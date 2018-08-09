@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Meu CSS -->
     <link href="css/Main.css" rel="stylesheet" type="text/css" media="all"/>
+    <!-- -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 </head>
 <body>
@@ -94,16 +96,14 @@
                         
                         <table class="table">
                             <thead>
-                              <tr>
+                              <tr style="font-size:15px; background-color:; color:;">
                                 <th>ID</th>
                                 <th>Nome</th>
                                 <th>Episodio</th>
-                                <th>Data</th>
-                                <th>Prox</th>
                                 <th>Dia</th>
-                                <th>Ep Novo</th>
                                 <th>Qualidade</th>
-                                <th>Excluir</th>
+                                <th>Edit</th>
+                                <th>Delet</th>
                               </tr>
                             </thead>
                             <tbody>
@@ -133,10 +133,10 @@
                 
     </section>
     
-                        <!-- LINHA: Divisão de Sectons -->
-                        <div class="" id="linha-divisao-section">
-                        .
-                        </div>
+    <!-- LINHA: Divisão de Sectons -->
+    <div class="" id="linha-divisao-section">
+    .
+    </div>
     
     <!-- SECTION 02: Cards -->
     <section class="" style="background-image: url('imagens/img05.jpg'); background-size:cover;">
