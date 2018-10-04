@@ -37,7 +37,7 @@ hr{
     border-radius: 50px;
     width: 100px;
     height: 100px;
-    margin-left: 40%;
+    margin-left: 45%;
     margin-top: 200px;
     margin-bottom: 20px;
 }
@@ -55,11 +55,11 @@ hr{
 #background-menu{
     background-color: red;
     opacity: 0.5;
-    height: 42px; 
+    height: 60px; 
 }
 
 #col-menu01{
-    margin-top: 7px;
+    margin-top: 15px;
     margin-left: 100px;
     font-size: 19px;
     color: white;
@@ -300,4 +300,30 @@ hr{
 #body-table-parados:hover:before, #body-table-parados:focus:before, #body-table-parados:active:before {
   -webkit-transform: scale(0);
   transform: scale(0);
+}
+
+#row-input-parados{
+    color: white;
+    padding-bottom: 50px;
+}
+
+.input-parados{
+    background-color: transparent;
+    border-radius: 0;
+    color: darkorange;
+}
+    .input-parados:hover{
+        background-color: #eeeeee;
+    }
+
+#button-salvar-parados{
+    background-color: darkorange;
+    border-radius: 1;
+    color: black;
+    width: 77px;
+}
+
+#icon-save-parados{
+    color: black;
+    font-size: 18px;
 }

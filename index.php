@@ -21,12 +21,23 @@
     
     <!-- MENU GERAL -->
     <div class="row" id="background-menu">
-            <div class="col-6" id="col-menu01">
-                Iron Blood Sweat Gundam
+            
+            <div class="col-4" id="col-menu01">
+                <?php 
+                      $mostrar_dia = date ("d", time());
+                      $mostrar_mes = date ("m", time());
+                      $mostrar_ano = date ("y", time());
+                ?>
+                <p style="color:white; font-size:25px;"> <?php echo $mostrar_dia . "/" . $mostrar_mes . "/" . $mostrar_ano; ?>  </p>
             </div>
+        
+            <div class="col" style="text-align:center;">
+                <img src="imagens/titulo.png" />
+            </div>
+        
             <div class="col-5" id="col-menu02">
 
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-3" id="col-menu02-hover">
                         <i class="fa fa-home" id="menu-size-icon"></i> HOME
                     </div>
@@ -39,22 +50,14 @@
                     <div class="col-3" id="col-menu02-hover">
                         <i class="fas fa-list-ol" id="menu-size-icon"></i> RANKING
                     </div>
-                </div>
+                </div> -->
 
             </div>
+        
         </div>
     
     <!-- SECTION 01: Input e Table -->
     <section class="" id="" style="background-image: url('imagens/img03.jpg'); background-size:cover;">
-                
-                <?php 
-                      $mostrar_dia = date ("d", time());
-                      $mostrar_mes = date ("m", time());
-                      $mostrar_ano = date ("y", time());
-                ?>
-                <img src="imagens/titulo.png" id="site-title"/>
-                <p style="margin-left:40%;"> <?php echo $mostrar_dia . "/" . $mostrar_mes . "/" . $mostrar_ano; ?>  </p>
-                <hr class="hr-linha"/>
                 
             <div class="container">
                 
@@ -159,117 +162,27 @@
                 
     </section>
     
-    <!-- LINHA: Divisão de Sectons -->
-    <div class="" id="linha-divisao-section">
+        <!-- LINHA: Divisão de Sectons -->
+        <div class="" id="linha-divisao-section">
     .
     </div>
     
     <!-- SECTION 02: Cards -->
     <section class="" style="background-image: url('imagens/img05.jpg'); background-size:cover;">
         
-        <img src="imagens/titulo.png" id="site-title"/>
-        <hr class="hr-linha"/>
+        a
         
-        <!-- Card's Linha: 01 -->
-        <div class="row">
-            
-            <div class="col">
-                
-                <div class="row" id="card-create">
-                    <img src="imagens/01anime.png" id="img-card"/>
-                    
-                    <div class="col">
-                        <p id="titulo-card">Isekai Maou to Shoukan</p>
-                        <p id="icon-card-id"> <i class="fa fa-themeisle"></i> 20</p>
-                        <p id="coment-card"> <i class="fas fa-comments" style="color:black;"></i> Comentário: Mago fuderoso, com duas escaravas.</p> 
-                    </div>
-                </div>
-                
-            </div>
-            
-            <div class="col">
-                
-                <div class="row" id="card-create">
-                    <img src="imagens/02anime.png" id="img-card"/>
-                    
-                    <div class="col">
-                        <p id="titulo-card">Satsuriku no Tenshi</p>
-                        <p id="icon-card-id"> <i class="fa fa-themeisle"></i> 21</p>
-                        <p id="coment-card"> <i class="fas fa-comments" style="color:black;"></i> Comentário: Garota inocente com mumia, anime de suspense.</p> 
-                    </div>
-                </div>
-                
-            </div>
-
-            <div class="col">
-                
-                <div class="row" id="card-create">
-                    <img src="https://www.intoxianime.com/wp-content/uploads/2018/04/91399l2-200x300.jpg" id="img-card"/>
-                    
-                    <div class="col" id="p-col-cinza">
-                        <p id="titulo-card">Phantom in the Twilight</p>
-                        <p id="icon-card-id"> <i class="fa fa-themeisle"></i> 18</p>
-                        <p id="coment-card"> <i class="fas fa-comments" style="color:black;"></i> Comentário:</p> 
-                    </div>
-                </div>
-                
-            </div>
-            
-        </div>
-        
-        <!-- Card's Linha: 02 -->
-        <div class="row">
-            
-            <div class="col">
-                
-                <div class="row" id="card-create">
-                    <img src="https://www.intoxianime.com/wp-content/uploads/2018/04/90995l-205x300.jpg" id="img-card"/>
-                    
-                    <div class="col" id="p-col-cinza">
-                        <p id="titulo-card">Kyoto Teramachi Sanjou no Holmes</p>
-                        <p id="icon-card-id"> <i class="fa fa-themeisle"></i> 17</p>
-                        <p id="coment-card"> <i class="fas fa-comments" style="color:black;"></i> Comentário: Garota se relaciona com um vendedor de artigos antigos.</p> 
-                    </div>
-                </div>
-                
-            </div>
-            
-            <div class="col">
-                
-                <div class="row" id="card-create">
-                    <img src="https://www.intoxianime.com/wp-content/uploads/2018/04/91304l-216x300.jpg" id="img-card"/>
-                    
-                    <div class="col" id="p-col-cinza">
-                        <p id="titulo-card">Angolmois: Genkou Kassenki</p>
-                        <p id="icon-card-id"> <i class="fa fa-themeisle"></i> 19</p>
-                        <p id="coment-card"> <i class="fas fa-comments" style="color:black;"></i> Comentário: Samurai overpower, anime serio.</p> 
-                    </div>
-                </div>
-                
-            </div>
-
-            <div class="col">
-                
-                <div class="row" id="card-create">
-                    <img src="https://www.intoxianime.com/wp-content/uploads/2018/04/91326l-212x300.jpg" id="img-card"/>
-                    
-                    <div class="col" id="p-col-cinza">
-                        <p id="titulo-card">Sirius the Jaeger (Tenrou)</p>
-                        <p style="color:purple;">ID: 25</p>
-                        <p>Comentário: Anime de vampiro</p> 
-                    </div>
-                </div>
-                
-            </div>
-            
-        </div>
-        
-        <!-- Next Button -->
+       <!-- button next -->
         <div class="">
-            <button id="button-next" style="margin-top:150px;"> <i class="fa fa-angle-double-down" id="arrow-next"></i> </button>
+            <button id="button-next"> <i class="fa fa-angle-double-down" id="arrow-next"></i> </button>
         </div>
         
     </section>
+    
+        <!-- LINHA: Divisão de Sectons -->
+        <div class="" id="linha-divisao-section">
+    .
+    </div>
     
     <!-- SECTION 03: Table Ranking -->
     <section class="" style="background-image: url('imagens/img245.jpg'); background-size:cover;">
@@ -279,6 +192,42 @@
                 <hr style="width:50%; color:white;"/>
         
         <div class="container">    
+            
+            <form action="insertparados.php" method="post">
+                <div class="row" id="row-input-parados">
+                    <div class="col-2">
+                        <label for="inputEmail4">Name:</label>
+                        <input type="text" class="form-control input-parados" name="nome" placeholder="Anime Name" required>
+                    </div>
+                    <div class="col-2">
+                        <label for="inputEmail4">Episode:</label>
+                        <input type="text" class="form-control input-parados" name="episodio" placeholder="Episode Stopped" required>
+                    </div>
+                    <div class="col-2">
+                        <label for="inputEmail4">Date:</label>
+                        <input type="text" class="form-control input-parados" name="data" placeholder="Last Date">
+                    </div>
+                    <div class="col-2">
+                        <label for="inputEmail4">Season:</label>
+                        <input type="text" class="form-control input-parados" name="season" placeholder="Current Season">
+                    </div>
+                    <div class="col-2">
+                        <label for="inputEmail4">Comment:</label>
+                        <input type="text" class="form-control input-parados" name="comentario" placeholder="Speak About Anime">
+                    </div>
+                    <div class="col-2">
+                        <label for="inputEmail4">Note:</label>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control input-parados" name="nota" id="inputEmail4" placeholder="Star">
+                            </div>
+                            <div class="col">
+                                <button type="submit" class="btn btn-dark" id="button-salvar-parados"> <i class="fas fa-save" id="icon-save-parados"></i> Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
             
             <table class="table table-sm">
                 <thead>

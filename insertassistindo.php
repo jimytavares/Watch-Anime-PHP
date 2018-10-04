@@ -2,7 +2,7 @@
 
     $mysqli = new mysqli ('localhost', 'dbanime', '12345', 'dbanime');
     
-    $nomeA           = $_POST['nome'];
+    $nomeA          = $_POST['nome'];
     $ep             = $_POST['episodio'];
     $dataassistidoA = $_POST['dataassistido'];
     $proxep         = $_POST['proximoepisodio'];
