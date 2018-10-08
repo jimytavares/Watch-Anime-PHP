@@ -80,11 +80,11 @@
                             
                             <input type="text" class="form-control" name="nome" value="" id="input-cadastro" placeholder="Nome do Anime">
                             <input type="text" class="form-control" name="episodio" value="" id="input-cadastro" placeholder="Episódio Assistido" autocomplete="off">
-                            <input type="text" class="form-control" name="dataassistido" value="" id="input-cadastro" placeholder="Data assistido" autocomplete="off">
-                            <input type="text" class="form-control" name="proximoepisodio" value="" id="input-cadastro" placeholder="Próximo Episódio" autocomplete="off">
-                            <input type="text" class="form-control" name="dataproxep" value="" id="input-cadastro" placeholder="Data próximo episódio" autocomplete="off">
+                            <input type="text" class="form-control" name="dataassistido" value="" id="input-cadastro" placeholder="--" autocomplete="off">
+                            <input type="text" class="form-control" name="proximoepisodio" value="" id="input-cadastro" placeholder="--" autocomplete="off">
+                            <input type="text" class="form-control" name="dataproxep" value="" id="input-cadastro" placeholder="--" autocomplete="off">
                             <input type="text" class="form-control" name="qualidade" value="" id="input-cadastro" placeholder="Qualidade">
-                            <input type="text" class="form-control" name="comentario" value="" id="input-cadastro" placeholder="Comentários">
+                            <input type="text" class="form-control" name="comentario" value="" id="input-cadastro" placeholder="Dia da semana">
                             
                               <!--<div class="input-group mb-2" id="input-cadastro">
                                 <div class="input-group-prepend">
