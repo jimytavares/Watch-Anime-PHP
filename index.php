@@ -107,7 +107,7 @@
                               <tr style="font-size:15px; background-color:; color:;">
                                 <th>ID</th>
                                 <th>Nome</th>
-                                <th>Episodio</th>
+                                <th>Assistido</th>
                                 <th>Dia</th>
                                 <th>Qualidade</th>
                                 <th>Edit</th>
@@ -229,6 +229,21 @@
                 </div>
             </form>
             
+            <div class="row">
+                <div class="col">
+                    <ul class="list-group">
+                      <li class="list-group-item list-group-item-info" id="season-janeiro">Janeiro / Winter / Inverno</li>
+                      <li class="list-group-item list-group-item-warning">Abril / Spring / Primavera</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-danger">Julho / Summer / Verão</li>
+                      <li class="list-group-item list-group-item-success">Outubro / Fall / Outono</li>
+                    </ul>
+                </div>
+            </div>
+            
             <table class="table table-sm">
                 <thead>
                   <tr id="tr-parados">
@@ -237,6 +252,7 @@
                     <th id="th-parados">Episódio</th>
                     <th id="th-parados">Data</th>
                     <th id="th-parados">Temporada</th>
+                    <th id="th-parados">Season</th>
                     <th id="th-parados">Nota</th>
                     <th id="th-parados">Comentário</th>
                     <th id="th-parados">Excluir</th>

@@ -24,6 +24,8 @@
                                     echo "<td>" . $dados["dt"];                                       
                                         echo "</td>";
                                     echo "<td>" . $dados["temporada"];
+                                        echo"</td>";
+                                    echo "<td>" . $dados["season"];
                                         echo "</td>";
                                     echo "<td>" . $dados["nota"];  
                                         echo "</td>";
