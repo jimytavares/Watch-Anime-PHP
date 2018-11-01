@@ -232,25 +232,24 @@
             <div class="row">
                 <div class="col">
                     <ul class="list-group">
-                      <li class="list-group-item list-group-item-info" id="season-janeiro">Janeiro / Winter / Inverno</li>
-                      <li class="list-group-item list-group-item-warning">Abril / Spring / Primavera</li>
+                      <li class="list-group-item list-group-item-info" id="season-janeiro"><strong>1º Janeiro / Winter / Inverno</strong></li>
+                      <li class="list-group-item list-group-item-warning" id="season-janeiro"><strong>2º Abril / Spring / Primavera</strong></li>
                     </ul>
                 </div>
                 <div class="col">
                     <ul class="list-group">
-                        <li class="list-group-item list-group-item-danger">Julho / Summer / Verão</li>
-                      <li class="list-group-item list-group-item-success">Outubro / Fall / Outono</li>
+                        <li class="list-group-item list-group-item-danger" id="season-janeiro"><strong>3º Julho / Summer / Verão</strong></li>
+                      <li class="list-group-item list-group-item-success" id="season-janeiro"><strong>4º Outubro / Fall / Outono</strong></li>
                     </ul>
                 </div>
             </div>
             
-            <table class="table table-sm">
+            <table class="table table-sm" style="margin-top:30px;">
                 <thead>
                   <tr id="tr-parados">
                     <th id="th-parados">ID</th>
                     <th id="th-parados">Nome</th>
                     <th id="th-parados">Episódio</th>
-                    <th id="th-parados">Data</th>
                     <th id="th-parados">Temporada</th>
                     <th id="th-parados">Season</th>
                     <th id="th-parados">Nota</th>

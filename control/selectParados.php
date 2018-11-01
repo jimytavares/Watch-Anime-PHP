@@ -21,8 +21,6 @@
                                         echo "</td>";
                                     echo "<td>" . $dados["ep"];                                      
                                         echo "</td>";
-                                    echo "<td>" . $dados["dt"];                                       
-                                        echo "</td>";
                                     echo "<td>" . $dados["temporada"];
                                         echo"</td>";
                                     echo "<td>" . $dados["season"];
