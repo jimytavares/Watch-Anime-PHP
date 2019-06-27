@@ -15,6 +15,8 @@
     <link href="css/Main.css" rel="stylesheet" type="text/css" media="all"/>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+    <style> .cssbb{color: red;} </style>
 
 </head>
 <body>
@@ -57,7 +59,7 @@
         </div>
     
     <!-- SECTION 01: Input e Table -->
-    <section class="" id="" style="background-image: url('imagens/img03.jpg'); background-size:cover;">
+    <section class="" id="" style="background-image: url('imagens/img05.jpg'); background-size:cover;">
                 
             <div class="container">
                 
@@ -169,8 +171,46 @@
     
     <!-- SECTION 02: Cards -->
     <section class="" style="background-image: url('imagens/img05.jpg'); background-size:cover;">
+    
         
-        a
+                            <script>
+                                function getAllParaElems() {
+                                  var allParas = document.getElementsByTagName('p');
+                                  var num = allParas.length;
+                                  alert('There are ' + num + ' paragraph in this document');
+                                }
+
+                                function div1ParaElems() {
+                                  var div1 = document.getElementById('div1');
+                                  var div1Paras = div1.getElementsByTagName('p');
+                                  var num = div1Paras.length;
+                                  alert('There are ' + num + ' paragraph in #div1');
+                                }
+
+                                function div2ParaElems() {
+                                  var div2 = document.getElementById('div2');
+                                  var div2Paras = div2.getElementsByTagName('p');
+                                  var num = div2Paras.length;
+                                  alert('There are ' + num + ' paragraph in #div2');
+                                }
+                                
+                                function subsallcolor(){
+                                    var colorred = document.getElementsByTagName('P');
+                                    var color = colorred.style.color = "red";
+                                    
+                                }
+                          </script>
+        
+
+                        
+
+                          <button onclick="subsallcolor();">Mudar Cor</button><br />
+
+                          <button onclick="" id="">show all p elements in div1 element</button><br />
+                            <p id="">dasdasdasd</p>
+                            <p>bbbbbbbbbb</p>
+
+
         
        <!-- button next -->
         <div class="">
@@ -232,24 +272,25 @@
             <div class="row">
                 <div class="col">
                     <ul class="list-group">
-                      <li class="list-group-item list-group-item-info" id="season-janeiro"><strong>1º Janeiro / Winter / Inverno</strong></li>
-                      <li class="list-group-item list-group-item-warning" id="season-janeiro"><strong>2º Abril / Spring / Primavera</strong></li>
+                      <li class="list-group-item list-group-item-info" id="season-janeiro">Janeiro / Winter / Inverno</li>
+                      <li class="list-group-item list-group-item-warning">Abril / Spring / Primavera</li>
                     </ul>
                 </div>
                 <div class="col">
                     <ul class="list-group">
-                        <li class="list-group-item list-group-item-danger" id="season-janeiro"><strong>3º Julho / Summer / Verão</strong></li>
-                      <li class="list-group-item list-group-item-success" id="season-janeiro"><strong>4º Outubro / Fall / Outono</strong></li>
+                        <li class="list-group-item list-group-item-danger">Julho / Summer / Verão</li>
+                      <li class="list-group-item list-group-item-success">Outubro / Fall / Outono</li>
                     </ul>
                 </div>
             </div>
             
-            <table class="table table-sm" style="margin-top:30px;">
+            <table class="table table-sm">
                 <thead>
                   <tr id="tr-parados">
                     <th id="th-parados">ID</th>
                     <th id="th-parados">Nome</th>
                     <th id="th-parados">Episódio</th>
+                    <th id="th-parados">Data</th>
                     <th id="th-parados">Temporada</th>
                     <th id="th-parados">Season</th>
                     <th id="th-parados">Nota</th>
