@@ -21,9 +21,15 @@
                                         echo "</td>";
                                     echo "<td>" . $dados["episodio"];                                      
                                         echo "</td>";
-                                    echo "<td>" . $dados["comentario"];  
+                                    echo "<td>" . $dados["dataassistido"];                                      
                                         echo "</td>";
-                                    echo "<td>" . $dados["qualidade"];   
+                                    echo "<td>" . $dados["dataproxep"];                                      
+                                        echo "</td>";
+                                    echo "<td>" . $dados["qualidade"];  
+                                        echo "</td>";
+                                    echo "<td>" . $dados["comentario"];   
+                                        echo "</td>";
+                                    echo "<td>" . $dados["nota"];                                      
                                         echo "</td>";
                                     echo "<td>" . " <button type='submit' class='btn-xs btn-outline-warning' data-toggle='modal' data-target='#modaledit' style='border-style:none; width:60px;'> <i class='far fa-edit' style='color:#00ffff; font-size: 20px;'></i> </button> ";
                                         echo "</td>";

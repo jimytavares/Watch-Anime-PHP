@@ -5,13 +5,13 @@
     $nomeA          = $_POST['nome'];
     $ep             = $_POST['episodio'];
     $dataassistidoA = $_POST['dataassistido'];
-    $proxep         = $_POST['proximoepisodio'];
     $dataprox       = $_POST['dataproxep'];
     $quali          = $_POST['qualidade'];
     $coment         = $_POST['comentario'];
+    $notaA          = $_POST['nota'];
 
     //enviar instrucao sql para o banco
-    $sql = "INSERT INTO assistindo(nome, episodio, dataassistido, proximoepisodio, dataproxep, qualidade, comentario) VALUES ('$nomeA', '$ep', '$dataassistidoA', '$proxep', '$dataprox', '$quali', '$coment');";
+    $sql = "INSERT INTO assistindo(nome, episodio, dataassistido, dataproxep, qualidade, comentario, nota) VALUES ('$nomeA', '$ep', '$dataassistidoA', '$dataprox', '$quali', '$coment', '$notaA');";
     
     if ($mysqli->query($sql) === TRUE) {
     header('Location: index.php');
