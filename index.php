@@ -163,8 +163,10 @@
     <!-- SECTION 02: Cards de Temporada
     ================================================== -->
     <section class="" style="background-image: url('imagens/background-gundam.png'); background-size:cover;">
-    
-        <h2 style="text-align:center;">Temporada</h2>
+        
+        <div class="" style="">
+            <h2 style="text-align:center;">Temporada</h2>
+        </div>
         
         <!-- Cards: Winter, Spring, Summer, Fall -->
         <div class="row">
@@ -267,8 +269,12 @@
             
         </div>
         
+        <!-- Container: Animes de Temporadas passadas -->
         <div class="container">
-            <div class="row" style="color:white; font-size:30px;">
+            <div class="" style="background-color:#efefef; width:1140px; margin-left:-15px; border-radius:2px; height:40px;">
+                <h3 style="text-align:center;">Lista de Animes das Temporada passada</h3>
+            </div>
+            <div class="row" style="color:black; background-color:white; margin-top:-px;border-radius:2px;">
                 <div class="col">
                     <p> <i class="fab fa-ethereum"></i>Janeiro / Winter / Inverno 2018 </p>
                     <p> <i class="fab fa-ethereum"></i>Janeiro / Winter / Inverno 2017 </p>
@@ -295,6 +301,9 @@
                 </div>
             </div>
         </div>
+        
+            <!-- apagar esse <B/>R depois, ajustar por height -->
+            <br/><br/><br/><br/>
         
     </section>
     
