@@ -302,8 +302,10 @@
             </div>
         </div>
         
-            <!-- apagar esse <B/>R depois, ajustar por height -->
-            <br/><br/><br/><br/>
+        <!-- Next Button -->
+        <div class="">
+            <button id="button-next" style="margin-top:150px;"> <i class="fa fa-angle-double-down" id="arrow-next"></i> </button>
+        </div>
         
     </section>
     
@@ -317,9 +319,11 @@
     <section class="" style="background-image: url('imagens/.jpg'); background-size:cover;">
         <div class="container" style="padding-top:30px;">
             
-            <img src="imagens/titulo.png" id="site-title" style="margin-left:42%;"/>
+            <img src="imagens/titulo-black.png" id="site-title" style="margin-left:42%;"/>
 
                     <hr style="width:50%; background-color:black;"/>
+            
+            <p style="text-align:center;">Aqui você pode cadastrar Animes das próximas temporadas, como um controle de favoritos de espera dos animes que serão lançados futuramentes.</p>
                 
                 <p style="text-align:center; color:white;"> <i class="fas fa-radiation-alt"></i> Cadastre animes e suas respectivas datas das próximas temporadas para ter um controle do que os aguarda nas próximas temporadas.</p>
                     
