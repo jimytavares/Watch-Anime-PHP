@@ -6,23 +6,29 @@
         <li><a href="#details" id="menu-fixed" style="color:white;">Próxima Temporada</a>
         <li><a href="#FAQ" id="menu-fixed" style="color:white;">Parados</a>
         <li><a href="#FAQ" id="menu-fixed" style="color:white;">Ranking</a>
-    </ul>
+    </ul>box-shadow: 1px 3px 10px #989898;
 -->
     
-    <div class="row" style="box-shadow: 1px 3px 10px #989898;">
-        <div class="col" style="background-color:orange;">
+    <div class="row">
+        
+        <div class="col">
         </div>
-        <div class="col" style="background-color:orange;">
+        
+        <div class="col">
             <img src="imagens/titulo.png" id="site-title" />
         </div>
-        <div class="col" style="background-color:orange;">
+        
+        <div class="col">
             <a data-toggle="modal" data-target="#exampleModal">
-                <p id="menu-temporada"> <i class="fas fa-info-circle" style="color:white;"></i> <b style="color:white;">Temporada Atual:</b>  <br/> <i class="fas fa-umbrella-beach" style="font-size:15px;"></i> Julho / Summer / Verão</p>
+                <p id="menu-temporada"> 
+                    <i class="fas fa-info-circle" style="color:white;"></i> <b style="color:white;">Temporada Atual:</b>  <br/> <i class="fas fa-umbrella-beach" style="font-size:15px;"></i> Julho / Summer / Verão
+                </p>
             </a>
         </div>
+        
     </div>
 
-    <hr style="width:100%; background-color:orange;"/>
+    <hr style="width:90%; background-color:white;"/>
     
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

@@ -28,7 +28,7 @@
         <div class="container">    
             
             <!-- Input: Cadastro Anime Assistindo -->
-                <form action="insertassistindo.php" method="post">
+            <form action="insertassistindo.php" method="post">
                     <div class="row" id="row-input-parados">
                         <div class="col-2">
                             <label for="inputEmail4">Nome:</label>
@@ -71,36 +71,36 @@
                     <button type="submit" class="btn btn-dark button-salvar-parados"> <i class="fas fa-save" id="icon-save-parados"></i> Save</button>
                 </form>
             
-            <!-- Cards: Seaseon -->
-                <div class="row" style="margin-top:30px;">
-                    <div class="col">
-                        <ul class="list-group">
-                          <li class="list-group-item list-group-item-info" id="season-janeiro"> <i class="far fa-snowflake" style="font-size:15px;"></i> Janeiro / Winter / Inverno</li>
-                          <li class="list-group-item list-group-item-warning" id="season-janeiro"> <i class="fab fa-pagelines" style="font-size:15px;"></i> Abril / Spring / Primavera</li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <ul class="list-group">
-                            <li class="list-group-item list-group-item-danger" id="season-janeiro"> <i class="fas fa-umbrella-beach" style="font-size:15px;"></i> Julho / Summer / Verão</li>
-                            <li class="list-group-item list-group-item-success" id="season-janeiro"> <i class="fas fa-apple-alt" style="font-size:15px;"></i> Outubro / Fall / Outono</li>
-                        </ul>
+            <!-- Title Table: Icons and Title Table -->
+            <div class="container" style="margin-top: 30px; color:white; background-image: linear-gradient(to right, #3FC9FE ,#3A7EC7, #2F449C); border-color: red; height:50px; width:90%; border-radius:5px; box-shadow: 1px 3px 10px #000000; text-align:center;">
+                    <div class="row" style="padding-top:15px;">
+                        <div class="col">
+                            <i class="far fa-calendar-alt" id="icon-table-assist" data-toggle="modal" data-target="#modaldataassistido"></i>
+                            <i class="fas fa-info-circle" id="icon-table-assist" data-toggle="modal" data-target="#modalinfo" style="margin-left:30px;"></i> 
+                        </div>
+                        <div class="col">
+                            Animes Assistindo
+                        </div>
+                        <div class="col">
+                            c
+                        </div>
                     </div>
                 </div>
             
-            <!-- Table: Episódios -->
-                <table class="table table-sm" style="margin-top:20px;">
+            <!-- Table: Animes Assistindo -->
+            <table class="table table-sm" style="margin-top: -1px;">
                     <thead>
                         <tr id="tr-parados">
-                        <th id="th-parados">ID</th>
-                        <th id="th-parados">Nome</th>
-                        <th id="th-parados">Episódio</th>
-                        <th id="th-parados"> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modaldataassistido" style="color:black; border-radius: 10px; border-color:black; font-weight: bold; background-color:#00bfff;">Data Assistido</button> </th>
-                        <th id="th-parados"> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modaldataproxep" style="color:black; border-radius: 10px; border-color:black; font-weight: bold; background-color:#1ac6ff;">Data Prox Ep</button> </th>
-                        <th id="th-parados">Qualidade</th>
-                        <th id="th-parados">Comentário</th>
-                        <th id="th-parados">Nota</th>
-                        <th id="th-parados">Editar</th>
-                        <th id="th-parados">Excluir</th>
+                            <th id="th-parados">ID</th>
+                            <th id="th-parados">Nome</th>
+                            <th id="th-parados">Episódio</th>
+                            <th id="th-parados">Data Assistido</th>
+                            <th id="th-parados"> Data Prox Ep</th>
+                            <th id="th-parados">Qualidade</th>
+                            <th id="th-parados">Comentário</th>
+                            <th id="th-parados">Nota</th>
+                            <th id="th-parados">Editar</th>
+                            <th id="th-parados">Excluir</th>
                         </tr>
                     </thead>
                     <tbody id="body-table-parados">
@@ -108,43 +108,67 @@
                     </tbody>
                 </table>
 
-                <!-- Modal: Data Assistido e Data Próximo Episódio -->
-                <div class="modal fade bd-example-modal-lg" id="modaldataassistido" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-              <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle"> <i class="far fa-calendar-alt"></i> Data e Dia dos Episódios Assistidos</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    
-                      
-                       <table class="table table-sm" style="margin-top:20px;">
-                            <thead>
-                                <tr id="tr-parados">
-                                <th id="th-parados">ID</th>
-                                <th id="th-parados">Nome Anime</th>
-                                <th id="th-parados">Dia Assistido</th>
-                                <th id="th-parados">Data Assistido</th>
-                                <th id="th-parados">Dia Semana Prox Ep</th>
-                                <th id="th-parados">Data Prox Ep</th>
-                                </tr>
-                            </thead>
-                            <tbody id="body-table-parados">
-                                <?php include ('control/selectAssistindoDias.php'); ?>
-                            </tbody>
-                        </table>
-                      
-                      
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+                    <!-- Modal: Data Assistido e Data Próximo Episódio -->
+                    <div class="modal fade bd-example-modal-lg" id="modaldataassistido" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle"> <i class="far fa-calendar-alt"></i> Data e Dia dos Episódios Assistidos</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+
+
+                               <table class="table table-sm" style="margin-top:20px;">
+                                    <thead>
+                                        <tr id="tr-parados">
+                                        <th id="th-parados">ID</th>
+                                        <th id="th-parados">Nome Anime</th>
+                                        <th id="th-parados">Dia Assistido</th>
+                                        <th id="th-parados">Data Assistido</th>
+                                        <th id="th-parados">Dia Semana Prox Ep</th>
+                                        <th id="th-parados">Data Prox Ep</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="body-table-parados">
+                                        <?php include ('control/selectAssistindoDias.php'); ?>
+                                    </tbody>
+                                </table>
+
+
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Modal: Informações -->
+                    <div class="modal fade bd-example-modal-lg" id="modalinfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle"> <i class="fas fa-info-circle" id="icon-table-assist"></i>  Informações</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+
+
+                               INo
+
+
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
             
         </div>
         

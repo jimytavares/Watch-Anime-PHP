@@ -170,9 +170,11 @@ hr{
 
         #th-parados
         {
-          background-color: orange;
-            border-radius: 5px;
+          background-color: white;
+            color: #0066cc;
+            border-radius: 2px;
             border-color: transparent;
+            font-family: "Arial", Times, serif;
           vertical-align: middle;
           -webkit-transform: perspective(1px) translateZ(0);
           transform: perspective(1px) translateZ(0);
@@ -214,57 +216,58 @@ hr{
                 transform: scaleX(1);
             }
 
-#body-table-parados {
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
-  background: transparent;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-#body-table-parados:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #eeeeee;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-#body-table-parados:hover, #body-table-parados:focus, #body-table-parados:active {
-  color: white;
-}
-#body-table-parados:hover:before, #body-table-parados:focus:before, #body-table-parados:active:before {
-  -webkit-transform: scale(0);
-  transform: scale(0);
-}
-
-#row-input-parados{
-    color: white;
-    padding-bottom: 50px;
-}
-
-.input-parados{
-    background-color: transparent;
-    border-radius: 0;
-    color: darkorange;
-}
-    .input-parados:hover{
-        background-color: #eeeeee;
+    #body-table-parados {
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      position: relative;
+      background: transparent;
+      -webkit-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
     }
+        #body-table-parados:before {
+          content: "";
+            margin-top:-2px;
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: white;
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          -webkit-transition-property: transform;
+          transition-property: transform;
+          -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+          -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+        }
+        #body-table-parados:hover, #body-table-parados:focus, #body-table-parados:active {
+          color: white;
+        }
+        #body-table-parados:hover:before, #body-table-parados:focus:before, #body-table-parados:active:before {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+
+    #row-input-parados{
+        color: white;
+        padding-bottom: 50px;
+    }
+
+    .input-parados{
+        background-color: transparent;
+        border-radius: 0;
+        color: darkorange;
+    }
+        .input-parados:hover{
+            background-color: #eeeeee;
+        }
 
     .button-salvar-parados{
         background-color: darkorange;
@@ -330,6 +333,13 @@ hr{
         text-align: center;
     }
         #season-janeiro:hover{
+        }
+
+    #icon-table-assist{
+        font-size:22px;
+    }
+        #icon-table-assist:hover{
+            color: red;
         }
 
 /* ############################################ */
