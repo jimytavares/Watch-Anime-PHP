@@ -52,39 +52,16 @@ hr{
 
 /* ########### Menu Principal ########### */
 
-#background-menu{
-    background-color: red;
-    opacity: 0.5;
-    height: 60px; 
-}
+    #menu-fixed{
 
-#col-menu01{
-    margin-top: 15px;
-    margin-left: 100px;
-    font-size: 19px;
-    color: white;
-}
-
-#col-menu02{
-    color: darkgray;
-    font-size: 13px;
-    margin-top: 12px;
-
-}
-
-    #col-menu02-hover:hover{
-        color: white;
-        box-shadow:
-                    1px 1px #53a7ea,
-                    2px 2px #53a7ea,
-                    3px 3px #53a7ea;
-        -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
+    }
+    #menu-fixed:hover{
+        background-color: red;
     }
 
-#menu-size-icon{
-    font-size: 19px;
-}
+    #menu-temporada{
+        color:#990033; margin-top:10px; text-align:center;
+    }
 
 /* ############################################ */
 /* ################ SESSION 01 ################ */
@@ -121,8 +98,8 @@ hr{
     }
 
 #site-title{
-    margin-top: 50px;
-    margin-left: 40%;
+    margin-left: 27%;
+    margin-top: 7px;
 }
 
 #col-table{
@@ -170,51 +147,11 @@ hr{
 
 /*######## Criando Card ########*/
 
-#card-create{
-    background-color: lightsteelblue;
-    color: black;
-    margin-top: 30px;
-    margin-left: 50px;
-    height: 300px;
-    width: 500px;
-    border-radius: 20px;
-    opacity: 0.7;
-}
-    #card-create:hover{
-        opacity: 0.9;
-    }
 
-    #img-card{
-        border-radius: 5px;    
-    }
-
-#titulo-card{
-    margin-top: 15px;
-    font-size: 18px;
-    color: black;   
-    font-family: "	Courier New";
-    text-align: center;
-}
-    #titulo-card:hover{
-        color: black;
-        text-align: center;
-        font-size: 25px;
-    }
-
-    #icon-card-id{
-        color: maroon; 
-        font-size: 35px;
-        margin-left: 30%;
-    }
-
-    #coment-card{
-        color: dimgray;
-        font-size: 15px;
-    }
 
 
 /* ############################################ */
-/* ################ SESSION 03 ################ */
+/* ################ SESSION 01 ################ */
 /* ############################################ */
 
 
@@ -233,6 +170,8 @@ hr{
         #th-parados
         {
           background-color: orange;
+            border-radius: 5px;
+            border-color: transparent;
           vertical-align: middle;
           -webkit-transform: perspective(1px) translateZ(0);
           transform: perspective(1px) translateZ(0);
@@ -397,6 +336,115 @@ hr{
 /* ############################################ */
 
 .btn-animeproxtemp{
-    background-color: hotpink;
+    background-color: greenyellow;
     border-color: transparent;
+}
+
+/* ############################################ */
+/* ########  ########## */
+/* ############################################ */
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+p {
+  font-size: 13px;
+}
+
+a:hover .card-outmore {
+  background: #2C3E50;
+  color: #fff;
+}
+
+a:hover .thecard {
+  box-shadow: 0 10px 50px rgba(0,0,0,.6);
+}
+
+.thecard {
+  width: 300px;
+  margin: 5% auto;
+  box-shadow: 0 1px 30px rgba(0,0,0,.4);
+  display: block;
+  background-color: #fff;
+  border-radius: 4px;
+  transition: 400ms ease;
+}
+
+.card-img {
+  height: 225px;
+}
+
+.card-img img {
+  width:100%;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.card-caption {
+  position: relative;
+  background: #ffffff;
+  padding: 15px 25px 5px 25px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.card-outmore {
+  padding: 10px 25px 10px 25px;
+  border-radius: 0px 0px 4px 4px;
+  border-top: 1px solid #e0e0e0;
+  background: #efefef;
+  color: #222;
+  display: inline-table;
+  width: 100%;
+  box-sizing: border-box;
+  transition: 400ms ease;
+}
+.card-outmore h5 {
+  float: left;
+}
+.card-outmore i {
+  float: right;
+}
+
+span.date {
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 22px;
+}
+
+h5 {
+  margin:0;
+}
+
+#like-btn {
+  font-size: 18px;
+  background: #446CB3;
+  color: #fff;
+  padding: 13px 15px;
+  border-radius: 50em;
+  position: absolute;
+  right: 20px;
+  top: -22px;
+  box-shadow: 0 2px 1px rgba(0,0,0,.2);
+  transition: 400ms ease;
+}
+
+#like-btn:hover {
+  font-size: 18px;
+  background: #3B5998;
+  color: #fff;
+  padding: 13px 15px;
+  border-radius: 50em;
+  position: absolute;
+  right: 20px;
+  top: -22px;
+  box-shadow: 0 4px 5px rgba(0,0,0,.3);
+}
+
+#outmore-icon {
+  border:1px solid ;
+  padding: 1px 6px;
+  border-radius: 50em;
 }
