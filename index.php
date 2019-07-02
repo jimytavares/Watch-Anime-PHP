@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Meu CSS -->
     <link href="css/Main.css" rel="stylesheet" type="text/css" media="all"/>
     <!-- Font Awesome -->
@@ -21,287 +19,132 @@
 </head>
 <body>
     
-    <!-- MENU GERAL -->
-    <div class="row" id="background-menu">
-            
-            <div class="col-4" id="col-menu01">
-                <?php 
-                      $mostrar_dia = date ("d", time());
-                      $mostrar_mes = date ("m", time());
-                      $mostrar_ano = date ("y", time());
-                ?>
-                <p style="color:white; font-size:25px;"> <?php echo $mostrar_dia . "/" . $mostrar_mes . "/" . $mostrar_ano; ?>  </p>
-            </div>
-        
-            <div class="col" style="text-align:center;">
-                <img src="imagens/titulo.png" />
-            </div>
-        
-            <div class="col-5" id="col-menu02">
-
-                <!-- <div class="row">
-                    <div class="col-3" id="col-menu02-hover">
-                        <i class="fa fa-home" id="menu-size-icon"></i> HOME
-                    </div>
-                    <div class="col-3" id="col-menu02-hover">
-                        <i class="fab fa-earlybirds" id="menu-size-icon"></i> ASSISTINDO
-                    </div>
-                    <div class="col-3" id="col-menu02-hover">
-                        <i class="fas fa-stopwatch" id="menu-size-icon"></i> PARADOS
-                    </div>
-                    <div class="col-3" id="col-menu02-hover">
-                        <i class="fas fa-list-ol" id="menu-size-icon"></i> RANKING
-                    </div>
-                </div> -->
-
-            </div>
-        
-        </div>
-    
-    <!-- SECTION 01: Input e Table -->
-    <section class="" id="" style="background-image: url('imagens/img05.jpg'); background-size:cover;">
-                
-            <div class="container">
-                
-                <!-- row input e table -->
-                <div class="row" id="row-geral">
-                    
-                    <!-- Input Col01 -->
-                    <div class="col-4 form-group" id="col-input">
-                        
-                        <div class="row" id="row-titulo-form">
-                            <div class="col" id="icon-titulo01">
-                                <i class="fab fa-jedi-order"></i>
-                            </div>
-                            <div class="col" id="titulo-form">
-                                <p>Cadastro de Animes <i class="fab fa-earlybirds"></i> </p>
-                            </div>
-                        </div>
-                            
-                        <form action="insertassistindo.php" method="post">
-                            
-                            <input type="text" class="form-control" name="nome" value="" id="input-cadastro" placeholder="Nome do Anime">
-                            <input type="text" class="form-control" name="episodio" value="" id="input-cadastro" placeholder="Episódio Assistido" autocomplete="off">
-                            <input type="text" class="form-control" name="dataassistido" value="" id="input-cadastro" placeholder="--" autocomplete="off">
-                            <input type="text" class="form-control" name="proximoepisodio" value="" id="input-cadastro" placeholder="--" autocomplete="off">
-                            <input type="text" class="form-control" name="dataproxep" value="" id="input-cadastro" placeholder="--" autocomplete="off">
-                            <input type="text" class="form-control" name="qualidade" value="" id="input-cadastro" placeholder="Qualidade">
-                            <input type="text" class="form-control" name="comentario" value="" id="input-cadastro" placeholder="Dia da semana">
-                            
-                              <!--<div class="input-group mb-2" id="input-cadastro">
-                                <div class="input-group-prepend">
-                                  <div class="input-group-text">@</div>
-                                <input type="text" class="form-control" name="nome" value="" placeholder="Nome do Anime">
-                                </div>
-                              </div> -->
-                            
-                                <br/>
-                            <button type="submit" class="btn btn-dark" id="button-salvar-form"> Salvar </button>
-                        </form>
-
-                    </div>
-
-                    <!-- Table Col02 -->
-                    <div class="col-8" id="col-table">
-                        
-                        <table class="table">
-                            <thead>
-                              <tr style="font-size:15px; background-color:; color:;">
-                                <th>ID</th>
-                                <th>Nome</th>
-                                <th>Assistido</th>
-                                <th>Dia</th>
-                                <th>Qualidade</th>
-                                <th>Edit</th>
-                                <th>Delet</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <?php include ('control/selectAssistindo.php'); ?>
-                            </tbody>
-                          </table>
-
-                    </div>
-
-                </div>
-                
-                <!-- campo excluir -->
-                <form action="control/excluindoAssistindo.php" method="get">
-                    <div class="form-group">
-                      <label for="excluir" style="color:white;">ID para Excluir da Lista:</label>
-                      <input type="text" name="idex" class="form-control" placeholder="Digite o ID do anime a ser excluido manualmente">
-                    </div>                        
-                    <button type="submit" class="btn btn-danger">Exlcuir</button>
-                </form>
-                
-                <!-- button next -->
-                <div class="">
-                    <button id="button-next"> <i class="fa fa-angle-double-down" id="arrow-next"></i> </button>
-                </div>
-                
-                <!-- Modal Editar -->
-                <div class="modal fade" id="modaledit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        ...
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-            </div>
-                
-    </section>
-    
-        <!-- LINHA: Divisão de Sectons -->
-        <div class="" id="linha-divisao-section">
-    .
-    </div>
-    
-    <!-- SECTION 02: Cards -->
-    <section class="" style="background-image: url('imagens/img05.jpg'); background-size:cover;">
-    
-        
-                            <script>
-                                function getAllParaElems() {
-                                  var allParas = document.getElementsByTagName('p');
-                                  var num = allParas.length;
-                                  alert('There are ' + num + ' paragraph in this document');
-                                }
-
-                                function div1ParaElems() {
-                                  var div1 = document.getElementById('div1');
-                                  var div1Paras = div1.getElementsByTagName('p');
-                                  var num = div1Paras.length;
-                                  alert('There are ' + num + ' paragraph in #div1');
-                                }
-
-                                function div2ParaElems() {
-                                  var div2 = document.getElementById('div2');
-                                  var div2Paras = div2.getElementsByTagName('p');
-                                  var num = div2Paras.length;
-                                  alert('There are ' + num + ' paragraph in #div2');
-                                }
-                                
-                                function subsallcolor(){
-                                    var colorred = document.getElementsByTagName('P');
-                                    var color = colorred.style.color = "red";
-                                    
-                                }
-                          </script>
-        
-
-                        
-
-                          <button onclick="subsallcolor();">Mudar Cor</button><br />
-
-                          <button onclick="" id="">show all p elements in div1 element</button><br />
-                            <p id="">dasdasdasd</p>
-                            <p>bbbbbbbbbb</p>
-
-
-        
-       <!-- button next -->
-        <div class="">
-            <button id="button-next"> <i class="fa fa-angle-double-down" id="arrow-next"></i> </button>
-        </div>
-        
-    </section>
-    
-        <!-- LINHA: Divisão de Sectons -->
-        <div class="" id="linha-divisao-section">
-    .
-    </div>
-    
-    <!-- SECTION 03: Table Ranking -->
+    <!-- SECTION 01: Header 
+    ================================================== -->
     <section class="" style="background-image: url('imagens/img245.jpg'); background-size:cover;">
         
-        <img src="imagens/titulo.png" id="site-title" style="margin-left:45%;"/>
-        
-                <hr style="width:50%; color:white;"/>
+        <?php include ('.globals/header.php'); ?>
         
         <div class="container">    
             
-            <form action="insertparados.php" method="post">
-                <div class="row" id="row-input-parados">
-                    <div class="col-2">
-                        <label for="inputEmail4">Name:</label>
-                        <input type="text" class="form-control input-parados" name="nome" placeholder="Anime Name" required>
-                    </div>
-                    <div class="col-2">
-                        <label for="inputEmail4">Episode:</label>
-                        <input type="text" class="form-control input-parados" name="episodio" placeholder="Episode Stopped" required>
-                    </div>
-                    <div class="col-2">
-                        <label for="inputEmail4">Date:</label>
-                        <input type="text" class="form-control input-parados" name="data" placeholder="Last Date">
-                    </div>
-                    <div class="col-2">
-                        <label for="inputEmail4">Season:</label>
-                        <input type="text" class="form-control input-parados" name="season" placeholder="Current Season">
-                    </div>
-                    <div class="col-2">
-                        <label for="inputEmail4">Comment:</label>
-                        <input type="text" class="form-control input-parados" name="comentario" placeholder="Speak About Anime">
-                    </div>
-                    <div class="col-2">
-                        <label for="inputEmail4">Note:</label>
-                        <div class="row">
-                            <div class="col">
-                                <input type="text" class="form-control input-parados" name="nota" id="inputEmail4" placeholder="Star">
+            <!-- Input: Cadastro Anime Assistindo -->
+                <form action="insertassistindo.php" method="post">
+                    <div class="row" id="row-input-parados">
+                        <div class="col-2">
+                            <label for="inputEmail4">Nome:</label>
+                            <input type="text" class="form-control input-parados" name="nome" placeholder="Anime Name" required>
+                        </div>
+                        <div class="col-2">
+                            <label for="inputEmail4">Episódio:</label>
+                            <input type="text" class="form-control input-parados" name="episodio" placeholder="Episode Watched" required>
+                        </div>
+                        <div class="col-2">
+                            <label for="inputEmail4">Data Assistida ¹:</label>
+                            <input type="text" class="form-control input-parados" name="dataassistido" placeholder="Watched Date">
+                        </div>
+                            <div class="col-2">
+                                <label for="inputEmail4">Dia ¹:</label>
+                                <input type="text" class="form-control input-parados" name="dataassistido" placeholder="Day Watched">
                             </div>
-                            <div class="col">
-                                <button type="submit" class="btn btn-dark" id="button-salvar-parados"> <i class="fas fa-save" id="icon-save-parados"></i> Save</button>
+                        <div class="col-2">
+                            <label for="inputEmail4">Data Próximo Ep ²:</label>
+                            <input type="text" class="form-control input-parados" name="dataproxep" placeholder="Date New Ep">
+                        </div>
+                            <div class="col-2">
+                                <label for="inputEmail4">Dia ²:</label>
+                                <input type="text" class="form-control input-parados" name="dataassistido" placeholder="Dia Prox Ep">
                             </div>
+                        <div class="col-2">
+                            <label for="inputEmail4">Qualidade:</label>
+                            <input type="text" class="form-control input-parados" name="qualidade" placeholder="Quality">
+                        </div>
+                        <div class="col-2">
+                            <label for="inputEmail4">Comentario:</label>
+                            <input type="text" class="form-control input-parados" name="comentario" id="inputEmail4" placeholder="Coment">
+                        </div>
+                        <div class="col-2">
+                            <label for="inputEmail4">Nota:</label>
+                            <input type="text" class="form-control input-parados" name="nota" id="inputEmail4" placeholder="Star">
                         </div>
                     </div>
-                </div>
-            </form>
+
+                    <button type="submit" class="btn btn-dark button-salvar-parados"> <i class="fas fa-save" id="icon-save-parados"></i> Save</button>
+                </form>
             
-            <div class="row">
-                <div class="col">
-                    <ul class="list-group">
-                      <li class="list-group-item list-group-item-info" id="season-janeiro">Janeiro / Winter / Inverno</li>
-                      <li class="list-group-item list-group-item-warning">Abril / Spring / Primavera</li>
-                    </ul>
+            <!-- Cards: Seaseon -->
+                <div class="row" style="margin-top:30px;">
+                    <div class="col">
+                        <ul class="list-group">
+                          <li class="list-group-item list-group-item-info" id="season-janeiro"> <i class="far fa-snowflake" style="font-size:15px;"></i> Janeiro / Winter / Inverno</li>
+                          <li class="list-group-item list-group-item-warning" id="season-janeiro"> <i class="fab fa-pagelines" style="font-size:15px;"></i> Abril / Spring / Primavera</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-danger" id="season-janeiro"> <i class="fas fa-umbrella-beach" style="font-size:15px;"></i> Julho / Summer / Verão</li>
+                            <li class="list-group-item list-group-item-success" id="season-janeiro"> <i class="fas fa-apple-alt" style="font-size:15px;"></i> Outubro / Fall / Outono</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col">
-                    <ul class="list-group">
-                        <li class="list-group-item list-group-item-danger">Julho / Summer / Verão</li>
-                      <li class="list-group-item list-group-item-success">Outubro / Fall / Outono</li>
-                    </ul>
+            
+            <!-- Table: Episódios -->
+                <table class="table table-sm" style="margin-top:20px;">
+                    <thead>
+                        <tr id="tr-parados">
+                        <th id="th-parados">ID</th>
+                        <th id="th-parados">Nome</th>
+                        <th id="th-parados">Episódio</th>
+                        <th id="th-parados"> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modaldataassistido" style="color:black; border-radius: 10px; border-color:black; font-weight: bold; background-color:#00bfff;">Data Assistido</button> </th>
+                        <th id="th-parados"> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modaldataproxep" style="color:black; border-radius: 10px; border-color:black; font-weight: bold; background-color:#1ac6ff;">Data Prox Ep</button> </th>
+                        <th id="th-parados">Qualidade</th>
+                        <th id="th-parados">Comentário</th>
+                        <th id="th-parados">Nota</th>
+                        <th id="th-parados">Editar</th>
+                        <th id="th-parados">Excluir</th>
+                        </tr>
+                    </thead>
+                    <tbody id="body-table-parados">
+                        <?php include ('control/selectAssistindo.php'); ?>
+                    </tbody>
+                </table>
+
+                <!-- Modal: Data Assistido e Data Próximo Episódio -->
+                <div class="modal fade bd-example-modal-lg" id="modaldataassistido" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle"> <i class="far fa-calendar-alt"></i> Data e Dia dos Episódios Assistidos</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    
+                      
+                       <table class="table table-sm" style="margin-top:20px;">
+                            <thead>
+                                <tr id="tr-parados">
+                                <th id="th-parados">ID</th>
+                                <th id="th-parados">Nome Anime</th>
+                                <th id="th-parados">Dia Assistido</th>
+                                <th id="th-parados">Data Assistido</th>
+                                <th id="th-parados">Dia Semana Prox Ep</th>
+                                <th id="th-parados">Data Prox Ep</th>
+                                </tr>
+                            </thead>
+                            <tbody id="body-table-parados">
+                                <?php include ('control/selectAssistindoDias.php'); ?>
+                            </tbody>
+                        </table>
+                      
+                      
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                  </div>
                 </div>
+              </div>
             </div>
-            
-            <table class="table table-sm">
-                <thead>
-                  <tr id="tr-parados">
-                    <th id="th-parados">ID</th>
-                    <th id="th-parados">Nome</th>
-                    <th id="th-parados">Episódio</th>
-                    <th id="th-parados">Data</th>
-                    <th id="th-parados">Temporada</th>
-                    <th id="th-parados">Season</th>
-                    <th id="th-parados">Nota</th>
-                    <th id="th-parados">Comentário</th>
-                    <th id="th-parados">Excluir</th>
-                  </tr>
-                </thead>
-                <tbody id="body-table-parados">
-                  <?php include ('control/selectParados.php'); ?>
-                </tbody>
-              </table>
             
         </div>
         
@@ -312,11 +155,224 @@
         
     </section>
     
+        <!-- LINHA: Divisão de Sectons -->
+        <div class="" id="linha-divisao-section">
+            .
+        </div>
+    
+    <!-- SECTION 02: Cards de Temporada
+    ================================================== -->
+    <section class="" style="background-image: url('imagens/background-gundam.png'); background-size:cover;">
+    
+        <h2 style="text-align:center;">Temporada</h2>
+        
+        <!-- Cards: Winter, Spring, Summer, Fall -->
+        <div class="row">
+            
+            <div class="col">
+                <a target="_blank" href="https://www.behance.net/doonnnx">
+                  <div class="thecard">
+
+                    <div class="card-img">
+                      <img src="imagens/seaseon/winter-anime.png">
+                    </div>
+
+                    <div class="card-caption">
+                      <i class="far fa-snowflake" style="font-size:20px; color:#5500ff;"></i>
+                      <span class="date">Janeiro, Julho 16, 2019</span>
+                      <h1>Janeiro / Winter / Inverno</h1>
+                      <p>Um guia com os novos episódio da temporada de Janeiro / Winter.</p>
+                    </div>
+
+                    <div class="card-outmore">
+                      <h5>Vê Animes</h5>
+                      <i id="outmore-icon" class="fa fa-angle-right"></i>
+                    </div>
+
+                  </div>
+                </a>
+            </div>
+            
+            <div class="col">
+                <a target="_blank" href="https://www.behance.net/doonnnx">
+                  <div class="thecard">
+
+                    <div class="card-img">
+                      <img src="imagens/seaseon/spring-anime.jpg">
+                    </div>
+
+                    <div class="card-caption">
+                      <i class="fab fa-pagelines" style="font-size:23px; color:pink;"></i>
+                      <span class="date">Thursday, July 16, 2015</span>
+                      <h1>Abril / Spring / Primavera</h1>
+                      <p>Um guia com os novos episódio da temporada de Abril / Primavera.</p>
+                    </div>
+
+                    <div class="card-outmore">
+                      <h5>Vê Animes</h5>
+                      <i id="outmore-icon" class="fa fa-angle-right"></i>
+                    </div>
+
+                  </div>
+                </a>
+            </div>
+            
+            <div class="col">
+                <a target="_blank" href="https://www.behance.net/doonnnx">
+                  <div class="thecard">
+
+                    <div class="card-img">
+                      <img src="imagens/seaseon/summer-%20anime.jpg">
+                    </div>
+
+                    <div class="card-caption">
+                      <i class="fas fa-umbrella-beach" style="font-size:25px; color:#0099ff;"></i>
+                      <span class="date">Thursday, July 16, 2015</span>
+                      <h1>Julho / Summer / Verão</h1>
+                      <p>Um guia com os novos episódio da temporada de Julho / Verão.</p>
+                    </div>
+
+                    <div class="card-outmore">
+                      <h5>Vê Animes</h5>
+                      <i id="outmore-icon" class="fa fa-angle-right"></i>
+                    </div>
+
+                  </div>
+                </a>
+            </div>
+            
+            <div class="col">
+                <a target="_blank" href="https://www.behance.net/doonnnx">
+                  <div class="thecard">
+
+                    <div class="card-img">
+                      <img src="imagens/seaseon/fall-anime.jpg">
+                    </div>
+
+                    <div class="card-caption">
+                      <i class="fas fa-apple-alt" style="font-size:25px; color:#e62e00;"></i>
+                      <span class="date">Thursday, July 16, 2015</span>
+                      <h1>Outubro / Fall / Outono</h1>
+                      <p>Um guia com os novos episódio da temporada de Outubro / Fall.</p>
+                    </div>
+
+                    <div class="card-outmore">
+                      <h5>Vê Animes</h5>
+                      <i id="outmore-icon" class="fa fa-angle-right"></i>
+                    </div>
+
+                  </div>
+                </a>
+            </div>
+            
+        </div>
+        
+        <div class="container">
+            <div class="row" style="color:white; font-size:30px;">
+                <div class="col">
+                    <p> <i class="fab fa-ethereum"></i>Janeiro / Winter / Inverno 2018 </p>
+                    <p> <i class="fab fa-ethereum"></i>Janeiro / Winter / Inverno 2017 </p>
+                    <p> <i class="fab fa-ethereum"></i>Janeiro / Winter / Inverno 2016 </p>
+                    <p> <i class="fab fa-ethereum"></i>Janeiro / Winter / Inverno 2018 </p>
+                </div>
+                <div class="col">
+                    <p> <i class="fab fa-ethereum"></i>Abril / Spring / Primavera 2018 </p>
+                    <p> <i class="fab fa-ethereum"></i>Abril / Spring / Primavera 2017 </p>
+                    <p> <i class="fab fa-ethereum"></i>Abril / Spring / Primavera 2016 </p>
+                    <p> <i class="fab fa-ethereum"></i>Abril / Spring / Primavera 2015 </p>
+                </div>
+                <div class="col">
+                    <p> <i class="fab fa-ethereum"></i>Julho / Summer / Verão 2018 </p>
+                    <p> <i class="fab fa-ethereum"></i>Julho / Summer / Verão 2017 </p>
+                    <p> <i class="fab fa-ethereum"></i>Julho / Summer / Verão 2016 </p>
+                    <p> <i class="fab fa-ethereum"></i>Julho / Summer / Verão 2015 </p>
+                </div>
+                <div class="col">
+                    <p> <i class="fab fa-ethereum"></i>Outubro / Fall / Outono 2018 </p>
+                    <p> <i class="fab fa-ethereum"></i>Outubro / Fall / Outono 2017 </p>
+                    <p> <i class="fab fa-ethereum"></i>Outubro / Fall / Outono 2016 </p>
+                    <p> <i class="fab fa-ethereum"></i>Outubro / Fall / Outono 2015 </p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+        <!-- LINHA: Divisão de Sectons -->
+        <div class="" id="linha-divisao-section">
+            .
+        </div>
+    
+    <!-- SECTION 03: Cards 
+    ================================================== -->
+    <section class="" style="background-image: url('imagens/img03.jpg'); background-size:cover;">
+        <div class="container" style="padding-top:30px;">
+            
+            <img src="imagens/titulo.png" id="site-title" style="margin-left:42%;"/>
+
+                    <hr style="width:50%; background-color:white;"/>
+                
+                <p style="text-align:center; color:white;"> <i class="fas fa-radiation-alt"></i> Cadastre animes e suas respectivas datas das próximas temporadas para ter um controle do que os aguarda nas próximas temporadas.</p>
+                    
+                <div class="" style="color:white; height: 150px; border-radius:20px; opacity:0.9; background-image: linear-gradient(to right, #a900b4 , #522ec0);">
+                    <!-- Input: Cadastro Anime Assistindo -->
+                    <form action="insertproxtemporada.php" method="post" style="padding-top:22px; margin-left:15px;">
+                        <div class="row" id="row-input-parados2">
+                            <div class="col-2">
+                                <label for="inputEmail4">Nome:</label>
+                                <input type="text" class="form-control" name="nome" placeholder="Anime Name" required>
+                            </div>
+                            <div class="col-2">
+                                <label for="inputEmail4">Data Estreia:</label>
+                                <input type="text" class="form-control" name="estreia" placeholder="Estreia" required>
+                            </div>
+                            <div class="col-2">
+                                <label for="inputEmail4">Temporada:</label>
+                                <input type="text" class="form-control" name="temporada" placeholder="Temporada">
+                            </div>
+                            <div class="col-2">
+                                <label for="inputEmail4">Sinopse:</label>
+                                <input type="text" class="form-control" name="sinopse" placeholder="Sobre">
+                            </div>
+                            <div class="col-2">
+                                <label for="inputEmail4">Link Trailer:</label>
+                                <input type="text" class="form-control" name="trailer" placeholder="Link do Trailer">
+                            </div>
+                            <div class="col-1">
+                                <label for="inputEmail4">Nota:</label>
+                                <input type="text" class="form-control" name="nota" placeholder="Nota">
+                            </div>
+                            <div class="col-1">
+                                <label for="inputEmail4">Save</label>
+                                <button type="submit" class="btn btn-dark btn-animeproxtemp"> <i class="fas fa-save" id="icon-save-parados"></i></button>
+                            </div>
+                                <input name="imagem" type="file" style="margin-left:68%; margin-top:10px;"/>
+                        </div>
+                    </form>
+                </div>
+            
+            <div class="row" style="margin-top:40px; margin-left:-110px;">
+                <?php include ('control/selectproxtemporada.php'); ?>
+            </div>
+
+            <!-- button next -->
+            <div class="">
+                <button id="button-next"> <i class="fa fa-angle-double-down" id="arrow-next"></i> </button>
+            </div>
+            
+       </div> 
+    </section>
+    
+    
+    
+    
+    
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
 </body>
 </html>
