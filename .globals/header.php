@@ -12,6 +12,7 @@
     <div class="row">
         
         <div class="col">
+            
         </div>
         
         <div class="col">
@@ -20,7 +21,7 @@
         
         <div class="col">
             <a data-toggle="modal" data-target="#exampleModal">
-                <p id="menu-temporada"> 
+                <p id="menu-temporada" style="padding-top:10px;"> 
                     <i class="fas fa-info-circle" style="color:white;"></i> <b style="color:white;">Temporada Atual:</b>  <br/> <i class="fas fa-umbrella-beach" style="font-size:15px;"></i> Julho / Summer / Verão
                 </p>
             </a>

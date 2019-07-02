@@ -174,7 +174,7 @@ hr{
             color: #0066cc;
             border-radius: 2px;
             border-color: transparent;
-            font-family: "Arial", Times, serif;
+            font-family: "Arial";
           vertical-align: middle;
           -webkit-transform: perspective(1px) translateZ(0);
           transform: perspective(1px) translateZ(0);
@@ -352,7 +352,7 @@ hr{
 }
 
 /* ############################################ */
-/* ########  ########## */
+/* ######## cards ########## */
 /* ############################################ */
 
 a {

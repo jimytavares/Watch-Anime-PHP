@@ -31,9 +31,9 @@
                                         echo "</td>";
                                     echo "<td>" . $dados["nota"];                                      
                                         echo "</td>";
-                                    echo "<td>" . " <button type='submit' class='btn-xs btn-outline-warning' data-toggle='modal' data-target='#modaledit' style='border-style:none; width:60px;'> <i class='far fa-edit' style='color:#00ffff; font-size: 20px;'></i> </button> ";
+                                    echo "<td>" . " <button type='submit' class='btn-xs btn-outline-warning' data-toggle='modal' data-target='#modaledit' style='border-style:none; width:60px; background-color:transparent;'> <i class='far fa-edit' style='color:#ff66d9; font-size: 20px;'></i> </button> ";
                                         echo "</td>";
-                                    echo "<td>" . " <a href='excluindoAssistindo.php?idex=". $dados['id']. "'> <button type='submit' class='btn-xs btn-outline-danger' style='border-style:none; width:60px;'> <i class='fas fa-trash-alt' style='font-size:20px; color:black;'></i> </button> </a>";
+                                    echo "<td>" . " <a href='excluindoAssistindo.php?idex=". $dados['id']. "'> <button type='submit' class='btn-xs btn-outline-danger' style='border-style:none; width:60px;background-color:transparent;'> <i class='fas fa-trash-alt' style='font-size:20px; color:#EE5253;'></i> </button> </a>";
                                         echo "</td>";
                                 echo "</tr>";
                            }
