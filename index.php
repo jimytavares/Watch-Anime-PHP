@@ -314,12 +314,12 @@
     
     <!-- SECTION 03: Cards 
     ================================================== -->
-    <section class="" style="background-image: url('imagens/img03.jpg'); background-size:cover;">
+    <section class="" style="background-image: url('imagens/.jpg'); background-size:cover;">
         <div class="container" style="padding-top:30px;">
             
             <img src="imagens/titulo.png" id="site-title" style="margin-left:42%;"/>
 
-                    <hr style="width:50%; background-color:white;"/>
+                    <hr style="width:50%; background-color:black;"/>
                 
                 <p style="text-align:center; color:white;"> <i class="fas fa-radiation-alt"></i> Cadastre animes e suas respectivas datas das próximas temporadas para ter um controle do que os aguarda nas próximas temporadas.</p>
                     
