@@ -21,7 +21,7 @@
                                         echo "</td>";
                                     echo "<td>" . $dados["episodio"];                                      
                                         echo "</td>";
-                                    echo "<td>" . $dados["diasemanaproxep"];                                      
+                                    echo "<td>" . $dados["diasemana"];                                      
                                         echo "</td>";
                                     echo "<td>" . $dados["dataassistido"];                                      
                                         echo "</td>";

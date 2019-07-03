@@ -3,17 +3,17 @@
     $mysqli = new mysqli ('localhost', 'dbanime', '12345', 'dbanime');
     
     $nomeA          = $_POST['nome'];
-    $ep             = $_POST['episodio'];
+    $episodioA             = $_POST['episodio'];
     $dataassistidoA = $_POST['dataassistido'];
-    $dataprox       = $_POST['dataproxep'];
-    $quali          = $_POST['qualidade'];
-    $coment         = $_POST['comentario'];
-    $notaA          = $_POST['nota'];
-    $diasemanaA     = $_POST['diasemana'];
-    $diasemanaproxep = $_POST['diasemanaproxep'];
+    $diasemanaA       = $_POST['diasemana'];
+    $dataproxepA          = $_POST['dataproxep'];
+    $diasemanaproxepA         = $_POST['diasemanaproxep'];
+    $qualidadeA          = $_POST['qualidade'];
+    $comentarioA     = $_POST['comentario'];
+    $notaA = $_POST['nota'];
 
     //enviar instrucao sql para o banco
-    $sql = "INSERT INTO assistindo(nome, episodio, dataassistido, dataproxep, qualidade, comentario, nota, diasemana, diasemanaproxep) VALUES ('$nomeA', '$ep', '$dataassistidoA', '$dataprox', '$quali', '$coment', '$notaA', '$diasemanaA', '$diasemanaproxep');";
+    $sql = "INSERT INTO assistindo(nome, episodio, dataassistido, diasemana, dataproxep, diasemanaproxep, qualidade, comentario, nota) VALUES ('$nomeA', '$episodioA', '$dataassistidoA', '$diasemanaA', '$dataproxepA', '$diasemanaproxepA', '$qualidadeA', '$comentarioA', '$notaA');";
     
     if ($mysqli->query($sql) === TRUE) {
     header('Location: index.php');
