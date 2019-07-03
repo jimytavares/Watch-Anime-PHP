@@ -13,25 +13,18 @@
         
         <div class="col">
             
-            <div class="pos-f-t">
-                
-              <nav class="navbar navbar-dark" style="margin-top:3%; margin-left:10%;">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <i class="fas fa-bars" style="font-size:30px; color:#0097ff;"></i>
-                </button>
-              </nav>
-                
-              <div class="collapse" id="navbarToggleExternalContent">
-                <div class="bg-dark p-4">
-                  <h4 class="text-white">Menu Geral</h4>
-                  <span class="text-muted">Toggleable via the navbar brand.</span>
-                    
-                    <div class="" style="color:white;margin-top:25px;">
-                        <p>Ranking de Animes</p>
-                    </div>
+            <div class="container2 green borderXwidth" style="color:white;">
+              <div class="row">
+                <div class="col">
+                    <a>HOME</a>
+                </div>
+                  <div class="col">
+                      <a>Ranking</a>
+                </div>
+                  <div class="col">
+                      <a>PORTFOLIO</a>
                 </div>
               </div>
-                
             </div>
             
         </div>
