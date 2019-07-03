@@ -81,7 +81,7 @@
                             </div>
                                 <div class="col-2">
                                     <label for="inputEmail4">Dia ¹:</label>
-                                    <input type="text" class="form-control input-parados" name="dataassistido" placeholder="Day Watched">
+                                    <input type="text" class="form-control input-parados" name="diasemana" placeholder="Day Watched">
                                 </div>
                             <div class="col-2">
                                 <label for="inputEmail4">Data Próximo Ep ²:</label>
@@ -89,7 +89,7 @@
                             </div>
                                 <div class="col-2">
                                     <label for="inputEmail4">Dia ²:</label>
-                                    <input type="text" class="form-control input-parados" name="dataassistido" placeholder="Dia Prox Ep">
+                                    <input type="text" class="form-control input-parados" name="diasemanaproxep" placeholder="Dia Prox Ep">
                                 </div>
                             <div class="col-2">
                                 <label for="inputEmail4">Qualidade:</label>

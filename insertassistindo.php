@@ -9,9 +9,11 @@
     $quali          = $_POST['qualidade'];
     $coment         = $_POST['comentario'];
     $notaA          = $_POST['nota'];
+    $diasemanaA     = $_POST['diasemana'];
+    $diasemanaproxep = $_POST['diasemanaproxep'];
 
     //enviar instrucao sql para o banco
-    $sql = "INSERT INTO assistindo(nome, episodio, dataassistido, dataproxep, qualidade, comentario, nota) VALUES ('$nomeA', '$ep', '$dataassistidoA', '$dataprox', '$quali', '$coment', '$notaA');";
+    $sql = "INSERT INTO assistindo(nome, episodio, dataassistido, dataproxep, qualidade, comentario, nota, diasemana, diasemanaproxep) VALUES ('$nomeA', '$ep', '$dataassistidoA', '$dataprox', '$quali', '$coment', '$notaA', '$diasemanaA', '$diasemanaproxep');";
     
     if ($mysqli->query($sql) === TRUE) {
     header('Location: index.php');
