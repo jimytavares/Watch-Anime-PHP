@@ -208,9 +208,9 @@
             
         </div>
         
-        <!-- Next Button -->
+        <!-- Next Section: Button -->
         <div class="">
-            <button id="button-next" style="margin-top:150px;"> <i class="fa fa-angle-double-down" id="arrow-next"></i> </button>
+            <button id="button-next"> <i class="fa fa-angle-double-down" id="arrow-next"></i> </button>
         </div>
         
     </section>
@@ -362,7 +362,7 @@
             </div>
         </div>
         
-        <!-- Next Button -->
+        <!-- Next Section: Button -->
         <div class="">
             <button id="button-next" style="margin-top:150px;"> <i class="fa fa-angle-double-down" id="arrow-next"></i> </button>
         </div>
@@ -428,7 +428,7 @@
                 <?php include ('control/selectproxtemporada.php'); ?>
             </div>
 
-            <!-- button next -->
+            <!-- Next Section: Button -->
             <div class="">
                 <button id="button-next"> <i class="fa fa-angle-double-down" id="arrow-next"></i> </button>
             </div>
