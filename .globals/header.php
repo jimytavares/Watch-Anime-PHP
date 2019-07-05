@@ -5,21 +5,7 @@
         <!-- Col 01: Menu -->
         <div class="col">
             
-            <div class="container2 green borderXwidth" style="color:white;">
-              <div class="row" style="margin-left:10px;">
-                <div class="col">
-                    <i class="fas fa-home" style="color:#00ffff; font-size:22px;"></i> <a>HOME</a>
-                </div>
-                  <div class="col">
-                      <i class="fas fa-chart-area" style="color:#33ff66; font-size:22px;"></i> <a>RANKING</a>
-                </div>
-                      <a href="../.pages/ranking.php">
-                  <div class="col">
-                            <i class="fas fa-tree" style="color:#CEE3D1; font-size:22px;"></i> <a>TEMPORADAS</a>
-                </div>
-                      </a>
-              </div>
-            </div>
+            
             
         </div>
         

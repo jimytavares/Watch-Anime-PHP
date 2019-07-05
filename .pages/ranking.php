@@ -14,15 +14,162 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-    <style></style>
+    <style>
+    
+        .wrap
+        {
+          margin:50px auto 0 auto;
+          width:100%;
+          display:flex;
+          align-items:space-around;
+          max-width:1200px;
+        }
+        .tile
+        {
+          width:380px;
+          height:380px;
+          margin:10px;
+            border-radius: 8px;
+          background-color:#99aeff;
+          display:inline-block;
+          background-size:cover;
+          position:relative;
+          cursor:pointer;
+          transition: all 0.4s ease-out;
+          box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.44);
+          overflow:hidden;
+          color:white;
+          font-family:'Arial';
+
+        }
+        .tile img
+        {
+          height:100%;
+          width:100%;
+          position:absolute;
+          top:0;
+          left:0;
+          z-index:0;
+          transition: all 0.4s ease-out;
+        }
+        .tile .text
+        {
+        /*   z-index:99; */
+          position:absolute;
+          padding:30px;
+          height:calc(100% - 60px);
+        text-align: center;
+            
+        }
+        .tile h1
+        {
+            color:black;
+          font-weight:300;
+          margin:0;
+          text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            border-radius:5px;
+        }
+        .tile h2
+        {
+          font-weight:100;
+          margin:20px 0 0 0;
+          font-style:italic;
+           transform: translateX(200px);
+        }
+        .tile p
+        {
+          font-weight:300;
+          margin:20px 0 0 0;
+          line-height: 25px;
+        /*   opacity:0; */
+          transform: translateX(-200px);
+          transition-delay: 0.2s;
+        }
+        .animate-text
+        {
+          opacity:0;
+          transition: all 0.6s ease-in-out;
+        }
+        .tile:hover
+        {
+        /*   background-color:#99aeff; */
+        box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
+          transform:scale(1.05);
+        }
+        .tile:hover img
+        {
+          opacity: 0.2;
+        }
+        .tile:hover .animate-text
+        {
+          transform:translateX(0);
+          opacity:1;
+        }
+        .dots
+        {
+          position:absolute;
+          bottom:20px;
+          right:30px;
+          margin: 0 auto;
+          width:30px;
+          height:30px;
+          color:currentColor;
+          display:flex;
+          flex-direction:column;
+          align-items:center;
+          justify-content:space-around;
+
+        }
+
+        .dots span
+        {
+            width: 5px;
+            height:5px;
+            background-color: currentColor;
+            border-radius: 50%;
+            display:block;
+          opacity:0;
+          transition: transform 0.4s ease-out, opacity 0.5s ease;
+          transform: translateY(30px);
+
+        }
+
+        .tile:hover span
+        {
+          opacity:1;
+          transform:translateY(0px);
+        }
+
+        .dots span:nth-child(1)
+        {
+           transition-delay: 0.05s;
+        }
+        .dots span:nth-child(2)
+        {
+           transition-delay: 0.1s;
+        }
+        .dots span:nth-child(3)
+        {
+           transition-delay: 0.15s;
+        }
+
+
+        @media (max-width: 1000px) {
+          .wrap {
+           flex-direction: column;
+            width:400px;
+          }
+        }
+
+    </style>
     
 </head>
 <body>
     
-    <section style="background-image: url('../imagens/bg-ranking.jpg'); background-size:cover;">
+    <section style="background-image: url('../imagens/img245.jpg'); background-size:cover;">
       
         <?php include ('../.globals/header.php'); ?>
-        <div class="container">
+        <div class="container" style="margin-left:150px;">
                 
             <div style="margin-top: 50px; color:white; background-image: linear-gradient(to right, #ebe304 ,#bbeb2b, #82f050, #11f377); border-color: red; height:50px; width:90%; border-radius:5px; box-shadow: 1px 3px 10px #000000; text-align:center;">
                 <div class="row" style="padding-top:15px;">
@@ -50,8 +197,61 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- CARDS: Ranking -->
+            <div class="wrap" style="margin-left:-60px;">
+                
+                 <div class="tile"> 
+                      <img src='../imagens/ranking/ranking-1.gif'/>
+                      <div class="text">
+                          <h1>Animes Ranking: 10</h1>
+                          <h2 class="animate-text">More lorem ipsum bacon ipsum.</h2>
+                          <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
+                       
+                          <div class="dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                      </div>
+                 </div>
+
+
+                <div class="tile"> 
+                    <img src='../imagens/ranking/ranking-4.gif'/>
+                      <div class="text">
+                          <h1>Lorem ipsum.</h1>
+                          <h2 class="animate-text">More lorem ipsum bacon ipsum.</h2>
+                          <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
+                       
+                          <div class="dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                      </div>
+                 </div>
+
+                  <div class="tile"> 
+                      <img src='../imagens/ranking/ranking-6.gif' style="opacity:;"/>
+                      <div class="text">
+                          <h1>Animes: Ranking 7~1.</h1>
+                          <h2 class="animate-text">More lorem ipsum bacon ipsum.</h2>
+                          <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
+                        
+                          <div class="dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                      </div>
+                 </div>
+            </div>
+
+
+            
         
-            <!-- Table with panel -->
+            <!-- TABLE: Ranking -->
             <div class="card card-cascade narrower" style="margin-left: -50px; width:100%; margin-top:20px;">
 
               <div class="px-4">
@@ -171,7 +371,6 @@
               </div>
 
             </div>
-            <!-- Table with panel -->
     
         </div>
     </section>
