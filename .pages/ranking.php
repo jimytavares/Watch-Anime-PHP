@@ -164,49 +164,50 @@
     </style>
     
 </head>
-<body>
+<body style="background-image: url('../imagens/img245.jpg'); background-size:cover;">
     
-    <section style="background-image: url('../imagens/img245.jpg'); background-size:cover;">
+    <section>
       
         <?php include ('../.globals/header.php'); ?>
         <div class="container" style="margin-left:150px;">
                 
-            <div style="margin-top: 50px; color:white; background-image: linear-gradient(to right, #ebe304 ,#bbeb2b, #82f050, #11f377); border-color: red; height:50px; width:90%; border-radius:5px; box-shadow: 1px 3px 10px #000000; text-align:center;">
+            <div style="margin-top: 50px; color:white; background-image: linear-gradient(to right, #00a0ff ,#0080ff, #6d58f0, #a000c4); border-color: red; height:50px; width:90%; border-radius:5px; box-shadow: 1px 3px 10px #000000; text-align:center;">
                 <div class="row" style="padding-top:15px;">
                     <div class="col">
+                        <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2" data-toggle="collapse" href="#collapseCards" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <i class="fas fa-th-large mt-0" style="font-size:18px; color:white"></i>
+                        </button>
                         <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2">
-                            <i class="fas fa-th-large mt-0"></i>
-                      </button>
-                      <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2">
-                        <i class="fas fa-columns mt-0"></i>
-                      </button>
+                            <i class="fas fa-columns mt-0" style="font-size:20px; color:white"></i>
+                        </button>
                     </div>
                     <div class="col">
-                        <b>Animes Assistindo</b>
+                        <b style="color:white; font-size:17px;">Anime Ranking</b>
                     </div>
                     <div class="col">
-                       <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2">
-                        <i class="fas fa-pencil-alt mt-0"></i>
-                      </button>
-                      <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2">
-                        <i class="far fa-trash-alt mt-0"></i>
-                      </button>
-                      <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2">
-                        <i class="fas fa-info-circle mt-0"></i>
-                      </button>
+                        <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2">
+                            <i class="fas fa-pencil-alt mt-0" style="font-size:18px; color:white"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2">
+                            <i class="far fa-trash-alt mt-0" style="font-size:18px; color:white"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2" data-toggle="modal" data-target="#ModalInfo">
+                            <i class="fas fa-info-circle mt-0" style="font-size:20px; color:white"></i>
+                        </button>
                     </div>
                 </div>
             </div>
+
             
             <!-- CARDS: Ranking -->
-            <div class="wrap" style="margin-left:-60px;">
+            <div class="wrap" style="margin-left:-60px;" id="collapseCards">
                 
                  <div class="tile"> 
                       <img src='../imagens/ranking/ranking-1.gif'/>
                       <div class="text">
-                          <h1>Animes Ranking: 10</h1>
-                          <h2 class="animate-text">More lorem ipsum bacon ipsum.</h2>
-                          <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
+                          <h1></h1>
+                          <h2 class="animate-text">Animes Ranking Nota 10</h2>
+                          <p class="animate-text">Clique aqui para listar todos os animes do seu perfil de nota 10.</p>
                        
                           <div class="dots">
                             <span></span>
@@ -220,9 +221,9 @@
                 <div class="tile"> 
                     <img src='../imagens/ranking/ranking-4.gif'/>
                       <div class="text">
-                          <h1>Lorem ipsum.</h1>
-                          <h2 class="animate-text">More lorem ipsum bacon ipsum.</h2>
-                          <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
+                          <h1></h1>
+                          <h2 class="animate-text">Animes Ranking Nota 8~6</h2>
+                          <p class="animate-text">Clique aqui para listar todos os animes do seu perfil de nota 8~6.</p>
                        
                           <div class="dots">
                             <span></span>
@@ -235,9 +236,9 @@
                   <div class="tile"> 
                       <img src='../imagens/ranking/ranking-6.gif' style="opacity:;"/>
                       <div class="text">
-                          <h1>Animes: Ranking 7~1.</h1>
-                          <h2 class="animate-text">More lorem ipsum bacon ipsum.</h2>
-                          <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
+                          <h1></h1>
+                          <h2 class="animate-text">Animes Ranking Nota 5~1</h2>
+                          <p class="animate-text">Clique aqui para listar todos os animes do seu perfil de nota 5~1.</p>
                         
                           <div class="dots">
                             <span></span>
@@ -247,9 +248,6 @@
                       </div>
                  </div>
             </div>
-
-
-            
         
             <!-- TABLE: Ranking -->
             <div class="card card-cascade narrower" style="margin-left: -50px; width:100%; margin-top:20px;">
@@ -370,6 +368,26 @@
 
               </div>
 
+            </div>
+            
+            <!-- MODAL: Info -->
+            <div class="modal fade" id="ModalInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"> <i class="fas fa-info" style="color:red; font-size:25px;"></i> Informações: Página de Ranking</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Sair</button>
+                  </div>
+                </div>
+              </div>
             </div>
     
         </div>
