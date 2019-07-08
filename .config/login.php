@@ -48,7 +48,7 @@
 
                                     <div class="row" style="padding-top:30px; margin-left:5px; color:white;">
                                         <div class="col">
-                                            New Member!
+                                            <a data-toggle="modal" data-target="#exampleModal">Registrar!</a>
                                         </div>
                                         <div class="col">
                                             Forgot Password?
@@ -63,6 +63,67 @@
             </div>
             
         </div>
+        
+        <!-- Modal -->
+        <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content" style="background-image: url('../imagens/fundo.jpg'); background-size:cover;">
+              
+                <div class="modal-header">
+                    <h5 class="modal-title" style="color:white;">Criando Conta: Anime</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                
+                <div class="modal-body" style="width:80%;color:white;margin-left:27%;">
+                    
+                        <form>
+                          <div class="form-group">
+                            <div class="row">
+                              <div class="col">
+                                <label for="exampleInputEmail1">Nome: </label>
+                              </div>
+                              <div class="col">
+                                <input type="email" class="form-control"  style="margin-left:-80%;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="nome completo">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                              <div class="row">
+                                  <div class="col">
+                                      <label for="exampleInputPassword1">Password: </label>
+                                  </div>
+                                  <div class="col">
+                                      <input type="password" class="form-control" style="margin-left:-80%;" id="exampleInputPassword1" placeholder="Password">
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <div class="row">
+                                  <div class="col">
+                                    <label for="exampleInputEmail1">E-Mail: </label>
+                                  </div>
+                                  <div class="col">
+                                    <input type="email" class="form-control" style="margin-left:-80%;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="seu e-mail">
+                                  </div>
+                              </div>
+                          </div>
+                            <input type="Submit" class="button-new-user" value="Enviar" name="btnenviar" >
+                            <input type="reset" value="Limpar" name="btnlimpar">
+                            <a href="index.html"><input type="button" name="Voltar" value="Voltar" ></a>
+                        </form>
+                    
+                </div>
+             
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Sair</button>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+
     </section>
     
     

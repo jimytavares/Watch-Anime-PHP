@@ -518,3 +518,11 @@ h5 {
   padding: 1px 6px;
   border-radius: 50em;
 }
+
+/* ############################################ */
+/* ######## CADASTRO DE NOVO USUARIO ########## */
+/* ############################################ */
+
+.button-new-user{
+    background-color: #4CAF50; border: none; color: white; padding: 16px 32px; text-decoration: none; margin: 4px 2px; cursor: pointer;
+}
