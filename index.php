@@ -68,40 +68,40 @@
             <form action="insertassistindo.php" method="post">
                         <div class="row" id="row-input-parados">
                             <div class="col-2">
-                                <label for="inputEmail4">Nome:</label>
-                                <input type="text" class="form-control input-parados" name="nome" placeholder="Anime Name" required>
+                                <label for="inputEmail1">Nome:</label>
+                                <input type="text" class="form-control input-parados" name="nome" id="inputEmail1" placeholder="Anime Name" required>
                             </div>
                             <div class="col-2">
-                                <label for="inputEmail4">Episódio:</label>
-                                <input type="text" class="form-control input-parados" name="episodio" placeholder="Episode Watched" required>
+                                <label for="inputEmail2">Episódio:</label>
+                                <input type="text" class="form-control input-parados" name="episodio" id="inputEmail2" placeholder="Episode Watched" required>
                             </div>
                             <div class="col-2">
-                                <label for="inputEmail4">Data Assistida ¹:</label>
-                                <input type="text" class="form-control input-parados" name="dataassistido" placeholder="Watched Date">
+                                <label for="inputEmail3">Data Assistida ¹:</label>
+                                <input type="text" class="form-control input-parados" name="dataassistido"  id="inputEmail3" placeholder="Watched Date">
                             </div>
                                 <div class="col-2">
                                     <label for="inputEmail4">Dia ¹:</label>
-                                    <input type="text" class="form-control input-parados" name="diasemana" placeholder="Day Watched">
+                                    <input type="text" class="form-control input-parados" name="diasemana"  id="inputEmail4" placeholder="Day Watched">
                                 </div>
                             <div class="col-2">
-                                <label for="inputEmail4">Data Próximo Ep ²:</label>
-                                <input type="text" class="form-control input-parados" name="dataproxep" placeholder="Date New Ep">
+                                <label for="inputEmail5">Data Próximo Ep ²:</label>
+                                <input type="text" class="form-control input-parados" name="dataproxep"  id="inputEmail5"  placeholder="Date New Ep">
                             </div>
                                 <div class="col-2">
-                                    <label for="inputEmail4">Dia ²:</label>
-                                    <input type="text" class="form-control input-parados" name="diasemanaproxep" placeholder="Dia Prox Ep">
+                                    <label for="inputEmail6">Dia ²:</label>
+                                    <input type="text" class="form-control input-parados" name="diasemanaproxep" id="inputEmail6" placeholder="Dia Prox Ep">
                                 </div>
                             <div class="col-2">
-                                <label for="inputEmail4">Qualidade:</label>
-                                <input type="text" class="form-control input-parados" name="qualidade" placeholder="Quality">
+                                <label for="inputEmail7">Qualidade:</label>
+                                <input type="text" class="form-control input-parados" name="qualidade" id="inputEmail7" placeholder="Quality">
                             </div>
                             <div class="col-2">
-                                <label for="inputEmail4">Comentario:</label>
-                                <input type="text" class="form-control input-parados" name="comentario" id="inputEmail4" placeholder="Coment">
+                                <label for="inputEmail8">Comentario:</label>
+                                <input type="text" class="form-control input-parados" name="comentario" id="inputEmail8" placeholder="Coment">
                             </div>
                             <div class="col-2">
-                                <label for="inputEmail4">Nota:</label>
-                                <input type="text" class="form-control input-parados" name="nota" id="inputEmail4" placeholder="Star">
+                                <label for="inputEmail9">Nota:</label>
+                                <input type="text" class="form-control input-parados" name="nota" id="inputEmail9" placeholder="Star">
                             </div>
                         </div>
 
