@@ -27,7 +27,24 @@
         
         <div class="container" style="padding-top:30px;">    
             
-            <div class="row" style="color:white; margin-left:%;">
+            <!-- Buttons: Actions -->
+            <div class="row">
+                <div class="col create-button-action">
+                    <button type="button" class="btn btn-primary button-action"> <h3> <i class="fas fa-user-circle" style="color:#6ae34f; font-size:40px;"></i> <br/> Seu Perfil</h3> </button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary button-action" style="width: 250px; height:190px;"> <h3> <i class="fas fa-table" style="color:#FEDF08; font-size:40px;"></i> <br/> Table Ocult</h3> </button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary button-action" style="width: 250px; height:190px;">Primary</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary button-action" style="width: 250px; height:190px;">Primary</button>
+                </div>
+            </div>
+            
+            <!-- Noticias do Site -->
+            <div class="row" style="color:white; margin-top:30px;">
                 <div class="col" style="padding-top:40px;">
                     <h3> <i class="fas fa-newspaper"></i> Noticias</h3>
                     <p>Acesse a página de noticias e veja comentários dos usuarios referente a cada anime e </p>
@@ -262,10 +279,6 @@
             
         </div>
         
-        <!-- Next Section: Button -->
-        <div class="">
-            <button id="button-next"> <i class="fa fa-angle-double-down" id="arrow-next"></i> </button>
-        </div>
         
     </section>
     
@@ -274,223 +287,8 @@
             .
         </div>
     
-    <!-- SECTION 02: Cards de Temporada
-    ================================================== -->
-    <section class="" style="background-image: url('imagens/background-gundam.png'); background-size:cover;">
-        
-        <div class="" style="">
-            <h2 style="text-align:center;">Temporada</h2>
-        </div>
-        
-        <!-- Cards: Winter, Spring, Summer, Fall -->
-        <div class="row">
-            
-            <div class="col">
-                <a target="_blank" href="https://www.behance.net/doonnnx">
-                  <div class="thecard">
+    <?php include ('.globals/footer.php'); ?>
 
-                    <div class="card-img">
-                      <img src="imagens/seaseon/winter-anime.png">
-                    </div>
-
-                    <div class="card-caption">
-                      <i class="far fa-snowflake" style="font-size:20px; color:#5500ff;"></i>
-                      <span class="date">Janeiro, Julho 16, 2019</span>
-                      <h1>Janeiro / Winter / Inverno</h1>
-                      <p>Um guia com os novos episódio da temporada de Janeiro / Winter.</p>
-                    </div>
-
-                    <div class="card-outmore">
-                      <h5>Vê Animes</h5>
-                      <i id="outmore-icon" class="fa fa-angle-right"></i>
-                    </div>
-
-                  </div>
-                </a>
-            </div>
-            
-            <div class="col">
-                <a target="_blank" href="https://www.behance.net/doonnnx">
-                  <div class="thecard">
-
-                    <div class="card-img">
-                      <img src="imagens/seaseon/spring-anime.jpg">
-                    </div>
-
-                    <div class="card-caption">
-                      <i class="fab fa-pagelines" style="font-size:23px; color:pink;"></i>
-                      <span class="date">Thursday, July 16, 2015</span>
-                      <h1>Abril / Spring / Primavera</h1>
-                      <p>Um guia com os novos episódio da temporada de Abril / Primavera.</p>
-                    </div>
-
-                    <div class="card-outmore">
-                      <h5>Vê Animes</h5>
-                      <i id="outmore-icon" class="fa fa-angle-right"></i>
-                    </div>
-
-                  </div>
-                </a>
-            </div>
-            
-            <div class="col">
-                <a target="_blank" href="https://www.behance.net/doonnnx">
-                  <div class="thecard">
-
-                    <div class="card-img">
-                      <img src="imagens/seaseon/summer-%20anime.jpg">
-                    </div>
-
-                    <div class="card-caption">
-                      <i class="fas fa-umbrella-beach" style="font-size:25px; color:#0099ff;"></i>
-                      <span class="date">Thursday, July 16, 2015</span>
-                      <h1>Julho / Summer / Verão</h1>
-                      <p>Um guia com os novos episódio da temporada de Julho / Verão.</p>
-                    </div>
-
-                    <div class="card-outmore">
-                      <h5>Vê Animes</h5>
-                      <i id="outmore-icon" class="fa fa-angle-right"></i>
-                    </div>
-
-                  </div>
-                </a>
-            </div>
-            
-            <div class="col">
-                <a target="_blank" href="https://www.behance.net/doonnnx">
-                  <div class="thecard">
-
-                    <div class="card-img">
-                      <img src="imagens/seaseon/fall-anime.jpg">
-                    </div>
-
-                    <div class="card-caption">
-                      <i class="fas fa-apple-alt" style="font-size:25px; color:#e62e00;"></i>
-                      <span class="date">Thursday, July 16, 2015</span>
-                      <h1>Outubro / Fall / Outono</h1>
-                      <p>Um guia com os novos episódio da temporada de Outubro / Fall.</p>
-                    </div>
-
-                    <div class="card-outmore">
-                      <h5>Vê Animes</h5>
-                      <i id="outmore-icon" class="fa fa-angle-right"></i>
-                    </div>
-
-                  </div>
-                </a>
-            </div>
-            
-        </div>
-        
-        <!-- Container: Animes de Temporadas passadas -->
-        <div class="container">
-            <div class="" style="background-color:#efefef; width:1140px; margin-left:-15px; border-radius:2px; height:40px;">
-                <h3 style="text-align:center;">Lista de Animes das Temporada passada</h3>
-            </div>
-            <div class="row" style="color:black; background-color:white; margin-top:-px;border-radius:2px;">
-                <div class="col">
-                    <p> <i class="fab fa-ethereum"></i>Janeiro / Winter / Inverno 2018 </p>
-                    <p> <i class="fab fa-ethereum"></i>Janeiro / Winter / Inverno 2017 </p>
-                    <p> <i class="fab fa-ethereum"></i>Janeiro / Winter / Inverno 2016 </p>
-                    <p> <i class="fab fa-ethereum"></i>Janeiro / Winter / Inverno 2018 </p>
-                </div>
-                <div class="col">
-                    <p> <i class="fab fa-ethereum"></i>Abril / Spring / Primavera 2018 </p>
-                    <p> <i class="fab fa-ethereum"></i>Abril / Spring / Primavera 2017 </p>
-                    <p> <i class="fab fa-ethereum"></i>Abril / Spring / Primavera 2016 </p>
-                    <p> <i class="fab fa-ethereum"></i>Abril / Spring / Primavera 2015 </p>
-                </div>
-                <div class="col">
-                    <p> <i class="fab fa-ethereum"></i>Julho / Summer / Verão 2018 </p>
-                    <p> <i class="fab fa-ethereum"></i>Julho / Summer / Verão 2017 </p>
-                    <p> <i class="fab fa-ethereum"></i>Julho / Summer / Verão 2016 </p>
-                    <p> <i class="fab fa-ethereum"></i>Julho / Summer / Verão 2015 </p>
-                </div>
-                <div class="col">
-                    <p> <i class="fab fa-ethereum"></i>Outubro / Fall / Outono 2018 </p>
-                    <p> <i class="fab fa-ethereum"></i>Outubro / Fall / Outono 2017 </p>
-                    <p> <i class="fab fa-ethereum"></i>Outubro / Fall / Outono 2016 </p>
-                    <p> <i class="fab fa-ethereum"></i>Outubro / Fall / Outono 2015 </p>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Next Section: Button -->
-        <div class="">
-            <button id="button-next" style="margin-top:150px;"> <i class="fa fa-angle-double-down" id="arrow-next"></i> </button>
-        </div>
-        
-    </section>
-    
-        <!-- LINHA: Divisão de Sectons -->
-        <div class="" id="linha-divisao-section">
-            .
-        </div>
-    
-    <!-- SECTION 03: Cards 
-    ================================================== -->
-    <section class="" style="background-image: url('imagens/.jpg'); background-size:cover;">
-        <div class="container" style="padding-top:30px;">
-            
-            <img src="imagens/titulo-black.png" id="site-title" style="margin-left:42%;"/>
-
-                    <hr style="width:50%; background-color:black;"/>
-            
-            <p style="text-align:center;">Aqui você pode cadastrar Animes das próximas temporadas, como um controle de favoritos de espera dos animes que serão lançados futuramentes.</p>
-                
-                <p style="text-align:center; color:white;"> <i class="fas fa-radiation-alt"></i> Cadastre animes e suas respectivas datas das próximas temporadas para ter um controle do que os aguarda nas próximas temporadas.</p>
-                    
-                <!-- Input: Cadastro Anime Assistindo -->
-                <div class="" style="color:white; height: 150px; border-radius:20px; opacity:0.9; background-image: linear-gradient(to right, #a900b4 , #522ec0);">
-                    <form action="insertproxtemporada.php" method="post" style="padding-top:22px; margin-left:15px;">
-                        <div class="row" id="row-input-parados2">
-                            <div class="col-2">
-                                <label for="inputEmail4">Nome:</label>
-                                <input type="text" class="form-control" name="nome" placeholder="Anime Name" required>
-                            </div>
-                            <div class="col-2">
-                                <label for="inputEmail4">Data Estreia:</label>
-                                <input type="text" class="form-control" name="estreia" placeholder="Estreia" required>
-                            </div>
-                            <div class="col-2">
-                                <label for="inputEmail4">Temporada:</label>
-                                <input type="text" class="form-control" name="temporada" placeholder="Temporada">
-                            </div>
-                            <div class="col-2">
-                                <label for="inputEmail4">Sinopse:</label>
-                                <input type="text" class="form-control" name="sinopse" placeholder="Sobre">
-                            </div>
-                            <div class="col-2">
-                                <label for="inputEmail4">Link Trailer:</label>
-                                <input type="text" class="form-control" name="trailer" placeholder="Link do Trailer">
-                            </div>
-                            <div class="col-1">
-                                <label for="inputEmail4">Nota:</label>
-                                <input type="text" class="form-control" name="nota" placeholder="Nota">
-                            </div>
-                            <div class="col-1">
-                                <label for="inputEmail4">Save</label>
-                                <button type="submit" class="btn btn-dark btn-animeproxtemp"> <i class="fas fa-save" id="icon-save-parados"></i></button>
-                            </div>
-                                <input name="imagem" type="file" style="margin-left:68%; margin-top:10px;"/>
-                        </div>
-                    </form>
-                </div>
-            
-            <div class="row" style="margin-top:40px; margin-left:-110px;">
-                <?php include ('control/selectproxtemporada.php'); ?>
-            </div>
-
-            <!-- Next Section: Button -->
-            <div class="">
-                <button id="button-next"> <i class="fa fa-angle-double-down" id="arrow-next"></i> </button>
-            </div>
-            
-       </div> 
-    </section>
-
-    
     
     
     

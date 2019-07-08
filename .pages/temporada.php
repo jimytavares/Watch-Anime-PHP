@@ -15,332 +15,159 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
     <style>
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700|Shrikhand');
-
-$nav-item-bg-clr: #2269BB;
-$nav-item-bg-clr-hvr: #1E1E1E;
-$nav-item-txt-clr: white;
-$ts: 0.3s;
-$td: 0.05s;
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  line-height: 1.4;
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/ales-krivec-38565-unsplash.jpg);
-  background-size: cover;
-  
-  @media (min-width: 450px) {
-    font-size: 1.25rem;
-  }
-}
-
-.page-header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  overflow: visible;
-  padding: 1rem;
-  z-index: 200;
-}
-
-.page-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  min-height: 100vh;
-  text-align: center;
-  color: white;
-}
-
-.page-tagline {
-  font-size: 0.75rem;
-  font-weight: 700;
-  z-index: 100;
-  
-  a {
-    color: darken($nav-item-bg-clr, 20%);
-    text-decoration: none;
-  }
-}
-
-.page-title {
-  margin-bottom: 1.5rem;
-  font-family: 'Shrikhand', serif;
-  font-size: 2rem;
-  line-height: 1.2;
-  
-  @media (min-width: 450px) {
-    font-size: 3rem;
-  }
-}
-
-nav {
-  display: flex;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 3rem 1rem 1rem;
-  width: 100vw;
-  min-height: 100vh;
-  text-align: center;
-  background-color: white;
-  opacity: 0;
-  transform: translateY(-100%);
-  transition: 
-    opacity $ts * 1.5 $ts * 1.5 ease,
-    transform 0s $ts * 4 ;
-}
-
-.menu ol {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
-  width: 100%;
-  
-  @media (min-width: 820px) {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  
-  li {
-    display: grid;
-    grid-column: span 1;
-    grid-gap: 1rem;
-    overflow: hidden;
-  }
-  
-  a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    width: 100%;
-    height: 100%;
-    font-size: 1.25rem;
-    text-decoration: none;
-    color: $nav-item-bg-clr;
-    background-color: $nav-item-bg-clr;
-    border-radius: 2px;
-    
-    @media (min-width: 450px) {
-      font-size: 1.75rem;
-    }
-  }
-}
-
-.menu > ol > li:nth-child(n + 3) {
-  grid-column: span 2;
-}
-
-.menu .sub-menu {
-  padding: 0;
-  grid-template-columns: repeat(2, 1fr);
-  
-  @media (min-width: 500px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  
-  li a {
-    font-size: 0.85rem;
-    color: darken($nav-item-bg-clr, 15%);
-    background-color: darken($nav-item-bg-clr, 15%);
-    
-    @media (min-width: 450px) {
-      font-size: 1rem;
-    }
-  }
-  
-  li:nth-child(3n) {
-    grid-column: span 2;
-
-    @media (min-width: 500px) {
-      grid-column: span 1;
-    }
-  }
-}
-
-.menu-toggle {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 2px;
-  position: relative;
-  cursor: pointer;
-  width: 28px;
-  height: 22px;
-  z-index: 100;
-  
-  &:before {
-    content: '×';
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 2.4rem;
-    line-height: 0.4;
-    color: darken($nav-item-bg-clr, 20%);
-    z-index: 2;
-    opacity: 0;
-    transition: opacity $ts ease;
-  }
-  
-  span {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 2px;
-    background-color: darken($nav-item-bg-clr, 20%);
-    border-radius: 2px;
-    transition: transform $ts ease;
-    transform-origin: 100% 100%;
-    
-    @for $i from 1 through 6 {
-      &:nth-child(#{$i}) {
-        transition-delay: $ts + ($td * $i);
-      }
-    }
-    
-    &:nth-child(1),
-    &:nth-child(2) {
-      grid-column: span 3;
-    }
-        
-    &:nth-child(3),
-    &:nth-child(6) {
-      grid-column: span 2;
-    }
-  
-    &:nth-child(4),
-    &:nth-child(5) {
-      grid-column: span 4;
-    }
-  }
-}
-
-#menu-toggle-input {
-  display: none;
-  
-  &:checked ~ .menu-toggle {
-    span {
-      transform: scaleX(0);
-      
-      @for $i from 1 through 6 {
-        &:nth-child(#{$i}) {
-          transition-delay: $td * $i;
-        }
-      }
-    }
-    
-    &:before {
-      opacity: 1;
-      transition-delay: $ts * 2.5;
-    }
-  }
-  
-  &:checked ~ nav {
-    opacity: 1;
-    transform: translateY(0);
-    transition-delay: 0s;
-    
-    a {
-      color: $nav-item-txt-clr;
-      transform: translate(0, 0);
-    }
-    
-    @for $i from 1 through 5 {
-      > ol > li:nth-child(#{$i}) > a {
-        transition: 
-          color $ts ($ts * 2.75),
-          transform $ts ($ts + $td * $i) ease;
-      }
-
-      .sub-menu > li:nth-child(#{$i}) > a {
-        transition: 
-          color $ts ($ts * 2.75),
-          transform $ts ($ts * 1.5 + $td * $i) ease;
-      }
-    }
-  }
-}
-
-@for $i from 1 through 5 {
-  .menu > ol > li:nth-child(#{$i}) > a {
-    transform: translate(calc(-100% - 12px), 0);
-    transition: 
-      color $ts,
-      transform $ts ($ts / 2 + $td * $i) ease;
-  }
-  
-  .sub-menu > li:nth-child(#{$i}) > a {
-    transform: translate(0, calc(-100% - 12px));
-    transition: 
-      color $ts,
-      transform $ts ($ts / 2 + $td * $i) ease;
-  }
-}
     </style>
     
 </head>
 <body style="background-image: url('../imagens/.jpg'); background-size:cover;">
     
-    <section>
-      
+    
+     <section class="" style="background-image: url('../imagens/background-gundam.png'); background-size:cover;">
         
-        <header class="page-header">
-          <input id="menu-toggle-input" type="checkbox" />
-          <label class="menu-toggle" for="menu-toggle-input">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-
-  <div class="page-tagline">
-    <a href="https://codepen.io/challenges" target="_blank">#CodePenChallenge</a>
-  </div>
-
-  <nav class="menu">
-    <ol>
-      <li class="menu-item"><a href="#0">Home</a></li>
-      <li class="menu-item"><a href="#0">About</a></li>
-      <li class="menu-item">
-        <a href="#0">Widgets</a>
-        <ol class="sub-menu">
-          <li class="menu-item"><a href="#0">Big Widgets</a></li>
-          <li class="menu-item"><a href="#0">Bigger Widgets</a></li>
-          <li class="menu-item"><a href="#0">Huge Widgets</a></li>
-        </ol>
-      </li>
-      <li class="menu-item">
-        <a href="#0">Kabobs</a>
-        <ol class="sub-menu">
-          <li class="menu-item"><a href="#0">Shishkabobs</a></li>
-          <li class="menu-item"><a href="#0">BBQ kabobs</a></li>
-          <li class="menu-item"><a href="#0">Summer kabobs</a></li>
-        </ol>
-      </li>
-      <li class="menu-item"><a href="#0">Contact</a></li>
-    </ol>
-  </nav>
-</header>
-
-<section class="page-content">
-  <h1 class="page-title">CSS Grid Menu Panels</h1>
-  <p>Click the toggle in the top left corner to see it in action. Photo by Ales Krivec on Unsplash</p>
-</section>
+        <div class="" style="">
+            <h2 style="text-align:center;">Temporada</h2>
+        </div>
         
+        <!-- Cards: Winter, Spring, Summer, Fall -->
+        <div class="row">
+            
+            <div class="col">
+                <a target="_blank" href="https://www.behance.net/doonnnx">
+                  <div class="thecard">
+
+                    <div class="card-img">
+                      <img src="../imagens/seaseon/winter-anime.png">
+                    </div>
+
+                    <div class="card-caption">
+                      <i class="far fa-snowflake" style="font-size:20px; color:#5500ff;"></i>
+                      <span class="date">Janeiro, Julho 16, 2019</span>
+                      <h1>Janeiro / Winter / Inverno</h1>
+                      <p>Um guia com os novos episódio da temporada de Janeiro / Winter.</p>
+                    </div>
+
+                    <div class="card-outmore">
+                      <h5>Vê Animes</h5>
+                      <i id="outmore-icon" class="fa fa-angle-right"></i>
+                    </div>
+
+                  </div>
+                </a>
+            </div>
+            
+            <div class="col">
+                <a target="_blank" href="https://www.behance.net/doonnnx">
+                  <div class="thecard">
+
+                    <div class="card-img">
+                      <img src="../imagens/seaseon/spring-anime.jpg">
+                    </div>
+
+                    <div class="card-caption">
+                      <i class="fab fa-pagelines" style="font-size:23px; color:pink;"></i>
+                      <span class="date">Thursday, July 16, 2015</span>
+                      <h1>Abril / Spring / Primavera</h1>
+                      <p>Um guia com os novos episódio da temporada de Abril / Primavera.</p>
+                    </div>
+
+                    <div class="card-outmore">
+                      <h5>Vê Animes</h5>
+                      <i id="outmore-icon" class="fa fa-angle-right"></i>
+                    </div>
+
+                  </div>
+                </a>
+            </div>
+            
+            <div class="col">
+                <a target="_blank" href="https://www.behance.net/doonnnx">
+                  <div class="thecard">
+
+                    <div class="card-img">
+                      <img src="../imagens/seaseon/summer-%20anime.jpg">
+                    </div>
+
+                    <div class="card-caption">
+                      <i class="fas fa-umbrella-beach" style="font-size:25px; color:#0099ff;"></i>
+                      <span class="date">Thursday, July 16, 2015</span>
+                      <h1>Julho / Summer / Verão</h1>
+                      <p>Um guia com os novos episódio da temporada de Julho / Verão.</p>
+                    </div>
+
+                    <div class="card-outmore">
+                      <h5>Vê Animes</h5>
+                      <i id="outmore-icon" class="fa fa-angle-right"></i>
+                    </div>
+
+                  </div>
+                </a>
+            </div>
+            
+            <div class="col">
+                <a target="_blank" href="https://www.behance.net/doonnnx">
+                  <div class="thecard">
+
+                    <div class="card-img">
+                      <img src="../imagens/seaseon/fall-anime.jpg">
+                    </div>
+
+                    <div class="card-caption">
+                      <i class="fas fa-apple-alt" style="font-size:25px; color:#e62e00;"></i>
+                      <span class="date">Thursday, July 16, 2015</span>
+                      <h1>Outubro / Fall / Outono</h1>
+                      <p>Um guia com os novos episódio da temporada de Outubro / Fall.</p>
+                    </div>
+
+                    <div class="card-outmore">
+                      <h5>Vê Animes</h5>
+                      <i id="outmore-icon" class="fa fa-angle-right"></i>
+                    </div>
+
+                  </div>
+                </a>
+            </div>
+            
+        </div>
+        
+        <!-- Container: Animes de Temporadas passadas -->
+        <div class="container">
+            <div class="" style="background-color:#efefef; width:1140px; margin-left:-15px; border-radius:2px; height:40px;">
+                <h3 style="text-align:center;">Lista de Animes das Temporada passada</h3>
+            </div>
+            <div class="row" style="color:black; background-color:white; margin-top:-px;border-radius:2px;">
+                <div class="col">
+                    <p> <i class="fab fa-ethereum"></i>Janeiro / Winter / Inverno 2018 </p>
+                    <p> <i class="fab fa-ethereum"></i>Janeiro / Winter / Inverno 2017 </p>
+                    <p> <i class="fab fa-ethereum"></i>Janeiro / Winter / Inverno 2016 </p>
+                    <p> <i class="fab fa-ethereum"></i>Janeiro / Winter / Inverno 2018 </p>
+                </div>
+                <div class="col">
+                    <p> <i class="fab fa-ethereum"></i>Abril / Spring / Primavera 2018 </p>
+                    <p> <i class="fab fa-ethereum"></i>Abril / Spring / Primavera 2017 </p>
+                    <p> <i class="fab fa-ethereum"></i>Abril / Spring / Primavera 2016 </p>
+                    <p> <i class="fab fa-ethereum"></i>Abril / Spring / Primavera 2015 </p>
+                </div>
+                <div class="col">
+                    <p> <i class="fab fa-ethereum"></i>Julho / Summer / Verão 2018 </p>
+                    <p> <i class="fab fa-ethereum"></i>Julho / Summer / Verão 2017 </p>
+                    <p> <i class="fab fa-ethereum"></i>Julho / Summer / Verão 2016 </p>
+                    <p> <i class="fab fa-ethereum"></i>Julho / Summer / Verão 2015 </p>
+                </div>
+                <div class="col">
+                    <p> <i class="fab fa-ethereum"></i>Outubro / Fall / Outono 2018 </p>
+                    <p> <i class="fab fa-ethereum"></i>Outubro / Fall / Outono 2017 </p>
+                    <p> <i class="fab fa-ethereum"></i>Outubro / Fall / Outono 2016 </p>
+                    <p> <i class="fab fa-ethereum"></i>Outubro / Fall / Outono 2015 </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Next Section: Button -->
+        <div class="">
+            <button id="button-next" style="margin-top:150px;"> <i class="fa fa-angle-double-down" id="arrow-next"></i> </button>
+        </div>
         
     </section>
+    
     
     
     <!-- Optional JavaScript -->
