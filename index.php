@@ -27,6 +27,25 @@
         
         <div class="container" style="padding-top:30px;">    
             
+            <div class="row" style="color:white; margin-left:%;">
+                <div class="col" style="padding-top:40px;">
+                    <h3> <i class="fas fa-newspaper"></i> Noticias</h3>
+                    <p>Acesse a página de noticias e veja comentários dos usuarios referente a cada anime e </p>
+                    <h3> <i class="fas fa-exclamation"></i> Objetivo</h3>
+                    <p>O site é baseado em cadastrar animes que você está assistindo no momento, assim você tera controle do ultimo espisodio que assistiu, datas do próximo eposódio, temporada atual e você poderá da nota ao anime que está assistindo, assim outras pessoas poderá vê o que você achou do anime e seus pontos irão classificalos na tabela de ranking pessoal e global do site.</p>
+                </div>
+                <div class="col" style="background-color:; text-align:center;">
+                    <img src="../trunk/imagens/gif-index-anime2.gif" style="border-radius:200px; width:350px; height:320px;"/>
+                </div>
+                <div class="col" style="padding-top:60px;">
+                    <h3> <i class="fas fa-user-circle"></i> Seu Perfil</h3>
+                    <p>Você pode ter acesso ao seu perfil, </p>
+                    <h3> <i class="fas fa-cannabis"></i> Temporadas</h3>
+                    <p>Acesse a página de temporadas e veja todos os animes das temporadas atuais e das próxima, podendo adicionalas a sua lista de espera para próxima temporada ou para animes que você está assistindo no momento.</p>
+                </div>
+            </div>
+        
+            
             <!-- Title Table: Icons and Title Table -->
             <div class="container" style="margin-top: 50px; color:white; background-image: linear-gradient(to right, #3FC9FE ,#3A7EC7, #2F449C); border-color: red; height:50px; width:90%; border-radius:5px; box-shadow: 1px 3px 10px #000000; text-align:center;">
                     <div class="row" style="padding-top:15px;">
