@@ -32,7 +32,7 @@
                     <h3> <i class="fas fa-newspaper"></i> Noticias</h3>
                     <p>Acesse a página de noticias e veja comentários dos usuarios referente a cada anime e </p>
                     <h3> <i class="fas fa-exclamation"></i> Objetivo</h3>
-                    <p>O site é baseado em cadastrar animes que você está assistindo no momento, assim você tera controle do ultimo espisodio que assistiu, datas do próximo eposódio, temporada atual e você poderá da nota ao anime que está assistindo, assim outras pessoas poderá vê o que você achou do anime e seus pontos irão classificalos na tabela de ranking pessoal e global do site.</p>
+                    <p>O site é baseado em cadastrar animes que você está assistindo no momento, tendo assim controle do ultimo espisodio que assistiu, datas do próximo eposódio, temporada atual e você poderá da nota ao anime que está assistindo, assim outras pessoas poderá vê o que você achou do anime e seus pontos irão classificalos na tabela de ranking pessoal e global do site.</p>
                 </div>
                 <div class="col" style="background-color:; text-align:center;">
                     <img src="../trunk/imagens/gif-index-anime2.gif" style="border-radius:200px; width:350px; height:320px;"/>
@@ -45,6 +45,41 @@
                 </div>
             </div>
         
+            <!-- Input: Cadastro Anime Assistindo -->
+                <div class="" style="color:white; height: 150px; border-radius:20px; opacity:0.9; background-image: linear-gradient(to right, #3FC9FE ,#3A7EC7, #2F449C, #2F449C); margin-top:50px;">
+                    <form action="insertproxtemporada.php" method="post" style="padding-top:22px; margin-left:15px;">
+                        <div class="row" id="row-input-parados2">
+                            <div class="col-2">
+                                <label for="inputEmail4">Nome:</label>
+                                <input type="text" class="form-control" name="nome" placeholder="Anime Name" required>
+                            </div>
+                            <div class="col-2">
+                                <label for="inputEmail4">Data Estreia:</label>
+                                <input type="text" class="form-control" name="estreia" placeholder="Estreia" required>
+                            </div>
+                            <div class="col-2">
+                                <label for="inputEmail4">Temporada:</label>
+                                <input type="text" class="form-control" name="temporada" placeholder="Temporada">
+                            </div>
+                            <div class="col-2">
+                                <label for="inputEmail4">Sinopse:</label>
+                                <input type="text" class="form-control" name="sinopse" placeholder="Sobre">
+                            </div>
+                            <div class="col-2">
+                                <label for="inputEmail4">Link Trailer:</label>
+                                <input type="text" class="form-control" name="trailer" placeholder="Link do Trailer">
+                            </div>
+                            <div class="col-1">
+                                <label for="inputEmail4">Nota:</label>
+                                <input type="text" class="form-control" name="nota" placeholder="Nota">
+                            </div>
+                            <div class="col-1">
+                                <label for="inputEmail4">Save</label>
+                                <button type="submit" class="btn btn-dark btn-animeproxtemp"> <i class="fas fa-save" id="icon-save-parados"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>    
             
             <!-- Title Table: Icons and Title Table -->
             <div class="container" style="margin-top: 50px; color:white; background-image: linear-gradient(to right, #3FC9FE ,#3A7EC7, #2F449C); border-color: red; height:50px; width:90%; border-radius:5px; box-shadow: 1px 3px 10px #000000; text-align:center;">
