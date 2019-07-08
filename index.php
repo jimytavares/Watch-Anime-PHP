@@ -25,7 +25,7 @@
         
         <?php include ('.globals/header.php'); ?>
         
-        <div class="container">    
+        <div class="container" style="padding-top:30px;">    
             
             <!-- Title Table: Icons and Title Table -->
             <div class="container" style="margin-top: 50px; color:white; background-image: linear-gradient(to right, #3FC9FE ,#3A7EC7, #2F449C); border-color: red; height:50px; width:90%; border-radius:5px; box-shadow: 1px 3px 10px #000000; text-align:center;">
