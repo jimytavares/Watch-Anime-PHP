@@ -34,24 +34,24 @@
                             <form action="validacao.php" method="post" autocomplete="off">
                                 <fieldset>            
                                   <div class="form-group">
-                                    <label for="">Login</label>
-                                    <input type="text" name ="usuario" class="form-control" autocomplete="off" style="background-color:transparent; border-radius:10px; border:none;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuário">
+                                    <label for="" >Login</label>
+                                    <input type="text" name ="usuario" class="form-control" autocomplete="off" style="background-color:white; border-radius:10px; border:none;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuário">
                                   </div>
 
                                   <div class="form-group">
                                     <label for="exampleInputPassword1">Password</label>
-                                    <input type="password" name="senha" class="form-control" autocomplete="off" style="background-color:transparent; border-radius:10px; border:none;" id="exampleInputPassword1" placeholder="Password">
-                                    <small style="color:#bfbfbf;">Prestar atenção no capslock ativo.</small>
+                                    <input type="password" name="senha" class="form-control" autocomplete="off" style="background-color:white; border-radius:10px; border:none;" id="exampleInputPassword1" placeholder="Senha">
+                                      <small style="color:white;"> <font size="3" face="Arial">Prestar atenção no capslock ativo.</font></small>
                                   </div>
 
                                   <button type="submit" class="btn btn-primary" style="width:80%; color:black; margin-left: 9%; background-image: linear-gradient(to right, #db5783 , #f7bb97); border-color:transparent;">Logar</button>
 
                                     <div class="row" style="padding-top:30px; margin-left:5px; color:white;">
                                         <div class="col">
-                                            <a data-toggle="modal" data-target="#exampleModal">Registrar!</a>
+                                            <a data-toggle="modal" data-target="#exampleModal"> <button type="submit" class="btn btn-primary" style="width:80%; color:black; margin-left: 9%; background-image: linear-gradient(to right, #db5783 , #f7bb97); border-color:transparent;">Registrar!</button></a>
                                         </div>
                                         <div class="col">
-                                            Forgot Password?
+                                            Perdeu a Senha ?
                                         </div>
                                     </div>
                                 </fieldset>    
