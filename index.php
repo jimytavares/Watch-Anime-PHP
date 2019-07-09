@@ -21,7 +21,7 @@ require_once('control/Connection.class.php');
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     
     <style> .cssbb{color: red;} </style>
-
+    
 </head>
 <body>
     
@@ -42,10 +42,10 @@ require_once('control/Connection.class.php');
                     <button type="button" class="btn btn-primary button-action" style="width: 250px; height:190px;"> <h3> <i class="fas fa-table" style="color:#FEDF08; font-size:40px;"></i> <br/> Table Ocult</h3> </button>
                 </div>
                 <div class="col">
-                    <button type="button" class="btn btn-primary button-action" style="width: 250px; height:190px;">Primary</button>
+                    <button type="button" class="btn btn-primary button-action" style="width: 250px; height:190px;"> <h3> <i class="fas fa-rocket" style="color:#FA7914; font-size:40px;"></i> <br/> Lançamentos </h3> </button>
                 </div>
                 <div class="col">
-                    <button type="button" class="btn btn-primary button-action" style="width: 250px; height:190px;">Primary</button>
+                    <button type="button" class="btn btn-primary button-action" style="width: 250px; height:190px;"> <h3> <i class="fas fa-tv" style="color:#33d3ff; font-size:40px;"></i> <br/> Assistir </h3></button>
                 </div>
             </div>
             

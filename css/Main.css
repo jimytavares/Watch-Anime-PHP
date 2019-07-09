@@ -101,7 +101,7 @@
 
 /* ####### Input & Table ###### */
 
-#row-geral{
+ff#row-geral{
     margin-top: 60px;
 }
 
@@ -165,7 +165,7 @@
 }
 
 .button-action{
-    width: 250px; height:190px; background-color:transparent; background-image: linear-gradient( #00c6ff ,#0072ff);
+    width: 250px; height:190px; background-color:transparent; background-image: linear-gradient( #00c5ff ,#00afff, #0097ff ); border-radius: 0px;
 }
 
 /* ############################################ */
