@@ -75,27 +75,27 @@
                       <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                
+
                 <div class="modal-body" style="width:80%;color:white;margin-left:27%;">
-                    
+
                         <form>
                           <div class="form-group">
                             <div class="row">
                               <div class="col">
-                                <label for="exampleInputEmail1">Nome: </label>
+                                <label for="exampleInputEmail1">Login: </label>
                               </div>
                               <div class="col">
-                                <input type="email" class="form-control"  style="margin-left:-80%;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="nome completo">
+                                <input type="email" class="form-control"  style="margin-left:-80%;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Login Do Usuário">
                               </div>
                             </div>
                           </div>
                           <div class="form-group">
                               <div class="row">
                                   <div class="col">
-                                      <label for="exampleInputPassword1">Password: </label>
+                                      <label for="exampleInputPassword1">Senha: </label>
                                   </div>
                                   <div class="col">
-                                      <input type="password" class="form-control" style="margin-left:-80%;" id="exampleInputPassword1" placeholder="Password">
+                                      <input type="password" class="form-control" style="margin-left:-80%;" id="exampleInputPassword1" placeholder="Sua Senha">
                                   </div>
                               </div>
                           </div>
@@ -105,21 +105,24 @@
                                     <label for="exampleInputEmail1">E-Mail: </label>
                                   </div>
                                   <div class="col">
-                                    <input type="email" class="form-control" style="margin-left:-80%;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="seu e-mail">
+                                    <input type="email" class="form-control" style="margin-left:-80%;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu E-mail">
                                   </div>
                               </div>
                           </div>
-                            <input type="Submit" class="button-new-user" value="Enviar" name="btnenviar" >
-                            <input type="reset" value="Limpar" name="btnlimpar">
-                            <a href="index.html"><input type="button" name="Voltar" value="Voltar" ></a>
+                            <div style="margin-left: 90px;">
+                            <input  type="Submit"  class="btn btn-success" value="Enviar" name="btnenviar" >
+                            <input type="reset" class="btn btn-light"  value="Limpar" name="btnlimpar">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Sair</button>
+                            <!--<a href="index.html"><input type="button" name="Voltar" value="Voltar" ></a>-->
+                            </div>
                         </form>
-                    
+
                 </div>
-             
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Sair</button>
-                </div>
-                
+
+
+
+
+
             </div>
           </div>
         </div>
