@@ -237,12 +237,12 @@ ff#row-geral{
             }
             #th-parados:hover, #th-parados:focus, #th-parados:active 
             {
-              color: white;
+             // color: white;
             }
             #th-parados:hover:before, #th-parados:focus:before, #th-parados:active:before 
             {
-              -webkit-transform: scaleX(1);
-                transform: scaleX(1);
+             // -webkit-transform: scaleX(1);
+             //   transform: scaleX(1);
             }
 
     #body-table-parados {
@@ -277,11 +277,11 @@ ff#row-geral{
           transition-timing-function: ease-out;
         }
         #body-table-parados:hover, #body-table-parados:focus, #body-table-parados:active {
-          color: white;
+        //color: white;
         }
         #body-table-parados:hover:before, #body-table-parados:focus:before, #body-table-parados:active:before {
-          -webkit-transform: scale(0);
-          transform: scale(0);
+         //-webkit-transform: scale(0);
+         //transform: scale(0);
         }
 
     #row-input-parados{

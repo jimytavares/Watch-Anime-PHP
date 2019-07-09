@@ -21,9 +21,9 @@
         echo "</td>";
         echo "<td>" . $dados["episodio"];
         echo "</td>";
-        echo "<td>" . $dados["diasemana"];
+        echo "<td>" . $dados["dia_semana"];
         echo "</td>";
-        echo "<td>" . $dados["dataassistido"];
+        echo "<td>" . $dados["dia_assistido"];
         echo "</td>";
         echo "<td>" . $dados["dataproxep"];
         echo "</td>";
