@@ -52,7 +52,7 @@
                     <p>O site é baseado em cadastrar animes que você está assistindo no momento, tendo assim controle do ultimo espisodio que assistiu, datas do próximo eposódio, temporada atual e você poderá da nota ao anime que está assistindo, assim outras pessoas poderá vê o que você achou do anime e seus pontos irão classificalos na tabela de ranking pessoal e global do site.</p>
                 </div>
                 <div class="col" style="background-color:; text-align:center;">
-                    <img src="../trunk/imagens/gif-index-anime2.gif" style="border-radius:200px; width:350px; height:320px;"/>
+                    <img src="imagens/gif-index-anime2.gif" style="border-radius:200px; width:350px; height:320px;"/>
                 </div>
                 <div class="col" style="padding-top:60px;">
                     <h3> <i class="fas fa-user-circle"></i> Seu Perfil</h3>
