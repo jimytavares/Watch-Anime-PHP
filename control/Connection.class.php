@@ -12,7 +12,7 @@ class Database
     
     private function __construct(){
         # Informações sobre o banco de dados:
-        $db_host = "enetdev.com";
+        $db_host = "server.grupomeuservidorweb.com.br";
         $db_nome = "enetdevc_animes";
         $db_usuario = "enetdevc_animesview";
         $db_senha = "0U3zkbJFtX1k";
@@ -20,7 +20,7 @@ class Database
         
         try{
             
-            self::$db = new PDO("$db_driver:host=$db_host; dbname=$db_nome", $db_usuario, $db_senha);
+            self::$db = new PDO("$db_driver:host=$db_host;port=3306;dbname=$db_nome", $db_usuario, $db_senha);
             
             self::$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             
