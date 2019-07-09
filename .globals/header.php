@@ -4,7 +4,7 @@
         
         <!-- Col 01: Menu -->
         <div class="col-md-auto">
-            <img src="imagens/titulo.png" style="width:150px; margin-left: 50px; padding-top:5px;" />
+            <img src="../../../watch-anime-php/trunk/imagens/titulo.png" style="width:150px; margin-left: 50px; padding-top:5px;" />
         </div>
         
         <!-- Col 02: Logo do Site -->
@@ -12,7 +12,7 @@
             
             <div class="col-temporada" style="opacity:0.8;">
                 <a data-toggle="modal" data-target="#exampleModal">
-                    <img src="imagens/temporada-img.png" id="temporada-img"/>
+                    <img src="../../../watch-anime-php/trunk/imagens/temporada-img.png" id="temporada-img"/>
 
                     <p id="color-nome-temporada" style="padding-top:0px;"> 
                         <i class="fas fa-umbrella-beach" style="font-size:15px;"></i> Julho / Summer / Verão
