@@ -1,38 +1,38 @@
 <?php
 
-   $servidor = 'localhost';
-   $usuario  = 'dbanime';
-   $senha    = '12345';
-   $banco    = 'dbanime';
+   require_once('Connection.class.php');
+   $db = Database::conexao();
+   
+   $sql = "SELECT * FROM vw_assistido";
 
-   $mysqli = new mysqli ($servidor, $usuario, $senha, $banco);
+   $getAssistindo = $db->prepare($sql);
+   $getAssistindo->execute();
 
    //enviar instrucao sql para o banco
-   $sql = "SELECT * FROM assistindo";
 
-    $resultado = $mysqli->query($sql);
+    $dadosAssistindo = $getAssistindo->fetchAll();
 
     // $dados = mysqli_fetch_array($resultado)
-    while($dados = mysqli_fetch_assoc($resultado)){
-                                echo "<tr>";
-                                    echo "<td>" . $dados["id"];                                       
-                                        echo "</td>";
-                                    echo "<td>" . $dados["nome"];                                       
-                                        echo "</td>";
-                                    echo "<td>" . $dados["episodio"];                                      
-                                        echo "</td>";
-                                    echo "<td>" . $dados["diasemana"];                                      
-                                        echo "</td>";
-                                    echo "<td>" . $dados["dataassistido"];                                      
-                                        echo "</td>";
-                                    echo "<td>" . $dados["dataproxep"];                                      
-                                        echo "</td>";
-                                    echo "<td>" . $dados["qualidade"];  
-                                        echo "</td>";
-                                    echo "<td>" . $dados["comentario"];   
-                                        echo "</td>";
-                                    echo "<td>" . $dados["nota"];                                      
-                                        echo "</td>";
-                                echo "</tr>";
-                           }
+    foreach ($dadosAssistindo AS $dados){
+        echo "<tr>";
+        echo "<td>" . $dados["id"];
+        echo "</td>";
+        echo "<td>" . $dados["nome"];
+        echo "</td>";
+        echo "<td>" . $dados["episodio"];
+        echo "</td>";
+        echo "<td>" . $dados["diasemana"];
+        echo "</td>";
+        echo "<td>" . $dados["dataassistido"];
+        echo "</td>";
+        echo "<td>" . $dados["dataproxep"];
+        echo "</td>";
+        echo "<td>" . $dados["qualidade"];
+        echo "</td>";
+        echo "<td>" . $dados["comentario"];
+        echo "</td>";
+        echo "<td>" . $dados["nota"];
+        echo "</td>";
+        echo "</tr>";
+    }
 ?>

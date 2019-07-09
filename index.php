@@ -1,9 +1,3 @@
-<?php
-
-require_once('control/Connection.class.php');
-
-?>
-
 <!DOCTYPE HTML>  
 <html>
 <head>
@@ -137,7 +131,7 @@ require_once('control/Connection.class.php');
                         </tr>
                     </thead>
                     <tbody id="body-table-parados">
-                        <?php echo Database::exibirAssistido(); ?>
+                        <?php include_once('control/selectAssistindo.php'); ?>
                     </tbody>
             </table>
             
