@@ -12,7 +12,7 @@ class Database
     
     private function __construct(){
         # Informações sobre o banco de dados:
-        $db_host = "server.grupomeuservidorweb.com.br";
+        $db_host = "enetdev.com";
         $db_nome = "enetdevc_animes";
         $db_usuario = "enetdevc_animesview";
         $db_senha = "0U3zkbJFtX1k";
