@@ -12,6 +12,12 @@ class Database
     
     private function __construct(){
         # Informações sobre o banco de dados:
+        
+//        BANCO DE DADOS 
+//        link: http://enetdev.com/phpmyadmin
+//        Usuario: enetdevc_animes
+//        Senha: 4n1m3s#!
+        
         $db_host = "enetdev.com";
         $db_nome = "enetdevc_animes";
         $db_usuario = "enetdevc_animesview";
