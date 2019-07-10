@@ -63,8 +63,8 @@
             </div>
         
             <!-- Input: Cadastro Anime Assistindo -->
-                <div class="" style="color:white; height: 150px; border-radius:20px; opacity:0.9; background-image: linear-gradient(to right, #3FC9FE ,#3A7EC7, #2F449C, #2F449C); margin-top:50px;">
-                    <form action="insertproxtemporada.php" method="post" style="padding-top:22px; margin-left:15px;">
+          <!--      <div class="" style="color:white; height: 150px; border-radius:20px; opacity:0.9; background-image: linear-gradient(to right, #3FC9FE ,#3A7EC7, #2F449C, #2F449C); margin-top:50px;">
+                    <form action="control/insertproxtemporada.php" method="post" style="padding-top:22px; margin-left:15px;">
                         <div class="row" id="row-input-parados2">
                             <div class="col-2">
                                 <label for="inputEmail4">Nome:</label>
@@ -96,7 +96,7 @@
                             </div>
                         </div>
                     </form>
-                </div>    
+                </div>-->
             
             <!-- Title Table: Icons and Title Table -->
             <div class="container" style="margin-top: 50px; color:white; background-image: linear-gradient(to right, #3FC9FE ,#3A7EC7, #2F449C); border-color: red; height:50px; width:90%; border-radius:5px; box-shadow: 1px 3px 10px #000000; text-align:center;">
@@ -114,12 +114,57 @@
                         </div>
                     </div>
                 </div>
-            
+
+            <!-- Input: Cadastro Anime Assistindo -->
+
+            <!-- <form action="control/insertassistindo.php" method="post">
+                <div class="row" id="row-input-parados">
+                    <div class="col-2">
+                        <label for="inputEmail1">Nome:</label>
+                        <input type="text" class="form-control input-parados" name="nome" id="inputEmail1" placeholder="Anime Name" required>
+                    </div>
+                    <div class="col-2">
+                        <label for="inputEmail2">Episódio:</label>
+                        <input type="text" class="form-control input-parados" name="episodio" id="inputEmail2" placeholder="Episode Watched" required>
+                    </div>
+                    <div class="col-2">
+                        <label for="inputEmail3">Data Assistida ¹:</label>
+                        <input type="text" class="form-control input-parados" name="dataassistido"  id="inputEmail3" placeholder="Watched Date">
+                    </div>
+                    <div class="col-2">
+                        <label for="inputEmail4">Dia ¹:</label>
+                        <input type="text" class="form-control input-parados" name="diasemana"  id="inputEmail4" placeholder="Day Watched">
+                    </div>
+                    <div class="col-2">
+                        <label for="inputEmail5">Data Próximo Ep ²:</label>
+                        <input type="text" class="form-control input-parados" name="dataproxep"  id="inputEmail5"  placeholder="Date New Ep">
+                    </div>
+                    <div class="col-2">
+                        <label for="inputEmail6">Dia ²:</label>
+                        <input type="text" class="form-control input-parados" name="diasemanaproxep" id="inputEmail6" placeholder="Dia Prox Ep">
+                    </div>
+                    <div class="col-2">
+                        <label for="inputEmail7">Qualidade:</label>
+                        <input type="text" class="form-control input-parados" name="qualidade" id="inputEmail7" placeholder="Quality">
+                    </div>
+                    <div class="col-2">
+                        <label for="inputEmail8">Comentario:</label>
+                        <input type="text" class="form-control input-parados" name="comentario" id="inputEmail8" placeholder="Coment">
+                    </div>
+                    <div class="col-2">
+                        <label for="inputEmail9">Nota:</label>
+                        <input type="text" class="form-control input-parados" name="nota" id="inputEmail9" placeholder="Star">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-dark button-salvar-parados"> <i class="fas fa-save" id="icon-save-parados"></i> Save</button>
+            </form>-->
+
+
             <!-- Table: Animes Assistindo -->
             <table class="table table-sm" style="margin-top: -1px;">
                     <thead>
                         <tr id="tr-parados">
-                            <th id="th-parados">ID</th>
                             <th id="th-parados">Nome</th>
                             <th id="th-parados">Episódio</th>
                             <th id="th-parados">Dia</th>
@@ -134,51 +179,6 @@
                         <?php include_once('control/selectAssistindo.php'); ?>
                     </tbody>
             </table>
-            
-            <!-- Input: Cadastro Anime Assistindo -->
-            <form action="insertassistindo.php" method="post">
-                        <div class="row" id="row-input-parados">
-                            <div class="col-2">
-                                <label for="inputEmail1">Nome:</label>
-                                <input type="text" class="form-control input-parados" name="nome" id="inputEmail1" placeholder="Anime Name" required>
-                            </div>
-                            <div class="col-2">
-                                <label for="inputEmail2">Episódio:</label>
-                                <input type="text" class="form-control input-parados" name="episodio" id="inputEmail2" placeholder="Episode Watched" required>
-                            </div>
-                            <div class="col-2">
-                                <label for="inputEmail3">Data Assistida ¹:</label>
-                                <input type="text" class="form-control input-parados" name="dataassistido"  id="inputEmail3" placeholder="Watched Date">
-                            </div>
-                                <div class="col-2">
-                                    <label for="inputEmail4">Dia ¹:</label>
-                                    <input type="text" class="form-control input-parados" name="diasemana"  id="inputEmail4" placeholder="Day Watched">
-                                </div>
-                            <div class="col-2">
-                                <label for="inputEmail5">Data Próximo Ep ²:</label>
-                                <input type="text" class="form-control input-parados" name="dataproxep"  id="inputEmail5"  placeholder="Date New Ep">
-                            </div>
-                                <div class="col-2">
-                                    <label for="inputEmail6">Dia ²:</label>
-                                    <input type="text" class="form-control input-parados" name="diasemanaproxep" id="inputEmail6" placeholder="Dia Prox Ep">
-                                </div>
-                            <div class="col-2">
-                                <label for="inputEmail7">Qualidade:</label>
-                                <input type="text" class="form-control input-parados" name="qualidade" id="inputEmail7" placeholder="Quality">
-                            </div>
-                            <div class="col-2">
-                                <label for="inputEmail8">Comentario:</label>
-                                <input type="text" class="form-control input-parados" name="comentario" id="inputEmail8" placeholder="Coment">
-                            </div>
-                            <div class="col-2">
-                                <label for="inputEmail9">Nota:</label>
-                                <input type="text" class="form-control input-parados" name="nota" id="inputEmail9" placeholder="Star">
-                            </div>
-                        </div>
-
-                        <button type="submit" class="btn btn-dark button-salvar-parados"> <i class="fas fa-save" id="icon-save-parados"></i> Save</button>
-                    </form>
-            
                     <!-- Modal: Data Assistido e Data Próximo Episódio -->
                     <div class="modal fade bd-example-modal-lg" id="modaldataassistido" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                       <div class="modal-dialog modal-lg" role="document">

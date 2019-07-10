@@ -30,7 +30,7 @@
                     <i class="fas fa-home"></i> Home
                 </div>
                 <div class="col col-perfil">
-                    <i class="fas fa-user-circle"></i> Pefil
+                    <i class="fas fa-user-circle"></i> Perfil
                 </div>
                 <div class="col col-perfil">
                     <i class="fas fa-chart-area"></i> Ranking

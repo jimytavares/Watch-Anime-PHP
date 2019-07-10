@@ -78,7 +78,7 @@
                             </div>
                         </div>
                             
-                        <form action="insertassistindo.php" method="post">
+                        <form action="control/insertassistindo.php" method="post">
                             
                             <input type="text" class="form-control" name="nome" value="" id="input-cadastro" placeholder="Nome do Anime">
                             <input type="text" class="form-control" name="episodio" value="" id="input-cadastro" placeholder="Episódio Assistido" autocomplete="off">
@@ -233,7 +233,7 @@
         
         <div class="container">    
             
-            <form action="insertparados.php" method="post">
+            <form action="control/insertparados.php" method="post">
                 <div class="row" id="row-input-parados">
                     <div class="col-2">
                         <label for="inputEmail4">Name:</label>

@@ -1,8 +1,8 @@
 <?php
 
    $servidor = 'localhost';
-   $usuario  = 'dbanime';
-   $senha    = '12345';
+   $usuario  = 'root';
+   $senha    = '';
    $banco    = 'dbanime';
 
    $mysqli = new mysqli ($servidor, $usuario, $senha, $banco);

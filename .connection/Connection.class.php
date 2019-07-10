@@ -2,7 +2,7 @@
 
 /**
  * Modo de Usar:
- * require_once './Connection.class.php';
+ * require_once '../.connection/Connection.class.php';
  * $db = Database::conexao();
  * E agora use as funções do PDO (prepare, query, exec) em cima da variável $db.
  */
@@ -19,7 +19,6 @@ class Database
         $db_driver = "mysql";
         
         try{
-            
             self::$db = new PDO("$db_driver:host=$db_host;port=3306;dbname=$db_nome", $db_usuario, $db_senha);
             
             self::$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -27,7 +26,6 @@ class Database
             self::$db->exec('SET NAMES utf8');
         }
         catch (PDOException $e){
-            echo 'erro';
             die("Connection Error: " . $e->getMessage());
         }
     }

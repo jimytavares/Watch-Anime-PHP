@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col">
                 <h3 style="font-size:20px;">Team Anime:</h3>
-                <p style="color:gray;">Yuri Sanches <br/> Jimy Tavares <br/> Carlos <br/> Higor <br/> Lucas <br/> Elcid</p>
+                <p style="color:gray;">Yuri Sanchez <br/> Jimy Tavares <br/> Carlos <br/> Higor <br/> Lucas <br/> Elcid</p>
             </div>
             <div class="col">
                 <h3 style="font-size:20px;">Company:</h3>
