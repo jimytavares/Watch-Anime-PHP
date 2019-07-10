@@ -1,6 +1,6 @@
 <?php
 
-   require_once('../.connection/Connection.class.php');
+   require_once('.connection/Connection.class.php');
    $db = Database::conexao();
 
    $sql = "SELECT * FROM vw_assistido";
