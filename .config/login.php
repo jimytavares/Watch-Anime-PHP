@@ -15,11 +15,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 </head>
-<body style="background-image: url('../imagens/bg-login.jpg'); background-size:cover;">
+<body style="background-image: url('../imagens/bg-login.jpg'); background-size: 100%;">
 
 <section class="lg-index">
+    
     <div class="row">
-
 
         <div class="col">
         </div>
@@ -33,27 +33,34 @@
 
                     <form action="validacao.php" method="post" autocomplete="off">
                         <fieldset>
+                            
                             <div class="form-group">
-                                <label for="" >  <font size="4" face="Times ">Login:</label></font>
+                                <label for="campoUsuario">Login:</label>
                                 <input type="text" name ="usuario" class="form-control" autocomplete="off" style="background-color:white; border-radius:10px; border:none;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuário">
                             </div>
 
                             <div class="form-group">
-                                <label for="exampleInputPassword1"> <font size="4" face="Times ">Password:</label></font>
+                                <label for="exampleInputPassword1">Senha:</label>
                                 <input type="password" name="senha" class="form-control" autocomplete="off" style="background-color:white; border-radius:10px; border:none;" id="exampleInputPassword1" placeholder="Senha">
-                                <small style="color:white;"> <font size="3" face="Arial"><br>Prestar atenção no capslock ativo.</font></small>
+                                <small style="color:white;">*Prestar atenção no capslock ativo!</small>
                             </div>
 
-                            <button type="submit" class="btn btn-primary" style="width:80%; color:black; margin-left: 9%; background-image: linear-gradient(to right, #db5783 , #f7bb97); border-color:transparent;">Logar</button>
+                            <button type="submit" class="btn btn-primary" style="width:80%; color:black; margin-left: 9%; border-color:transparent;">Entrar</button>
 
                             <div class="row text-center" style="padding-top:30px; margin-left:-40px; color:white;">
                                 <div class="col">
-                                    <a data-toggle="modal" data-target="#exampleModal"> <button type="submit" class="btn btn-primary" style="width:100%; color:black; margin-left: 9%; background-image: linear-gradient(to right, #db5783 , #f7bb97); border-color:transparent;">Registre-se!</button></a>
+                                    <a data-toggle="modal" data-target="#ModalRegistrar"> 
+                                        <button type="submit" class="btn btn-primary btn-forgot">Registre-se!</button>
+                                    </a>
                                 </div>
-                                <div class="col text-center">
-                                    <button type="submit" class="btn btn-primary" style="width:100%; color:black; margin-left: 9%; background-image: linear-gradient(to right, #db5783 , #f7bb97); border-color:transparent;">Perdeu a Senha ?</button>
+                                <div class="col">
+                                    <a data-toggle="modal" data-target="#ModalEsqueciSenha"> 
+                                        <button type="submit" class="btn btn-primary btn-forgot">Perdeu a Senha?</button>
+                                    </a>  
+                                    <p id="teste11">aaaa</p>
                                 </div>
                             </div>
+                            
                         </fieldset>
                     </form>
 
@@ -64,8 +71,8 @@
 
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- MODAL: Novo Usuário -->
+        <div class="modal fade bd-example-modal-lg" id="ModalRegistrar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content" style="background-image: url('../imagens/fundo.jpg'); background-size:cover;">
 
@@ -113,7 +120,7 @@
                             </div>
                         </div>
                         <div style="margin-left: 90px;">
-                            <input  type="Submit"  class="btn btn-success" value="Enviar" name="btnenviar" >
+                            <input  type="Submit"  class="btn btn-success" value="Cadastrar" name="btnenviar" >
                             <input type="reset" class="btn btn-light"  value="Limpar" name="btnlimpar">
                             <button type="button" class="btn btn-danger" data-dismiss="modal">Sair</button>
                             <!--<a href="index.html"><input type="button" name="Voltar" value="Voltar" ></a>-->
@@ -129,6 +136,30 @@
             </div>
         </div>
     </div>
+    
+    <!-- MODAL: Esqueci Senha -->
+        <div class="modal fade" id="ModalEsqueciSenha" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Recuperar Senha</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+                
+              <div class="modal-body">
+                ...
+              </div>
+                
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Sair</button>
+              </div>
+                
+            </div>
+          </div>
+        </div>
 
 </section>
 
