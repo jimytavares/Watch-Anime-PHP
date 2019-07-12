@@ -31,26 +31,34 @@
 
             <div class="box-login" style="background-color: white; width:60%; height: 500px; margin-top: 10%; margin-left:5%; border-radius:7px; opacity:0.9;">
                 <div class="box2-login" style="width:80%; margin-left:9%; padding-top:10%;">
-
-                    <img src="imagens/titulo-black.png" style="margin-left:18%;"/>
+                    
+                    <div class="row">
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                            <img src="imagens/titulo-black.png" style=""/>
+                        </div>
+                        <div class="col">
+                        </div>
+                    </div>
 
                     <form action="home.php" method="post" autocomplete="off" style="margin-top:20px;">
                         <fieldset>
                             
                             <div class="form-group">
                                 <label for="campoUsuario"><b>Usuário:</b></label>
-                                <input type="text" name ="usuario" class="form-control" autocomplete="off" style="border-radius:10px; border:none;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuário">
+                                <input type="text" name ="usuario" class="form-control" autocomplete="off" style="width:100%; border-radius:10px; border:none;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuário">
                             </div>
 
                             <div class="form-group">
                                 <label for="exampleInputPassword1"><b>Senha:</b></label>
-                                <input type="password" name="senha" class="form-control" autocomplete="off" style="background-color:white; border-radius:10px; border:none;" id="exampleInputPassword1" placeholder="Senha">
+                                <input type="password" name="senha" class="form-control" autocomplete="off" style="width:100%; background-color:white; border-radius:10px; border:none;" id="exampleInputPassword1" placeholder="Senha">
                                 <small style="color:black;">*Prestar atenção no capslock ativo!</small>
                             </div>
 
                             <button type="submit" class="btn btn-primary" style="background-image: linear-gradient(to right, #3FC9FE ,#3A7EC7, #2F449C); width:100%; color:white; margin-left: %; border-color:aqua; border-radius:20px;">ENTRAR</button>
 
-                            <div class="row text-center" style="padding-top:50px; margin-left:10px; color:white;">
+                            <div class="row" style="margin: 30px auto; max-width: 100%;">
                                 <div class="col-md-auto">
                                     <a data-toggle="modal" data-target="#ModalRegistrar"> 
                                         <button type="submit" class="btn btn-outline-primary" style="border-radius:20px; width:140px;">Registre-se!</button>
