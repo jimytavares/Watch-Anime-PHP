@@ -76,7 +76,7 @@
     <!-- MODAL: Novo Usuário -->
         <div class="modal fade bd-example-modal-lg" id="ModalRegistrar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content" style="background-image: url('../imagens/fundo.jpg'); background-size:cover;">
+            <div class="modal-content" style="background-image: url('imagens/fundo.jpg'); background-size:cover;">
 
                 <div class="modal-header">
                     <h3 class="modal-title" style="color:white; margin-left:30%">Criando Conta: Anime</h3>
