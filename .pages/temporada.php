@@ -20,10 +20,9 @@
 </head>
 <body style="background-image: url('../imagens/.jpg'); background-size:cover;">
     
+    
      <section class="" style="background-image: url('../imagens/background-gundam.png'); background-size:cover;">
-
-         <?php include ('../.globals/header.php'); ?>
-
+        
         <div class="" style="">
             <h2 style="text-align:center;">Temporada</h2>
         </div>
@@ -40,9 +39,9 @@
                     </div>
 
                     <div class="card-caption">
-                      <i class="far fa-snowflake" style="font-size:30px; color:#5500ff;"></i>
+                      <i class="far fa-snowflake" style="font-size:20px; color:#5500ff;"></i>
                       <span class="date">Janeiro, Julho 16, 2019</span>
-                      <h1>Janeiro/Winter/Inverno</h1>
+                      <h1>Janeiro / Winter / Inverno</h1>
                       <p>Um guia com os novos episódio da temporada de Janeiro / Winter.</p>
                     </div>
 
@@ -66,7 +65,7 @@
                     <div class="card-caption">
                       <i class="fab fa-pagelines" style="font-size:23px; color:pink;"></i>
                       <span class="date">Thursday, July 16, 2015</span>
-                      <h1>Abril/Spring/Primavera</h1>
+                      <h1>Abril / Spring / Primavera</h1>
                       <p>Um guia com os novos episódio da temporada de Abril / Primavera.</p>
                     </div>
 
@@ -90,7 +89,7 @@
                     <div class="card-caption">
                       <i class="fas fa-umbrella-beach" style="font-size:25px; color:#0099ff;"></i>
                       <span class="date">Thursday, July 16, 2015</span>
-                      <h1>Julho/Summer/Verão</h1>
+                      <h1>Julho / Summer / Verão</h1>
                       <p>Um guia com os novos episódio da temporada de Julho / Verão.</p>
                     </div>
 
@@ -114,7 +113,7 @@
                     <div class="card-caption">
                       <i class="fas fa-apple-alt" style="font-size:25px; color:#e62e00;"></i>
                       <span class="date">Thursday, July 16, 2015</span>
-                      <h1>Outubro/Fall/Outono</h1>
+                      <h1>Outubro / Fall / Outono</h1>
                       <p>Um guia com os novos episódio da temporada de Outubro / Fall.</p>
                     </div>
 
@@ -130,34 +129,34 @@
         </div>
         
         <!-- Container: Animes de Temporadas passadas -->
-        <div class="container" style="margin-top: 100px;">
+        <div class="container">
             <div class="" style="background-color:#efefef; width:1140px; margin-left:-15px; border-radius:2px; height:40px;">
                 <h3 style="text-align:center;">Lista de Animes das Temporada passada</h3>
             </div>
             <div class="row" style="color:black; background-color:white; margin-top:-px;border-radius:2px;">
                 <div class="col">
-                    <p> <i class="far fa-snowflake" style="font-size:30px; color:#5500ff;"></i> Janeiro / Winter / Inverno 2018 </p>
-                    <p> <i class="far fa-snowflake" style="font-size:30px; color:#5500ff;"></i> Janeiro / Winter / Inverno 2017 </p>
-                    <p> <i class="far fa-snowflake" style="font-size:30px; color:#5500ff;"></i> Janeiro / Winter / Inverno 2016 </p>
-                    <p> <i class="far fa-snowflake" style="font-size:30px; color:#5500ff;"></i> Janeiro / Winter / Inverno 2018 </p>
+                    <p> <i class="fab fa-ethereum"></i>Janeiro / Winter / Inverno 2018 </p>
+                    <p> <i class="fab fa-ethereum"></i>Janeiro / Winter / Inverno 2017 </p>
+                    <p> <i class="fab fa-ethereum"></i>Janeiro / Winter / Inverno 2016 </p>
+                    <p> <i class="fab fa-ethereum"></i>Janeiro / Winter / Inverno 2018 </p>
                 </div>
                 <div class="col">
-                    <p> <i class="fab fa-pagelines" style="font-size:30px; color:pink;"></i> Abril / Spring / Primavera 2018 </p>
-                    <p> <i class="fab fa-pagelines" style="font-size:30px; color:pink;"></i> Abril / Spring / Primavera 2017 </p>
-                    <p> <i class="fab fa-pagelines" style="font-size:30px; color:pink;"></i> Abril / Spring / Primavera 2016 </p>
-                    <p> <i class="fab fa-pagelines" style="font-size:30px; color:pink;"></i> Abril / Spring / Primavera 2015 </p>
+                    <p> <i class="fab fa-ethereum"></i>Abril / Spring / Primavera 2018 </p>
+                    <p> <i class="fab fa-ethereum"></i>Abril / Spring / Primavera 2017 </p>
+                    <p> <i class="fab fa-ethereum"></i>Abril / Spring / Primavera 2016 </p>
+                    <p> <i class="fab fa-ethereum"></i>Abril / Spring / Primavera 2015 </p>
                 </div>
                 <div class="col">
-                    <p> <i class="fas fa-umbrella-beach" style="font-size:30px; color:#0099ff;"></i> Julho / Summer / Verão 20 </p>
-                    <p> <i class="fas fa-umbrella-beach" style="font-size:30px; color:#0099ff;"></i> Julho / Summer / Verão 2017 </p>
-                    <p> <i class="fas fa-umbrella-beach" style="font-size:30px; color:#0099ff;"></i> Julho / Summer / Verão 2016 </p>
-                    <p> <i class="fas fa-umbrella-beach" style="font-size:30px; color:#0099ff;"></i> Julho / Summer / Verão 2015 </p>
+                    <p> <i class="fab fa-ethereum"></i>Julho / Summer / Verão 2018 </p>
+                    <p> <i class="fab fa-ethereum"></i>Julho / Summer / Verão 2017 </p>
+                    <p> <i class="fab fa-ethereum"></i>Julho / Summer / Verão 2016 </p>
+                    <p> <i class="fab fa-ethereum"></i>Julho / Summer / Verão 2015 </p>
                 </div>
                 <div class="col">
-                    <p> <i class="fas fa-apple-alt" style="font-size:30px; color:#e62e00;"></i> Outubro / Fall / Outono 2018 </p>
-                    <p> <i class="fas fa-apple-alt" style="font-size:30px; color:#e62e00;"></i> Outubro / Fall / Outono 2017 </p>
-                    <p> <i class="fas fa-apple-alt" style="font-size:30px; color:#e62e00;"></i> Outubro / Fall / Outono 2016 </p>
-                    <p> <i class="fas fa-apple-alt" style="font-size:30px; color:#e62e00;"></i> Outubro / Fall / Outono 2015 </p>
+                    <p> <i class="fab fa-ethereum"></i>Outubro / Fall / Outono 2018 </p>
+                    <p> <i class="fab fa-ethereum"></i>Outubro / Fall / Outono 2017 </p>
+                    <p> <i class="fab fa-ethereum"></i>Outubro / Fall / Outono 2016 </p>
+                    <p> <i class="fab fa-ethereum"></i>Outubro / Fall / Outono 2015 </p>
                 </div>
             </div>
         </div>

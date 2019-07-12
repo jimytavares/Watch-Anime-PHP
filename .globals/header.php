@@ -1,16 +1,38 @@
+<?php
+session_start();
+
+if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['password']) == true)){
+  
+  unset($_SESSION['login']);
+  unset($_SESSION['password']);
+  header('location:index.php');
+
+}
+ 
+$login = $_SESSION['login'];
+
+?>
 <section style=" overflow: hidden; background-color: transparent; position: ; top: 0; width: 100%; z-index:2; height:60px;">
     
     <div class="row" style="height:;">
         
         <!-- Col 01: Menu -->
-        <div class="col-md-auto" style="background-color:;">
+        <div class="col-md-auto">
             <img src="../../../watch-anime-php/trunk/imagens/titulo.png" style="width:150px; margin-left: 50px; padding-top:5px;" />
         </div>
         
         <!-- Col 02: Logo do Site -->
-        <div class="col" style="background-color:;">
+        <div class="col">
             
-            
+            <div class="col-temporada" style="opacity:0.8;">
+                <a data-toggle="modal" data-target="#exampleModal">
+                    <img src="../../../watch-anime-php/trunk/imagens/temporada-img.png" id="temporada-img"/>
+
+                    <p id="color-nome-temporada" style="padding-top:0px;"> 
+                        <i class="fas fa-umbrella-beach" style="font-size:15px;"></i> Julho / Summer / Verão
+                    </p>
+                </a>
+            </div>
             
         </div>
         
@@ -22,7 +44,7 @@
                     <i class="fas fa-home"></i> Home
                 </div>
                 <div class="col col-perfil">
-                    <i class="fas fa-user-circle"></i> Perfil
+                    <i class="fas fa-user-circle"></i> <?php echo $login; ?>
                 </div>
                 <div class="col col-perfil">
                     <i class="fas fa-chart-area"></i> Ranking
@@ -40,7 +62,7 @@
     </div>
         
         <!-- Linha divisão do menu -->
-        <hr style="width:100%; background-color:white; margin-top:-1px;box-shadow: 1px 3px 10px red;"/>
+        <hr style="width:100%; background-color:white; margin-top:-15px;box-shadow: 1px 3px 10px red;"/>
     
         <!-- MODAL: Temporada -->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

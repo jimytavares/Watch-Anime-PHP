@@ -15,23 +15,23 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 </head>
-<body style="background-image: url('imagens/bg-login.jpg'); background-size: cover;">
+<body style="background-image: url('imagens/bg-login.jpg'); background-size: 100%;">
 
-<section class="lg-index">
-    
-    <div class="row">
+    <section class="lg-index">
 
-        <div class="col">
-            <div class="alert alert-primary" role="alert" style="margin-top: 100px; margin-left:30px;">
-              CLIQUE NO BOTÃO "ENTRAR" PARA LOGAR, NAO PRECISA DE USER NEM PASSWORD AINDA!!!
-            </div>
-        </div>
+        <div class="row">
 
-        <div class="col">
+            <div class="col">
+                <div class="alert alert-primary" role="alert" style="margin-top: 100px; margin-left:30px;">
+                  CLIQUE NO BOTÃO "ENTRAR" PARA LOGAR, NAO PRECISA DE USER NEM PASSWORD AINDA!!!
+              </div>
+          </div>
+
+          <div class="col">
 
             <div class="box-login" style="background-color: white; width:60%; height: 500px; margin-top: 10%; margin-left:5%; border-radius:7px; opacity:0.9;">
                 <div class="box2-login" style="width:80%; margin-left:9%; padding-top:10%;">
-                    
+
                     <div class="row">
                         <div class="col">
                         </div>
@@ -42,17 +42,17 @@
                         </div>
                     </div>
 
-                    <form action="home.php" method="post" autocomplete="off" style="margin-top:20px;">
+                    <form action="logar.php" method="post" autocomplete="on" style="margin-top:20px;">
                         <fieldset>
-                            
+
                             <div class="form-group">
                                 <label for="campoUsuario"><b>Usuário:</b></label>
-                                <input type="text" name ="usuario" class="form-control" autocomplete="off" style="width:100%; border-radius:10px; border:none;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuário">
+                                <input type="text" name ="usuario" class="form-control" autocomplete="on" style="width:100%; border-radius:10px; border:none;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuário">
                             </div>
 
                             <div class="form-group">
                                 <label for="exampleInputPassword1"><b>Senha:</b></label>
-                                <input type="password" name="senha" class="form-control" autocomplete="off" style="width:100%; background-color:white; border-radius:10px; border:none;" id="exampleInputPassword1" placeholder="Senha">
+                                <input type="password" name="senha" class="form-control" autocomplete="on" style="width:100%; background-color:white; border-radius:10px; border:none;" id="exampleInputPassword1" placeholder="Senha">
                                 <small style="color:black;">*Prestar atenção no capslock ativo!</small>
                             </div>
 
@@ -78,11 +78,10 @@
             </div>
 
         </div>
-
     </div>
 
     <!-- MODAL: Novo Usuário -->
-        <div class="modal fade bd-example-modal-lg" id="ModalRegistrar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade bd-example-modal-lg" id="ModalRegistrar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content" style="background-image: url('imagens/fundo.jpg'); background-size:cover;">
 
@@ -95,7 +94,7 @@
 
                 <div class="modal-body" style="width:80%;color:white;margin-left:27%;">
 
-                    <form>
+                    <form action="insertUsuario.php" method="POST">
                         <div>
                             <h5 style="color:white; margin-left:10%;">Cadastro De Usuário</h5><br>
                         </div>
@@ -105,7 +104,7 @@
                                     <label for="exampleInputEmail1">Login: </label>
                                 </div>
                                 <div class="col">
-                                    <input type="email" class="form-control"  style="margin-left:-80%;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Login Do Usuário">
+                                    <input type="text" name="login" required class="form-control"  style="margin-left:-80%;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Login Do Usuário">
                                 </div>
                             </div>
                         </div>
@@ -115,7 +114,7 @@
                                     <label for="exampleInputPassword1">Senha: </label>
                                 </div>
                                 <div class="col">
-                                    <input type="password" class="form-control" style="margin-left:-80%;" id="exampleInputPassword1" placeholder="Sua Senha">
+                                    <input type="password" required name="senha" class="form-control" style="margin-left:-80%;" id="exampleInputPassword1" placeholder="Sua Senha">
                                 </div>
                             </div>
                         </div>
@@ -125,7 +124,18 @@
                                     <label for="exampleInputEmail1">E-Mail: </label>
                                 </div>
                                 <div class="col">
-                                    <input type="email" class="form-control" style="margin-left:-80%;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu E-mail">
+                                    <input type="email" required name="email" class="form-control" style="margin-left:-80%;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu E-mail">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="exampleInputEmail1">Deseja receber notificações pelo e-mail?<br> </label>
+                                </div>
+                                <div class="col">
+                                    <input style="display: inline-grid;" type="radio" checked="checked" name="checkbox" value="1"> Sim <br>
+                                    <input  style="display: inline-grid;" type="radio" name="checkbox" value="0"> Não <br>
                                 </div>
                             </div>
                         </div>
@@ -138,38 +148,46 @@
                     </form>
 
                 </div>
-
-
-
-
-
             </div>
         </div>
     </div>
     
     <!-- MODAL: Esqueci Senha -->
-        <div class="modal fade" id="ModalEsqueciSenha" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Recuperar Senha</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-                
-              <div class="modal-body">
-                ...
-              </div>
-                
-              <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Sair</button>
-              </div>
-                
-            </div>
-          </div>
-        </div>
+
+    <div class="modal fade" id="ModalEsqueciSenha" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+           <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Recuperar Senha</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+
+      <div class="modal-body">
+        ...
+    </div>
+
+    <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Sair</button>
+    </div>
+
+</div>
+</div>
+</div>
+
+<!-- MODAL: error ou sucesso -->
+<?php 
+if(isset($_GET['success'])){
+    ?>
+    <script type="text/javascript">alert('cadastrado com sucesso')</script>
+    <?php
+}elseif(isset($_GET['error'])){
+    ?>
+    <script type="text/javascript">alert('deu algum erro aí mano')</script>
+    <?php
+}
+?>
 
 </section>
 
