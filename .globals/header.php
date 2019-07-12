@@ -3,22 +3,14 @@
     <div class="row" style="height:;">
         
         <!-- Col 01: Menu -->
-        <div class="col-md-auto">
+        <div class="col-md-auto" style="background-color:;">
             <img src="../../../watch-anime-php/trunk/imagens/titulo.png" style="width:150px; margin-left: 50px; padding-top:5px;" />
         </div>
         
         <!-- Col 02: Logo do Site -->
-        <div class="col">
+        <div class="col" style="background-color:;">
             
-            <div class="col-temporada" style="opacity:0.8;">
-                <a data-toggle="modal" data-target="#exampleModal">
-                    <img src="../../../watch-anime-php/trunk/imagens/temporada-img.png" id="temporada-img"/>
-
-                    <p id="color-nome-temporada" style="padding-top:0px;"> 
-                        <i class="fas fa-umbrella-beach" style="font-size:15px;"></i> Julho / Summer / Verão
-                    </p>
-                </a>
-            </div>
+            
             
         </div>
         
@@ -48,7 +40,7 @@
     </div>
         
         <!-- Linha divisão do menu -->
-        <hr style="width:100%; background-color:white; margin-top:-15px;box-shadow: 1px 3px 10px red;"/>
+        <hr style="width:100%; background-color:white; margin-top:-1px;box-shadow: 1px 3px 10px red;"/>
     
         <!-- MODAL: Temporada -->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
