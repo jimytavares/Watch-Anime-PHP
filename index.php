@@ -90,6 +90,8 @@
         </div>
     </div>
 
+    
+
     <!-- MODAL: Novo Usuário -->
     <div class="modal fade bd-example-modal-lg" id="ModalRegistrar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
@@ -185,10 +187,15 @@
 </div>
 </div>
 </div>
-
-
-
 </section>
+
+<!-- MODAL: error ou sucesso -->
+<?php
+if(isset($_GET['success'])){
+    ?><script type="text/javascript">alert('cadastrado com sucesso')</script><?php
+}elseif(isset($_GET['error']) && $_GET['error'] == 'register_wrong'){
+    ?><script type="text/javascript">alert('deu algum erro aí ao tentar cadastrar')</script><?php
+}?>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
