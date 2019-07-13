@@ -1,10 +1,9 @@
 <?php
 session_start();
 
-if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['password']) == true)){
+if((!isset ($_SESSION['login']) == true)){
   
   unset($_SESSION['login']);
-  unset($_SESSION['password']);
   header('location:index.php');
 
 }
@@ -53,7 +52,7 @@ $login = $_SESSION['login'];
                     <i class="fas fa-cannabis"></i> Temporadas
                 </div>
                 <div class="col col-perfil">
-                    <i class="fas fa-sign-out-alt"></i> Logout!
+                    <a href="logout.php"><i class="fas fa-sign-out-alt"></i> Logout!</a>
                 </div>
             </div>
             

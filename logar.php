@@ -9,7 +9,7 @@ if(!empty($usuario) && !empty($senha)){
 	
 	$database = Database::conexao();
 
-	$sql = "SELECT * FROM tb_usuario WHERE username='$usuario' and password='$senha'";
+	$sql = "SELECT * FROM tb_usuario WHERE username='".$usuario."' and password='".$senha."'";
 
 	try{
 
@@ -20,21 +20,19 @@ if(!empty($usuario) && !empty($senha)){
 	}catch(Exception $e){
 		
 		echo "aconteceu algum erro". $e->getMessage();
-	
+
 	}
 
 	if($result){
-		echo "logado";
+		unset($result['password']);
+		session_start();
+		$_SESSION['login'] = $usuario;
+		header('Location: home.php');
 	}else{
-		echo "ta errado aí po";
+		header('Location: index.php?error=wrong');
 	}
 
-	unset($result['password']);
 	
-	session_start();
-	$_SESSION['login'] = $usuario;
-	$_SESSION['password'] = $senha;
-	header('Location: home.php');
 
 }else{
 

@@ -56,6 +56,16 @@
                                 <small style="color:black;">*Prestar atenção no capslock ativo!</small>
                             </div>
 
+                            <?php
+                            if(isset($_GET['error']) && $_GET['error'] == 'wrong'){
+                                echo "
+                                    <div class='form-group'>
+                                        <small style='color:red;'>Usuario ou senha inválido.</small>
+                                    </div>
+                                ";
+                            }
+                            ?>
+
                             <button type="submit" class="btn btn-primary" style="background-image: linear-gradient(to right, #3FC9FE ,#3A7EC7, #2F449C); width:100%; color:white; margin-left: %; border-color:aqua; border-radius:20px;">ENTRAR</button>
 
                             <div class="row" style="margin: 30px auto; max-width: 100%;">
@@ -157,7 +167,7 @@
     <div class="modal fade" id="ModalEsqueciSenha" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-           <div class="modal-header">
+         <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Recuperar Senha</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
@@ -176,18 +186,7 @@
 </div>
 </div>
 
-<!-- MODAL: error ou sucesso -->
-<?php 
-if(isset($_GET['success'])){
-    ?>
-    <script type="text/javascript">alert('cadastrado com sucesso')</script>
-    <?php
-}elseif(isset($_GET['error'])){
-    ?>
-    <script type="text/javascript">alert('deu algum erro aí mano')</script>
-    <?php
-}
-?>
+
 
 </section>
 
