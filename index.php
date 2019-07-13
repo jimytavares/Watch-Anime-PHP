@@ -54,17 +54,14 @@
                                 <label for="exampleInputPassword1"><b>Senha:</b></label>
                                 <input type="password" id="senha" name="senha" class="form-control" autocomplete="on" style="width:100%; background-color:white; border-radius:10px; border:none;" id="exampleInputPassword1" placeholder="Senha">
                                 <small id="capsativo" style="color:red; display: none; padding-top: 15px; text-align: center;">* Caps lock ativo *</small>
+                                <?php
+                                    if(isset($_GET['error']) && $_GET['error'] == 'wrong'){
+                                        echo "<p style='color:red; text-align: center;'>Usuario ou senha inválido.</p>";
+                                    }
+                                ?>
                             </div>
 
-                            <?php
-                            if(isset($_GET['error']) && $_GET['error'] == 'wrong'){
-                                echo "
-                                    <div class='form-group'>
-                                        <small style='color:red;'>Usuario ou senha inválido.</small>
-                                    </div>
-                                ";
-                            }
-                            ?>
+                            
 
                             <button type="submit" class="btn btn-primary" style="background-image: linear-gradient(to right, #3FC9FE ,#3A7EC7, #2F449C); width:100%; color:white; margin-left: %; border-color:aqua; border-radius:20px;">ENTRAR</button>
 
@@ -190,16 +187,9 @@
 </section>
 
 <script type="text/javascript">
-    // Get the input field
 var input = document.getElementById("senha");
-
-// Get the warning text
 var text = document.getElementById("capsativo");
-
-// When the user presses any key on the keyboard, run the function
 input.addEventListener("keyup", function(event) {
-
-  // If "caps lock" is pressed, display the warning text
   if (event.getModifierState("CapsLock")) {
     text.style.display = "block";
   } else {
@@ -208,7 +198,6 @@ input.addEventListener("keyup", function(event) {
 });
 </script>
 
-<!-- MODAL: error ou sucesso -->
 <?php
 if(isset($_GET['success'])){
     ?><script type="text/javascript">alert('cadastrado com sucesso')</script><?php
