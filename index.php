@@ -52,8 +52,8 @@
 
                             <div class="form-group">
                                 <label for="exampleInputPassword1"><b>Senha:</b></label>
-                                <input type="password" name="senha" class="form-control" autocomplete="on" style="width:100%; background-color:white; border-radius:10px; border:none;" id="exampleInputPassword1" placeholder="Senha">
-                                <small style="color:black;">*Prestar atenção no capslock ativo!</small>
+                                <input type="password" id="senha" name="senha" class="form-control" autocomplete="on" style="width:100%; background-color:white; border-radius:10px; border:none;" id="exampleInputPassword1" placeholder="Senha">
+                                <small id="capsativo" style="color:red; display: none; padding-top: 15px; text-align: center;">* Caps lock ativo *</small>
                             </div>
 
                             <?php
@@ -90,7 +90,7 @@
         </div>
     </div>
 
-    
+
 
     <!-- MODAL: Novo Usuário -->
     <div class="modal fade bd-example-modal-lg" id="ModalRegistrar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -188,6 +188,25 @@
 </div>
 </div>
 </section>
+
+<script type="text/javascript">
+    // Get the input field
+var input = document.getElementById("senha");
+
+// Get the warning text
+var text = document.getElementById("capsativo");
+
+// When the user presses any key on the keyboard, run the function
+input.addEventListener("keyup", function(event) {
+
+  // If "caps lock" is pressed, display the warning text
+  if (event.getModifierState("CapsLock")) {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none"
+  }
+});
+</script>
 
 <!-- MODAL: error ou sucesso -->
 <?php
