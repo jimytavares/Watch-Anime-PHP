@@ -22,64 +22,62 @@
         <div class="row">
 
             <div class="col">
-                <div class="alert alert-primary" role="alert" style="margin-top: 100px; margin-left:30px;">
-                  CLIQUE NO BOTÃO "ENTRAR" PARA LOGAR, NAO PRECISA DE USER NEM PASSWORD AINDA!!!
-              </div>
-          </div>
 
-          <div class="col">
+            </div>
 
-            <div class="box-login" style="background-color: white; width:60%; height: 500px; margin-top: 10%; margin-left:5%; border-radius:7px; opacity:0.9;">
-                <div class="box2-login" style="width:80%; margin-left:9%; padding-top:10%;">
+            <div class="col">
 
-                    <div class="row">
-                        <div class="col">
-                        </div>
-                        <div class="col">
-                            <img src="imagens/titulo-black.png" style=""/>
-                        </div>
-                        <div class="col">
-                        </div>
-                    </div>
+                <div class="box-login" style="background-color: white; width:60%; height: 500px; margin-top: 10%; margin-left:5%; border-radius:7px; opacity:0.9;">
+                    <div class="box2-login" style="width:80%; margin-left:9%; padding-top:10%;">
 
-                    <form action="logar.php" method="post" autocomplete="on" style="margin-top:20px;">
-                        <fieldset>
-
-                            <div class="form-group">
-                                <label for="campoUsuario"><b>Usuário:</b></label>
-                                <input type="text" name ="usuario" class="form-control" autocomplete="on" style="width:100%; border-radius:10px; border:none;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuário">
+                        <div class="row">
+                            <div class="col">
                             </div>
-
-                            <div class="form-group">
-                                <label for="exampleInputPassword1"><b>Senha:</b></label>
-                                <input type="password" id="senha" name="senha" class="form-control" autocomplete="on" style="width:100%; background-color:white; border-radius:10px; border:none;" id="exampleInputPassword1" placeholder="Senha">
-                                <small id="capsativo" style="color:red; display: none; padding-top: 15px; text-align: center;">* Caps lock ativo *</small>
-                                <?php
-                                    if(isset($_GET['error']) && $_GET['error'] == 'wrong'){
-                                        echo "<p style='color:red; text-align: center;'>Usuario ou senha inválido.</p>";
-                                    }
-                                ?>
+                            <div class="col">
+                                <img src="imagens/titulo-black.png" style=""/>
                             </div>
+                            <div class="col">
+                            </div>
+                        </div>
 
-                            
+                        <form action="logar.php" method="post" autocomplete="on" style="margin-top:20px;">
+                            <fieldset>
 
-                            <button type="submit" class="btn btn-primary" style="background-image: linear-gradient(to right, #3FC9FE ,#3A7EC7, #2F449C); width:100%; color:white; margin-left: %; border-color:aqua; border-radius:20px;">ENTRAR</button>
-
-                            <div class="row" style="margin: 30px auto; max-width: 100%;">
-                                <div class="col-md-auto">
-                                    <a data-toggle="modal" data-target="#ModalRegistrar"> 
-                                        <button type="submit" class="btn btn-outline-primary" style="border-radius:20px; width:140px;">Registre-se!</button>
-                                    </a>
+                                <div class="form-group">
+                                    <label for="campoUsuario"><b>Usuário:</b></label>
+                                    <input type="text" name ="usuario" class="form-control" autocomplete="on" style="width:100%; border-radius:10px; border:none;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuário">
                                 </div>
-                                <div class="col-md-auto">
-                                    <a data-toggle="modal" data-target="#ModalEsqueciSenha"> 
-                                        <button type="submit" class="btn btn-outline-primary" style="border-radius:20px;">Perdeu a Senha?</button>
-                                    </a>  
+
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1"><b>Senha:</b></label>
+                                    <input type="password" id="senha" name="senha" class="form-control" autocomplete="on" style="width:100%; background-color:white; border-radius:10px; border:none;" id="exampleInputPassword1" placeholder="Senha">
+                                    <small id="capsativo" style="color:red; display: none; padding-top: 15px; text-align: center;">* Caps lock ativo *</small>
+                                    <?php
+                                        if(isset($_GET['error']) && $_GET['error'] == 'wrong'){
+                                            echo "<p style='color:red; text-align: center;'>Usuario ou senha inválido.</p>";
+                                        }
+                                    ?>
                                 </div>
-                            </div>
-                            
-                        </fieldset>
-                    </form>
+
+
+
+                                <button type="submit" class="btn btn-primary" style="background-image: linear-gradient(to right, #3FC9FE ,#3A7EC7, #2F449C); width:100%; color:white; margin-left: %; border-color:aqua; border-radius:20px;">ENTRAR</button>
+
+                                <div class="row" style="margin: 30px auto; max-width: 100%;">
+                                    <div class="col-md-auto">
+                                        <a data-toggle="modal" data-target="#ModalRegistrar">
+                                            <button type="submit" class="btn btn-outline-primary" style="border-radius:20px; width:140px;">Registre-se!</button>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-auto">
+                                        <a data-toggle="modal" data-target="#ModalEsqueciSenha">
+                                            <button type="submit" class="btn btn-outline-primary" style="border-radius:20px;">Perdeu a Senha?</button>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </fieldset>
+                        </form>
 
                 </div>
             </div>
@@ -200,9 +198,9 @@ input.addEventListener("keyup", function(event) {
 
 <?php
 if(isset($_GET['success'])){
-    ?><script type="text/javascript">alert('cadastrado com sucesso')</script><?php
+    ?><script type="text/javascript">alert('Cadastrado com sucesso')</script><?php
 }elseif(isset($_GET['error']) && $_GET['error'] == 'register_wrong'){
-    ?><script type="text/javascript">alert('deu algum erro aí ao tentar cadastrar')</script><?php
+    ?><script type="text/javascript">alert('Deu algum erro aí ao tentar cadastrar, usuário ou endereço de correio eletrônico pertencem ao meu PAI! (OOO PAI oO)')</script><?php
 }?>
 
 <!-- Optional JavaScript -->
