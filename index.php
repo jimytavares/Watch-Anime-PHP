@@ -118,6 +118,16 @@
                         <div class="form-group">
                             <div class="row">
                                 <div class="col">
+                                    <label for="exampleInputEmail1">Nick: </label>
+                                </div>
+                                <div class="col">
+                                    <input type="text" name="nickname" required class="form-control"  style="margin-left:-80%;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nick Do Usuário">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col">
                                     <label for="exampleInputPassword1">Senha: </label>
                                 </div>
                                 <div class="col">

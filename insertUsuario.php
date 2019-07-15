@@ -3,13 +3,14 @@
 $login = $_POST['login'];
 $senha = $_POST['senha'];
 $email = $_POST['email'];
+$nickname = ucfirst($_POST['nickname']);
 $checkbox = $_POST['checkbox'];
 
 if(!empty($login) && !empty($senha) && !empty($email)){
 
 	require_once('.connection/Connection.class.php');
 	$database = Database::conexao();
-	$sql = "INSERT INTO TB_USUARIO VALUES (default, '$login', '$senha', '$email', 2, 1, '$checkbox')";
+	$sql = "INSERT INTO TB_USUARIO VALUES (default, '$login', '$nickname','$senha', '$email', 2, 1, '$checkbox')";
 	
 	try{
 
