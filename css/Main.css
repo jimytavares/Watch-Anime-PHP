@@ -539,3 +539,23 @@ h5 {
 .button-new-user{
     background-color: #4CAF50; border: none; color: white; padding: 16px 32px; text-decoration: none; margin: 4px 2px; cursor: pointer;
 }
+
+/*----------------------------*/
+
+
+    @media screen and (min-width:768px) and (max-width:1366px)
+    {   
+        .index-button{color:; width:;}
+    }
+
+    /*iPhone 6/7/8 Plus*/
+    @media screen and (min-width:414px) and (max-width:736px)
+    {   
+       
+    }
+
+    /*iPad*/
+    @media screen and (min-width:768px) and (max-width:1024px)
+    {   
+       
+    }
