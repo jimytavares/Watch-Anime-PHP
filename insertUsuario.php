@@ -10,7 +10,8 @@ if(!empty($login) && !empty($senha) && !empty($email)){
 
 	require_once('.connection/Connection.class.php');
 	$database = Database::conexao();
-	$sql = "INSERT INTO TB_USUARIO VALUES (default, '$login', '$nickname','$senha', '$email', 2, 1, '$checkbox')";
+	$sql = "INSERT INTO TB_USUARIO (id, username, nickname, password, email, nivel, ativo, notificacao) VALUES (default, '$login', '$nickname', '$senha', '$email', 2, 1, '$checkbox')";
+	
 	
 	try{
 

@@ -4,11 +4,12 @@ session_start();
 if((!isset ($_SESSION['login']) == true)){
   
   unset($_SESSION['login']);
+  unset($_SESSION['nickname']);
   header('location:index.php');
 
 }
  
-$login = $_SESSION['login'];
+$nickname = $_SESSION['nickname'];
 
 ?>
 <section style=" overflow: hidden; background-color: transparent; position: ; top: 0; width: 100%; z-index:2; height:60px;">
@@ -43,7 +44,7 @@ $login = $_SESSION['login'];
                     <i class="fas fa-home"></i> Home
                 </div>
                 <div class="col col-perfil">
-                    <i class="fas fa-user-circle"></i> <?php echo $login; ?>
+                    <i class="fas fa-user-circle"></i> <?php echo $nickname; ?>
                 </div>
                 <div class="col col-perfil">
                     <i class="fas fa-chart-area"></i> Ranking
