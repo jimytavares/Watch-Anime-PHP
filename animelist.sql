@@ -21,8 +21,7 @@ USE `dbanime`;
 DROP TABLE IF EXISTS `tb_animes`;
 CREATE TABLE IF NOT EXISTS `tb_animes` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `id_verificar` int(11) DEFAULT NULL,
-  `id_genero` int(11) DEFAULT NULL,
+  `id_genero` varchar(10) DEFAULT NULL,
   `id_categoria` int(11) DEFAULT NULL,
   `id_temporada` int(11) DEFAULT NULL,
   `nome` varchar(50) DEFAULT NULL,
@@ -36,12 +35,10 @@ CREATE TABLE IF NOT EXISTS `tb_animes` (
   PRIMARY KEY (`id`),
   KEY `FK_id_genero` (`id_genero`),
   KEY `FK_id_categoria` (`id_categoria`),
-  KEY `FK_id_verificar` (`id_verificar`),
   KEY `FK_id_temporada` (`id_temporada`),
   CONSTRAINT `FK_id_categoria` FOREIGN KEY (`id_categoria`) REFERENCES `tb_categoria` (`id`),
   CONSTRAINT `FK_id_genero` FOREIGN KEY (`id_genero`) REFERENCES `tb_genero` (`id`),
-  CONSTRAINT `FK_id_temporada` FOREIGN KEY (`id_temporada`) REFERENCES `tb_temporada` (`id`),
-  CONSTRAINT `FK_id_verificar` FOREIGN KEY (`id_verificar`) REFERENCES `tb_verificar` (`id`)
+  CONSTRAINT `FK_id_temporada` FOREIGN KEY (`id_temporada`) REFERENCES `tb_temporada` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- Copiando dados para a tabela dbanime.tb_animes: ~0 rows (aproximadamente)
@@ -216,6 +213,7 @@ DROP TABLE IF EXISTS `tb_usuario`;
 CREATE TABLE IF NOT EXISTS `tb_usuario` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(50) NOT NULL,
+  `nickname` varchar(25) NOT NULL,
   `password` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
   `nivel` int(11) NOT NULL,
@@ -226,23 +224,18 @@ CREATE TABLE IF NOT EXISTS `tb_usuario` (
 
 -- Copiando dados para a tabela dbanime.tb_usuario: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `tb_usuario` DISABLE KEYS */;
-INSERT INTO `tb_usuario` (`id`, `username`, `password`, `email`, `nivel`, `ativo`, `notificacao`) VALUES
-	(1, 'admim', 'admim', 'admim@admim.com', 1, 1, 1);
+
+INSERT INTO `tb_usuario` (`id`, `username`, `nickname`, `password`, `email`, `nivel`, `ativo`, `notificacao`) VALUES
+(1, 'admin', 'Admin', 'admin', 'admin@admin.com', 1, 1, 1);
+
+ALTER TABLE `tb_usuario`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `uni_email` (`email`) USING BTREE,
+  ADD UNIQUE KEY `uni_username` (`username`) USING BTREE,
+  ADD UNIQUE KEY `uni_nickname` (`nickname`);
+
+
 /*!40000 ALTER TABLE `tb_usuario` ENABLE KEYS */;
-
--- Copiando estrutura para tabela dbanime.tb_verificar
-DROP TABLE IF EXISTS `tb_verificar`;
-CREATE TABLE IF NOT EXISTS `tb_verificar` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `id_usuario` int(11) DEFAULT NULL,
-  `comentario` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- Copiando dados para a tabela dbanime.tb_verificar: ~0 rows (aproximadamente)
-/*!40000 ALTER TABLE `tb_verificar` DISABLE KEYS */;
-/*!40000 ALTER TABLE `tb_verificar` ENABLE KEYS */;
-
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
