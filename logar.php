@@ -1,11 +1,11 @@
 <?php
 
-$usuario = $_POST['usuario'];
-$senha = $_POST['senha'];
+$usuario = $_POST['username'];
+$senha = $_POST['password'];
 
 if(!empty($usuario) && !empty($senha)){
 	
-	require_once('.connection/Connection.class.php');
+	require_once('.connection/conn.class.php');
 	
 	$database = Database::conexao();
 
