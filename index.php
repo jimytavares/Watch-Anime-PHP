@@ -63,10 +63,10 @@
 
                                 <button type="submit" class="btn btn-primary" style="background-image: linear-gradient(to right, #3FC9FE ,#3A7EC7, #2F449C); width:100%; color:white; margin-left: %; border-color:aqua; border-radius:20px;">ENTRAR</button>
 
-                                <div class="row" style="margin: 30px auto; max-width: 100%;">
+                                <div class="row" style="margin: 30px auto; max-width: 100%; margin-left:3px;">
                                     <div class="col-md-auto">
                                         <a data-toggle="modal" data-target="#ModalRegistrar">
-                                            <button type="submit" class="btn btn-outline-primary" style="border-radius:20px; width:140px;">Registre-se!</button>
+                                            <button type="submit" class="btn btn-outline-primary" style="border-radius:20px; width:110px;">Registre-se!</button>
                                         </a>
                                     </div>
                                     <div class="col-md-auto">
