@@ -45,12 +45,12 @@
 
                                 <div class="form-group">
                                     <label for="campoUsuario"><b>Usuário:</b></label>
-                                    <input type="text" name ="usuario" class="form-control" autocomplete="on" style="width:100%; border-radius:10px; border:none;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuário">
+                                    <input type="text" name ="username" class="form-control" autocomplete="on" style="width:100%; border-radius:10px; border:none;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuário">
                                 </div>
 
                                 <div class="form-group">
                                     <label for="exampleInputPassword1"><b>Senha:</b></label>
-                                    <input type="password" id="senha" name="senha" class="form-control" autocomplete="on" style="width:100%; background-color:white; border-radius:10px; border:none;" id="exampleInputPassword1" placeholder="Senha">
+                                    <input type="password" id="senha" name="password" class="form-control" autocomplete="on" style="width:100%; background-color:white; border-radius:10px; border:none;" id="exampleInputPassword1" placeholder="Senha">
                                     <small id="capsativo" style="color:red; display: none; padding-top: 15px; text-align: center;">* Caps lock ativo *</small>
                                     <?php
                                         if(isset($_GET['error']) && $_GET['error'] == 'wrong'){
@@ -131,7 +131,7 @@
                                     <label for="exampleInputPassword1">Senha: </label>
                                 </div>
                                 <div class="col">
-                                    <input type="password" required name="senha" class="form-control" style="margin-left:-80%;" id="exampleInputPassword1" placeholder="Sua Senha">
+                                    <input type="password" required name="password  " class="form-control" style="margin-left:-80%;" id="exampleInputPassword1" placeholder="Sua Senha">
                                 </div>
                             </div>
                         </div>
