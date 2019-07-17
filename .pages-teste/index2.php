@@ -238,6 +238,7 @@
                 <!-- COL 02: Notícias -->
                 <div class="col">
                     
+                    <!--
                     <div class="row" style="background-color:white; width: 70%; border-radius:5px; margin-left:100px; margin-top: 10px;">
                         <div class="col-md-auto">
                             <img src="../../trunk/imagens/graficos/notc.png" style="width:100px; padding-top:10px;"/>
