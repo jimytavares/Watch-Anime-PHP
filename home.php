@@ -32,7 +32,7 @@
 
             <div class="row" style="margin-top: ; margin-left:;">
                 <div class="col-md-auto">
-                    <img src="../../watch-anime-php/trunk/imagens/titulo.png" />
+                    <img src="imagens/titulo.png" />
                 </div>
                 <div class="col">
                     a
@@ -67,16 +67,16 @@
 
             <div class="row" style="margin-left:40px;">
                 <div class="col-md-auto">
-                    <a href="../../trunk/home.php"> <button type="button" class="btn btn-outline-success" style="background-color:#F9F8FD; width:100px; height: 50px; color:white; border-radius:1px;"> <i class="fas fa-home" style="color:black; font-size:25px;"></i> </button> </a>
+                    <a href="home.php"> <button type="button" class="btn btn-outline-success" style="background-color:#F9F8FD; width:100px; height: 50px; color:white; border-radius:1px;"> <i class="fas fa-home" style="color:black; font-size:25px;"></i> </button> </a>
                 </div>
                 <div class="col-md-auto">
-                    <a href="../../watch-anime-php/trunk/.pages/perfil.php">  <button type="button" class="btn btn-outline-success" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Perfil</button> </a>
+                    <a href=".pages/perfil.php">  <button type="button" class="btn btn-outline-success" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Perfil</button> </a>
                 </div>
                 <div class="col-md-auto">
-                    <a href="../../trunk/.pages/temporada.php"> <button type="button" class="btn btn-outline-success" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Temporadas</button> </a>
+                    <a href=".pages/temporada.php"> <button type="button" class="btn btn-outline-success" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Temporadas</button> </a>
                 </div>
                 <div class="col-md-auto">
-                    <a href="../../trunk/.pages/ranking.php"> <button type="button" class="btn btn-outline-success" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Ranking</button> </a>
+                    <a href=".pages/ranking.php"> <button type="button" class="btn btn-outline-success" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Ranking</button> </a>
                 </div>
             </div>
 
@@ -94,7 +94,7 @@
                     <!-- 01 CARD: Assistindo -->
                     <div class="row" style="background-color:white; width:99%; margin-left:5px; margin-top:45px; height:150px; border-radius:5px;">
                         <div class="col-md-auto">
-                            <img src="../../trunk/imagens/logo-table.png" style="width:120px; padding-top:15px;"/>
+                            <img src="imagens/logo-table.png" style="width:120px; padding-top:15px;"/>
                         </div>
                         <div class="col">
                             <h3>Assistindo</h3>
@@ -106,7 +106,7 @@
                     <!-- 02 CARD: Ranking -->
                     <div class="row" style="background-color:white; width:99%; margin-left:5px; margin-top:10px; height:150px; border-radius:5px;">
                         <div class="col-md-auto">
-                            <img src="../../trunk/imagens/logo-table.png" style="width:120px; padding-top:15px;"/>
+                            <img src="imagens/logo-table.png" style="width:120px; padding-top:15px;"/>
                         </div>
                         <div class="col">
                             <h3>Ranking</h3>
@@ -140,12 +140,7 @@
                             <tr id="tr-parados">
                                 <th id="th-parados">Nome</th>
                                 <th id="th-parados">Episódio</th>
-                                <th id="th-parados">Dia</th>
-                                <th id="th-parados">Data Assistido</th>
-                                <th id="th-parados"> Data Prox Ep</th>
-                                <th id="th-parados">Qualidade</th>
-                                <th id="th-parados">Comentário</th>
-                                <th id="th-parados">Nota</th>
+                                <th id="th-parados">Dia Lançamento</th>
                             </tr>
                         </thead>
                         <tbody id="body-table-parados">
@@ -175,7 +170,7 @@
                             <p>Dr.Stone</p>
                         </div>
                         <div class="col">
-                            <img src="../../trunk/imagens/graficos/g1.png" />
+                            <img src="imagens/graficos/g1.png" />
                         </div>
                         <div class="col">
                             <button type="button" class="btn btn-primary btn-sm" style="margin-top: 20px;"> <i class="fas fa-plus"></i> Adicionar</button>
@@ -192,7 +187,7 @@
                             <p>Noragami</p>
                         </div>
                         <div class="col">
-                            <img src="../../trunk/imagens/graficos/g2.png" />
+                            <img src="imagens/graficos/g2.png" />
                         </div>
                         <div class="col">
                             <button type="button" class="btn btn-primary btn-sm" style="margin-top: 20px;"> <i class="fas fa-plus"></i> Adicionar</button>
@@ -209,7 +204,7 @@
                             <p>Katekyo hitman reborn</p>
                         </div>
                         <div class="col">
-                            <img src="../../trunk/imagens/graficos/g3.png" />
+                            <img src="imagens/graficos/g3.png" />
                         </div>
                         <div class="col">
                             <button type="button" class="btn btn-primary btn-sm" style="margin-top: 20px;"> <i class="fas fa-plus"></i> Adicionar</button>
@@ -226,7 +221,7 @@
                             <p>Black Clover</p>
                         </div>
                         <div class="col">
-                            <img src="../../trunk/imagens/graficos/g4.png" />
+                            <img src="imagens/graficos/g4.png" />
                         </div>
                         <div class="col">
                             <button type="button" class="btn btn-primary btn-sm" style="margin-top: 20px;"> <i class="fas fa-plus"></i> Adicionar</button>
@@ -241,26 +236,26 @@
                     <!--
                     <div class="row" style="background-color:white; width: 70%; border-radius:5px; margin-left:100px; margin-top: 10px;">
                         <div class="col-md-auto">
-                            <img src="../../trunk/imagens/graficos/notc.png" style="width:100px; padding-top:10px;"/>
+                            <img src="imagens/graficos/notc.png" style="width:100px; padding-top:10px;"/>
                         </div>
                         <div class="col">
                             <h3>Noticias</h3>
                             
                             <div class="row">
                                 <div class="col">
-                                    <p> <img src="../../trunk/imagens/graficos/line-not-1.png" /> Noticia </p>
+                                    <p> <img src="imagens/graficos/line-not-1.png" /> Noticia </p>
                                 </div>
                                 <div class="col">
-                                    <p> <img src="../../trunk/imagens/graficos/line-not-2.png" /> Noticias Quentes </p>
+                                    <p> <img src="imagens/graficos/line-not-2.png" /> Noticias Quentes </p>
                                 </div>
                             </div>
                             
                             <div class="row">
                                 <div class="col">
-                                    <p> <img src="../../trunk/imagens/graficos/line-not-3.png" /> Novas </p>
+                                    <p> <img src="imagens/graficos/line-not-3.png" /> Novas </p>
                                 </div>
                                 <div class="col">
-                                    <p> <img src="../../trunk/imagens/graficos/line-not-1.png" /> Noticia 01 </p>
+                                    <p> <img src="imagens/graficos/line-not-1.png" /> Noticia 01 </p>
                                 </div>
                             </div>
                         </div>
@@ -269,7 +264,7 @@
                     <!-- Noticia: 01 -->
                     <div class="row" style="background-color:white; width:95%; margin-left: 5px; margin-top:20px;">
                         <div class="col-md-auto">
-                            <img src="../../trunk/imagens/graficos/bar1.png" />
+                            <img src="imagens/graficos/bar1.png" />
                         </div>
                         <div class="col-md-auto">
                             <div class="form-check" style="padding-top:10px;">
@@ -284,7 +279,7 @@
                     <!-- Noticia: 02 -->
                     <div class="row" style="background-color:white; width:95%; margin-left: 5px;">
                         <div class="col-md-auto">
-                            <img src="../../trunk/imagens/graficos/bar2.png" />
+                            <img src="imagens/graficos/bar2.png" />
                         </div>
                         <div class="col-md-auto">
                             <div class="form-check" style="padding-top:10px;">
@@ -299,7 +294,7 @@
                     <!-- Noticia: 03 -->
                     <div class="row" style="background-color:white; width:95%; margin-left: 5px;">
                         <div class="col-md-auto">
-                            <img src="../../trunk/imagens/graficos/bar3.png" />
+                            <img src="imagens/graficos/bar3.png" />
                         </div>
                         <div class="col-md-auto">
                             <div class="form-check" style="padding-top:10px;">
@@ -314,7 +309,7 @@
                     <!-- Noticia: 04 -->
                     <div class="row" style="background-color:white; width:95%; margin-left: 5px;">
                         <div class="col-md-auto">
-                            <img src="../../trunk/imagens/graficos/bar4.png" />
+                            <img src="imagens/graficos/bar4.png" />
                         </div>
                         <div class="col-md-auto">
                             <div class="form-check" style="padding-top:10px;">
@@ -329,7 +324,7 @@
                     <!-- Noticia: 05 -->
                     <div class="row" style="background-color:white; width:95%; margin-left: 5px;">
                         <div class="col-md-auto">
-                            <img src="../../trunk/imagens/graficos/bar1.png" />
+                            <img src="imagens/graficos/bar1.png" />
                         </div>
                         <div class="col-md-auto">
                             <div class="form-check" style="padding-top:10px;">
