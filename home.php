@@ -1,306 +1,378 @@
 <!DOCTYPE HTML>  
 <html>
 <head>
+    
+    <?php  
+        session_start();
+    ?>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Meu CSS -->
     <link href="css/Main.css" rel="stylesheet" type="text/css" media="all"/>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     
-    <style> .cssbb{color: red;} </style>
-    
+    <style>  </style>
+
 </head>
-<body>
+<body style="background-image: linear-gradient(to right, #6424ea,  #ad00b1, #9200c5);">
     
     <!-- SECTION 01: Header 
-    ================================================== -->
-    <section class="" style="background-image: url('imagens/img245.jpg'); background-size:cover;">
-        
-        <?php include ('.globals/header.php'); ?>
-    
-        
-        <div class="container" style="padding-top:30px;">    
-            
-            <!-- Buttons: Actions -->
-            <div class="row">
-                <div class="col create-button-action">
-                    <button type="button" class="btn btn-primary button-action"> <h3> <i class="fas fa-user-circle" style="color:#6ae34f; font-size:40px;"></i> <br/> Seu Perfil</h3> </button>
+    ===================================================== -->
+    <section>
+        <div class="container-fluid" style="width: 95%; margin-top: 30px;">
+
+            <div class="row" style="margin-top: ; margin-left:;">
+                <div class="col-md-auto">
+                    <img src="../../watch-anime-php/trunk/imagens/titulo.png" />
                 </div>
                 <div class="col">
-                    <button type="button" class="btn btn-primary button-action" style="width: 250px; height:190px;"> <h3> <i class="fas fa-table" style="color:#FEDF08; font-size:40px;"></i> <br/> Table Ocult</h3> </button>
+                    a
                 </div>
                 <div class="col">
-                    <button type="button" class="btn btn-primary button-action" style="width: 250px; height:190px;"> <h3> <i class="fas fa-rocket" style="color:#FA7914; font-size:40px;"></i> <br/> Lançamentos </h3> </button>
-                </div>
-                <div class="col">
-                    <button type="button" class="btn btn-primary button-action" style="width: 250px; height:190px;"> <h3> <i class="fas fa-tv" style="color:#33d3ff; font-size:40px;"></i> <br/> Assistir </h3></button>
+
+                    <div class="row" style="margin-left:50%; padding-top:20px;">
+                        <div class="col-md-auto">
+                            <i class="fas fa-home" style="color:white; font-size:25px;"></i>
+                        </div>
+                        <div class="col-md-auto">
+                            <i class="fas fa-chart-area" style="color:white; font-size:25px;"></i>
+                        </div>
+                        <div class="col-md-auto">
+                            <i class="fas fa-cog" style="color:white; font-size:25px;"></i>
+                        </div>
+                        <div class="col-md-auto">
+                            <i class="fas fa-sign-out-alt" style="color:white; font-size:25px;"></i>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            
-            <!-- Noticias do Site -->
-            <div class="row" style="color:white; margin-top:30px;">
-                <div class="col" style="padding-top:40px;">
-                    <h3> <i class="fas fa-newspaper"></i> Noticias</h3>
-                    <p>Acesse a página de noticias e veja comentários dos usuarios referente a cada anime e </p>
-                    <h3> <i class="fas fa-exclamation"></i> Objetivo</h3>
-                    <p>O site é baseado em cadastrar animes que você está assistindo no momento, tendo assim controle do ultimo espisodio que assistiu, datas do próximo eposódio, temporada atual e você poderá da nota ao anime que está assistindo, assim outras pessoas poderá vê o que você achou do anime e seus pontos irão classificalos na tabela de ranking pessoal e global do site.</p>
-                </div>
-                <div class="col" style="background-color:; text-align:center;">
-                    <img src="imagens/gif-index-anime2.gif" style="border-radius:200px; width:350px; height:320px;"/>
-                </div>
-                <div class="col" style="padding-top:60px;">
-                    <h3> <i class="fas fa-user-circle"></i> Seu Perfil</h3>
-                    <p>Você pode ter acesso ao seu perfil, </p>
-                    <h3> <i class="fas fa-cannabis"></i> Temporadas</h3>
-                    <p>Acesse a página de temporadas e veja todos os animes das temporadas atuais e das próxima, podendo adicionalas a sua lista de espera para próxima temporada ou para animes que você está assistindo no momento.</p>
-                </div>
-            </div>
-        
-            <!-- Input: Cadastro Anime Assistindo -->
-            
-            <!--      <div class="" style="color:white; height: 150px; border-radius:20px; opacity:0.9; background-image: linear-gradient(to right, #3FC9FE ,#3A7EC7, #2F449C, #2F449C); margin-top:50px;">
-                    <form action="control/insertproxtemporada.php" method="post" style="padding-top:22px; margin-left:15px;">
-                        <div class="row" id="row-input-parados2">
-                            <div class="col-2">
-                                <label for="inputEmail4">Nome:</label>
-                                <input type="text" class="form-control" name="nome" placeholder="Anime Name" required>
-                            </div>
-                            <div class="col-2">
-                                <label for="inputEmail4">Data Estreia:</label>
-                                <input type="text" class="form-control" name="estreia" placeholder="Estreia" required>
-                            </div>
-                            <div class="col-2">
-                                <label for="inputEmail4">Temporada:</label>
-                                <input type="text" class="form-control" name="temporada" placeholder="Temporada">
-                            </div>
-                            <div class="col-2">
-                                <label for="inputEmail4">Sinopse:</label>
-                                <input type="text" class="form-control" name="sinopse" placeholder="Sobre">
-                            </div>
-                            <div class="col-2">
-                                <label for="inputEmail4">Link Trailer:</label>
-                                <input type="text" class="form-control" name="trailer" placeholder="Link do Trailer">
-                            </div>
-                            <div class="col-1">
-                                <label for="inputEmail4">Nota:</label>
-                                <input type="text" class="form-control" name="nota" placeholder="Nota">
-                            </div>
-                            <div class="col-1">
-                                <label for="inputEmail4">Save</label>
-                                <button type="submit" class="btn btn-dark btn-animeproxtemp"> <i class="fas fa-save" id="icon-save-parados"></i></button>
-                            </div>
-                        </div>
-                    </form>
-                </div>-->
-            
-            <!-- Title Table: Icons and Title Table -->
-            <div class="container" style="margin-top: 50px; color:white; background-image: linear-gradient(to right, #3FC9FE ,#3A7EC7, #2F449C); border-color: red; height:50px; width:90%; border-radius:5px; box-shadow: 1px 3px 10px #000000; text-align:center;">
-                    <div class="row" style="padding-top:15px;">
-                        <div class="col">
-                            <i class="far fa-calendar-alt" id="icon-table-assist" data-toggle="modal" data-target="#modaldataassistido"></i>
-                            <i class="fas fa-info-circle" id="icon-table-assist" data-toggle="modal" data-target="#modalinfo" style="margin-left:30px;"></i> 
-                        </div>
-                        <div class="col">
-                            <b>Animes Assistindo</b>
-                        </div>
-                        <div class="col">
-                            <i class='far fa-edit' data-toggle="modal" data-target="#modaleditdel" style='color:#ff66d9; font-size: 20px;'></i>
-                            <i class='fas fa-trash-alt' data-toggle="modal" data-target="#modaleditdel" style='font-size:20px; color:#EE5253;margin-left:30px;'></i>
-                        </div>
-                    </div>
-                </div>
 
-            <!-- Input: Cadastro Anime Assistindo -->
-
-            <!-- <form action="control/insertassistindo.php" method="post">
-                <div class="row" id="row-input-parados">
-                    <div class="col-2">
-                        <label for="inputEmail1">Nome:</label>
-                        <input type="text" class="form-control input-parados" name="nome" id="inputEmail1" placeholder="Anime Name" required>
-                    </div>
-                    <div class="col-2">
-                        <label for="inputEmail2">Episódio:</label>
-                        <input type="text" class="form-control input-parados" name="episodio" id="inputEmail2" placeholder="Episode Watched" required>
-                    </div>
-                    <div class="col-2">
-                        <label for="inputEmail3">Data Assistida ¹:</label>
-                        <input type="text" class="form-control input-parados" name="dataassistido"  id="inputEmail3" placeholder="Watched Date">
-                    </div>
-                    <div class="col-2">
-                        <label for="inputEmail4">Dia ¹:</label>
-                        <input type="text" class="form-control input-parados" name="diasemana"  id="inputEmail4" placeholder="Day Watched">
-                    </div>
-                    <div class="col-2">
-                        <label for="inputEmail5">Data Próximo Ep ²:</label>
-                        <input type="text" class="form-control input-parados" name="dataproxep"  id="inputEmail5"  placeholder="Date New Ep">
-                    </div>
-                    <div class="col-2">
-                        <label for="inputEmail6">Dia ²:</label>
-                        <input type="text" class="form-control input-parados" name="diasemanaproxep" id="inputEmail6" placeholder="Dia Prox Ep">
-                    </div>
-                    <div class="col-2">
-                        <label for="inputEmail7">Qualidade:</label>
-                        <input type="text" class="form-control input-parados" name="qualidade" id="inputEmail7" placeholder="Quality">
-                    </div>
-                    <div class="col-2">
-                        <label for="inputEmail8">Comentario:</label>
-                        <input type="text" class="form-control input-parados" name="comentario" id="inputEmail8" placeholder="Coment">
-                    </div>
-                    <div class="col-2">
-                        <label for="inputEmail9">Nota:</label>
-                        <input type="text" class="form-control input-parados" name="nota" id="inputEmail9" placeholder="Star">
-                    </div>
-                </div>
-
-                <button type="submit" class="btn btn-dark button-salvar-parados"> <i class="fas fa-save" id="icon-save-parados"></i> Save</button>
-            </form>-->
-
-
-            <!-- Table: Animes Assistindo -->
-            <table class="table table-sm" style="margin-top: -1px;">
-                    <thead>
-                        <tr id="tr-parados">
-                            <th id="th-parados">Nome</th>
-                            <th id="th-parados">Episódio</th>
-                            <th id="th-parados">Dia</th>
-                            <th id="th-parados">Data Assistido</th>
-                            <th id="th-parados"> Data Prox Ep</th>
-                            <th id="th-parados">Qualidade</th>
-                            <th id="th-parados">Comentário</th>
-                            <th id="th-parados">Nota</th>
-                        </tr>
-                    </thead>
-                    <tbody id="body-table-parados">
-                        <?php include_once('control/selectAssistindo.php'); ?>
-                    </tbody>
-            </table>
-            
-            
-                    <!-- Modal: Data Assistido e Data Próximo Episódio -->
-                    <div class="modal fade bd-example-modal-lg" id="modaldataassistido" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                      <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle"> <i class="far fa-calendar-alt"></i> Data e Dia dos Episódios Assistidos</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-
-
-                               <table class="table table-sm" style="margin-top:20px;">
-                                    <thead>
-                                        <tr id="tr-parados">
-                                        <th id="th-parados">ID</th>
-                                        <th id="th-parados">Nome Anime</th>
-                                        <th id="th-parados">Dia Assistido</th>
-                                        <th id="th-parados">Data Assistido</th>
-                                        <th id="th-parados">Dia Semana Prox Ep</th>
-                                        <th id="th-parados">Data Prox Ep</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="body-table-parados">
-                                        <?php include ('control/selectAssistindoDias.php'); ?>
-                                    </tbody>
-                                </table>
-
-
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Modal: Informações -->
-                    <div class="modal fade bd-example-modal-lg" id="modalinfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                      <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle"> <i class="fas fa-info-circle" id="icon-table-assist"></i>  Informações</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-
-
-                               INo
-
-
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-            
-                    <!-- Modal: Editar e Excluir -->
-                    <div class="modal fade bd-example-modal-lg" id="modaleditdel" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                      <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle"> <i class="far fa-calendar-alt"></i> Data e Dia dos Episódios Assistidos</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-
-
-                               <table class="table table-sm" style="margin-top:20px;">
-                                    <thead>
-                                        <tr id="tr-parados">
-                                        <th id="th-parados">ID</th>
-                                        <th id="th-parados">Anime</th>
-                                        <th id="th-parados">Editar</th>
-                                        <th id="th-parados">Excluir</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="body-table-parados">
-                                        <?php include ('control/selectEditDel.php'); ?>
-                                    </tbody>
-                                </table>
-
-
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-            
         </div>
     </section>
-        
-        
-    
-        <!-- LINHA: Divisão de Sectons -->
-        <div class="" id="linha-divisao-section">
-            .
-        </div>
-    
-    <?php include ('.globals/footer.php'); ?>
 
+    <!-- SECTION 02: Botões de Ação
+    ===================================================== -->
+    <sectcion>
+        <div class="container-fluid" style="width: 95%; margin-top:30px;">
+
+            <div class="row" style="margin-left:40px;">
+                <div class="col-md-auto">
+                    <a href="../../trunk/home.php"> <button type="button" class="btn btn-outline-success" style="background-color:#F9F8FD; width:100px; height: 50px; color:white; border-radius:1px;"> <i class="fas fa-home" style="color:black; font-size:25px;"></i> </button> </a>
+                </div>
+                <div class="col-md-auto">
+                    <a href="../../watch-anime-php/trunk/.pages/perfil.php">  <button type="button" class="btn btn-outline-success" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Perfil</button> </a>
+                </div>
+                <div class="col-md-auto">
+                    <a href="../../trunk/.pages/temporada.php"> <button type="button" class="btn btn-outline-success" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Temporadas</button> </a>
+                </div>
+                <div class="col-md-auto">
+                    <a href="../../trunk/.pages/ranking.php"> <button type="button" class="btn btn-outline-success" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Ranking</button> </a>
+                </div>
+            </div>
+
+        </div>
+    </sectcion>
+
+    <!-- SECTION ALL BODY
+    ===================================================== -->
+    <section class="container-fluid" style="background-color:#eeebf9;width: 95%; margin-top: 0px; height:1000px; border-radius:5px;">
+
+            <div class="row" style="padding-top: 20px; width:99%; margin-left:8px;">
+
+                <div class="col-4">
+                    
+                    <!-- 01 CARD: Assistindo -->
+                    <div class="row" style="background-color:white; width:99%; margin-left:5px; margin-top:45px; height:150px; border-radius:5px;">
+                        <div class="col-md-auto">
+                            <img src="../../trunk/imagens/logo-table.png" style="width:120px; padding-top:15px;"/>
+                        </div>
+                        <div class="col">
+                            <h3>Assistindo</h3>
+                            <p>Aqui você pode cadastrar todos os animes que está assistindo no momento.</p>
+                            <button type="button" class="btn btn-success btn-sm" style="width:200px; margin-left: 60px;">Cadastrar</button>
+                        </div>
+                    </div>
+                    
+                    <!-- 02 CARD: Ranking -->
+                    <div class="row" style="background-color:white; width:99%; margin-left:5px; margin-top:10px; height:150px; border-radius:5px;">
+                        <div class="col-md-auto">
+                            <img src="../../trunk/imagens/logo-table.png" style="width:120px; padding-top:15px;"/>
+                        </div>
+                        <div class="col">
+                            <h3>Ranking</h3>
+                            <p>Aqui você pode cadastrar todos os animes que está assistindo no momento.</p>
+                            <button type="button" class="btn btn-primary btn-sm" style="background-color: #6D6CC7; width:200px; margin-left: 60px;">Cadastrar</button>
+                        </div>
+                    </div>
+                
+                </div>
+                
+                <div class="col-8">
+
+                    <div class="container" style="margin-top: 50px; color:white; background-image: linear-gradient(to right, #3FC9FE ,#3A7EC7, #2F449C); border-color: red; height:50px; width:90%; border-radius:5px; box-shadow: 1px 3px 10px #000000; text-align:center;">
+                        <div class="row" style="padding-top:15px;">
+                            <div class="col">
+                                <i class="far fa-calendar-alt" id="icon-table-assist" data-toggle="modal" data-target="#modaldataassistido"></i>
+                                <i class="fas fa-info-circle" id="icon-table-assist" data-toggle="modal" data-target="#modalinfo" style="margin-left:30px;"></i> 
+                            </div>
+                            <div class="col">
+                                <b>Animes Assistindo</b>
+                            </div>
+                            <div class="col">
+                                <i class='far fa-edit' data-toggle="modal" data-target="#modaleditdel" style='color:#ff66d9; font-size: 20px;'></i>
+                                <i class='fas fa-trash-alt' data-toggle="modal" data-target="#modaleditdel" style='font-size:20px; color:#EE5253;margin-left:30px;'></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <table class="table table-sm" style="margin-top: -1px;">
+                        <thead>
+                            <tr id="tr-parados">
+                                <th id="th-parados">Nome</th>
+                                <th id="th-parados">Episódio</th>
+                                <th id="th-parados">Dia</th>
+                                <th id="th-parados">Data Assistido</th>
+                                <th id="th-parados"> Data Prox Ep</th>
+                                <th id="th-parados">Qualidade</th>
+                                <th id="th-parados">Comentário</th>
+                                <th id="th-parados">Nota</th>
+                            </tr>
+                        </thead>
+                        <tbody id="body-table-parados">
+                            <?php include_once('control/selectAssistindo.php'); ?>
+                        </tbody>
+                    </table>
+                    
+                </div>
+
+            </div>
+                
+                <!-- hr division -->    
+                <hr style="background-color:black; box-shadow: 1px 3px 10px black;"/>
+
+            <div class="row" style="padding-top: 20px; width:99%; margin-left:8px;">
+                
+                <!-- COL 01: Graficos ADD Animes -->
+                <div class="col">
+                    
+                    <!-- Anime 01 Grafico -->
+                    <div class="row" style="background-color:white; border-radius: 5px; width:95%; margin-left: 10px;">
+                        <div class="col">
+                            IMG
+                        </div>
+                        <div class="col">
+                            <h3>Dr.Stone</h3>
+                            <p>Dr.Stone</p>
+                        </div>
+                        <div class="col">
+                            <img src="../../trunk/imagens/graficos/g1.png" />
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-primary btn-sm" style="margin-top: 20px;"> <i class="fas fa-plus"></i> Adicionar</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Anime 02 Grafico -->
+                    <div class="row" style="background-color:white; border-radius: 5px; width:95%; margin-left: 10px; margin-top:5px;">
+                        <div class="col">
+                            IMG
+                        </div>
+                        <div class="col">
+                            <h3>Noragami</h3>
+                            <p>Noragami</p>
+                        </div>
+                        <div class="col">
+                            <img src="../../trunk/imagens/graficos/g2.png" />
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-primary btn-sm" style="margin-top: 20px;"> <i class="fas fa-plus"></i> Adicionar</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Anime 03 Grafico -->
+                    <div class="row" style="background-color:white; border-radius: 5px; width:95%; margin-left: 10px; margin-top:5px;">
+                        <div class="col">
+                            IMG
+                        </div>
+                        <div class="col">
+                            <h3>Katekyo hitman reborn</h3>
+                            <p>Katekyo hitman reborn</p>
+                        </div>
+                        <div class="col">
+                            <img src="../../trunk/imagens/graficos/g3.png" />
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-primary btn-sm" style="margin-top: 20px;"> <i class="fas fa-plus"></i> Adicionar</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Anime 04 Grafico -->
+                    <div class="row" style="background-color:white; border-radius: 5px; width:95%; margin-left: 10px; margin-top:5px;">
+                        <div class="col">
+                            IMG
+                        </div>
+                        <div class="col">
+                            <h3>Black Clover</h3>
+                            <p>Black Clover</p>
+                        </div>
+                        <div class="col">
+                            <img src="../../trunk/imagens/graficos/g4.png" />
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-primary btn-sm" style="margin-top: 20px;"> <i class="fas fa-plus"></i> Adicionar</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- COL 02: Notícias -->
+                <div class="col">
+                    
+                    <!--
+                    <div class="row" style="background-color:white; width: 70%; border-radius:5px; margin-left:100px; margin-top: 10px;">
+                        <div class="col-md-auto">
+                            <img src="../../trunk/imagens/graficos/notc.png" style="width:100px; padding-top:10px;"/>
+                        </div>
+                        <div class="col">
+                            <h3>Noticias</h3>
+                            
+                            <div class="row">
+                                <div class="col">
+                                    <p> <img src="../../trunk/imagens/graficos/line-not-1.png" /> Noticia </p>
+                                </div>
+                                <div class="col">
+                                    <p> <img src="../../trunk/imagens/graficos/line-not-2.png" /> Noticias Quentes </p>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col">
+                                    <p> <img src="../../trunk/imagens/graficos/line-not-3.png" /> Novas </p>
+                                </div>
+                                <div class="col">
+                                    <p> <img src="../../trunk/imagens/graficos/line-not-1.png" /> Noticia 01 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Noticia: 01 -->
+                    <div class="row" style="background-color:white; width:95%; margin-left: 5px; margin-top:20px;">
+                        <div class="col-md-auto">
+                            <img src="../../trunk/imagens/graficos/bar1.png" />
+                        </div>
+                        <div class="col-md-auto">
+                            <div class="form-check" style="padding-top:10px;">
+                              <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                            </div>
+                        </div>
+                        <div class="col" style="padding-top:10px;">
+                            <p>Alguma noticia de algum anime, para mostrar alguma coisa que deve ter coisa pra mostrar.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Noticia: 02 -->
+                    <div class="row" style="background-color:white; width:95%; margin-left: 5px;">
+                        <div class="col-md-auto">
+                            <img src="../../trunk/imagens/graficos/bar2.png" />
+                        </div>
+                        <div class="col-md-auto">
+                            <div class="form-check" style="padding-top:10px;">
+                              <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                            </div>
+                        </div>
+                        <div class="col" style="padding-top:10px;">
+                            <p>Alguma noticia de algum anime, para mostrar alguma coisa que deve ter coisa pra mostrar.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Noticia: 03 -->
+                    <div class="row" style="background-color:white; width:95%; margin-left: 5px;">
+                        <div class="col-md-auto">
+                            <img src="../../trunk/imagens/graficos/bar3.png" />
+                        </div>
+                        <div class="col-md-auto">
+                            <div class="form-check" style="padding-top:10px;">
+                              <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                            </div>
+                        </div>
+                        <div class="col" style="padding-top:10px;">
+                            <p>Alguma noticia de algum anime, para mostrar alguma coisa que deve ter coisa pra mostrar.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Noticia: 04 -->
+                    <div class="row" style="background-color:white; width:95%; margin-left: 5px;">
+                        <div class="col-md-auto">
+                            <img src="../../trunk/imagens/graficos/bar4.png" />
+                        </div>
+                        <div class="col-md-auto">
+                            <div class="form-check" style="padding-top:10px;">
+                              <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                            </div>
+                        </div>
+                        <div class="col" style="padding-top:10px;">
+                            <p>Alguma noticia de algum anime, para mostrar alguma coisa que deve ter coisa pra mostrar.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Noticia: 05 -->
+                    <div class="row" style="background-color:white; width:95%; margin-left: 5px;">
+                        <div class="col-md-auto">
+                            <img src="../../trunk/imagens/graficos/bar1.png" />
+                        </div>
+                        <div class="col-md-auto">
+                            <div class="form-check" style="padding-top:10px;">
+                              <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                            </div>
+                        </div>
+                        <div class="col" style="padding-top:10px;">
+                            <p>Alguma noticia de algum anime, para mostrar alguma coisa que deve ter coisa pra mostrar.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        
+    </section>
     
     
     
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    
+    
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     
 </body>
 </html>
+                <!-- CARD: Geral
+                    <div class="card-geral" style="width:95%; margin-top:30px; height: 250px; background-image: url('../imagens/bg-index2.png'); background-size:cover; border-radius:5px;">
+
+                    <!-- LINHA: Dentro do Card
+                    <div class="row" style="width: 100%; margin-left: -90px; padding-top: 10px; height:95%;">
+
+                    <div class="col-md-auto" style="background-color:;">
+                    <img src="../imagens/user.jpg" style="border-radius:100px; width: 150px; padding-top: 40px;"/>
+                    </div>
+
+                    <div class="col" style="background-color:blue;">
+                    <?php echo $_SESSION['login'] ?>
+                    </div>
+
+                    </div>
+                </div>-->
