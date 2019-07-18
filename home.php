@@ -64,7 +64,8 @@
             </div>
         
             <!-- Input: Cadastro Anime Assistindo -->
-          <!--      <div class="" style="color:white; height: 150px; border-radius:20px; opacity:0.9; background-image: linear-gradient(to right, #3FC9FE ,#3A7EC7, #2F449C, #2F449C); margin-top:50px;">
+            
+            <!--      <div class="" style="color:white; height: 150px; border-radius:20px; opacity:0.9; background-image: linear-gradient(to right, #3FC9FE ,#3A7EC7, #2F449C, #2F449C); margin-top:50px;">
                     <form action="control/insertproxtemporada.php" method="post" style="padding-top:22px; margin-left:15px;">
                         <div class="row" id="row-input-parados2">
                             <div class="col-2">
@@ -180,6 +181,8 @@
                         <?php include_once('control/selectAssistindo.php'); ?>
                     </tbody>
             </table>
+            
+            
                     <!-- Modal: Data Assistido e Data Próximo Episódio -->
                     <div class="modal fade bd-example-modal-lg" id="modaldataassistido" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                       <div class="modal-dialog modal-lg" role="document">
