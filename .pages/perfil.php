@@ -151,22 +151,26 @@
                     <button type="button" class="btn btn-outline-primary btn-sm" style="color:black; font-weight: bold;"> <i class="fas fa-users" style="color:#003366; font-size: 20px;"></i> Amigos</button> &nbsp &nbsp
             </div>
             
-            <!-- LINHA 03: Botões de ação usuário -->
+            <!-- LINHA 04: Botões de ação usuário -->
             <div class="" style="margin-top:10px; margin-left: 20px;">
-                <button type="button" class="btn btn-outline-primary btn-sm" style="color:black; font-weight: bold;"> <i class="fas fa-user-circle" style="color:#e000c7; font-size: 20px;"></i> Trocar Nome</button> &nbsp &nbsp
-                <button type="button" class="btn btn-outline-primary btn-sm" style="color:black; font-weight: bold;"> <i class="fas fa-key" style="color:#00ace6; font-size: 20px;"></i> Trocar Senha</button> &nbsp &nbsp
-                <button type="button" class="btn btn-outline-primary btn-sm" style="color:black; font-weight: bold;"> <i class="fas fa-key" style="color:#00ace6; font-size: 20px;"></i> Trocar E-Mail</button> &nbsp &nbsp
+                <button type="button" class="btn btn-outline-primary btn-sm" style="color:black; font-weight: bold;"> <i class="fas fa-user-circle" style="color:#e000c7; font-size: 20px;"></i> Trocar Nick</button> &nbsp &nbsp
+                <button type="button" class="btn btn-outline-primary btn-sm" style="color:black; font-weight: bold;"> <i class="fas fa-key" style="color:#db8780; font-size: 20px;"></i> Trocar Senha</button> &nbsp &nbsp
+                <button type="button" class="btn btn-outline-primary btn-sm" style="color:black; font-weight: bold;"> <i class="fas fa-at" style="color:#00ace6; font-size: 20px;"></i> Trocar E-Mail</button> &nbsp &nbsp
                 <button type="button" class="btn btn-outline-primary btn-sm" style="color:black; font-weight: bold;"> <i class="fas fa-cog" style="color:#3e1a61; font-size: 20px;"></i> Configurações</button> &nbsp &nbsp
             </div>
             
         </div>
         
         <!--#### ROW GERAL 02: Animes ####-->
-        <div class="" style="background-color:white; width: 99%; margin-left:5px; margin-top:20px; border-radius:5px; height:230px;">
-        
-            
-        
+        <div class="row" style="width:99%; margin-left:4px; margin-top:15px; height: 230px;">
+            <div class="col" style="background-color:white; border-radius:3px;">
+                a
+            </div>
+            <div class="col" style="background-color:white; margin-left:10px; border-radius:3px;">
+                b
+            </div>
         </div>
+            
         
     </section>
     
