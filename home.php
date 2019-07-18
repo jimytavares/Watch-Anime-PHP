@@ -50,7 +50,7 @@
                             <i class="fas fa-cog" style="color:white; font-size:25px;"></i>
                         </div>
                         <div class="col-md-auto">
-                            <i class="fas fa-sign-out-alt" style="color:white; font-size:25px;"></i>
+                            <a href="logout.php"><i class="fas fa-sign-out-alt" style="color:white; font-size:25px;"></i></a>
                         </div>
                     </div>
 
