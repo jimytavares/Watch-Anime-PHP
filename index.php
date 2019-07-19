@@ -1,7 +1,15 @@
+<?php 
+session_start();
+
+if(isset($_SESSION['login'])){
+    header('Location: home.php');
+}
+?>
+
 <!DOCTYPE HTML>
 <html>
 <head>
-    
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -53,9 +61,9 @@
                                     <input type="password" id="senha" name="password" class="form-control" autocomplete="on" style="width:100%; background-color:white; border-radius:10px; border:none;" id="exampleInputPassword1" placeholder="Senha">
                                     <small id="capsativo" style="color:red; display: none; padding-top: 15px; text-align: center;">* Caps lock ativo *</small>
                                     <?php
-                                        if(isset($_GET['error']) && $_GET['error'] == 'wrong'){
-                                            echo "<p style='color:red; text-align: center;'>Usuario ou senha inválido.</p>";
-                                        }
+                                    if(isset($_GET['error']) && $_GET['error'] == 'wrong'){
+                                        echo "<p style='color:red; text-align: center;'>Usuario ou senha inválido.</p>";
+                                    }
                                     ?>
                                 </div>
 
@@ -79,130 +87,130 @@
                             </fieldset>
                         </form>
 
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-
-    <!-- MODAL: Novo Usuário -->
-    <div class="modal fade bd-example-modal-lg" id="ModalRegistrar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content" style="background-image: url('imagens/fundo.jpg'); background-size:cover;">
-
-                <div class="modal-header">
-                    <h3 class="modal-title" style="color:white; margin-left:30%">Criando Conta: Anime</h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                    </div>
                 </div>
 
-                <div class="modal-body" style="width:80%;color:white;margin-left:27%;">
-
-                    <form action="insertUsuario.php" method="POST">
-                        <div>
-                            <h5 style="color:white; margin-left:10%;">Cadastro De Usuário</h5><br>
-                        </div>
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col">
-                                    <label for="exampleInputEmail1">Login: </label>
-                                </div>
-                                <div class="col">
-                                    <input type="text" name="login" required class="form-control"  style="margin-left:-80%;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Login Do Usuário">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col">
-                                    <label for="exampleInputEmail1">Nick: </label>
-                                </div>
-                                <div class="col">
-                                    <input type="text" name="nickname" required class="form-control"  style="margin-left:-80%;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nick Do Usuário">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col">
-                                    <label for="exampleInputPassword1">Senha: </label>
-                                </div>
-                                <div class="col">
-                                    <input type="password" required name="password  " class="form-control" style="margin-left:-80%;" id="exampleInputPassword1" placeholder="Sua Senha">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col">
-                                    <label for="exampleInputEmail1">E-Mail: </label>
-                                </div>
-                                <div class="col">
-                                    <input type="email" required name="email" class="form-control" style="margin-left:-80%;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu E-mail">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col">
-                                    <label for="exampleInputEmail1">Deseja receber notificações pelo e-mail?<br> </label>
-                                </div>
-                                <div class="col">
-                                    <input style="display: inline-grid;" type="radio" checked="checked" name="checkbox" value="1"> Sim <br>
-                                    <input  style="display: inline-grid;" type="radio" name="checkbox" value="0"> Não <br>
-                                </div>
-                            </div>
-                        </div>
-                        <div style="margin-left: 90px;">
-                            <input  type="Submit"  class="btn btn-success" value="Cadastrar" name="btnenviar" >
-                            <input type="reset" class="btn btn-light"  value="Limpar" name="btnlimpar">
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">Sair</button>
-                            <!--<a href="index.html"><input type="button" name="Voltar" value="Voltar" ></a>-->
-                        </div>
-                    </form>
-
-                </div>
             </div>
         </div>
+
+
+
+        <!-- MODAL: Novo Usuário -->
+        <div class="modal fade bd-example-modal-lg" id="ModalRegistrar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content" style="background-image: url('imagens/fundo.jpg'); background-size:cover;">
+
+                    <div class="modal-header">
+                        <h3 class="modal-title" style="color:white; margin-left:30%">Criando Conta: Anime</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body" style="width:80%;color:white;margin-left:27%;">
+
+                        <form action="insertUsuario.php" method="POST">
+                            <div>
+                                <h5 style="color:white; margin-left:10%;">Cadastro De Usuário</h5><br>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="exampleInputEmail1">Login: </label>
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" name="login" required class="form-control"  style="margin-left:-80%;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Login Do Usuário">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="exampleInputEmail1">Nick: </label>
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" name="nickname" required class="form-control"  style="margin-left:-80%;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nick Do Usuário">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="exampleInputPassword1">Senha: </label>
+                                    </div>
+                                    <div class="col">
+                                        <input type="password" required name="password  " class="form-control" style="margin-left:-80%;" id="exampleInputPassword1" placeholder="Sua Senha">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="exampleInputEmail1">E-Mail: </label>
+                                    </div>
+                                    <div class="col">
+                                        <input type="email" required name="email" class="form-control" style="margin-left:-80%;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu E-mail">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="exampleInputEmail1">Deseja receber notificações pelo e-mail?<br> </label>
+                                    </div>
+                                    <div class="col">
+                                        <input style="display: inline-grid;" type="radio" checked="checked" name="checkbox" value="1"> Sim <br>
+                                        <input  style="display: inline-grid;" type="radio" name="checkbox" value="0"> Não <br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-left: 90px;">
+                                <input  type="Submit"  class="btn btn-success" value="Cadastrar" name="btnenviar" >
+                                <input type="reset" class="btn btn-light"  value="Limpar" name="btnlimpar">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Sair</button>
+                                <!--<a href="index.html"><input type="button" name="Voltar" value="Voltar" ></a>-->
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL: Esqueci Senha -->
+
+        <div class="modal fade" id="ModalEsqueciSenha" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+             <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Recuperar Senha</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+
+          <div class="modal-body">
+            ...
+        </div>
+
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Sair</button>
+        </div>
+
     </div>
-    
-    <!-- MODAL: Esqueci Senha -->
-
-    <div class="modal fade" id="ModalEsqueciSenha" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-         <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Recuperar Senha</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-          </button>
-      </div>
-
-      <div class="modal-body">
-        ...
-    </div>
-
-    <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Sair</button>
-    </div>
-
-</div>
 </div>
 </div>
 </section>
 
 <script type="text/javascript">
-var input = document.getElementById("senha");
-var text = document.getElementById("capsativo");
-input.addEventListener("keyup", function(event) {
-  if (event.getModifierState("CapsLock")) {
-    text.style.display = "block";
-  } else {
-    text.style.display = "none"
-  }
+    var input = document.getElementById("senha");
+    var text = document.getElementById("capsativo");
+    input.addEventListener("keyup", function(event) {
+      if (event.getModifierState("CapsLock")) {
+        text.style.display = "block";
+    } else {
+        text.style.display = "none"
+    }
 });
 </script>
 
