@@ -28,38 +28,7 @@
     
     <!-- SECTION 01: Header 
     ===================================================== -->
-    <section>
-        <div class="container-fluid" style="width: 95%; margin-top: 30px;">
-
-            <div class="row" style="margin-top: ; margin-left:;">
-                <div class="col-md-auto">
-                    <img src="../../trunk/imagens/titulo.png" />
-                </div>
-                <div class="col">
-                    
-                </div>
-                <div class="col">
-
-                    <div class="row" style="margin-left:50%; padding-top:20px;">
-                        <div class="col-md-auto">
-                            <i class="fas fa-home" style="color:white; font-size:25px;"></i>
-                        </div>
-                        <div class="col-md-auto">
-                            <i class="fas fa-chart-area" style="color:white; font-size:25px;"></i>
-                        </div>
-                        <div class="col-md-auto">
-                            <i class="fas fa-cog" style="color:white; font-size:25px;"></i>
-                        </div>
-                        <div class="col-md-auto">
-                            <a href="../logout.php"><i class="fas fa-sign-out-alt" style="color:white; font-size:25px;"></i></a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </section>
+    <?php include ('../../trunk/.globals/header.php'); ?>
 
     <!-- SECTION 02: Botões de Ação
     ===================================================== -->

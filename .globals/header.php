@@ -12,78 +12,41 @@ if((!isset ($_SESSION['login']) == true)){
 $nickname = $_SESSION['nickname'];
 
 ?>
-<section style=" overflow: hidden; background-color: transparent; position: ; top: 0; width: 100%; z-index:2; height:60px;">
-    
-    <div class="row" style="height:;">
-        
-        <!-- Col 01: Menu -->
-        <div class="col-md-auto">
-            <img src="../../../watch-anime-php/trunk/imagens/titulo.png" style="width:150px; margin-left: 50px; padding-top:5px;" />
-        </div>
-        
-        <!-- Col 02: Logo do Site -->
-        <div class="col">
-            
-            <div class="col-temporada" style="opacity:0.8;">
-                <a data-toggle="modal" data-target="#exampleModal">
-                    <img src="../../../watch-anime-php/trunk/imagens/temporada-img.png" id="temporada-img"/>
 
-                    <p id="color-nome-temporada" style="padding-top:0px;"> 
-                        <i class="fas fa-umbrella-beach" style="font-size:15px;"></i> Julho / Summer / Verão
-                    </p>
-                </a>
+<style>
+    .r-button{ background-color: transparent; border-color:white; margin: 5px; color: white; padding: 5px; height: 40px; width: 40px; border-radius: 20px; }
+    .r-button:hover{ background-color:#ff1a8c; border-color: transparent; }
+    
+    @media screen and (min-width:768px) and (max-width:1366px)
+    {  
+        .resp-icons{ margin-left:40% !important; }
+        .resp-align-buttons{ padding-top: 3px !important; }
+    }
+</style>
+
+<section>
+    <div class="container-fluid" style="width: 95%; margin-top: 30px;">
+
+        <div class="row">
+            
+            <div class="col-md-auto">
+                <img src="../../trunk/imagens/titulo.png" />
             </div>
             
-        </div>
-        
-        <!-- Col 03: Temporada Atual -->
-        <div class="col">
-            
-            <div class="row row-perfil">
-                <div class="col col-perfil">
-                    <i class="fas fa-home"></i> Home
-                </div>
-                <div class="col col-perfil">
-                    <i class="fas fa-user-circle"></i> <?php echo $nickname; ?>
-                </div>
-                <div class="col col-perfil">
-                    <i class="fas fa-chart-area"></i> Ranking
-                </div>
-                <div class="col col-perfil">
-                    <i class="fas fa-cannabis"></i> Temporadas
-                </div>
-                <div class="col col-perfil">
-                    <a href="logout.php"><i class="fas fa-sign-out-alt"></i> Logout!</a>
+            <div class="col-md-auto resp-icons" style="margin-left:50%; margin-top:10px;">
+                <div class="fvorm-group mx-sm-3 mb-2" style="margin-top:10px;">
+                    <input type="password" class="form-control" style="background-color:transparent;" id="inputPassword2" placeholder="Procurar">
                 </div>
             </div>
             
+            <div class="col resp-align-buttons" style="margin-top:10px;">
+                <button type="button" class="btn btn-primary r-button">a</button>
+                <button type="button" class="btn btn-primary r-button">a</button>
+                <button type="button" class="btn btn-primary r-button">a</button>
+                <a href="../../trunk/logout.php"> <button type="button" class="btn btn-primary r-button"> <i class="fas fa-sign-out-alt" style="font-size:24px; margin-left:3px; margin-top:2px;"></i> </button> </a>
+            </div>
+            
         </div>
-        
+
     </div>
-        
-        <!-- Linha divisão do menu -->
-        <hr style="width:100%; background-color:white; margin-top:-15px;box-shadow: 1px 3px 10px red;"/>
-    
-        <!-- MODAL: Temporada -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                ...
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
-            </div>
-          </div>
-        </div>
-    
 </section>
-    
