@@ -4,6 +4,7 @@
     
     <?php  
         session_start();
+        require_once('.globals/verificar_logado.php');
     ?>
 
     <meta charset="utf-8">
@@ -35,7 +36,7 @@
                     <img src="imagens/titulo.png" />
                 </div>
                 <div class="col">
-                    a
+                    
                 </div>
                 <div class="col">
 

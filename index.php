@@ -139,7 +139,7 @@ if(isset($_SESSION['login'])){
                                         <label for="exampleInputPassword1">Senha: </label>
                                     </div>
                                     <div class="col">
-                                        <input type="password" required name="password  " class="form-control" style="margin-left:-80%;" id="exampleInputPassword1" placeholder="Sua Senha">
+                                        <input type="password" required name="password" class="form-control" style="margin-left:-80%;" id="exampleInputPassword1" placeholder="Sua Senha">
                                     </div>
                                 </div>
                             </div>

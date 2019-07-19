@@ -4,6 +4,7 @@
     
     <?php  
         session_start();
+        require_once('../.globals/verificar_logado.php');
     ?>
 
     <meta charset="utf-8">
@@ -35,7 +36,7 @@
                     <img src="../../trunk/imagens/titulo.png" />
                 </div>
                 <div class="col">
-                    a
+                    
                 </div>
                 <div class="col">
 
@@ -50,7 +51,7 @@
                             <i class="fas fa-cog" style="color:white; font-size:25px;"></i>
                         </div>
                         <div class="col-md-auto">
-                            <i class="fas fa-sign-out-alt" style="color:white; font-size:25px;"></i>
+                            <a href="logout.php"><i class="fas fa-sign-out-alt" style="color:white; font-size:25px;"></i></a>
                         </div>
                     </div>
 
@@ -97,7 +98,7 @@
                     
                 </div>
                 <div class="col-md-auto">
-                    <h3> <i class="fas fa-street-view" style="color:#00b359;"></i> Nome Usuario</h3>
+                    <h3><i class="fas fa-street-view" style="color:#00b359; margin-right: 10px;"></i><?=$_SESSION['login']?></h3>
                     <p> <i class="fab fa-accusoft"></i> <b>Animes</b> Assistindo: 18</p>
                 </div>
                 <div class="col-md-auto">

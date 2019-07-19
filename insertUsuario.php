@@ -3,7 +3,7 @@
 $login = $_POST['login'];
 $senha = $_POST['senha'];
 $email = $_POST['email'];
-$nickname = ucfirst($_POST['nickname']);
+$nickname = $_POST['nickname'];
 $checkbox = $_POST['checkbox'];
 
 if(!empty($login) && !empty($senha) && !empty($email)){
