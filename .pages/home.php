@@ -46,6 +46,9 @@
                     <a href=".pages/temporada.php"> <button type="button" class="btn btn-outline-success" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Temporadas</button> </a>
                 </div>
                 <div class="col-md-auto">
+                    <a href="lancamentos.php"> <button type="button" class="btn btn-outline-success" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Lançamento</button> </a>
+                </div>
+                <div class="col-md-auto">
                     <a href=".pages/ranking.php"> <button type="button" class="btn btn-outline-success" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Ranking</button> </a>
                 </div>
             </div>
@@ -134,8 +137,8 @@
                     
                     <!-- Anime 01 Grafico -->
                     <div class="row" style="background-color:white; border-radius: 5px; width:95%; margin-left: 10px;">
-                        <div class="col">
-                            IMG
+                        <div class="col" style="text-align: center">
+                           <img src="https://cdn.myanimelist.net/images/anime/1758/97736.jpg" style="width: 35%;">
                         </div>
                         <div class="col">
                             <h3>Dr.Stone</h3>
@@ -148,11 +151,11 @@
                             <button type="button" class="btn btn-primary btn-sm" style="margin-top: 20px;"> <i class="fas fa-plus"></i> Adicionar</button>
                         </div>
                     </div>
-                    
+
                     <!-- Anime 02 Grafico -->
                     <div class="row" style="background-color:white; border-radius: 5px; width:95%; margin-left: 10px; margin-top:5px;">
-                        <div class="col">
-                            IMG
+                        <div class="col" style="text-align: center">
+                            <img src="https://cdn.myanimelist.net/images/anime/9/77809.jpg" style="width: 35%">
                         </div>
                         <div class="col">
                             <h3>Noragami</h3>
@@ -168,8 +171,8 @@
                     
                     <!-- Anime 03 Grafico -->
                     <div class="row" style="background-color:white; border-radius: 5px; width:95%; margin-left: 10px; margin-top:5px;">
-                        <div class="col">
-                            IMG
+                        <div class="col" style="text-align: center">
+                            <img src="https://cdn.myanimelist.net/images/anime/13/80000.jpg" style="width: 35%">
                         </div>
                         <div class="col">
                             <h3>Katekyo hitman reborn</h3>
@@ -185,8 +188,8 @@
                     
                     <!-- Anime 04 Grafico -->
                     <div class="row" style="background-color:white; border-radius: 5px; width:95%; margin-left: 10px; margin-top:5px;">
-                        <div class="col">
-                            IMG
+                        <div class="col" style="text-align: center">
+                            <img src="https://cdn.myanimelist.net/images/anime/2/88336.jpg" style="width: 35%">
                         </div>
                         <div class="col">
                             <h3>Black Clover</h3>
