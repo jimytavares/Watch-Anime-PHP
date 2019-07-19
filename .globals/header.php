@@ -21,28 +21,71 @@ $nickname = $_SESSION['nickname'];
         .resp-icons{ margin-left:40% !important; }
         .resp-align-buttons{ padding-top: 3px !important; }
     }
+
+    .btn-search{
+        background-color:transparent;
+        color: white;
+    }
+
+    .btn-search:hover{
+        color: black;
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: white !important;
+        opacity: 1; /* Firefox */
+    }
+
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: white !important;
+    }
+
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        color: white !important;
+    }
+
 </style>
 
 <section>
     <div class="container-fluid" style="width: 95%; margin-top: 30px;">
 
-        <div class="row">
+        <div class="row col-12">
             
             <div class="col-md-auto">
                 <img src="../imagens/titulo.png"/>
             </div>
             
-            <div class="col-md-auto resp-icons" style="margin-left:50%; margin-top:10px;">
+            <div class="col-md-auto resp-icons" style="margin-left:50%; margin-top:10px; float: right;">
                 <div class="fvorm-group mx-sm-3 mb-2" style="margin-top:10px;">
-                    <input type="password" class="form-control" style="background-color:transparent;" id="inputPassword2" placeholder="Procurar">
+                    <form>
+                    <span style="float: left;"><input type="text" class="form-control" style="width: 100%; background-color:rgba(255, 255, 255, 0.5); border: 1px solid rgba(115, 24, 107, 0.5); color: white;" id="inputPassword2" placeholder="Procurar"></span>
+                    <span style="float: left;"><button class="btn btn-search"><i class="fas fa-search"></i></button></span>
+                    </form>
                 </div>
             </div>
             
             <div class="col resp-align-buttons" style="margin-top:10px;">
-                <button type="button" class="btn btn-primary r-button">a</button>
-                <button type="button" class="btn btn-primary r-button">a</button>
-                <button type="button" class="btn btn-primary r-button">a</button>
-                <a href="../../trunk/logout.php"> <button type="button" class="btn btn-primary r-button"> <i class="fas fa-sign-out-alt" style="font-size:24px; margin-left:3px; margin-top:2px;"></i> </button> </a>
+                <div class="row" style="background-color:white; width:100%; border-radius:5px; float: right">
+                    <div class="col-md-auto">
+                        <div style="float: left;">
+                            <img src="../imagens/logo-table.png" style="width:80px; padding:15px; float: left;"/>
+                        </div>
+                        <div style="float: left;">
+                            <h3 style="float: left; margin-left: 10px;">Olá, <?php echo $nickname; ?></h3>
+
+                                <a href="#">
+                                <button type="button" class="btn btn-primary r-button" style="color: black;">
+                                    <i class="fas fa-cog fa-2x"></i>
+                                </button>
+                            </a>
+                            <a href="../../trunk/logout.php">
+                                <button type="button" class="btn btn-primary r-button" style="color: black;">
+                                    <i class="fas fa-sign-out-alt fa-2x"></i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
             
         </div>
