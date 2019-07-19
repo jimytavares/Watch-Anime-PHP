@@ -30,7 +30,7 @@ $nickname = $_SESSION['nickname'];
         <div class="row">
             
             <div class="col-md-auto">
-                <img src="../../trunk/imagens/titulo.png" />
+                <img src="../imagens/titulo.png"/>
             </div>
             
             <div class="col-md-auto resp-icons" style="margin-left:50%; margin-top:10px;">

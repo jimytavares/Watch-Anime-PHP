@@ -1,6 +1,6 @@
 <?php
 
-   require_once('.connection/conn.class.php');
+   require_once('../.connection/conn.class.php');
    $db = Database::conexao();
 
    $sql = "SELECT * FROM vw_assistido WHERE id_usuario = " . $_SESSION['id'];

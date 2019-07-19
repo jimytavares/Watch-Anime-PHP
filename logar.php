@@ -21,7 +21,7 @@ if(!empty($usuario) && !empty($senha)){
 		$_SESSION['id'] = $result['id'];
 		$_SESSION['login'] = $usuario;
 		$_SESSION['nickname'] = $result['nickname'];
-		header('Location: home.php');
+		header('Location: .pages/home.php');
 	}else{
 		header('Location: index.php?error=wrong');
 	}
