@@ -40,7 +40,7 @@
                     <a href="home.php"> <button type="button" class="btn btn-outline-success" style="background-color:#F9F8FD; width:100px; height: 50px; color:white; border-radius:1px;"> <i class="fas fa-home" style="color:black; font-size:25px;"></i> </button> </a>
                 </div>
                 <div class="col-md-auto">
-                    <a href=".pages/perfil.php">  <button type="button" class="btn btn-outline-success" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Perfil</button> </a>
+                    <a href="perfil.php">  <button type="button" class="btn btn-outline-success" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Perfil</button> </a>
                 </div>
                 <div class="col-md-auto">
                     <a href=".pages/temporada.php"> <button type="button" class="btn btn-outline-success" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Temporadas</button> </a>
@@ -56,7 +56,8 @@
     <!-- SECTION ALL BODY
     ===================================================== -->
     <section class="container-fluid" style="background-color:#eeebf9;width: 95%; margin-top: 0px; height:1000px; border-radius:5px;">
-
+            
+            <!--##### ROW 01 ####-->
             <div class="row" style="padding-top: 20px; width:99%; margin-left:8px;">
 
                 <div class="col-4">
@@ -89,7 +90,7 @@
                 
                 <div class="col-8">
 
-                    <div class="container" style="margin-top: 50px; color:white; background-image: linear-gradient(to right, #3FC9FE ,#3A7EC7, #2F449C); border-color: red; height:50px; width:90%; border-radius:5px; box-shadow: 1px 3px 10px #000000; text-align:center;">
+                    <div class="container" style="margin-top: 50px; color:white; background-image: linear-gradient(to right, #3FC9FE ,#3A7EC7, #2F449C); border-color: red; height:50px; border-radius:2px; box-shadow: 1px 3px 10px #000000; text-align:center;">
                         <div class="row" style="padding-top:15px;">
                             <div class="col">
                                 <i class="far fa-calendar-alt" id="icon-table-assist" data-toggle="modal" data-target="#modaldataassistido"></i>
@@ -105,7 +106,7 @@
                         </div>
                     </div>
                     
-                    <table class="table table-sm" style="margin-top: -1px;">
+                    <table class="table table-sm" style="margin-top: 10px;">
                         <thead>
                             <tr id="tr-parados">
                                 <th id="th-parados">Nome</th>
@@ -124,7 +125,8 @@
                 
                 <!-- hr division -->    
                 <hr style="background-color:black; box-shadow: 1px 3px 10px black;"/>
-
+        
+            <!--##### ROW 02 ####-->
             <div class="row" style="padding-top: 20px; width:99%; margin-left:8px;">
                 
                 <!-- COL 01: Graficos ADD Animes -->
