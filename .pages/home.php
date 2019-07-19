@@ -205,18 +205,48 @@
                 <!-- COL 02: Notícias -->
                 <div class="col">
                     
+                    <div class="" style="background-color:white; width:95%; margin-left:5px; height: 165px; border-radius:4px;">
+                        
+                        <div class="row" style="height:50px; width: 98%; margin-left:10px; padding-top:20px; text-align:center;">
+                            <div class="col">
+                                <img src="../../trunk/imagens/01msg.png" style="width: 30px;"/>
+                                <h3>dasdasdas</h3>
+                                <p>dsadsa</p>
+                            </div>
+                            <div class="col">
+                                <img src="../../trunk/imagens/02msg.png" style="width: 30px;"/>
+                                <h3>dasdasdas</h3>
+                                <p>dsadsa</p>
+                            </div>
+                            <div class="col">
+                                <img src="../../trunk/imagens/03msg.png" style="width: 30px;"/>
+                                <h3>dasdasdas</h3>
+                                <p>dsadsa</p>
+                            </div>
+                            <div class="col">
+                                <img src="../../trunk/imagens/04msg.png" style="width: 30px;"/>
+                                <h3>dasdasdas</h3>
+                                <p>dsadsa</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
                     <!-- Noticia: 01 -->
-                    <div class="row" style="background-color:white; width:95%; margin-left: 5px; margin-top:20px;">
+                    <div class="row" style="background-color:white; width:95%; margin-left: 5px; margin-top:px;">
                         <div class="col-md-auto">
                             <img src="../imagens/graficos/bar1.png" />
+                        </div>
+                        <div class="col-md-auto">
+                            <i class="fas fa-envelope"  style="margin-top:10px; font-size: 18px; color:purple;"></i>
+                        </div>
+                        <div class="col" style="padding-top:10px;">
+                            <p>Alguma noticia de algum anime, para mostrar alguma coisa que deve ter coisa pra mostrar.</p>
                         </div>
                         <div class="col-md-auto">
                             <div class="form-check" style="padding-top:10px;">
                               <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
                             </div>
-                        </div>
-                        <div class="col" style="padding-top:10px;">
-                            <p>Alguma noticia de algum anime, para mostrar alguma coisa que deve ter coisa pra mostrar.</p>
                         </div>
                     </div>
                     
@@ -226,12 +256,15 @@
                             <img src="../imagens/graficos/bar2.png" />
                         </div>
                         <div class="col-md-auto">
-                            <div class="form-check" style="padding-top:10px;">
-                              <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                            </div>
+                            <i class="fas fa-envelope" style="margin-top:10px; font-size: 18px; color:red;"></i>
                         </div>
                         <div class="col" style="padding-top:10px;">
                             <p>Alguma noticia de algum anime, para mostrar alguma coisa que deve ter coisa pra mostrar.</p>
+                        </div>
+                        <div class="col-md-auto">
+                            <div class="form-check" style="padding-top:10px;">
+                              <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                            </div>
                         </div>
                     </div>
                     
@@ -241,12 +274,15 @@
                             <img src="../imagens/graficos/bar3.png" />
                         </div>
                         <div class="col-md-auto">
-                            <div class="form-check" style="padding-top:10px;">
-                              <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                            </div>
+                            <i class="fas fa-envelope" style="margin-top:10px; font-size: 18px; color:green;"></i>
                         </div>
                         <div class="col" style="padding-top:10px;">
                             <p>Alguma noticia de algum anime, para mostrar alguma coisa que deve ter coisa pra mostrar.</p>
+                        </div>
+                        <div class="col-md-auto">
+                            <div class="form-check" style="padding-top:10px;">
+                              <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                            </div>
                         </div>
                     </div>
                     
@@ -256,12 +292,15 @@
                             <img src="../imagens/graficos/bar4.png" />
                         </div>
                         <div class="col-md-auto">
-                            <div class="form-check" style="padding-top:10px;">
-                              <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                            </div>
+                            <i class="fas fa-envelope" style="margin-top:10px; font-size: 18px; color:;"></i>
                         </div>
                         <div class="col" style="padding-top:10px;">
                             <p>Alguma noticia de algum anime, para mostrar alguma coisa que deve ter coisa pra mostrar.</p>
+                        </div>
+                        <div class="col-md-auto">
+                            <div class="form-check" style="padding-top:10px;">
+                              <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                            </div>
                         </div>
                     </div>
                     
@@ -271,12 +310,15 @@
                             <img src="../imagens/graficos/bar1.png" />
                         </div>
                         <div class="col-md-auto">
-                            <div class="form-check" style="padding-top:10px;">
-                              <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                            </div>
+                            <i class="fas fa-envelope" style="margin-top:10px; font-size: 18px; color:purple;"></i>
                         </div>
                         <div class="col" style="padding-top:10px;">
                             <p>Alguma noticia de algum anime, para mostrar alguma coisa que deve ter coisa pra mostrar.</p>
+                        </div>
+                        <div class="col-md-auto">
+                            <div class="form-check" style="padding-top:10px;">
+                              <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                            </div>
                         </div>
                     </div>
                     
