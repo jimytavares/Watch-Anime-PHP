@@ -23,18 +23,13 @@ if(isset($_SESSION['login'])){
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 </head>
-<body style="background-image: url('imagens/bg-login.jpg'); background-size: 100%;">
+<body style="background: url('imagens/bg-login.jpg') no-repeat center center fixed; background-size: cover; background-repeat: no-repeat;">
 
-    <section class="lg-index">
+    <section class="lg-index" style="overflow-x: hidden">
 
         <div class="row">
-
-            <div class="col">
-
-            </div>
-
-            <div class="col">
-
+            
+            <div class="col" style="margin-left: 45%">
                 <div class="box-login" style="background-color: white; width:60%; height: 500px; margin-top: 10%; margin-left:5%; border-radius:7px; opacity:0.9;">
                     <div class="box2-login" style="width:80%; margin-left:9%; padding-top:10%;">
 
@@ -107,7 +102,7 @@ if(isset($_SESSION['login'])){
                         </button>
                     </div>
 
-                    <div class="modal-body" style="width:80%;color:white;margin-left:27%;">
+                    <div class="modal-body" style="width:80%;color:white;margin-left:23%;">
 
                         <form action="insertUsuario.php" method="POST">
                             <div>
@@ -159,7 +154,7 @@ if(isset($_SESSION['login'])){
                                         <label for="exampleInputEmail1">Deseja receber notificações pelo e-mail?<br> </label>
                                     </div>
                                     <div class="col">
-                                        <input style="display: inline-grid;" type="radio" checked="checked" name="checkbox" value="1"> Sim <br>
+                                        <input style="display: inline-grid;" type="radio" checked="checked" name="checkbox" value="1"> Sim
                                         <input  style="display: inline-grid;" type="radio" name="checkbox" value="0"> Não <br>
                                     </div>
                                 </div>
