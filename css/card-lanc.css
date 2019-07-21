@@ -1,3 +1,10 @@
+.animes-card{
+    display: block;
+    margin-left: 30px;    
+    width: 95%;
+    height: 50em;
+}
+
 .card-group{
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 25px;
@@ -62,11 +69,12 @@
 
 .ani-card .ani-txt{
     font-family: "Merriweather", sans-serif;
-  line-height: 2;
-  font-size: .95rem;
-  color: rgba(21, 37, 54, 0.7);
-  opacity: 0;
-  transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+    text-align: justify;
+    line-height: 2;
+    font-size: .95rem;
+    color: rgba(21, 37, 54, 0.7);
+    opacity: 0;
+    transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
 }
 
 
