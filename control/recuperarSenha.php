@@ -24,6 +24,17 @@ try{
 
 	if($result){
 
+		$id = $result['id'];
+		$bytes = openssl_random_pseudo_bytes(rand(5, 10));
+		$hex   = bin2hex($bytes);
+		$codigo_autenticador = $hex;
+
+		$database = Database::conexao();
+		$sql = "INSERT INTO tb_rec_user (id, id_usuario, codigo_autenticador) VALUES (default, '$id', '$codigo_autenticador')";
+
+		$insert = $database->prepare($sql);
+		$insert->execute();
+
 		$mail = new PHPMailer(true);
 		$mail->CharSet = "UTF-8";
 		try {
@@ -48,7 +59,7 @@ try{
 		    //Content
 		    $mail->isHTML(true);                                  // Set email format to HTML
 		    $mail->Subject = 'Recuperação de Senha';
-		    $mail->Body    = 'Se fudeu auhseasuuuasues';
+		    $mail->Body    = "<a href='http://localhost/WATCH-ANIME-PHP/trunk/novaSenha.php?key=".$codigo_autenticador."'>Clique aqui para cadastrar uma nova senha!</a>";
 		    $mail->AltBody = 'É necessário utilizar um client que suporte HTML para ter acesso total ao conteúdo dessa mensagem';
 
 		    $mail->send();
