@@ -186,7 +186,7 @@ if(isset($_SESSION['login'])){
           </div>
 
           <div class="modal-body">
-            <form action="recuperarSenha" method="POST">
+            <form action="control/recuperarSenha.php" method="POST">
                 <div style="text-align: center;">
                     <div style="width: 80%; text-align: center; margin: auto;">
                         <p style="font-family: 'Montserrat', sans-serif;">Digite seu e-mail e aguarde alguns segundos enquanto enviamos um e-mail para você :)</p>
@@ -219,6 +219,10 @@ if(isset($_GET['success'])){
     ?><script type="text/javascript">alert('Cadastrado com sucesso')</script><?php
 }elseif(isset($_GET['error']) && $_GET['error'] == 'register_wrong'){
     ?><script type="text/javascript">alert('Deu algum erro aí ao tentar cadastrar, usuário ou endereço de correio eletrônico pertencem ao meu PAI! (OOO PAI oO)')</script><?php
+}elseif(isset($_GET['recsuccess'])){
+    ?><script type="text/javascript">alert('E-mail de recuperação enviado com sucesso')</script><?php
+}elseif(isset($_GET['recfail'])){
+    ?><script type="text/javascript">alert('Ocorreu algum erro')</script><?php
 }?>
 
 <!-- Optional JavaScript -->
