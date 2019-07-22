@@ -21,6 +21,7 @@ if(isset($_SESSION['login'])){
     <link href="css/Main.css" rel="stylesheet" type="text/css" media="all"/>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
 </head>
 <body style="background: url('imagens/bg-login.jpg') no-repeat center center fixed; background-size: cover; background-repeat: no-repeat;">
@@ -185,11 +186,15 @@ if(isset($_SESSION['login'])){
           </div>
 
           <div class="modal-body">
-            ...
-        </div>
-
-        <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Sair</button>
+            <form action="recuperarSenha" method="POST">
+                <div style="text-align: center;">
+                    <div style="width: 80%; text-align: center; margin: auto;">
+                        <p style="font-family: 'Montserrat', sans-serif;">Digite seu e-mail e aguarde alguns segundos enquanto enviamos um e-mail para você :)</p>
+                    </div>
+                    <input type="text" name ="emailrec" class="form-control" autocomplete="on" style="width:80%; margin:auto; border-radius:10px; border:none; text-align: center;" id="emailrec" aria-describedby="emailHelp" placeholder="Digite seu email"> <br>
+                    <button type="submit" class="btn btn-info">Enviar</button>
+                </div>
+            </form>
         </div>
 
     </div>
