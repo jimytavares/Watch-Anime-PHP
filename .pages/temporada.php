@@ -21,14 +21,56 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
     <style>
+        .bodyanimeted{
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, #6424ea,  #ad00b1, #9200c5);
+            background-size: 400% 400%;
+            position: relative;
+            animation: change 10s ease-in-out infinite;
+        }
+
+        @keyframes change {
+            0%{background-position: 0 50%}
+            50%{background-position: 100% 50%}
+            100%{background-position: 0 50%}
+        }
+
     </style>
 
 </head>
-<body style="background-image: url('../imagens/.jpg'); background-size:cover;">
+<body class="bodyanimeted">
 
-<section class="" style="background-image: url('../imagens/background-gundam.png'); background-size:cover;">
+<?php include ('../.globals/header.php'); ?>
 
-    <?php include ('../.globals/header.php'); ?>
+<sectcion>
+    <div class="container-fluid" style="width: 95%; margin-top:30px;">
+
+
+        <div class="row" style="margin-left:40px;">
+            <div class="col-md-auto">
+                <a href="home.php" > <button type="button" class="btn btn-outline-success" style="background-color:black; opacity:0.6; width:100px; height: 50px; color:white; border-radius:1px;"> Home </button> </a>
+            </div>
+            <div class="col-md-auto">
+                <a href="perfil.php">  <button type="button" class="btn btn-outline-success" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Perfil</button> </a>
+            </div>
+            <div class="col-md-auto">
+            <!--<a href="temporada.php"> <button type="button" class="btn btn-outline-success" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Temporadas</button> </a>-->
+                <a href="temporada.php"> <button type="button" class="btn btn-outline-success" style="background-color:#F9F8FD; width:100px; height: 50px;  color:white; border-radius:1px; margin-left:-25px;"> <i class="fas fa-tree" style="color:black; font-size:25px; "></i> </button> </a>
+            </div>
+            <div class="col-md-auto">
+                <a href="lancamentos.php"> <button type="button" class="btn btn-outline-success" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Lançamento</button> </a>
+            </div>
+            <div class="col-md-auto">
+                <a href="ranking.php"> <button type="button" class="btn btn-outline-success" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Ranking</button> </a>
+            </div>
+        </div>
+
+    </div>
+</sectcion>
+
+
+<section>
 
     <div class="" style="">
         <h2 style="text-align:center;">Temporada</h2>
