@@ -7,7 +7,6 @@
         require_once('../.globals/verificar_logado.php');
     ?>
 
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -15,6 +14,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Meu CSS -->
     <link href="../css/main.css" rel="stylesheet" type="text/css" media="all"/>
     <!-- Font Awesome -->
@@ -39,13 +40,12 @@
     </style>
 
 </head>
-<body class="bodyanimeted">
+<body class="bodyanimeted" style="overflow-x: hidden; background-image: linear-gradient(to right, #6424ea,  #ad00b1, #9200c5);">
 
 <?php include ('../.globals/header.php'); ?>
 
 <sectcion>
     <div class="container-fluid" style="width: 95%; margin-top:30px;">
-
 
         <div class="row" style="margin-left:40px;">
             <div class="col-md-auto">
@@ -55,7 +55,6 @@
                 <a href="perfil.php">  <button type="button" class="btn btn-outline-success" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Perfil</button> </a>
             </div>
             <div class="col-md-auto">
-            <!--<a href="temporada.php"> <button type="button" class="btn btn-outline-success" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Temporadas</button> </a>-->
                 <a href="temporada.php"> <button type="button" class="btn btn-outline-success" style="background-color:#F9F8FD; width:100px; height: 50px;  color:white; border-radius:1px; margin-left:-25px;"> <i class="fas fa-tree" style="color:black; font-size:25px; "></i> </button> </a>
             </div>
             <div class="col-md-auto">
