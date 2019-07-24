@@ -1,6 +1,6 @@
 <section style="height:170px; background-color:#1a1a1a; color:white;">
 
-    <div class="container" style="padding-top: 10px;">
+    <div class="container"">
         <div class="row">
             <div class="col">
                 <h3 style="font-size:20px;">Team Anime:</h3>
