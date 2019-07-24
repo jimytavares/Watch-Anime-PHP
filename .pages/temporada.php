@@ -209,11 +209,6 @@
         </div>
     </div>
 
-    <!-- Next Section: Button -->
-    <div class="">
-        <button id="button-next" style="margin-top:150px;"> <i class="fa fa-angle-double-down" id="arrow-next"></i> </button>
-    </div>
-
 </section>
 
 
