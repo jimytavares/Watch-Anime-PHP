@@ -192,7 +192,8 @@
 <body class="bodyanimeted" style="background-image: linear-gradient(to right, #6424ea,  #ad00b1, #9200c5);">
 
 <?php include ('../.globals/header.php'); ?>
-    <section>
+
+
 
         <div class="container-fluid" style="width: 95%; margin-top:30px;">
 
@@ -215,6 +216,11 @@
                     </div>
 
                 </div>
+<section class="container-fluid" style="background-color:#eeebf9;width: 95%; margin-top: 0px; border-radius:5px;">
+
+    <div class="" style="">
+        <h2 style="text-align:center;">Ranking</h2>
+    </div>
 
         <div class="container" style="width: 100%;">
 
@@ -390,7 +396,7 @@
             </div>
             
     
-        </div>
+        </div><br>
         
             <?php include ('../.globals/footer.php'); ?>
 

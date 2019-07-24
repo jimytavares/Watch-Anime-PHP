@@ -17,7 +17,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Meu CSS -->
-    <link href="../css/main.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="../css/Main.css" rel="stylesheet" type="text/css" media="all"/>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
@@ -69,7 +69,7 @@
 </sectcion>
 
 
-<section>
+<section class="container-fluid" style="background-color:#eeebf9;width: 95%; margin-top: 0px; border-radius:5px;">
 
     <div class="" style="">
         <h2 style="text-align:center;">Temporada</h2>
