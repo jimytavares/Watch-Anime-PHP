@@ -2,6 +2,11 @@
 <html>
 <head>
 
+    <?php
+        session_start();
+        require_once('../.globals/verificar_logado.php');
+    ?>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -9,13 +14,33 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Meu CSS -->
     <link href="../css/main.css" rel="stylesheet" type="text/css" media="all"/>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
     <style>
-    
+        .bodyanimeted{
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, #6424ea,  #ad00b1, #9200c5);
+            background-size: 400% 400%;
+            position: relative;
+            animation: change 10s ease-in-out infinite;
+        }
+
+        @keyframes change {
+            0%{background-position: 0 50%}
+            50%{background-position: 100% 50%}
+            100%{background-position: 0 50%}
+        }
+
+    </style>
+
+    <style>
+
         .wrap
         {
           margin:50px auto 0 auto;
@@ -59,7 +84,7 @@
           padding:30px;
           height:calc(100% - 60px);
         text-align: center;
-            
+
         }
         .tile h1
         {
@@ -164,51 +189,46 @@
     </style>
     
 </head>
-<body style="background-image: url('../imagens/img245.jpg'); background-size:cover;">
-    
-    <section>
-      
-        <?php include ('../.globals/header.php'); ?>
-        <div class="container" style="margin-left:150px;">
-                
-            <div style="margin-top: 50px; color:white; background-image: linear-gradient(to right, #00a0ff ,#0080ff, #6d58f0, #a000c4); border-color: red; height:50px; width:90%; border-radius:5px; box-shadow: 1px 3px 10px #000000; text-align:center;">
-                <div class="row" style="padding-top:15px;">
-                    <div class="col">
-                        <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2" data-toggle="collapse" href="#collapseCards" role="button" aria-expanded="false" aria-controls="collapseExample">
-                            <i class="fas fa-th-large mt-0" style="font-size:18px; color:white"></i>
-                        </button>
-                        <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2">
-                            <i class="fas fa-columns mt-0" style="font-size:20px; color:white"></i>
-                        </button>
-                    </div>
-                    <div class="col">
-                        <b style="color:white; font-size:17px;">Anime Ranking</b>
-                    </div>
-                    <div class="col">
-                        <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2">
-                            <i class="fas fa-pencil-alt mt-0" style="font-size:18px; color:white"></i>
-                        </button>
-                        <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2">
-                            <i class="far fa-trash-alt mt-0" style="font-size:18px; color:white"></i>
-                        </button>
-                        <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2" data-toggle="modal" data-target="#ModalInfo">
-                            <i class="fas fa-info-circle mt-0" style="font-size:20px; color:white"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
+<body class="bodyanimeted" style="background-image: linear-gradient(to right, #6424ea,  #ad00b1, #9200c5);">
 
-            
+<?php include ('../.globals/header.php'); ?>
+    <section>
+        
+        <div class="container-fluid" style="width: 95%; margin-top:30px;">
+
+            <div class="row" style="margin-left:40px;">
+                        <div class="col-md-auto">
+                            <a href="home.php" > <button type="button" class="btn btn-outline-success" style="background-color:black; opacity:0.6; width:100px; height: 50px; color:white; border-radius:1px;"> Home </button> </a>
+                        </div>
+                        <div class="col-md-auto">
+                            <a href="perfil.php">  <button type="button" class="btn btn-outline-success" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Perfil</button> </a>
+                        </div>
+                        <div class="col-md-auto">
+                            <a href="temporada.php"> <button type="button" class="btn btn-outline-success" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Temporada</button> </a>
+                        </div>
+                        <div class="col-md-auto">
+                            <a href="lancamentos.php"> <button type="button" class="btn btn-outline-success" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Lançamento</button> </a>
+                        </div>
+                        <div class="col-md-auto">
+                            <a href="ranking.php"> <button type="button" class="btn btn-outline-success" style="background-color:#F9F8FD; width:100px; height: 50px;  color:white; border-radius:1px; margin-left:-25px;"><i class="fas fa-align-left" style="color:black; font-size:25px; "></i> </button> </a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+        <div class="container" style="width: 100%;">
+
             <!-- CARDS: Ranking -->
-            <div class="wrap" style="margin-left:-60px;" id="collapseCards">
-                
-                 <div class="tile"> 
+            <div class="wrap" style="margin: auto;" id="collapseCards">
+
+                 <div class="tile">
                       <img src='../imagens/ranking/ranking-1.gif'/>
                       <div class="text">
                           <h1></h1>
                           <h2 class="animate-text">Animes Ranking Nota 10</h2>
                           <p class="animate-text">Clique aqui para listar todos os animes do seu perfil de nota 10.</p>
-                       
+
                           <div class="dots">
                             <span></span>
                             <span></span>
@@ -218,13 +238,13 @@
                  </div>
 
 
-                <div class="tile"> 
+                <div class="tile">
                     <img src='../imagens/ranking/ranking-4.gif'/>
                       <div class="text">
                           <h1></h1>
                           <h2 class="animate-text">Animes Ranking Nota 8~6</h2>
                           <p class="animate-text">Clique aqui para listar todos os animes do seu perfil de nota 8~6.</p>
-                       
+
                           <div class="dots">
                             <span></span>
                             <span></span>
@@ -233,13 +253,13 @@
                       </div>
                  </div>
 
-                  <div class="tile"> 
+                  <div class="tile">
                       <img src='../imagens/ranking/ranking-6.gif' style="opacity:;"/>
                       <div class="text">
                           <h1></h1>
                           <h2 class="animate-text">Animes Ranking Nota 5~1</h2>
                           <p class="animate-text">Clique aqui para listar todos os animes do seu perfil de nota 5~1.</p>
-                        
+
                           <div class="dots">
                             <span></span>
                             <span></span>
@@ -250,7 +270,7 @@
             </div>
         
             <!-- TABLE: Ranking -->
-            <div class="card card-cascade narrower" style="margin-left: -50px; width:100%; margin-top:20px;">
+            <div class="card card-cascade narrower align-center" style="width:auto; margin-top:20px;">
 
               <div class="px-4">
 
