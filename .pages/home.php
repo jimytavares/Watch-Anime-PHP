@@ -73,7 +73,7 @@
                         <div class="col">
                             <h3>Assistindo</h3>
                             <p>Aqui você pode cadastrar todos os animes que está assistindo no momento.</p>
-                            <button type="button" class="btn btn-success btn-sm" style="width:200px; margin-left: 60px;">Cadastrar</button>
+                            <a href="assistindo.php"> <button type="button" class="btn btn-success btn-sm" style="width:200px; margin-left: 60px;">Cadastrar</button> </a>
                         </div>
                     </div>
                     
