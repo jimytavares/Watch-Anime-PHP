@@ -4,62 +4,105 @@ ini_set('display_errors', 1);
 ini_set('display_startup_erros', 1);
 error_reporting(E_ALL);
 
-?>
+require 'composer/vendor/autoload.php';
 
-<script>
-
-    // Here we define our query as a multi-line string
-    // Storing it in a separate .graphql/.gql file is also possible
-    var query = `
-query ($id: Int) { # Define which variables will be used in the query (id)
-  Media (id: $id, type: ANIME) { # Insert our variables into the query arguments (id) (type: ANIME is hard-coded in the query)
-    id
-    title {
-      romaji
-      english
-      native
+// Here we define our query as a multi-line string
+$queryPages = '
+query ($page: Int) {
+  Page(page: $page, perPage: 50) {
+    pageInfo {
+      total
+      perPage
+      currentPage
+      lastPage
+      hasNextPage
+    }
+    media(seasonYear: 2019) {
+      id
     }
   }
 }
-`;
+';
 
-    // Define our query variables and values that will be used in the query request
-    var variables = {
-        id: 15125
-    };
+$queryAnimes = '
+query ($page: Int) {
+  Page(page: $page, perPage: 50) {
+    media(seasonYear: 2019) {
+      id
+      startDate {
+        year
+        month
+        day
+      }
+	  coverImage {
+      extraLarge
+      large
+      medium
+      color
+    }
+      season
+      status
+      title {
+        romaji
+      }
+    }
+  }
+}
+';
 
-    // Define the config we'll need for our Api request
-    var url = 'https://graphql.anilist.co',
-        options = {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json',
-            },
-            body: JSON.stringify({
-                query: query,
-                variables: variables
-            })
-        };
+// Define our query variables and values that will be used in the query request
+$variablesPages = [
+    "page" => 1
+];
 
-    // Make the HTTP Api request
-    fetch(url, options).then(handleResponse)
-        .then(handleData)
-        .catch(handleError);
+// Make the HTTP Api request
+$http = new GuzzleHttp\Client;
+$response = $http->post('https://graphql.anilist.co', [
+    'json' => [
+        'query' => $queryPages,
+        'variables' => $variablesPages,
+    ]
+]);
 
-    function handleResponse(response) {
-        return response.json().then(function (json) {
-            return response.ok ? json : Promise.reject(json);
-        });
+$jsonPages = json_decode($response->getBody()->getContents());
+
+$lastPage = $jsonPages->data->Page->pageInfo->lastPage;
+
+echo 'Qtd Páginas: ' . $lastPage . '<br>';
+
+$pageAtual = 1;
+
+for($i = 1; $i <= $lastPage; $i++){
+    $variablesAnimes = [
+        "page" => $pageAtual
+    ];
+
+    echo "<br>Página atual: " . $pageAtual . "<br>";
+
+    $responseAnimes = $http->post('https://graphql.anilist.co', [
+        'json' => [
+            'query' => $queryAnimes,
+            'variables' => $variablesAnimes,
+        ]
+    ]);
+
+    $jsonAnimes = json_decode($responseAnimes->getBody()->getContents(), true);
+
+    $pageAtual = $pageAtual+1;
+
+    foreach($jsonAnimes as $dados){
+        for($j = 0; $j < 50; $j++){
+            echo $dados["Page"]["media"][$j]["title"]["romaji"] . "<br>";
+            echo $dados["Page"]["media"][$j]["coverImage"]["extraLarge"] . "<br>";
+        }
     }
 
-    function handleData(data) {
-        console.log(data);
-    }
+    echo "<br>";
 
-    function handleError(error) {
-        alert('Error, check console');
-        console.error(error);
-    }
+}
 
-</script>
+echo 'Última página: ' . $pageAtual . '<br>';
+
+//var_dump($json->data->Page->pageInfo->total); TOTAL DE ANIMES
+
+// INSERIR ANIMES NO BANCO

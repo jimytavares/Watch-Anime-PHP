@@ -1,0 +1,13 @@
+{
+    "name": "animes/composer-php",
+    "description": "Test API Animes List",
+    "authors": [
+        {
+            "name": "Elciid Souza",
+            "email": "elcidfilho2@hotmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    }
+}
