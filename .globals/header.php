@@ -73,7 +73,7 @@ $nickname = $_SESSION['nickname'];
                 
             </div>
             
-            <div class="col-lg-3" style="background-color:#EEEBF9; border-radius: 5px; height: 80px; line-height: 80px;">
+            <div class="col-lg-3" style="background-color:#eeebf9; border-radius: 5px; height: 80px; line-height: 80px;">
                     <div class="col-lg-2">
                         <img src="../imagens/logo-table.png" style="width:80px; padding:10px; float: left; margin-left:-10px;"/>
                     </div>
