@@ -62,38 +62,53 @@
             
             <!--##### ROW 01 ####-->
             <div class="row" style="padding-top: 20px; width:99%; margin-left:8px;">
-
-                <div class="col-4">
-                    
-                    <!-- 01 CARD: Assistindo -->
-                    <div class="row" style="background-color:white; width:99%; margin-left:5px; margin-top:45px; height:150px; border-radius:5px;">
-                        <div class="col-md-auto">
-                            <img src="../imagens/logo-table.png" style="width:120px; padding-top:15px;"/>
-                        </div>
-                        <div class="col">
-                            <h3>Assistindo</h3>
-                            <p>Aqui você pode cadastrar todos os animes que está assistindo no momento.</p>
-                            <a href="assistindo.php"> <button type="button" class="btn btn-success btn-sm" style="width:200px; margin-left: 60px;">Cadastrar</button> </a>
-                        </div>
-                    </div>
-                    
-                    <!-- 02 CARD: Ranking -->
-                    <div class="row" style="background-color:white; width:99%; margin-left:5px; margin-top:10px; height:150px; border-radius:5px;">
-                        <div class="col-md-auto">
-                            <img src="../imagens/logo-table.png" style="width:120px; padding-top:15px;"/>
-                        </div>
-                        <div class="col">
-                            <h3>Ranking</h3>
-                            <p>Aqui você pode cadastrar todos os animes que está assistindo no momento.</p>
-                            <button type="button" class="btn btn-primary btn-sm" style="background-color: #6D6CC7; width:200px; margin-left: 60px;">Cadastrar</button>
-                        </div>
-                    </div>
                 
+                <!-- COL 02: New -->
+                <div class="col">
+                    <div class="row"  style="background-color:white; border-radius:3px; height: 220px;">
+                        <div class="col-md-auto">
+                            <img src="../imagens/01logo-perfil.png" style="width:160px; padding-top:35px;"/>
+                        </div>
+                        <div class="col" style="text-align:center; margin-top:20px;">
+                            <h2>Perfil</h2>
+                            <p>Aqui você pode cadastrar todos os animes que está assistindo no momento.</p>
+                            <button type="button" class="btn btn-primary" style="background-color:#ff471a; border:none; width:200px; height:40px; margin-top:10px;">visualizar</button>
+                        </div>
+                    </div>
                 </div>
                 
+                <!-- COL 02: Ranking -->
+                <div class="col">
+                    <div class="row"  style="background-color:white; border-radius:3px; margin-left:3px; height: 220px;">
+                        <div class="col-md-auto">
+                            <img src="../imagens/01logo-rank.png" style="width:160px; padding-top:35px;"/>
+                        </div>
+                        <div class="col" style="text-align:center; margin-top:20px;">
+                            <h2>Ranking</h2>
+                            <p>Aqui você pode cadastrar todos os animes que está assistindo no momento.</p>
+                            <button type="button" class="btn btn-primary" style="background-color: #9933ff; width:230px; height:40px; margin-top:10px; border:none;">Visualizar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- COL 01: Assistindo -->
+                <div class="col">
+                    <div class="row"  style="background-color:white; border-radius:3px; margin-left:3px; height: 220px;">
+                        <div class="col-md-auto">
+                            <img src="../imagens/01logo-assist.png" style="width:160px; padding-top:35px;"/>
+                        </div>
+                        <div class="col" style="text-align:center; margin-top:20px;">
+                            <h2>Assistindo</h2>
+                            <p>Aqui você pode cadastrar todos os animes que está assistindo no momento.</p>
+                            <a href="assistindo.php"> <button type="button" class="btn btn-success" style=" width:230px; background-color:#33ccff; border:none; height:40px; margin-top:10px;">Visualizar</button> </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- COL 02: Ranking 
                 <div class="col-8">
 
-                    <div class="container" style="margin-top: 50px; color:white; background-image: linear-gradient(to right, #3FC9FE ,#3A7EC7, #2F449C); border-color: red; height:50px; border-radius:2px; box-shadow: 1px 3px 10px #000000; text-align:center;">
+                    <div class="container" style="width:1000px; margin-top: 50px; color:white; background-image: linear-gradient(to right, #3FC9FE ,#3A7EC7, #2F449C); height:50px; border-radius:2px; box-shadow: 1px 3px 10px #000000; text-align:center;">
                         <div class="row" style="padding-top:15px;">
                             <div class="col">
                                 <i class="far fa-calendar-alt" id="icon-table-assist" data-toggle="modal" data-target="#modaldataassistido"></i>
@@ -122,90 +137,131 @@
                         </tbody>
                     </table>
                     
-                </div>
+                </div> -->
 
             </div>
                 
                 <!-- hr division -->    
                 <hr style="background-color:black; box-shadow: 1px 3px 10px black;"/>
-        
+            
             <!--##### ROW 02 ####-->
             <div class="row" style="padding-top: 20px; width:99%; margin-left:8px;">
+        
+                <div class="container" style="width:1000px; color:white; background-image: linear-gradient(to right, #3FC9FE ,#3A7EC7, #2F449C); height:50px; border-radius:2px; box-shadow: 1px 3px 10px #000000; text-align:center;">
+                        <div class="row" style="padding-top:15px;">
+                            <div class="col">
+                                <i class="far fa-calendar-alt" id="icon-table-assist" data-toggle="modal" data-target="#modaldataassistido"></i>
+                                <i class="fas fa-info-circle" id="icon-table-assist" data-toggle="modal" data-target="#modalinfo" style="margin-left:30px;"></i> 
+                            </div>
+                            <div class="col">
+                                <b>Animes Assistindo</b>
+                            </div>
+                            <div class="col">
+                                <i class='far fa-edit' data-toggle="modal" data-target="#modaleditdel" style='color:#ff66d9; font-size: 20px;'></i>
+                                <i class='fas fa-trash-alt' data-toggle="modal" data-target="#modaleditdel" style='font-size:20px; color:#EE5253;margin-left:30px;'></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                <table class="table table-sm" style="margin-top: 10px;">
+                        <thead>
+                            <tr id="tr-parados">
+                                <th id="th-parados">Nome</th>
+                                <th id="th-parados">Episódio</th>
+                                <th id="th-parados">Dia Lançamento</th>
+                            </tr>
+                        </thead>
+                        <tbody id="body-table-parados">
+                            <?php include_once('../../trunk/control/selectAssistindo.php'); ?>
+                        </tbody>
+                    </table>
+        
+            </div>
+        
+            <!--##### ROW 03 ####-->
+            <div class="row" style="padding-top: 20px; width:99%; margin-left:8px;">
                 
-                <!-- COL 01: Graficos ADD Animes -->
-                <div class="col">
+                <div class="row" style="margin-left:80px;">
                     
-                    <!-- Anime 01 Grafico -->
-                    <div class="row" style="background-color:white; border-radius: 5px; width:95%; margin-left: 10px;">
-                        <div class="col" style="text-align: center">
-                           <img src="https://cdn.myanimelist.net/images/anime/1758/97736.jpg" style="width: 35%;">
+                    <div class="col">
+                    
+                        <!-- Anime 01 Grafico -->
+                        <div class="row" style="background-color:white; border-radius: 5px; width:95%; margin-left: 10px;">
+                            <div class="col" style="text-align: center">
+                               <img src="https://cdn.myanimelist.net/images/anime/1758/97736.jpg" style="width: 35%;">
+                            </div>
+                            <div class="col">
+                                <h3>Dr.Stone</h3>
+                                <p>Dr.Stone</p>
+                            </div>
+                            <div class="col">
+                                <img src="../imagens/graficos/g1.png" />
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-primary btn-sm" style="margin-top: 20px;"> <i class="fas fa-plus"></i> Adicionar</button>
+                            </div>
                         </div>
-                        <div class="col">
-                            <h3>Dr.Stone</h3>
-                            <p>Dr.Stone</p>
-                        </div>
-                        <div class="col">
-                            <img src="../imagens/graficos/g1.png" />
-                        </div>
-                        <div class="col">
-                            <button type="button" class="btn btn-primary btn-sm" style="margin-top: 20px;"> <i class="fas fa-plus"></i> Adicionar</button>
-                        </div>
-                    </div>
 
-                    <!-- Anime 02 Grafico -->
-                    <div class="row" style="background-color:white; border-radius: 5px; width:95%; margin-left: 10px; margin-top:5px;">
-                        <div class="col" style="text-align: center">
-                            <img src="https://cdn.myanimelist.net/images/anime/9/77809.jpg" style="width: 35%">
+                        <!-- Anime 02 Grafico -->
+                        <div class="row" style="background-color:white; border-radius: 5px; width:95%; margin-left: 10px; margin-top:5px;">
+                            <div class="col" style="text-align: center">
+                                <img src="https://cdn.myanimelist.net/images/anime/9/77809.jpg" style="width: 35%">
+                            </div>
+                            <div class="col">
+                                <h3>Noragami</h3>
+                                <p>Noragami</p>
+                            </div>
+                            <div class="col">
+                                <img src="../imagens/graficos/g2.png" />
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-primary btn-sm" style="margin-top: 20px;"> <i class="fas fa-plus"></i> Adicionar</button>
+                            </div>
                         </div>
-                        <div class="col">
-                            <h3>Noragami</h3>
-                            <p>Noragami</p>
-                        </div>
-                        <div class="col">
-                            <img src="../imagens/graficos/g2.png" />
-                        </div>
-                        <div class="col">
-                            <button type="button" class="btn btn-primary btn-sm" style="margin-top: 20px;"> <i class="fas fa-plus"></i> Adicionar</button>
-                        </div>
+                        
                     </div>
                     
-                    <!-- Anime 03 Grafico -->
-                    <div class="row" style="background-color:white; border-radius: 5px; width:95%; margin-left: 10px; margin-top:5px;">
-                        <div class="col" style="text-align: center">
-                            <img src="https://cdn.myanimelist.net/images/anime/13/80000.jpg" style="width: 35%">
+                    <div class="col">
+                        
+                        <!-- Anime 03 Grafico -->
+                        <div class="row" style="background-color:white; border-radius: 5px; width:95%; margin-left: 10px; margin-top:5px;">
+                            <div class="col" style="text-align: center">
+                                <img src="https://cdn.myanimelist.net/images/anime/13/80000.jpg" style="width: 35%">
+                            </div>
+                            <div class="col-md-auto">
+                                <h3>Katekyo Himan</h3>
+                                <p>Katekyo Hitman</p>
+                            </div>
+                            <div class="col">
+                                <img src="../imagens/graficos/g3.png" />
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-primary btn-sm" style="margin-top: 20px;"> <i class="fas fa-plus"></i> Adicionar</button>
+                            </div>
                         </div>
-                        <div class="col">
-                            <h3>Katekyo hitman reborn</h3>
-                            <p>Katekyo hitman reborn</p>
+
+                        <!-- Anime 04 Grafico -->
+                        <div class="row" style="background-color:white; border-radius: 5px; width:100%; margin-left: 10px; margin-top:5px;">
+                            <div class="col" style="text-align: center">
+                                <img src="https://cdn.myanimelist.net/images/anime/2/88336.jpg" style="width: 35%">
+                            </div>
+                            <div class="col-md-auto">
+                                <h3>Black Clover</h3>
+                                <p>Black Clover</p>
+                            </div>
+                            <div class="col">
+                                <img src="../imagens/graficos/g4.png" />
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-primary btn-sm" style="margin-top: 20px;"> <i class="fas fa-plus"></i> Adicionar</button>
+                            </div>
                         </div>
-                        <div class="col">
-                            <img src="../imagens/graficos/g3.png" />
-                        </div>
-                        <div class="col">
-                            <button type="button" class="btn btn-primary btn-sm" style="margin-top: 20px;"> <i class="fas fa-plus"></i> Adicionar</button>
-                        </div>
-                    </div>
-                    
-                    <!-- Anime 04 Grafico -->
-                    <div class="row" style="background-color:white; border-radius: 5px; width:95%; margin-left: 10px; margin-top:5px;">
-                        <div class="col" style="text-align: center">
-                            <img src="https://cdn.myanimelist.net/images/anime/2/88336.jpg" style="width: 35%">
-                        </div>
-                        <div class="col">
-                            <h3>Black Clover</h3>
-                            <p>Black Clover</p>
-                        </div>
-                        <div class="col">
-                            <img src="../imagens/graficos/g4.png" />
-                        </div>
-                        <div class="col">
-                            <button type="button" class="btn btn-primary btn-sm" style="margin-top: 20px;"> <i class="fas fa-plus"></i> Adicionar</button>
-                        </div>
+                        
                     </div>
                     
                 </div>
                 
-                <!-- COL 02: Notícias -->
+                <!-- COL 02: Notícias
                 <div class="col">
                     
                     <div class="" style="background-color:white; width:95%; margin-left:5px; height: 165px; border-radius:4px;">
@@ -235,7 +291,6 @@
                         
                     </div>
                     
-                    <!-- Noticia: 01 -->
                     <div class="row" style="background-color:white; width:95%; margin-left: 5px; margin-top:px;">
                         <div class="col-md-auto">
                             <img src="../imagens/graficos/bar1.png" />
@@ -253,7 +308,6 @@
                         </div>
                     </div>
                     
-                    <!-- Noticia: 02 -->
                     <div class="row" style="background-color:white; width:95%; margin-left: 5px;">
                         <div class="col-md-auto">
                             <img src="../imagens/graficos/bar2.png" />
@@ -271,7 +325,6 @@
                         </div>
                     </div>
                     
-                    <!-- Noticia: 03 -->
                     <div class="row" style="background-color:white; width:95%; margin-left: 5px;">
                         <div class="col-md-auto">
                             <img src="../imagens/graficos/bar3.png" />
@@ -289,7 +342,6 @@
                         </div>
                     </div>
                     
-                    <!-- Noticia: 04 -->
                     <div class="row" style="background-color:white; width:95%; margin-left: 5px;">
                         <div class="col-md-auto">
                             <img src="../imagens/graficos/bar4.png" />
@@ -307,7 +359,6 @@
                         </div>
                     </div>
                     
-                    <!-- Noticia: 05 -->
                     <div class="row" style="background-color:white; width:95%; margin-left: 5px;">
                         <div class="col-md-auto">
                             <img src="../imagens/graficos/bar1.png" />
@@ -325,7 +376,7 @@
                         </div>
                     </div>
                     
-                </div>
+                </div> -->
                 
             </div>
         
