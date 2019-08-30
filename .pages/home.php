@@ -26,11 +26,11 @@
 </head>
 <body style="background-image: linear-gradient(to right, #6424ea,  #ad00b1, #9200c5);">
     
-    <!-- SECTION 01: Header 
+    <!-- SECTION 01: header 
     ===================================================== -->
     <?php include ('../.globals/header.php'); ?>
 
-    <!-- SECTION 02: Botões de Ação
+    <!-- SECTION 02: menu
     ===================================================== -->
     <sectcion>
         <div class="container-fluid" style="width: 95%; margin-top:30px;">
@@ -56,7 +56,7 @@
         </div>
     </sectcion>
 
-    <!-- SECTION ALL BODY
+    <!-- SECTION: corpo
     ===================================================== -->
     <section class="container-fluid" style="background-color:#eeebf9;width: 95%; margin-top: 0px; border-radius:5px;">
             
@@ -378,6 +378,13 @@
                     
                 </div> -->
                 
+            </div>
+        
+            <!--#### ROW 04: new ####-->
+            <div class="row" style="padding-top: 20px; width:99%; margin-left:8px;">
+        
+                a
+                    
             </div>
         
     </section>
