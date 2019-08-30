@@ -49,36 +49,45 @@ $nickname = $_SESSION['nickname'];
 <section>
     
     <div class="container-fluid" style="width: 95%; margin-top: 0px; border-radius:5px;">
-  <div class="row" style="margin-top: 30px">
-    <div class="col-lg-3">
-      <img src="../imagens/titulo.png"/>
-    </div>
-    <div class="col-lg-6">
-        <form>
-            <div class="input-group" style="width: 90%;">
-                <input type="text" class="form-control" style="background-color:rgba(255, 255, 255, 0.5); border: 1px solid rgba(115, 24, 107, 0.5); color: white;" placeholder="Pesquisar">
-            <div class="input-group-append">
-                <button class="btn btn-search" type="button">
-                <i class="fa fa-search"></i>
-                </button>
+        <div class="row" style="margin-top: 30px">
+            
+            <div class="col-lg-3">
+              <img src="../imagens/titulo.png"/>
             </div>
-            </div>
-        </form>
-    </div>
-    <div class="col-lg-3" style="background-color:#EEEBF9; border-radius: 5px; height: 80px; line-height: 80px;">
-            <div class="col-lg-2">
-                <img src="../imagens/logo-table.png" style="width:80px; padding:15px; float: left;"/>
-            </div>
+            
             <div class="col-lg-6">
-                Olá, <?php echo $nickname; ?>
+                
+                <form style="padding-top:25px;">
+                    <div class="input-group" style="width: 90%;">
+                        
+                        <input type="text" class="form-control" style="background-color:rgba(255, 255, 255, 0.5); border: 1px solid rgba(115, 24, 107, 0.5); color: white;" placeholder="Pesquisar">
+                        
+                        <div class="input-group-append">
+                            <button class="btn btn-search" type="button">
+                            <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                        
+                    </div>
+                </form>
+                
             </div>
-            <div class="col-lg-4">
-                <div class="btn btn-search"><i class="fas fa-cog"></i></div>
-                <a href="../logout.php"><div class="btn btn-search"><i class="fas fa-sign-out-alt"></i></div></a>
+            
+            <div class="col-lg-3" style="background-color:#EEEBF9; border-radius: 5px; height: 80px; line-height: 80px;">
+                    <div class="col-lg-2">
+                        <img src="../imagens/logo-table.png" style="width:80px; padding:10px; float: left; margin-left:-10px;"/>
+                    </div>
+                    <div class="col-lg-6" style="padding-left:40px; font-size:17px; padding-top:2px;">
+                        Olá, <?php echo $nickname; ?>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="../.pages/perfil.php"> <div class="btn btn-search"><i class="fas fa-cog"></i></div> </a>
+                        <a href="../logout.php"> <div class="btn btn-search"><i class="fas fa-sign-out-alt"></i></div> </a>
+                    </div>
             </div>
+            
+        </div>
     </div>
-  </div>
-</div>
     
     <!-- div class="container" style="margin-top: 30px;">
 
