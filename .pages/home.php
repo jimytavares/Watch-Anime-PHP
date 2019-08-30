@@ -18,10 +18,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Meu CSS -->
     <link href="../css/Main.css" rel="stylesheet" type="text/css" media="all"/>
+    <!-- Responsividade -->
+    <link href="../css/responsive.css" rel="stylesheet" type="text/css" media="all"/>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    
-    <style>  </style>
 
 </head>
 <body style="background-image: linear-gradient(to right, #6424ea,  #ad00b1, #9200c5);">
@@ -181,83 +181,7 @@
             <!--##### ROW 03 ####-->
             <div class="row" style="padding-top: 20px; width:99%; margin-left:8px;">
                 
-                <div class="row" style="margin-left:80px;">
-                    
-                    <div class="col">
-                    
-                        <!-- Anime 01 Grafico -->
-                        <div class="row" style="background-color:white; border-radius: 5px; width:95%; margin-left: 10px;">
-                            <div class="col" style="text-align: center">
-                               <img src="https://cdn.myanimelist.net/images/anime/1758/97736.jpg" style="width: 35%;">
-                            </div>
-                            <div class="col">
-                                <h3>Dr.Stone</h3>
-                                <p>Dr.Stone</p>
-                            </div>
-                            <div class="col">
-                                <img src="../imagens/graficos/g1.png" />
-                            </div>
-                            <div class="col">
-                                <button type="button" class="btn btn-primary btn-sm" style="margin-top: 20px;"> <i class="fas fa-plus"></i> Adicionar</button>
-                            </div>
-                        </div>
-
-                        <!-- Anime 02 Grafico -->
-                        <div class="row" style="background-color:white; border-radius: 5px; width:95%; margin-left: 10px; margin-top:5px;">
-                            <div class="col" style="text-align: center">
-                                <img src="https://cdn.myanimelist.net/images/anime/9/77809.jpg" style="width: 35%">
-                            </div>
-                            <div class="col">
-                                <h3>Noragami</h3>
-                                <p>Noragami</p>
-                            </div>
-                            <div class="col">
-                                <img src="../imagens/graficos/g2.png" />
-                            </div>
-                            <div class="col">
-                                <button type="button" class="btn btn-primary btn-sm" style="margin-top: 20px;"> <i class="fas fa-plus"></i> Adicionar</button>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    
-                    <div class="col">
-                        
-                        <!-- Anime 03 Grafico -->
-                        <div class="row" style="background-color:white; border-radius: 5px; width:95%; margin-left: 10px; margin-top:5px;">
-                            <div class="col" style="text-align: center">
-                                <img src="https://cdn.myanimelist.net/images/anime/13/80000.jpg" style="width: 35%">
-                            </div>
-                            <div class="col-md-auto">
-                                <h3>Katekyo Himan</h3>
-                                <p>Katekyo Hitman</p>
-                            </div>
-                            <div class="col">
-                                <img src="../imagens/graficos/g3.png" />
-                            </div>
-                            <div class="col">
-                                <button type="button" class="btn btn-primary btn-sm" style="margin-top: 20px;"> <i class="fas fa-plus"></i> Adicionar</button>
-                            </div>
-                        </div>
-
-                        <!-- Anime 04 Grafico -->
-                        <div class="row" style="background-color:white; border-radius: 5px; width:100%; margin-left: 10px; margin-top:5px;">
-                            <div class="col" style="text-align: center">
-                                <img src="https://cdn.myanimelist.net/images/anime/2/88336.jpg" style="width: 35%">
-                            </div>
-                            <div class="col-md-auto">
-                                <h3>Black Clover</h3>
-                                <p>Black Clover</p>
-                            </div>
-                            <div class="col">
-                                <img src="../imagens/graficos/g4.png" />
-                            </div>
-                            <div class="col">
-                                <button type="button" class="btn btn-primary btn-sm" style="margin-top: 20px;"> <i class="fas fa-plus"></i> Adicionar</button>
-                            </div>
-                        </div>
-                        
-                    </div>
+                <div class="row">
                     
                 </div>
                 
@@ -387,8 +311,7 @@
                     
             </div>
         
-    </section>
-    
+    b</section>
     
     
     

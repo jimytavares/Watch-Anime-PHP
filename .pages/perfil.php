@@ -91,6 +91,13 @@
                             <img src="../../trunk/imagens/icon-doc.png" />
                             <b>Anotações:</b> 15
                         </div>
+                    </div>
+                    
+                    <div class="row" style="margin-left:60px; margin-top:10px;">
+                        <div class="col">
+                            <img src="../../trunk/imagens/icon-msg.png" />
+                            <b>Mensagens:</b> 3201
+                        </div>
                         <div class="col">
                             <img src="../../trunk/imagens/icon-msg.png" />
                             <b>Mensagens:</b> 3201
@@ -115,7 +122,7 @@
             </div>
             
             <!-- LINHA 03: Botões de ação site -->
-            <div class="" style="margin-top:10px; margin-left: 20px;">
+            <div class="" style="margin-top:10px; text-align:center;">
                     <button type="button" class="btn btn-outline-primary btn-sm" style="color:black; font-weight: bold;"> <i class="fas fa-coins" style="color:#5345ba; font-size: 20px;"></i> R$ 1000,00</button> &nbsp &nbsp
                     <button type="button" class="btn btn-outline-primary btn-sm" style="color:black; font-weight: bold;"> <i class="far fa-newspaper" style="color:#00ace6; font-size: 20px;"></i> Noticias</button> &nbsp &nbsp
                     <button type="button" class="btn btn-outline-primary btn-sm" style="color:black; font-weight: bold;"> <i class="fas fa-sync-alt" style="color:#5cbcb1; font-size: 20px;"></i> Animes Parados</button> &nbsp &nbsp
@@ -125,7 +132,7 @@
             </div>
             
             <!-- LINHA 04: Botões de ação usuário -->
-            <div class="" style="margin-top:10px; margin-left: 20px;">
+            <div class="" style="margin-top:10px; text-align:center;">
                 <button type="button" class="btn btn-outline-primary btn-sm" style="color:black; font-weight: bold;"> <i class="fas fa-user-circle" style="color:#e000c7; font-size: 20px;"></i> Trocar Nick</button> &nbsp &nbsp
                 <button type="button" class="btn btn-outline-primary btn-sm" style="color:black; font-weight: bold;"> <i class="fas fa-key" style="color:#db8780; font-size: 20px;"></i> Trocar Senha</button> &nbsp &nbsp
                 <button type="button" class="btn btn-outline-primary btn-sm" style="color:black; font-weight: bold;"> <i class="fas fa-at" style="color:#00ace6; font-size: 20px;"></i> Trocar E-Mail</button> &nbsp &nbsp
