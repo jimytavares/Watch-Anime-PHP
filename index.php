@@ -1,12 +1,12 @@
-<?php 
-session_start();
+    <?php 
+    session_start();
 
-if(isset($_SESSION['login'])){
-    header('Location: home.php');
-}
-?>
+    if(isset($_SESSION['login'])){
+        header('Location: home.php');
+    }
+    ?>
 
-<!DOCTYPE HTML>
+    <!DOCTYPE HTML>
 <html>
 <head>
 
@@ -27,7 +27,6 @@ if(isset($_SESSION['login'])){
 <body style="background: url('imagens/bg-login.jpg') no-repeat center center fixed; background-size: cover; background-repeat: no-repeat;">
 
     <section class="lg-index" style="overflow-x: hidden">
-
         <div class="row">
             
             <div class="col" style="margin-left: 45%">
@@ -43,7 +42,8 @@ if(isset($_SESSION['login'])){
                             <div class="col">
                             </div>
                         </div>
-
+                        
+                        <!-- Formulário-->
                         <form action="logar.php" method="post" autocomplete="on" style="margin-top:20px;">
                             <fieldset>
 
@@ -85,13 +85,13 @@ if(isset($_SESSION['login'])){
 
                     </div>
                 </div>
-
             </div>
+            
         </div>
 
 
 
-        <!-- MODAL: Novo Usuário -->
+        <!--#### MODAL: Novo Usuário ####-->
         <div class="modal fade bd-example-modal-lg" id="ModalRegistrar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content" style="background-image: url('imagens/fundo.jpg'); background-size:cover;">
@@ -173,8 +173,7 @@ if(isset($_SESSION['login'])){
             </div>
         </div>
 
-        <!-- MODAL: Esqueci Senha -->
-
+        <!--#### MODAL: Esqueci Senha ####-->
         <div class="modal fade" id="ModalEsqueciSenha" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -200,36 +199,41 @@ if(isset($_SESSION['login'])){
     </div>
 </div>
 </div>
+        
 </section>
 
-<script type="text/javascript">
-    var input = document.getElementById("senha");
-    var text = document.getElementById("capsativo");
-    input.addEventListener("keyup", function(event) {
-      if (event.getModifierState("CapsLock")) {
-        text.style.display = "block";
-    } else {
-        text.style.display = "none"
-    }
-});
-</script>
+    <script type="text/javascript">
 
-<?php
-if(isset($_GET['success'])){
-    ?><script type="text/javascript">alert('Cadastrado com sucesso')</script><?php
-}elseif(isset($_GET['error']) && $_GET['error'] == 'register_wrong'){
-    ?><script type="text/javascript">alert('Deu algum erro aí ao tentar cadastrar, usuário ou endereço de correio eletrônico pertencem ao meu PAI! (OOO PAI oO)')</script><?php
-}elseif(isset($_GET['recsuccess'])){
-    ?><script type="text/javascript">alert('E-mail de recuperação enviado com sucesso')</script><?php
-}elseif(isset($_GET['recfail'])){
-    ?><script type="text/javascript">alert('Ocorreu algum erro')</script><?php
-}?>
+        var input = document.getElementById("senha");
+        var text = document.getElementById("capsativo");
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        input.addEventListener("keyup", function(event) {
+          if (event.getModifierState("CapsLock")) {
+            text.style.display = "block";
+        } else {
+            text.style.display = "none"
+        }
+        });
+
+    </script>
+
+    <?php
+        if(isset($_GET['success'])){
+            ?><script type="text/javascript">alert('Cadastrado com sucesso')</script><?php
+        }elseif(isset($_GET['error']) && $_GET['error'] == 'register_wrong'){
+            ?><script type="text/javascript">alert('Deu algum erro aí ao tentar cadastrar, usuário ou endereço de correio eletrônico pertencem ao meu PAI! (OOO PAI oO)')</script><?php
+        }elseif(isset($_GET['recsuccess'])){
+            ?><script type="text/javascript">alert('E-mail de recuperação enviado com sucesso')</script><?php
+        }elseif(isset($_GET['recfail'])){
+            ?><script type="text/javascript">alert('Ocorreu algum erro')</script><?php
+        }
+    ?>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
 </html>
