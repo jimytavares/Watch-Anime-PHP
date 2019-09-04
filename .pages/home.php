@@ -181,8 +181,51 @@
             <!--##### ROW 03 ####-->
             <div class="row" style="padding-top: 20px; width:99%; margin-left:8px;">
                 
-                <div class="row">
+                <!-- Noticia 01 -->
+                <div class="col" style="background-color:white; height:300px; border-radius:5px;">
                     
+                    <div class="row">
+                        <div class="col">
+                            <h3>Melhores Animes</h3>
+                        </div>
+                        <div class="col" style="text-align:right;">
+                            <i class="fas fa-plus-circle" style="padding-top:25px; font-size:30px; color:#404040;"></i>
+                            <i class="fas fa-bars" style="padding-top:25px; font-size:30px; margin-left:20px;"></i>
+                        </div>
+                    </div>
+                    
+                    <hr style="width:100%;color:gray;">
+                    
+                    <div class="row" style="margin-left:0px; width:98%;background-color:Red;">
+                        <div class="col">
+                            a
+                        </div>
+                        <div class="col">
+                            b
+                        </div>
+                        <div class="col">
+                            c
+                        </div>
+                        <div class="col">
+                            d
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Noticia 02 -->
+                <div class="col" style="background-color:white; margin-left:10px; border-radius:5px;">
+                    <div class="row">
+                        <div class="col">
+                            <h3>testando</h3>
+                        </div>
+                        <div class="col" style="text-align:right;">
+                            <i class="fas fa-plus-circle" style="padding-top:25px; font-size:30px; color:#404040;"></i>
+                            <i class="fas fa-bars" style="padding-top:25px; font-size:30px; margin-left:20px;"></i>
+                        </div>
+                    </div>
+                    <hr style="width:100%;color:gray;">
+                    <p>dsahudhasudhuashduhasudhasuhdusahduahudahsudhasuhdaus</p>
                 </div>
                 
                 <!-- COL 02: Notícias
@@ -302,16 +345,16 @@
                     
                 </div> -->
                 
-            </div>
+                </div>
         
             <!--#### ROW 04: new ####-->
             <div class="row" style="padding-top: 20px; width:99%; margin-left:8px;">
         
-                a
+                b
                     
             </div>
         
-    b</section>
+    </section>
     
     
     
