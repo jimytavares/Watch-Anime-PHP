@@ -37,19 +37,30 @@
 
             <div class="row" style="margin-left:40px;">
                 <div class="col-md-auto">
-                    <a href="home.php"> <button type="button" class="btn btn-outline-success" style="background-color:#F9F8FD; width:100px; height: 50px; color:white; border-radius:1px;"> <i class="fas fa-home" style="color:black; font-size:25px;"></i> </button> </a>
+                    <a href="home.php"> <button type="button" class="btn btn-outline-success resp-menu-butHome" style="background-color:#F9F8FD; width:100px; height: 50px; color:white; border-radius:1px;"> <i class="fas fa-home" style="color:black; font-size:25px;"></i> </button> </a>
                 </div>
                 <div class="col-md-auto">
-                    <a href="perfil.php">  <button type="button" class="btn btn-outline-success" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Perfil</button> </a>
+                    <a href="perfil.php">  <button type="button" class="btn btn-outline-success resp-menu-butPerfil" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Perfil</button> </a>
                 </div>
                 <div class="col-md-auto">
-                    <a href="temporada.php"> <button type="button" class="btn btn-outline-success" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Temporadas</button> </a>
+                    <a href="temporada.php"> <button type="button" class="btn btn-outline-success resp-menu-butTemp" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Temporadas</button> </a>
                 </div>
+                    <!-- Resp: Button Mobile -->
+                    <div class="col-md-auto">
+                        <a href="temporada.php"> <button type="button" class="btn btn-outline-success resp-menu-buTemp2" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px; display:none;">Temp</button> </a>
+                    </div>
+                
                 <div class="col-md-auto">
-                    <a href="lancamentos.php"> <button type="button" class="btn btn-outline-success" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Lançamento</button> </a>
+                    <a href="lancamentos.php"> <button type="button" class="btn btn-outline-success resp-menu-butLanc" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-55px;">Lançamento</button> </a>
                 </div>
+                
+                    <!-- Resp: Button Mobile -->
+                    <div class="col-md-auto">
+                        <a href="lancamentos.php"> <button type="button" class="btn btn-outline-success resp-menu-butLanc2" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-55px; display:none;">Novos</button> </a>
+                    </div>
+                
                 <div class="col-md-auto">
-                    <a href="ranking.php"> <button type="button" class="btn btn-outline-success" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Ranking</button> </a>
+                    <a href="ranking.php"> <button type="button" class="btn btn-outline-success resp-menu-butRank" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-54px;">Ranking</button> </a>
                 </div>
             </div>
 
@@ -58,14 +69,14 @@
 
     <!-- SECTION: corpo
     ===================================================== -->
-    <section class="container-fluid" style="background-color:#eeebf9;width: 95%; margin-top: 0px; border-radius:5px;">
+    <section class="container-fluid resp-body" style="background-color:#eeebf9; width: 95%; border-radius:5px;">
             
             <!--##### ROW 01 ####-->
             <div class="row" style="padding-top: 20px; width:99%; margin-left:8px;">
                 
                 <!-- COL 02: New -->
                 <div class="col">
-                    <div class="row"  style="background-color:white; border-radius:3px; height: 220px;">
+                    <div class="row off-r" style="background-color:white; border-radius:3px; height: 220px;">
                         <div class="col-md-auto">
                             <img src="../imagens/01logo-perfil.png" style="width:160px; padding-top:35px;"/>
                         </div>
@@ -79,7 +90,7 @@
                 
                 <!-- COL 02: Ranking -->
                 <div class="col">
-                    <div class="row"  style="background-color:white; border-radius:3px; margin-left:3px; height: 220px;">
+                    <div class="row off-r"  style="background-color:white; border-radius:3px; margin-left:3px; height: 220px;">
                         <div class="col-md-auto">
                             <img src="../imagens/01logo-rank.png" style="width:160px; padding-top:35px;"/>
                         </div>
@@ -93,7 +104,7 @@
                 
                 <!-- COL 01: Assistindo -->
                 <div class="col">
-                    <div class="row"  style="background-color:white; border-radius:3px; margin-left:3px; height: 220px;">
+                    <div class="row off-r"  style="background-color:white; border-radius:3px; margin-left:3px; height: 220px;">
                         <div class="col-md-auto">
                             <img src="../imagens/01logo-assist.png" style="width:160px; padding-top:35px;"/>
                         </div>
@@ -153,7 +164,7 @@
                                 <i class="far fa-calendar-alt" id="icon-table-assist" data-toggle="modal" data-target="#modaldataassistido"></i>
                                 <i class="fas fa-info-circle" id="icon-table-assist" data-toggle="modal" data-target="#modalinfo" style="margin-left:30px;"></i> 
                             </div>
-                            <div class="col">
+                            <div class="col alignText-r">
                                 <b>Animes Assistindo</b>
                             </div>
                             <div class="col">
@@ -172,7 +183,7 @@
                             </tr>
                         </thead>
                         <tbody id="body-table-parados">
-                            <?php include_once('../../trunk/control/selectAssistindo.php'); ?>
+                            <?php include_once('../../trunk/control/selectAssistindo2.php'); ?>
                         </tbody>
                     </table>
         

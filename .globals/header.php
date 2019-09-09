@@ -51,16 +51,18 @@ $nickname = $_SESSION['nickname'];
     <div class="container-fluid" style="width: 95%; margin-top: 0px; border-radius:5px;">
         <div class="row" style="margin-top: 30px">
             
-            <div class="col-lg-3">
+            <!-- Title -->
+            <div class="col-lg-3 resp-title">
               <img src="../imagens/titulo.png"/>
             </div>
             
+            <!-- Search & Button: Search -->
             <div class="col-lg-6">
                 
                 <form style="padding-top:25px;">
                     <div class="input-group" style="width: 90%;">
                         
-                        <input type="text" class="form-control" style="background-color:rgba(255, 255, 255, 0.5); border: 1px solid rgba(115, 24, 107, 0.5); color: white;" placeholder="Pesquisar">
+                        <input type="text" class="form-control resp-search" style="background-color:rgba(255, 255, 255, 0.5); border: 1px solid rgba(115, 24, 107, 0.5); color: white;" placeholder="Pesquisar">
                         
                         <div class="input-group-append">
                             <button class="btn btn-search" type="button">
@@ -73,7 +75,8 @@ $nickname = $_SESSION['nickname'];
                 
             </div>
             
-            <div class="col-lg-3" style="background-color:#eeebf9; border-radius: 5px; height: 80px; line-height: 80px;">
+            <!-- User: Campo -->
+            <div class="col-lg-3 resp-user" style="background-color:#eeebf9; border-radius: 5px; height: 80px; line-height: 80px;">
                     <div class="col-lg-2">
                         <img src="../imagens/logo-table.png" style="width:80px; padding:10px; float: left; margin-left:-10px;"/>
                     </div>
@@ -81,8 +84,8 @@ $nickname = $_SESSION['nickname'];
                         Olá, <?php echo $nickname; ?>
                     </div>
                     <div class="col-lg-4">
-                        <a href="../.pages/perfil.php"> <div class="btn btn-search"><i class="fas fa-cog"></i></div> </a>
-                        <a href="../logout.php"> <div class="btn btn-search"><i class="fas fa-sign-out-alt"></i></div> </a>
+                        <a href="../.pages/perfil.php"> <div class="btn btn-search resp-user-config"><i class="fas fa-cog"></i></div> </a>
+                        <a href="../logout.php"> <div class="btn btn-search resp-user-logout"><i class="fas fa-sign-out-alt"></i></div> </a>
                     </div>
             </div>
             

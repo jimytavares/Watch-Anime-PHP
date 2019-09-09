@@ -2,7 +2,79 @@
 /*               Header                */
 /* =================================== */
 
-    @media screen and (min-width:768px) and (max-width:1366)
+    @media screen and (min-width:414px) and (max-width:736px)
     {   
+        .off-r{
+            display: none;
+        }
         
+        .alignText-r{
+            margin-top: -10px; !important;
+        }
+        
+        .resp-search{
+            width:80% !important;
+            margin-left:30px;
+        }
+        
+        .resp-title{
+            text-align:center !important;
+        }
+        
+        .resp-user{
+            margin-top:15px;
+            background-color: #eeebf9 !important;
+            opacity: 1.0;
+            border-radius: 2px !important;
+        }
+            .resp-user-config{
+                margin-left: 230px; !important;
+                margin-top: -50% !important;
+            }
+            .resp-user-logout{
+                margin-top: -50% !important;
+            }
+        
+        .resp-menu-butHome{
+            margin-left:-70px !important;
+            width: 80px !important;
+            background-color: #eeebf9 !important;
+        }
+        .resp-menu-butPerfil{
+            width: 70px !important;
+            margin-left:12px !important;
+            margin-top:-73px !important;
+            height: 49px !important;
+        }
+            .resp-menu-butTemp{
+                display: none;
+            }
+            .resp-menu-buTemp2{    
+                display: block !important;
+                width: 70px !important;
+                margin-left:83px !important;
+                margin-top:-71px !important;
+                height: 49px !important;
+            }
+            .resp-menu-butLanc{
+                display: none;
+            }
+            .resp-menu-butLanc2{
+                display: block !important;
+                width:70px !important;
+                margin-left:50% !important;
+                margin-top:-73px !important;
+                height: 49px !important;
+            }
+        .resp-menu-butRank{
+            width: 80px !important;
+            margin-left:73% !important;
+            margin-top:-121px !important;
+            height: 49px !important;
+        }
+        
+        .resp-body{
+            margin-top:-44px !important;
+            border-radius: 1px !important;
+        }
     }
