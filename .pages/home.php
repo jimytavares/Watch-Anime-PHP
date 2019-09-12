@@ -74,30 +74,16 @@
             <!--##### ROW 01 ####-->
             <div class="row" style="padding-top: 20px; width:99%; margin-left:8px;">
                 
-                <!-- COL 02: New -->
+                <!-- COL 02: xxxx -->
                 <div class="col">
                     <div class="row off-r" style="background-color:white; border-radius:3px; height: 220px;">
                         <div class="col-md-auto">
                             <img src="../imagens/01logo-perfil.png" style="width:160px; padding-top:35px;"/>
                         </div>
                         <div class="col" style="text-align:center; margin-top:20px;">
-                            <h2>Perfil</h2>
-                            <p>Aqui você pode cadastrar todos os animes que está assistindo no momento.</p>
-                            <button type="button" class="btn btn-primary" style="background-color:#ff471a; border:none; width:200px; height:40px; margin-top:10px;">visualizar</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- COL 02: Ranking -->
-                <div class="col">
-                    <div class="row off-r"  style="background-color:white; border-radius:3px; margin-left:3px; height: 220px;">
-                        <div class="col-md-auto">
-                            <img src="../imagens/01logo-rank.png" style="width:160px; padding-top:35px;"/>
-                        </div>
-                        <div class="col" style="text-align:center; margin-top:20px;">
-                            <h2>Ranking</h2>
-                            <p>Aqui você pode cadastrar todos os animes que está assistindo no momento.</p>
-                            <button type="button" class="btn btn-primary" style="background-color: #9933ff; width:230px; height:40px; margin-top:10px; border:none;">Visualizar</button>
+                            <h2>xXxXx</h2>
+                            <p>Aqui você pode você pode você pode você pode você pode você pode você pode .</p>
+                            <button type="button" class="btn btn-primary" style="background-color:#ff471a; border:none; width:200px; height:40px; margin-top:10px;">Fazer Algo</button>
                         </div>
                     </div>
                 </div>
@@ -110,8 +96,22 @@
                         </div>
                         <div class="col" style="text-align:center; margin-top:20px;">
                             <h2>Assistindo</h2>
-                            <p>Aqui você pode cadastrar todos os animes que está assistindo no momento.</p>
-                            <a href="assistindo.php"> <button type="button" class="btn btn-success" style=" width:230px; background-color:#33ccff; border:none; height:40px; margin-top:10px;">Visualizar</button> </a>
+                            <p>Cadastrar Animes que você ta assistindo.</p>
+                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#teste1" style=" width:230px; background-color:#33ccff; border:none; height:40px; margin-top:30px;">Cadastrar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- COL 02: xxxx -->
+                <div class="col">
+                    <div class="row off-r"  style="background-color:white; border-radius:3px; margin-left:3px; height: 220px;">
+                        <div class="col-md-auto">
+                            <img src="../imagens/01logo-rank.png" style="width:160px; padding-top:35px;"/>
+                        </div>
+                        <div class="col" style="text-align:center; margin-top:20px;">
+                            <h2>xXxXx</h2>
+                            <p>Aqui você pode você pode você pode você pode você pode você pode você pode .</p>
+                            <button type="button" class="btn btn-primary" style="background-color: #9933ff; width:230px; height:40px; margin-top:10px; border:none;">Fazer Algo</button>
                         </div>
                     </div>
                 </div>
@@ -161,20 +161,20 @@
                 <div class="container" style="width:1000px; color:white; background-image: linear-gradient(to right, #3FC9FE ,#3A7EC7, #2F449C); height:50px; border-radius:2px; box-shadow: 1px 3px 10px #000000; text-align:center;">
                         <div class="row" style="padding-top:15px;">
                             <div class="col">
-                                <i class="far fa-calendar-alt" id="icon-table-assist" data-toggle="modal" data-target="#modaldataassistido"></i>
-                                <i class="fas fa-info-circle" id="icon-table-assist" data-toggle="modal" data-target="#modalinfo" style="margin-left:30px;"></i> 
+                                <i class="far fa-calendar-alt" id="icon-table-assist"></i>
+                                <i class="fas fa-info-circle" id="icon-table-assist" style="margin-left:30px;"></i> 
                             </div>
                             <div class="col alignText-r">
                                 <b>Animes Assistindo</b>
                             </div>
                             <div class="col">
-                                <i class='far fa-edit' data-toggle="modal" data-target="#modaleditdel" style='color:#ff66d9; font-size: 20px;'></i>
-                                <i class='fas fa-trash-alt' data-toggle="modal" data-target="#modaleditdel" style='font-size:20px; color:#EE5253;margin-left:30px;'></i>
+                                <i class='far fa-edit' style='color:#ff66d9; font-size: 20px;'></i>
+                                <i class='fas fa-trash-alt' style='font-size:20px; color:#EE5253;margin-left:30px;'></i>
                             </div>
                         </div>
                     </div>
                     
-                <table class="table table-sm" style="margin-top: 10px;">
+                <table class="table table-sm" style="margin-top: 10px; margin-left: 10%; width:70%;">
                         <thead>
                             <tr id="tr-parados">
                                 <th id="th-parados">Nome</th>
@@ -358,11 +358,25 @@
                 
                 </div>
         
-            <!--#### ROW 04: new ####-->
-            <div class="row" style="padding-top: 20px; width:99%; margin-left:8px;">
-        
-                b
-                    
+        <!-- Group MODAL -->
+            <div class="modal fade" id="teste1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
             </div>
         
     </section>
