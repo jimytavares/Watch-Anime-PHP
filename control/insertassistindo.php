@@ -20,7 +20,7 @@
     $sql = "INSERT INTO tb_assistido(id_usuario, id_anime, episodio, dia_semana) VALUES ('$id_user', '$id_animeA', '$episodioA', '$dia_semana');";
 
     if ($mysqli->query($sql) === TRUE) {
-    header('Location: ../pages/form-assistindo.php');
+    header('Location: ../.pages/form-assistindo.php');
 
     } else {
     echo "Error: " . $sql . "<br>" . $mysqli->error;

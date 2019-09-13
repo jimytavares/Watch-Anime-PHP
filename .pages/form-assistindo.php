@@ -106,7 +106,7 @@
                             <p>Nome Anime:</p>
                         </div>
                         <div class="col">
-                            <select class="form-control" name="id_anime" id="exampleFormControlSelect1" style="width:50%; background-color:transparent; color:#999999; border-radius:3px; border: 1px solid #999999;">
+                            <select class="form-control" name="id_anime" id="exampleFormControlSelect1" style="width:50%; background-color:transparent; color:#595959; border-radius:3px; border: 1px solid #999999;">
                               <option value="0">..::Selecione Anime::..</option>
                               <?php include_once('../../trunk/control/selectTeste.php'); ?>  
                                 
