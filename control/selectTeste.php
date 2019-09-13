@@ -8,12 +8,12 @@
 
    $mysqli = new mysqli ($servidor, $usuario, $senha, $banco);
 
-    $sql = "SELECT nome FROM tb_animes ";
+    $sql = "SELECT * FROM tb_animes ";
 
     $resultado = $mysqli->query($sql);
 
     //$dados = mysqli_fetch_array($resultado);
     foreach ($resultado AS $dados){
-        echo '<option value=' . $dados["nome"] . '>' . $dados["nome"] . '</option>';
+        echo '<option value=' . $dados["id"] . '>' . $dados["nome"] . '</option>';
     }
 ?>

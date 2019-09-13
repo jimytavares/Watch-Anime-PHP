@@ -1,22 +1,26 @@
 <?php
 
-    $mysqli = new mysqli ('localhost', 'dbanime', '12345', 'dbanime');
-    
-    $nomeA          = $_POST['nome'];
-    $episodioA             = $_POST['episodio'];
-    $dataassistidoA = $_POST['dataassistido'];
-    $diasemanaA       = $_POST['diasemana'];
-    $dataproxepA          = $_POST['dataproxep'];
-    $diasemanaproxepA         = $_POST['diasemanaproxep'];
-    $qualidadeA          = $_POST['qualidade'];
-    $comentarioA     = $_POST['comentario'];
-    $notaA = $_POST['nota'];
+    session_start();
 
-    //enviar instrucao sql para o banco
-    $sql = "INSERT INTO assistindo(nome, episodio, dataassistido, diasemana, dataproxep, diasemanaproxep, qualidade, comentario, nota) VALUES ('$nomeA', '$episodioA', '$dataassistidoA', '$diasemanaA', '$dataproxepA', '$diasemanaproxepA', '$qualidadeA', '$comentarioA', '$notaA');";
-    
+    $servidor = 'localhost';
+    $usuario  = 'testee';
+    $senha    = '12345';
+    $banco    = 'dbanime';
+
+    $mysqli = new mysqli ($servidor, $usuario, $senha, $banco);
+
+    $id_user    = (int) $_SESSION['id'] ;
+    $id_animeA  = $_POST['id_anime'];
+    $episodioA  = $_POST['episodio'];
+    $dia_semana = $_POST['dia_semana'];
+
+    //var_dump($_POST);
+    //echo $id_user;
+
+    $sql = "INSERT INTO tb_assistido(id_usuario, id_anime, episodio, dia_semana) VALUES ('$id_user', '$id_animeA', '$episodioA', '$dia_semana');";
+
     if ($mysqli->query($sql) === TRUE) {
-    header('Location: index.php');
+    header('Location: ../pages/form-assistindo.php');
 
     } else {
     echo "Error: " . $sql . "<br>" . $mysqli->error;

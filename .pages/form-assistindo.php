@@ -92,22 +92,21 @@
                     <h4 style="margin-left:5px; padding-top:21px; font-family: 'Poppins', sans-serif;">Cadastro Ranking</h4>
                 </div>
                 <div class="col">
-                    <a href="ranking.php"> <button type="button" class="btn btn-primary btn-sm" style="margin-top:27px; margin-left:18px; background-color:#716aca; border:none;">Ranking</button> </a>
+                    <a href="ranking.php"> <button type="button" class="btn btn-primary btn-sm" style="margin-top:27px; margin-left:18px; background-color:#716aca; border:none;">Clique Aqui</button> </a>
                 </div>
             </div>
             <hr style="border-top: 1px solid #999999; width:98%; opacity:0.4;">
             
             <!-- BOX: form -->
             <div class="" style="margin-left:3%; width: 1000px; margin-top:30px; border: ;">
-                
-                <form method="post" action="" style="font-family: 'Poppins', sans-serif;">
+                <form action="../../trunk/control/insertassistindo.php" method="post" autocomplete="on" style="font-family: 'Poppins', sans-serif;">
                   <div class="form-group">
                       <div class="row">
                         <div class="col-md-auto">
                             <p>Nome Anime:</p>
                         </div>
                         <div class="col">
-                            <select class="form-control" id="exampleFormControlSelect1" style="width:50%; background-color:transparent; color:#999999; border-radius:3px; border: 1px solid #999999;">
+                            <select class="form-control" name="id_anime" id="exampleFormControlSelect1" style="width:50%; background-color:transparent; color:#999999; border-radius:3px; border: 1px solid #999999;">
                               <option value="0">..::Selecione Anime::..</option>
                               <?php include_once('../../trunk/control/selectTeste.php'); ?>  
                                 
@@ -116,45 +115,35 @@
                       </div>
                   </div>
                   <div class="form-group">
-                      <div class="row">
+                    <div class="row">
                         <div class="col-md-auto">
-                            <p>Abreviação:</p>
+                            <p>Episódio:</p>
                         </div>
-                          <div class="col">
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="escolha uma abreviação pro seu anime" style="width:50%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left: 10px;">
+                        <div class="col">
+                            <input type="text" name="episodio" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:20%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:40px;">
                         </div>
                       </div>
                   </div>
                   <div class="form-group">
                       <div class="row">
                         <div class="col-md-auto">
-                            <p>Data Estreia:</p>
+                            <p>Dia da Semana:</p>
                         </div>
                         <div class="col">
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:50%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:5px;">
+                            <input type="text" name="dia_semana" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:25%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:5px;">
                         </div>
                       </div>
                   </div>  
                   <div class="form-group">
-                    <p>Episódio:</p>
-                    <select multiple class="form-control" id="exampleFormControlSelect2" style="width:83%; background-color:transparent; color:black; border-radius:3px; border: 1px solid gray;">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
                     <p>OBS:</p>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="width:83%; background-color:transparent; color:red; border-radius:3px; border: 1px solid gray;"></textarea>
+                    <textarea class="form-control" name="obs" id="exampleFormControlTextarea1" rows="3" style="width:83%; background-color:transparent; color:red; border-radius:3px; border: 1px solid gray;"></textarea>
                   </div>
                     <button class="btn btn-success" style="background-color:#716aca; border:none;">Limpar</button>
-                    <button class="btn btn-success" style="border:none;">Cadastrar</button>
+                    <button type="submit" class="btn btn-success" style="border:none;">Cadastrar</button>
                 </form>
                 
             </div>
-            .
+            .<?php echo $_SESSION['id'] ?>
         </div>
         
     </section>

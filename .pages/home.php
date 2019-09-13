@@ -97,7 +97,7 @@
                         <div class="col" style="text-align:center; margin-top:20px;">
                             <h2>Assistindo</h2>
                             <p>Cadastrar Animes que você ta assistindo.</p>
-                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#teste1" style=" width:230px; background-color:#33ccff; border:none; height:40px; margin-top:30px;">Cadastrar</button>
+                            <a href="form-assistindo.php"> <button type="button" class="btn btn-success" data-toggle="modal" data-target="#teste1" style=" width:230px; background-color:#33ccff; border:none; height:40px; margin-top:30px;">Cadastrar</button> </a>
                         </div>
                     </div>
                 </div>
@@ -174,7 +174,7 @@
                         </div>
                     </div>
                     
-                <table class="table table-sm" style="margin-top: 10px; margin-left: 10%; width:70%;">
+                <table class="table table-sm" style="margin-top: 10px; margin-left: ; width:98%;">
                         <thead>
                             <tr id="tr-parados">
                                 <th id="th-parados">Nome</th>
@@ -182,7 +182,7 @@
                                 <th id="th-parados">Dia Lançamento</th>
                             </tr>
                         </thead>
-                        <tbody id="body-table-parados">
+                        <tbody id="">
                             <?php include_once('../../trunk/control/selectAssistindo2.php'); ?>
                         </tbody>
                     </table>
@@ -404,7 +404,7 @@
                     </div>
 
                     <div class="col" style="background-color:blue;">
-                    <?php echo $_SESSION['login'] ?>
+                    <?php echo $_SESSION['nickname'] ?>
                     </div>
 
                     </div>
