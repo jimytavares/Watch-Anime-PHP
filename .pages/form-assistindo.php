@@ -21,6 +21,7 @@
     <link href="css/Main.css" rel="stylesheet" type="text/css" media="all"/>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     
     <style>  </style>
 
@@ -59,39 +60,54 @@
 
     <!-- SECTION ALL BODY
     ===================================================== -->
-    <section class="container-fluid" style="background-color:#eeebf9;width: 95%; margin-top: 0px; height:1000px; border-radius:5px;">
+    <section class="container-fluid" style="background-color:#eeebf9; width: 95%; margin-top: 0px; height:700px; border-radius:5px;">
         
-        <div class="" style="margin-top:20px; background-color:white;border-radius:3px; height: 80px; width:98%; margin-left:10px;">
+        <!-- #### Row 01: Alert #### -->
+        <div class="" style="margin-top:20px; background-color:white; border-radius:3px; height: 67px; width:98%; margin-left:10px;">
             
-            <div class="row" style="width: 80%; margin-left: 5%; padding-top:20px;">
+            <div class="row " style="width: 80%; margin-left: 1%; padding-top:20px;">
                 <div class="col-md-auto">
-                    <img src="../imagens/icon-msg.png" style="width:45px;"/>
+                    <img src="../imagens/alert.png" style="margin-top:px;"/>
                 </div>
-                <div class="col">
-                    asdasdasd
+                <div class="col" style="margin-top:-8px; font-size:13px;">
+                    <p>Cadastre os <b>Animes</b> que você está <b>assistindo</b> no momento. </p>
+                    <p style="color:gray;">Visualize sua lista de animes cadastrados na página <a href="home.php" style="color:#716aca;"> <i class="fas fa-arrow-left"></i> Inicial</a> .</p>
                 </div>
             </div>
             
         </div>
         
-        <div class="row" style="background-color:white; width: 98%; margin-top: 20px; margin-left:10px; border-radius:3px;">
+        <!-- #### Row 02: Formulário #### -->
+        <div class="" style="background-color:white; width: 98%; margin-top: 20px; margin-left:10px; border-radius:3px;">
             
-            
-                <h3>Cadastro de Animes</h3>
-                <hr style="height:10px;color:red;">
+            <!-- TITLE: cadastro -->
+            <div class="row no-gutters">
+                <div class="col">
+                    <h4 style="margin-left: 50px; padding-top:20px; font-family: 'Poppins', sans-serif;">Cadastro de Animes</h4>
+                </div>
+                <div class="col-md-auto">
+                    <i class="fas fa-angle-double-right" style="font-size:30px; margin-top:26px;"></i>
+                </div>
+                <div class="col-md-auto">
+                    <h4 style="margin-left:5px; padding-top:21px; font-family: 'Poppins', sans-serif;">Cadastro Ranking</h4>
+                </div>
+                <div class="col">
+                    <a href="ranking.php"> <button type="button" class="btn btn-primary btn-sm" style="margin-top:27px; margin-left:18px; background-color:#716aca; border:none;">Ranking</button> </a>
+                </div>
+            </div>
+            <hr style="border-top: 1px solid #999999; width:98%; opacity:0.4;">
             
             <!-- BOX: form -->
-            <div class="" style="background-color:; margin-left:17%; width: 1000px; margin-top:30px; border: ;">
+            <div class="" style="margin-left:3%; width: 1000px; margin-top:30px; border: ;">
                 
-                <form method="post" action="">
+                <form method="post" action="" style="font-family: 'Poppins', sans-serif;">
                   <div class="form-group">
                       <div class="row">
                         <div class="col-md-auto">
-                            <label for="exampleFormControlInput1" style="color:red;">*</label>
-                            <label for="exampleFormControlInput1">Nome Anime:</label>
+                            <p>Nome Anime:</p>
                         </div>
                         <div class="col">
-                            <select class="form-control" id="exampleFormControlSelect1" style="width:80%; background-color:transparent; color:red; border-radius:3px; border: 1px solid gray;">
+                            <select class="form-control" id="exampleFormControlSelect1" style="width:50%; background-color:transparent; color:#999999; border-radius:3px; border: 1px solid #999999;">
                               <option value="0">..::Selecione Anime::..</option>
                               <?php include_once('../../trunk/control/selectTeste.php'); ?>  
                                 
@@ -102,29 +118,26 @@
                   <div class="form-group">
                       <div class="row">
                         <div class="col-md-auto">
-                            <label for="exampleFormControlInput1">Abreviação:</label>
+                            <p>Abreviação:</p>
                         </div>
                           <div class="col">
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="escolha uma abreviação pro seu anime" style="width:79%; background-color:transparent; color:red; border-radius:3px; border: 1px solid gray; margin-left: 18px;">
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="escolha uma abreviação pro seu anime" style="width:50%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left: 10px;">
                         </div>
                       </div>
                   </div>
                   <div class="form-group">
                       <div class="row">
                         <div class="col-md-auto">
-                            <label for="exampleFormControlInput1" style="color:red;">*</label>
-                            <label for="exampleFormControlInput1">Data Estreia:</label>
+                            <p>Data Estreia:</p>
                         </div>
                         <div class="col">
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:80%; background-color:transparent; color:red; border-radius:3px; border: 1px solid gray; margin-left:2px;">
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:50%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:5px;">
                         </div>
                       </div>
                   </div>  
                   <div class="form-group">
-                      <label for="exampleFormControlInput1" style="color:red;">*</label>
-                    <label for="exampleFormControlSelect2">Episódio</label>
-                    <label for="exampleFormControlSelect2" style="color:#bfbfbf;">(selecione)</label>
-                    <select multiple class="form-control" id="exampleFormControlSelect2" style="width:83%; background-color:transparent; color:red; border-radius:3px; border: 1px solid gray;">
+                    <p>Episódio:</p>
+                    <select multiple class="form-control" id="exampleFormControlSelect2" style="width:83%; background-color:transparent; color:black; border-radius:3px; border: 1px solid gray;">
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
@@ -133,13 +146,15 @@
                     </select>
                   </div>
                   <div class="form-group">
-                    <label for="exampleFormControlTextarea1">OBS:</label>
+                    <p>OBS:</p>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="width:83%; background-color:transparent; color:red; border-radius:3px; border: 1px solid gray;"></textarea>
                   </div>
-                    <button class="btn btn-success">Cadastrar</button>
+                    <button class="btn btn-success" style="background-color:#716aca; border:none;">Limpar</button>
+                    <button class="btn btn-success" style="border:none;">Cadastrar</button>
                 </form>
+                
             </div>
-            
+            .
         </div>
         
     </section>
