@@ -52,26 +52,13 @@ $nickname = $_SESSION['nickname'];
         <div class="row" style="margin-top: 30px">
             
             <!-- Title -->
-            <div class="col-lg-3 resp-title">
-              <img src="../imagens/titulo.png"/>
+            <div class="col-lg-5 resp-title">
             </div>
             
             <!-- Search & Button: Search -->
-            <div class="col-lg-6">
+            <div class="col-lg-4">
                 
-                <form style="padding-top:25px;">
-                    <div class="input-group" style="width: 90%;">
-                        
-                        <input type="text" class="form-control resp-search" style="background-color:rgba(255, 255, 255, 0.5); border: 1px solid rgba(115, 24, 107, 0.5); color: white;" placeholder="Pesquisar">
-                        
-                        <div class="input-group-append">
-                            <button class="btn btn-search" type="button">
-                            <i class="fa fa-search"></i>
-                            </button>
-                        </div>
-                        
-                    </div>
-                </form>
+              <img src="../imagens/titulo.png"/>
                 
             </div>
             
@@ -81,7 +68,7 @@ $nickname = $_SESSION['nickname'];
                         <img src="../imagens/logo-table.png" style="width:80px; padding:10px; float: left; margin-left:-10px;"/>
                     </div>
                     <div class="col-lg-6" style="padding-left:40px; font-size:17px; padding-top:2px;">
-                        Olá, <?php echo $nickname; ?>
+                        <b style="font-size:13px; color:#33ccff;">Usuário:</b> <?php echo $nickname; ?>
                     </div>
                     <div class="col-lg-4">
                         <a href="../.pages/perfil.php"> <div class="btn btn-search resp-user-config"><i class="fas fa-cog"></i></div> </a>
