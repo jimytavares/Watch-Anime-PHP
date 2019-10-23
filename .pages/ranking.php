@@ -11,13 +11,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Meu CSS -->
-    <link href="../css/main.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="../css/Main.css" rel="stylesheet" type="text/css" media="all"/>
+    <!-- Responsividade -->
+    <link href="../css/responsive.css" rel="stylesheet" type="text/css" media="all"/>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
@@ -100,68 +102,7 @@
     ===================================================== -->
     <section class="container-fluid" style="background-color:#eeebf9;width: 95%; margin-top: 0px; border-radius:5px; height: 800px;">
 
-        <!-- #### Row 01: Alert #### -->
-        <div class="" style="margin-top:20px; background-color:white; border-radius:3px; height: 67px; width:98%; margin-left:10px;">
-            
-            <div class="row " style="width: 80%; margin-left: 1%; padding-top:20px;">
-                <div class="col-md-auto">
-                    <img src="../imagens/alert.png" style="margin-top:px;"/>
-                </div>
-                <div class="col" style="margin-top:-8px; font-size:13px;">
-                    <p>Ranking de <b>Animes</b> que você assistiu durante toda sua jornada.</p>
-                    <p style="color:gray;">Os animes cadastrados são rankeados pelas notas que você os deu. Para cadastrar mais animes no ranking <a href="home.php" style="color:#716aca;"> <i class="fas fa-arrow-right"></i> Clique Aqui</a> .</p>
-                </div>
-            </div>
-            
-            <div class="" style="background-color:white; border-radius:5px; margin-top: 20px;">
-            
-                <div class="row">
-                    <div class="col-md-auto">
-                        <i class="fas fa-sort-numeric-up" style="font-size:26px; margin-top:20px; margin-left:40px; color:#1cbfae;"></i>
-                    </div>
-                    <div class="col">
-                        <h4 style=" margin-top:24px; font-family: 'Poppins', sans-serif;">Anime <b style="color:#716aca;">Ranking</b></h4> 
-                    </div>
-                </div>
-                
-                <hr style="border-top: 1px solid #999999; width:98%; opacity:0.4; margin-top:-1px;">
-            
-                <div class="" style="width:98%; margin-left:10px;">
-                    
-                    <table class="table table-bordered">
-                      <thead>
-                        <tr>
-                          <th scope="col">#</th>
-                          <th scope="col">First</th>
-                          <th scope="col">Last</th>
-                          <th scope="col">Handle</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">1</th>
-                          <td>Mark</td>
-                          <td>Otto</td>
-                          <td>@mdo</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">2</th>
-                          <td>Jacob</td>
-                          <td>Thornton</td>
-                          <td>@fat</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">3</th>
-                          <td colspan="2">Larry the Bird</td>
-                          <td>@twitter</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                </div>
-                
-            </div>
-            
-        </div>
+           
         
     </section>
 

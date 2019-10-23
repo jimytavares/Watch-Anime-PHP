@@ -1,36 +1,44 @@
+
 <?php
 
-   $servidor = 'localhost';
-   $usuario  = 'dbanime';
-   $senha    = '12345';
-   $banco    = 'dbanime';
+    $servidor = 'localhost';
+    $usuario  = 'testee';
+    $senha    = '12345';
+    $banco    = 'dbanime';
 
-   $mysqli = new mysqli ($servidor, $usuario, $senha, $banco);
+    $mysqli = new mysqli ($servidor, $usuario, $senha, $banco);
 
-   //enviar instrucao sql para o banco
-   $sql = "SELECT * FROM parados";
+    $sql = "SELECT * FROM vw_parados WHERE id_usuario =" . $_SESSION['id'];
 
-    $resultado = $mysqli->query($sql);
+    $dadosAssistindo = $mysqli->query($sql);
 
-    // $dados = mysqli_fetch_array($resultado)
-    while($dados = mysqli_fetch_assoc($resultado)){
-                                echo "<tr>";
-                                    echo "<td>" . $dados["id"];                                       
-                                        echo "</td>";
-                                    echo "<td>" . $dados["nome"];                                       
-                                        echo "</td>";
-                                    echo "<td>" . $dados["ep"];                                      
-                                        echo "</td>";
-                                    echo "<td>" . $dados["temporada"];
-                                        echo"</td>";
-                                    echo "<td>" . $dados["season"];
-                                        echo "</td>";
-                                    echo "<td>" . $dados["nota"];  
-                                        echo "</td>";
-                                    echo "<td>" . $dados["comentario"];  
-                                        echo "</td>";
-                                    echo "<td>" . " <a href=' excluindoAssistindo.php?idex=". $dados['id']. "'> <button      type='submit' class='btn-xs btn-danger'>X</button> </a>";
-                                        echo "</td>";
-                                echo "</tr>";
-                           }
+    foreach ($dadosAssistindo AS $dados){
+        echo "<tr>";
+
+            echo "<td>" . $dados["id"];
+                echo "</td>";
+
+            echo "<td style='font-weight:;color:#9933ff;'>" . $dados["nome"];
+                echo "</td>";
+
+            echo "<td>" . $dados["episodio"];
+                echo "</td>";
+
+            echo "<td>" . $dados["data"];
+                echo "</td>";
+
+            echo "<td>"; 
+                echo "<a href='../control/plusEpisodio.php?plus=" . $dados['id'] . "'> <img src='../imagens/plus1.png' style='width:29px;'/> </a>";
+            echo "</td>";
+
+            echo "<td>"; 
+                echo "<a href='../control/plusEpisodioM.php?plus=" . $dados['id'] . "'> <img src='../imagens/plus2.png' style='width:28px;'/> </a>";
+            echo "</td>";
+
+            echo "<td>"; 
+                echo "<a href='../control/excluindoAssistindo.php?idex=" . $dados['id'] . "'> <i class='fas fa-trash-alt' style='font-size:20px; color:red; padding-left:17px; padding-top:5px;'></i> </a>";
+            echo "</td>";
+
+        echo "</tr>";
+    }
 ?>
