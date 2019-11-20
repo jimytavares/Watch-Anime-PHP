@@ -72,85 +72,51 @@
     ===================================================== -->
     <section class="container-fluid resp-body" style="background-color:#eeebf9; width: 95%; border-radius:5px;">
             
-            <!--##### ROW 01 ####-->
+            <!--##### ROW 01: Assistindo ####-->
             <div class="row" style="padding-top: 20px; width:99%; margin-left:8px;">
                 
-                <!-- COL 02: Ranking 
-                <div class="col-8">
+                <!-- TABLE: Assistindo -->
+                <div class="container" style="width:1000px; color:white; background-image: linear-gradient(to right, #959abc, #6eb1d7, #54d8b1); height:50px; border-radius:2px; box-shadow: 1px 3px 10px #000000; text-align:center;">
+                    <div class="row" style="padding-top:15px;">
+                        <div class="col" style="background-color:;">
+                            <i class="far fa-calendar-alt" id="icon-table-assist" style=""></i>
+                            <i class="fas fa-info-circle" id="icon-table-assist" style="margin-left:30px; "></i> 
+                        </div>
+                        <div class="col alignText-r">
+                            <p style="font-family: 'Poppins', sans-serif; font-size:16px;">A n i m e s Assistindo</p>
+                        </div>
+                        <div class="col" style="background-color:;">
+                            <a href="form-assistindo.php" style="color:white;"> 
+                                <i class="fab fa-wpforms" style="font-size:23px; "></i>
+                            </a>
 
-                    <div class="container" style="width:1000px; margin-top: 50px; color:white; background-image: linear-gradient(to right, #3FC9FE ,#3A7EC7, #2F449C); height:50px; border-radius:2px; box-shadow: 1px 3px 10px #000000; text-align:center;">
-                        <div class="row" style="padding-top:15px;">
-                            <div class="col">
-                                <i class="far fa-calendar-alt" id="icon-table-assist" data-toggle="modal" data-target="#modaldataassistido"></i>
-                                <i class="fas fa-info-circle" id="icon-table-assist" data-toggle="modal" data-target="#modalinfo" style="margin-left:30px;"></i> 
-                            </div>
-                            <div class="col">
-                                <b>Animes Assistindo</b>
-                            </div>
-                            <div class="col">
-                                <i class='far fa-edit' data-toggle="modal" data-target="#modaleditdel" style='color:#ff66d9; font-size: 20px;'></i>
-                                <i class='fas fa-trash-alt' data-toggle="modal" data-target="#modaleditdel" style='font-size:20px; color:#EE5253;margin-left:30px;'></i>
-                            </div>
+                            <i class='far fa-edit' style=' font-size: 20px; margin-left:20px;'></i>
                         </div>
                     </div>
+                </div>
                     
-                    <table class="table table-sm" style="margin-top: 10px;">
-                        <thead>
-                            <tr id="tr-parados">
-                                <th id="th-parados">Nome</th>
-                                <th id="th-parados">Episódio</th>
-                                <th id="th-parados">Dia Lançamento</th>
-                            </tr>
-                        </thead>
-                        <tbody id="body-table-parados">
-                            <?php include_once('../../trunk/control/selectAssistindo.php'); ?>
-                        </tbody>
-                    </table>
-                    
-                </div> -->
+                <table class="table table-borderless" style="margin-top: 10px; margin-left: 5%; width:90%;">
+                    <thead>
+                        <tr style="background-image: linear-gradient(to right, #959abc, #6eb1d7, #54d8b1); color:white;">
+                            <th style="width:15%; color:;">ID</th>
+                            <th style="width:20%;color:;">Nome</th>
+                            <th style="width:10%;color:;">Episódio Assistido</th>
+                            <th style="color:;">Dia Lançamento</th>
+                            <th style="color:;">Data</th>
+                            <th style="color:;">+1 Ep</th>
+                            <th style="color:;">-1 Ep</th>
+                            <th style="color:;">Apagar</th>
+                        </tr>
+                    </thead>
+                    <tbody style="background-color:white; font-family: 'Poppins', sans-serif; color:#545868;">
+                        <?php include_once('../../trunk/control/selectAssistindo2.php'); ?>
+                    </tbody>
+                </table>
 
             </div>
         
-            <!--##### ROW 02 ####-->
+            <!--##### ROW 02: Parados ####-->
             <div class="row" style="padding-top: 40px; width:99%; margin-left:8px;">
-            
-                <!-- TABLE: Assistindo -->
-                <div class="container" style="width:1000px; color:white; background-image: linear-gradient(to right, #959abc, #6eb1d7, #54d8b1); height:50px; border-radius:2px; box-shadow: 1px 3px 10px #000000; text-align:center;">
-                        <div class="row" style="padding-top:15px;">
-                            <div class="col" style="background-color:;">
-                                <i class="far fa-calendar-alt" id="icon-table-assist" style=""></i>
-                                <i class="fas fa-info-circle" id="icon-table-assist" style="margin-left:30px; "></i> 
-                            </div>
-                            <div class="col alignText-r">
-                                <p style="font-family: 'Poppins', sans-serif; font-size:16px;">A n i m e s Assistindo</p>
-                            </div>
-                            <div class="col" style="background-color:;">
-                                <a href="form-assistindo.php" style="color:white;"> 
-                                    <i class="fab fa-wpforms" style="font-size:23px; "></i>
-                                </a>
-                                
-                                <i class='far fa-edit' style=' font-size: 20px; margin-left:20px;'></i>
-                            </div>
-                        </div>
-                    </div>
-                    
-                <table class="table table-borderless" style="margin-top: 10px; margin-left: 5%; width:90%;">
-                        <thead>
-                            <tr style="background-image: linear-gradient(to right, #959abc, #6eb1d7, #54d8b1); color:white;">
-                                <th style="width:15%; color:;">ID</th>
-                                <th style="width:20%;color:;">Nome</th>
-                                <th style="width:10%;color:;">Episódio Assistido</th>
-                                <th style="color:;">Dia Lançamento</th>
-                                <th style="color:;">Data</th>
-                                <th style="color:;">+1 Ep</th>
-                                <th style="color:;">-1 Ep</th>
-                                <th style="color:;">Apagar</th>
-                            </tr>
-                        </thead>
-                        <tbody style="background-color:white; font-family: 'Poppins', sans-serif; color:#545868;">
-                            <?php include_once('../../trunk/control/selectAssistindo2.php'); ?>
-                        </tbody>
-                    </table>
                 
                 <!-- TABLE: Parados -->
                 <div class="container" style="width:1000px; color:white; background-image: linear-gradient(to right, #3FC9FE ,#3A7EC7, #2F449C); height:50px; border-radius:2px; box-shadow: 1px 3px 10px #000000; text-align:center; margin-top:30px;">
@@ -191,7 +157,7 @@
                 
             </div>
         
-            <!--##### ROW 03 ####-->
+            <!--##### ROW 03: ####-->
             <div class="row" style="padding-top: 20px; width:99%; margin-left:8px;">
                 
             </div>
@@ -216,6 +182,22 @@
                 </div>
               </div>
             </div>
+        
+        <div class="row">
+            <div class="col">
+                    <?php $intvariable = 'this.content'?>
+            </div>
+            <div class="col">
+                <input class="form-control" type="text" placeholder="Readonly input here..." readonly>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col">
+            </div>
+        </div>
         
     </section>
     

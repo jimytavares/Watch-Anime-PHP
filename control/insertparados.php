@@ -12,7 +12,7 @@
     $sql = "INSERT INTO tb_parados(id_usuario, id_anime, episodio, data) VALUES ('$id_user','$nomeP', '$epP', '$dataP');";
     
     if ($mysqli->query($sql) === TRUE) {
-    header('Location: ../.pages/form-assistindo.php');
+    header('Location: ../.pages/form-parados.php');
 
     } else {
     echo "Error: " . $sql . "<br>" . $mysqli->error;
