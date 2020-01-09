@@ -70,7 +70,7 @@
                     <img src="../imagens/alert.png" style="margin-top:px;"/>
                 </div>
                 <div class="col" style="margin-top:-8px; font-size:13px;">
-                    <p>Cadastre os <b>Animes</b> que você está <b>assistindo</b> no momento. </p>
+                    <p>Todos os <b>Animes</b> que você <b>Parou</b> de assistir.</p>
                     <p style="color:gray;">Visualize sua lista de animes cadastrados na página <a href="home.php" style="color:#716aca;"> <i class="fas fa-arrow-left"></i> Inicial</a> .</p>
                 </div>
             </div>
@@ -83,7 +83,7 @@
             <!-- TITLE: cadastro -->
             <div class="row no-gutters">
                 <div class="col">
-                    <h4 style="margin-left: 50px; padding-top:20px; font-family: 'Poppins', sans-serif;">Cadastro de Animes</h4>
+                    <h4 style="margin-left: 50px; padding-top:20px; font-family: 'Poppins', sans-serif;">Animes Parados</h4>
                 </div>
                 <div class="col-md-auto">
                     <i class="fas fa-angle-double-right" style="font-size:30px; margin-top:26px;"></i>
@@ -120,7 +120,7 @@
                             <p>Episódio:</p>
                         </div>
                         <div class="col">
-                            <input type="text" name="episodio" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:20%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:40px;">
+                            <input type="text" name="episodio" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:30%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:40px;">
                         </div>
                       </div>
                   </div>
@@ -130,7 +130,7 @@
                             <p>Dia da Semana:</p>
                         </div>
                         <div class="col">
-                            <input type="text" name="data" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:25%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:5px;">
+                            <input type="text" name="data" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:30%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:5px;">
                         </div>
                       </div>
                   </div>  

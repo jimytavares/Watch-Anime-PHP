@@ -48,11 +48,18 @@ $nickname = $_SESSION['nickname'];
 
 <section>
     
-    <div class="container-fluid" style="width: 95%; margin-top: 0px; border-radius:5px;">
-        <div class="row" style="margin-top: 30px">
+    <div class="container-fluid" style="width: 95%; border-radius:5px;">
+        <div class="row" style="margin-top: 30px; background-color:;">
             
             <!-- Title -->
-            <div class="col-lg-5 resp-title">
+            <div class="col-lg-5" style="padding-top:30px;">
+                <a href="../.pages/home.php"> <div class="btn btn-search resp-user-config" style="margin-top:-30px;"><i class="fas fa-home"></i></div> </a>
+                <a href="../.pages/perfil.php"> <div class="btn btn-search resp-user-config" style="margin-top:-30px;"><i class="fas fa-user"></i></div> </a>
+                <a href="../.pages/AnimeForm.php"> <div class="btn btn-search resp-user-config" style="margin-top:-30px;"><i class="fas fa-database"></i></div> </a>
+                <a href="../logout.php"> <div class="btn btn-search resp-user-logout" style="margin-top:-30px;"><i class="fas fa-sign-out-alt"></i></div> </a>,
+                    <br><br>
+                <a href="../.pages/form-assistindo.php"> <div class="btn btn-search resp-user-config" style="margin-top:-30px; background-color:#ffffff !important;"><i class="fas fa-pencil-square-o" style="color:black; padding-left:2px;"></i></div> </a>
+                <a href="../.pages/form-parados.php"> <div class="btn btn-search resp-user-config" style="margin-top:-30px; background-color:#ff3300 !important;"><i class="fas fa-pencil-square-o" style="color:white; padding-left:2px;"></i></div> </a>
             </div>
             
             <!-- Search & Button: Search -->
@@ -63,17 +70,8 @@ $nickname = $_SESSION['nickname'];
             </div>
             
             <!-- User: Campo -->
-            <div class="col-lg-3 resp-user" style="background-color:#eeebf9; border-radius: 5px; height: 80px; line-height: 80px;">
-                    <div class="col-lg-2">
-                        <img src="../imagens/logo-table.png" style="width:80px; padding:10px; float: left; margin-left:-10px;"/>
-                    </div>
-                    <div class="col-lg-6" style="padding-left:40px; font-size:17px; padding-top:2px;">
-                        <b style="font-size:13px; color:#33ccff;">Usuário:</b> <?php echo $nickname; ?>
-                    </div>
-                    <div class="col-lg-4">
-                        <a href="../.pages/perfil.php"> <div class="btn btn-search resp-user-config"><i class="fas fa-cog"></i></div> </a>
-                        <a href="../logout.php"> <div class="btn btn-search resp-user-logout"><i class="fas fa-sign-out-alt"></i></div> </a>
-                    </div>
+            <div class="col-lg-3 resp-user">
+                <?php echo $nickname; ?>
             </div>
             
         </div>

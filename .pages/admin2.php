@@ -102,48 +102,24 @@
     ===================================================== -->
     <section class="container-fluid" style="background-color:#eeebf9;width: 95%; margin-top: 0px; border-radius:5px; height: 800px;">
 
-        <!--##### ROW 01: Assistindo ####-->
-            <div class="row" style="padding-top: 20px; width:99%; margin-left:8px;">
+        <div class="row" style="background-color:; margin-top:30px; width:98%; height:260px; margin-left: 10px;">
+            <div class="col">
                 
-                <!-- TABLE: Ranking -->
-                <div class="container" style="width:1000px; color:white; background-image: linear-gradient(to right, #959abc, #6eb1d7, #54d8b1); height:50px; border-radius:2px; box-shadow: 1px 3px 10px #000000; text-align:center;">
-                    <div class="row" style="padding-top:15px;">
-                        <div class="col" style="background-color:;">
-                            <i class="far fa-calendar-alt" id="icon-table-assist" style=""></i>
-                            <i class="fas fa-info-circle" id="icon-table-assist" style="margin-left:30px; "></i> 
-                        </div>
-                        <div class="col alignText-r">
-                            <p style="font-family: 'Poppins', sans-serif; font-size:16px;">A n i m e s Ranking</p>
-                        </div>
-                        <div class="col" style="background-color:;">
-                            <a href="form-assistindo.php" style="color:white;"> 
-                                <i class="fab fa-wpforms" style="font-size:23px; "></i>
-                            </a>
-
-                            <i class='far fa-edit' style=' font-size: 20px; margin-left:20px;'></i>
-                        </div>
+                <div class="row" style="background-image: linear-gradient(to right, #A3C6FC, #9481F5); margin-top:10px; width:90%; height:250px; margin-left:15px; border-radius:5px;">
+                    <div class="col-3">
+<!--                        <img src="../../trunk/imagens/"-->
+                    </div>
+                    <div class="col-4" style="color:white;">
+                        <H3 style="padding:">Cadastro de Animes</H3>
+                        <p>Cadastrar novos animes no sistema.</p>
                     </div>
                 </div>
-                    
-                <table class="table table-borderless" style="margin-top: 10px; margin-left: 5%; width:90%;">
-                    <thead>
-                        <tr style="background-image: linear-gradient(to right, #959abc, #6eb1d7, #54d8b1); color:white;">
-                            <th style="width:15%; color:;">ID</th>
-                            <th style="width:20%;color:;">Nome</th>
-                            <th style="width:10%;color:;">Episódio Assistido</th>
-                            <th style="color:;">Dia Lançamento</th>
-                            <th style="color:;">Data</th>
-                            <th style="color:;">+1 Ep</th>
-                            <th style="color:;">-1 Ep</th>
-                            <th style="color:;">Apagar</th>
-                        </tr>
-                    </thead>
-                    <tbody style="background-color:white; font-family: 'Poppins', sans-serif; color:#545868;">
-                        <?php include_once('../../trunk/control/selectAssistindo2.php'); ?>
-                    </tbody>
-                </table>
-
-            </div>   
+                
+            </div>
+            <div class="col" style="background-color:blue;">
+                b
+            </div>
+        </div>       
         
     </section>
 

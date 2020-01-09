@@ -9,7 +9,7 @@
     $epP           = $_POST['episodio'];
     $dataP         = $_POST['data'];
 
-    $sql = "INSERT INTO tb_parados(id_usuario, id_anime, episodio, data) VALUES ('$id_user','$nomeP', '$epP', '$dataP');";
+    $sql = "INSERT INTO tb_parado(id_usuario, id_anime, episodio, data) VALUES ('$id_user','$nomeP', '$epP', '$dataP');";
     
     if ($mysqli->query($sql) === TRUE) {
     header('Location: ../.pages/form-parados.php');

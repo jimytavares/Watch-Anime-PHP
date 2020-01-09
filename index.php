@@ -24,70 +24,68 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
 </head>
-<body style="background: url('imagens/bg-login.jpg') no-repeat center center fixed; background-size: cover; background-repeat: no-repeat;">
+<body style="background: url('imagens/bg-ranking.jpg') no-repeat center center fixed; background-size: cover; background-repeat: no-repeat;">
 
     <section class="lg-index" style="overflow-x: hidden">
-        <div class="row">
             
-            <div class="col" style="margin-left: 45%">
-                <div class="box-login" style="background-color: white; width:60%; height: 500px; margin-top: 10%; margin-left:5%; border-radius:7px; opacity:0.9;">
-                    <div class="box2-login" style="width:80%; margin-left:9%; padding-top:10%;">
-
-                        <div class="row">
-                            <div class="col">
-                            </div>
-                            <div class="col">
-                                <img src="imagens/titulo-black.png" style=""/>
-                            </div>
-                            <div class="col">
-                            </div>
-                        </div>
-                        
-                        <!-- Formulário-->
-                        <form action="logar.php" method="post" autocomplete="on" style="margin-top:20px;">
-                            <fieldset>
-
-                                <div class="form-group">
-                                    <label for="campoUsuario"><b>Usuário:</b></label>
-                                    <input type="text" name ="username" class="form-control" autocomplete="on" style="width:100%; border-radius:10px; border:none;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuário">
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1"><b>Senha:</b></label>
-                                    <input type="password" id="senha" name="password" class="form-control" autocomplete="on" style="width:100%; background-color:white; border-radius:10px; border:none;" id="exampleInputPassword1" placeholder="Senha">
-                                    <small id="capsativo" style="color:red; display: none; padding-top: 15px; text-align: center;">* Caps lock ativo *</small>
-                                    <?php
-                                    if(isset($_GET['error']) && $_GET['error'] == 'wrong'){
-                                        echo "<p style='color:red; text-align: center;'>Usuario ou senha inválido.</p>";
-                                    }
-                                    ?>
-                                </div>
-
-
-
-                                <button type="submit" class="btn btn-primary" style="background-image: linear-gradient(to right, #3FC9FE ,#3A7EC7, #2F449C); width:100%; color:white; margin-left: %; border-color:aqua; border-radius:20px;">ENTRAR</button>
-
-                                <div class="row" style="margin: 30px auto; max-width: 100%; margin-left:3px;">
-                                    <div class="col-md-auto">
-                                        <a data-toggle="modal" data-target="#ModalRegistrar">
-                                            <button type="submit" class="btn btn-outline-primary" style="border-radius:20px; width:110px;">Registre-se!</button>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-auto">
-                                        <a data-toggle="modal" data-target="#ModalEsqueciSenha">
-                                            <button type="submit" class="btn btn-outline-primary" style="border-radius:20px;">Perdeu a Senha?</button>
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </fieldset>
-                        </form>
-
+        <div class="box-login" style="background-color: ; width:30%; height: 500px; margin-top: 8%; margin-left:35%; border-radius:4px; opacity:0.9;">
+            
+            <div class="box2-login" style="width:80%; margin-left:9%; padding-top:10%;">
+                
+                <!-- Imagem -->
+                <div class="row">
+                    <div class="col">
+                    </div>
+                    <div class="col">
+                        <img src="imagens/titulo-black.png" style=""/>
+                    </div>
+                    <div class="col">
                     </div>
                 </div>
+
+                <!-- Formulário-->
+                <form action="logar.php" method="post" autocomplete="on" style="margin-top:20px;">
+                    <fieldset>
+
+                        <div class="form-group">
+                            <label for="campoUsuario"><b>Usuário:</b></label>
+                            <input type="text" name ="username" class="form-control" autocomplete="on" style="width:100%; border-radius:10px; border:none;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuário">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputPassword1"><b>Senha:</b></label>
+                            <input type="password" id="senha" name="password" class="form-control" autocomplete="on" style="width:100%; background-color:white; border-radius:10px; border:none;" id="exampleInputPassword1" placeholder="Senha">
+                            <small id="capsativo" style="color:red; display: none; padding-top: 15px; text-align: center;">* Caps lock ativo *</small>
+                            <?php
+                            if(isset($_GET['error']) && $_GET['error'] == 'wrong'){
+                                echo "<p style='color:red; text-align: center;'>Usuario ou senha inválido.</p>";
+                            }
+                            ?>
+                        </div>
+
+
+
+                        <button type="submit" class="btn btn-primary" style="background-image: linear-gradient(to right, #3FC9FE ,#3A7EC7, #cc33ff); width:100%; color:white; margin-left: %; border-color:transparent; border-radius:10px;">ENTRAR</button>
+
+                        <div class="row" style="margin: 30px auto; max-width: 100%; margin-left:3px;">
+                            <div class="col-md-auto">
+                                <a data-toggle="modal" data-target="#ModalRegistrar">
+                                    <button type="submit" class="btn btn-outline-primary" style="width:110px;">Registre-se!</button>
+                                </a>
+                            </div>
+                            <div class="col-md-auto">
+                                <a data-toggle="modal" data-target="#ModalEsqueciSenha">
+                                    <button type="submit" class="btn btn-outline-primary" style="">Perdeu a Senha?</button>
+                                </a>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </form>
+
             </div>
-            
         </div>
+            
 
 
 
@@ -200,7 +198,7 @@
 </div>
 </div>
         
-</section>
+    </section>
 
     <script type="text/javascript">
 

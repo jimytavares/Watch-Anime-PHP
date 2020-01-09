@@ -83,7 +83,7 @@
             <!-- TITLE: cadastro -->
             <div class="row no-gutters">
                 <div class="col">
-                    <h4 style="margin-left: 50px; padding-top:20px; font-family: 'Poppins', sans-serif;">Cadastro de Animes</h4>
+                    <h4 style="margin-left: 50px; padding-top:20px; font-family: 'Poppins', sans-serif;">Cadastrar Animes: Assistindo</h4>
                 </div>
                 <div class="col-md-auto">
                     <i class="fas fa-angle-double-right" style="font-size:30px; margin-top:26px;"></i>
@@ -133,7 +133,19 @@
                             <input type="text" name="dia_semana" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:25%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:5px;">
                         </div>
                       </div>
-                  </div>  
+                  </div>
+                  <div class="form-group">
+                      <div class="row">
+                        <div class="col-md-auto">
+                            <p>Data:</p>
+                        </div>
+                        <div class="col">
+                            <input type="text" name="dtdia" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:25%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:5px;">
+                        </div>
+                      </div>
+                  </div>    
+                    
+                    
                   <div class="form-group">
                     <p>OBS:</p>
                     <textarea class="form-control" name="obs" id="exampleFormControlTextarea1" rows="3" style="width:83%; background-color:transparent; color:red; border-radius:3px; border: 1px solid gray;"></textarea>

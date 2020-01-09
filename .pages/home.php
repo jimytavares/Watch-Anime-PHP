@@ -32,7 +32,7 @@
     <?php include ('../.globals/header.php'); ?>
 
     <!-- SECTION 02: menu
-    ===================================================== -->
+    ===================================================== 
     <sectcion>
         <div class="container-fluid" style="width: 95%; margin-top:30px;">
 
@@ -41,21 +41,22 @@
                     <a href="home.php"> <button type="button" class="btn btn-outline-success resp-menu-butHome" style="background-color:#F9F8FD; width:100px; height: 50px; color:white; border-radius:1px;"> <i class="fas fa-home" style="color:black; font-size:25px;"></i> </button> </a>
                 </div>
                 <div class="col-md-auto">
-                    <a href="perfil.php">  <button type="button" class="btn btn-outline-success resp-menu-butPerfil" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Perfil</button> </a>
+                    <a href="perfil.php">  <button type="button" class="btn btn-outline-success resp-menu-butPerfil" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;"></button> </a>
                 </div>
                 <div class="col-md-auto">
-                    <a href="temporada.php"> <button type="button" class="btn btn-outline-success resp-menu-butTemp" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Temporadas</button> </a>
+                    <a href="temporada.php"> <button type="button" class="btn btn-outline-success resp-menu-butTemp" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;"></button> </a>
                 </div>
-                    <!-- Resp: Button Mobile -->
+                
+                    <!-- Resp: Button Mobile 
                     <div class="col-md-auto">
                         <a href="temporada.php"> <button type="button" class="btn btn-outline-success resp-menu-buTemp2" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px; display:none;">Temp</button> </a>
                     </div>
                 
                 <div class="col-md-auto">
-                    <a href="lancamentos.php"> <button type="button" class="btn btn-outline-success resp-menu-butLanc" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-55px;">Lançamento</button> </a>
+                    <a href="lancamentos.php"> <button type="button" class="btn btn-outline-success resp-menu-butLanc" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-55px;"></button> </a>
                 </div>
                 
-                    <!-- Resp: Button Mobile -->
+                    <!-- Resp: Button Mobile 
                     <div class="col-md-auto">
                         <a href="lancamentos.php"> <button type="button" class="btn btn-outline-success resp-menu-butLanc2" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-55px; display:none;">Novos</button> </a>
                     </div>
@@ -66,11 +67,11 @@
             </div>
 
         </div>
-    </sectcion>
+    </sectcion> -->
 
     <!-- SECTION: corpo
     ===================================================== -->
-    <section class="container-fluid resp-body" style="background-color:#eeebf9; width: 95%; border-radius:5px;">
+    <section class="container-fluid resp-body" style="background-color:#eeebf9; width: 95%; border-radius:5px; margin-top:25px;">
             
             <!--##### ROW 01: Assistindo ####-->
             <div class="row" style="padding-top: 20px; width:99%; margin-left:8px;">
@@ -157,11 +158,6 @@
                 
             </div>
         
-            <!--##### ROW 03: ####-->
-            <div class="row" style="padding-top: 20px; width:99%; margin-left:8px;">
-                
-            </div>
-        
         <!-- Group MODAL -->
         <div class="modal fade" id="teste1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
               <div class="modal-dialog" role="document">
@@ -183,19 +179,13 @@
               </div>
             </div>
         
+        <!-- JavaScript(testing) -->
         <div class="row">
             <div class="col">
                     <?php $intvariable = 'this.content'?>
             </div>
             <div class="col">
                 <input class="form-control" type="text" placeholder="Readonly input here..." readonly>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col">
-            </div>
-            <div class="col">
             </div>
         </div>
         

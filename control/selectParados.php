@@ -36,7 +36,7 @@
             echo "</td>";
 
             echo "<td>"; 
-                echo "<a href='../control/excluindoAssistindo.php?idex=" . $dados['id'] . "'> <i class='fas fa-trash-alt' style='font-size:20px; color:red; padding-left:17px; padding-top:5px;'></i> </a>";
+                echo "<a href='../control/excluindoParados.php?idex=" . $dados['id'] . "'> <i class='fas fa-trash-alt' style='font-size:20px; color:red; padding-left:17px; padding-top:5px;'></i> </a>";
             echo "</td>";
 
         echo "</tr>";
