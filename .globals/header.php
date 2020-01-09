@@ -58,8 +58,9 @@ $nickname = $_SESSION['nickname'];
                 <a href="../.pages/AnimeForm.php"> <div class="btn btn-search resp-user-config" style="margin-top:-30px;"><i class="fas fa-database"></i></div> </a>
                 <a href="../logout.php"> <div class="btn btn-search resp-user-logout" style="margin-top:-30px;"><i class="fas fa-sign-out-alt"></i></div> </a>,
                     <br><br>
-                <a href="../.pages/form-assistindo.php"> <div class="btn btn-search resp-user-config" style="margin-top:-30px; background-color:#ffffff !important;"><i class="fas fa-pencil-square-o" style="color:black; padding-left:2px;"></i></div> </a>
-                <a href="../.pages/form-parados.php"> <div class="btn btn-search resp-user-config" style="margin-top:-30px; background-color:#ff3300 !important;"><i class="fas fa-pencil-square-o" style="color:white; padding-left:2px;"></i></div> </a>
+                <a href="../.pages/form-assistindo.php"> <div class="btn btn-search resp-user-config" style="margin-top:-30px; background-color:# !important;"><i class="fas fa-pencil-square-o" style="color:white; padding-left:2px;"></i></div> </a>
+                <a href="../.pages/form-parados.php"> <div class="btn btn-search resp-user-config" style="margin-top:-30px; background-color:# !important;"><i class="fas fa-hourglass-half" style="color:white; padding-left:px; font-size:17px; padding-top:1px;"></i></div> </a>
+                <a href="../.pages/form-ranking.php"> <div class="btn btn-search resp-user-config" style="margin-top:-30px; background-color:#3399ff !important;"><i class="fas fa-list-ol" style="color:black; padding-left:0px; font-size:18px; margin-top:2px;"></i></div> </a>
             </div>
             
             <!-- Search & Button: Search -->
