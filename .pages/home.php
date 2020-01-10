@@ -99,13 +99,14 @@
                 <table class="table table-borderless" style="margin-top: 10px; margin-left: 5%; width:90%;">
                     <thead>
                         <tr style="background-image: linear-gradient(to right, #959abc, #6eb1d7, #54d8b1); color:white;">
-                            <th style="width:15%; color:;">ID</th>
-                            <th style="width:20%;color:;">Nome</th>
-                            <th style="width:10%;color:;">Episódio Assistido</th>
+                            <th style="width:15%;">ID</th>
+                            <th style="width:20%;">Nome</th>
+                            <th style="width:10%;">Episódio Assistido</th>
                             <th style="color:;">Dia Lançamento</th>
                             <th style="color:;">Data</th>
                             <th style="color:;">+1 Ep</th>
                             <th style="color:;">-1 Ep</th>
+                            <th style="color:;">Editar</th>
                             <th style="color:;">Apagar</th>
                         </tr>
                     </thead>
@@ -115,6 +116,12 @@
                 </table>
 
             </div>
+        
+        <script>
+            function myFunction() {
+              document.getElementById("colorE").style.color = "yellow";
+            }
+        </script>
         
             <!--##### ROW 02: Parados ####-->
             <div class="row" style="padding-top: 40px; width:99%; margin-left:8px;">
@@ -187,7 +194,7 @@
             <div class="col">
                 <input class="form-control" type="text" placeholder="Readonly input here..." readonly>
             </div>
-        </div>
+        </div>  
         
     </section>
     
