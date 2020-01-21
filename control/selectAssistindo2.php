@@ -27,15 +27,15 @@
             echo "<td>" . $dados["dia_semana"];
                 echo "</td>";
 
-            echo "<td>" . $dados["dtdia"];
+            echo "<td style='color:#e6e6e6;'>" . $dados["dtdia"];
                 echo "</td>";
 
             echo "<td>"; 
-                echo "<a href='../control/plusEpisodio.php?plus=" . $dados['id'] . "' onclick='myFunction()'> <img src='../imagens/plus1.png' style='width:29px; margin-left:5px;'/> </a>";
+                echo "<a href='../control/plusEpisodio.php?plus=" . $dados['id'] . "' onclick='myFunction()'> <img src='../imagens/img-button-table/plus1.png' style='width:29px; margin-left:5px;'/> </a>";
             echo "</td>";
 
             echo "<td>"; 
-                echo "<a href='../control/plusEpisodioM.php?plus=" . $dados['id'] . "'> <img src='../imagens/plus2.png' style='width:28px; margin-left:5px;'/> </a>";
+                echo "<a href='../control/plusEpisodioM.php?plus=" . $dados['id'] . "'> <img src='../imagens/img-button-table/plus2.png' style='width:28px; margin-left:5px;'/> </a>";
             echo "</td>";
         
             echo "<td>"; 

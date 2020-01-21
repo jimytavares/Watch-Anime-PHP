@@ -185,16 +185,6 @@
                     <div class="form-group">
                       <div class="row">
                         <div class="col-md-auto">
-                            <p>Trailer:</p>
-                        </div>
-                        <div class="col">
-                            <input type="text" name="trailer" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:26%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:8px;">
-                        </div>
-                      </div>
-                  </div>
-                    <div class="form-group">
-                      <div class="row">
-                        <div class="col-md-auto">
                             <p>Sinopse:</p>
                         </div>
                         <div class="col">

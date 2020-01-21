@@ -28,11 +28,11 @@
                 echo "</td>";
 
             echo "<td>"; 
-                echo "<a href='../control/plusParados.php?plus=" . $dados['id'] . "'> <img src='../imagens/plus1.png' style='width:29px;'/> </a>";
+                echo "<a href='../control/plusParados.php?plus=" . $dados['id'] . "'> <img src='../imagens/img-button-table/plus1.png' style='width:29px;'/> </a>";
             echo "</td>";
 
             echo "<td>"; 
-                echo "<a href='../control/plusParadosM.php?plus=" . $dados['id'] . "'> <img src='../imagens/plus2.png' style='width:28px;'/> </a>";
+                echo "<a href='../control/plusParadosM.php?plus=" . $dados['id'] . "'> <img src='../imagens/img-button-table/plus2.png' style='width:28px;'/> </a>";
             echo "</td>";
 
             echo "<td>"; 
