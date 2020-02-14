@@ -100,6 +100,7 @@
                     <thead>
                         <tr style="background-image: linear-gradient(to right, #959abc, #6eb1d7, #54d8b1); color:white;">
                             <th style="width:15%;">ID</th>
+                            <th style="">TV</th>
                             <th style="width:20%;">Nome</th>
                             <th style="width:10%;">Episódio Assistido</th>
                             <th style="color:;">Dia Lançamento</th>

@@ -158,7 +158,7 @@
                             <p>Abreviação:</p>
                         </div>
                         <div class="col">
-                            <input type="text" name="abreviacao" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:23%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:5px;">
+                            <input type="text" name="abreviacao" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:28%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:28px;">
                         </div>
                       </div>
                   </div>
@@ -168,7 +168,7 @@
                             <p>Epísodio:</p>
                         </div>
                         <div class="col">
-                            <input type="text" name="episodio" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:25%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:5px;">
+                            <input type="text" name="episodio" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:28%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:48px;">
                         </div>
                       </div>
                   </div>
@@ -178,7 +178,7 @@
                             <p>Estreia:</p>
                         </div>
                         <div class="col">
-                            <input type="text" name="estreia" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:26%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:6px;">
+                            <input type="text" name="estreia" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:28%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:57px;">
                         </div>
                       </div>
                   </div>
@@ -188,7 +188,7 @@
                             <p>Sinopse:</p>
                         </div>
                         <div class="col">
-                            <input type="text" name="sinopse" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:25%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:5px;">
+                            <input type="text" name="sinopse" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:29%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:48px;">
                         </div>
                       </div>
                   </div>
@@ -199,7 +199,7 @@
                             <p>Gênero:</p>
                         </div>
                         <div class="col">
-                            <select class="form-control" name="id_genero" id="exampleFormControlSelect1" style="width:50%; background-color:transparent; color:#595959; border-radius:3px; border: 1px solid #999999;">
+                            <select class="form-control" name="id_genero" id="exampleFormControlSelect1" style="margin-left:50px; width:49%; background-color:transparent; color:#595959; border-radius:3px; border: 1px solid #999999;">
                               <option value="0">..::Selecione::..</option>
                               <?php include_once('../../trunk/control/cadastro-animes-admin/selectGenero.php'); ?>  
                                 
@@ -213,7 +213,7 @@
                             <p>Categoria:</p>
                         </div>
                         <div class="col">
-                            <select class="form-control" name="id_categoria" id="exampleFormControlSelect1" style="width:50%; background-color:transparent; color:#595959; border-radius:3px; border: 1px solid #999999;">
+                            <select class="form-control" name="id_categoria" id="exampleFormControlSelect1" style="width:50%; background-color:transparent; color:#595959; border-radius:3px; border: 1px solid #999999; margin-left:33px;">
                               <option value="0">..::Selecione::..</option>
                               <?php include_once('../../trunk/control/cadastro-animes-admin/selectCategoria.php'); ?>  
                                 
@@ -227,7 +227,7 @@
                             <p>Temporada:</p>
                         </div>
                         <div class="col">
-                            <select class="form-control" name="id_temporada" id="exampleFormControlSelect1" style="width:50%; background-color:transparent; color:#595959; border-radius:3px; border: 1px solid #999999;">
+                            <select class="form-control" name="id_temporada" id="exampleFormControlSelect1" style="margin-left:22px; width:51%; background-color:transparent; color:#595959; border-radius:3px; border: 1px solid #999999;">
                               <option value="0">..::Selecione::..</option>
                               <?php include_once('../../trunk/control/cadastro-animes-admin/selectTemporada.php'); ?>  
                                 

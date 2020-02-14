@@ -17,6 +17,10 @@
 
             echo "<td>" . $dados["id"];
                 echo "</td>";
+        
+            echo "<td>";
+                echo " <a href= " . $dados['link'] ." > <i class='fas fa-tv' style='color:#ff00bf; font-size:15px; margin-top:3px;'></i> </a>";
+            echo "</td>";
 
             echo "<td style='font-weight:;color:#9933ff;'>" . $dados["nome"];
                 echo "</td>";

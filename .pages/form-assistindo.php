@@ -33,7 +33,7 @@
     <?php include ('../../trunk/.globals/header.php'); ?>
 
     <!-- SECTION 02: Botões de Ação
-    ===================================================== -->
+    =====================================================
     <sectcion>
         <div class="container-fluid" style="width: 95%; margin-top:30px;">
 
@@ -56,11 +56,11 @@
             </div>
 
         </div>
-    </sectcion>
+    </sectcion>-->
 
     <!-- SECTION ALL BODY
     ===================================================== -->
-    <section class="container-fluid" style="background-color:#eeebf9; width: 95%; margin-top: 0px; height:700px; border-radius:5px;">
+    <section class="container-fluid" style="background-color:#eeebf9; width: 95%; margin-top: 20px; height:700px; border-radius:5px;">
         
         <!-- #### Row 01: Alert #### -->
         <div class="" style="margin-top:20px; background-color:white; border-radius:3px; height: 67px; width:98%; margin-left:10px;">
@@ -120,7 +120,7 @@
                             <p>Episódio:</p>
                         </div>
                         <div class="col">
-                            <input type="text" name="episodio" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:20%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:40px;">
+                            <input type="text" name="episodio" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:22%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:30px;">
                         </div>
                       </div>
                   </div>
@@ -130,7 +130,7 @@
                             <p>Dia da Semana:</p>
                         </div>
                         <div class="col">
-                            <input type="text" name="dia_semana" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:25%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:5px;">
+                            <input type="text" name="dia_semana" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:24%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:-18px;">
                         </div>
                       </div>
                   </div>
@@ -140,10 +140,20 @@
                             <p>Data:</p>
                         </div>
                         <div class="col">
-                            <input type="text" name="dtdia" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:25%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:5px;">
+                            <input type="text" name="dtdia" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:23%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:55px;">
                         </div>
                       </div>
-                  </div>    
+                  </div>
+                  <div class="form-group">
+                      <div class="row">
+                        <div class="col-md-auto">
+                            <p><b>Link</b> (Assistir):</p>
+                        </div>
+                        <div class="col">
+                            <input type="text" name="dtdia" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:65%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:px;">
+                        </div>
+                      </div>
+                  </div>
                     
                     
                   <div class="form-group">
