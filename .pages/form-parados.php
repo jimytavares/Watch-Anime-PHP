@@ -33,7 +33,7 @@
     <?php include ('../../trunk/.globals/header.php'); ?>
 
     <!-- SECTION 02: Botões de Ação
-    ===================================================== -->
+    ===================================================== 
     <sectcion>
         <div class="container-fluid" style="width: 95%; margin-top:30px;">
 
@@ -56,11 +56,11 @@
             </div>
 
         </div>
-    </sectcion>
+    </sectcion> -->
 
     <!-- SECTION ALL BODY
     ===================================================== -->
-    <section class="container-fluid" style="background-color:#eeebf9; width: 95%; margin-top: 0px; height:700px; border-radius:5px;">
+    <section class="container-fluid" style="background-color:#eeebf9; width: 95%; margin-top: 5px; height:700px; border-radius:5px;">
         
         <!-- #### Row 01: Alert #### -->
         <div class="" style="margin-top:20px; background-color:white; border-radius:3px; height: 67px; width:98%; margin-left:10px;">
@@ -106,7 +106,7 @@
                             <p>Nome Anime:</p>
                         </div>
                         <div class="col">
-                            <select class="form-control" name="id_anime" id="exampleFormControlSelect1" style="width:50%; background-color:transparent; color:#595959; border-radius:3px; border: 1px solid #999999;">
+                            <select class="form-control" name="id_anime" id="exampleFormControlSelect1" style="width:50%; background-color:transparent; color:#595959; border-radius:3px; border: 1px solid #999999; margin-left:18px;">
                               <option value="0">..::Selecione Anime::..</option>
                               <?php include_once('../../trunk/control/selectTeste.php'); ?>  
                                 
@@ -120,7 +120,7 @@
                             <p>Episódio:</p>
                         </div>
                         <div class="col">
-                            <input type="text" name="episodio" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:30%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:40px;">
+                            <input type="text" name="episodio" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:28%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:50px;">
                         </div>
                       </div>
                   </div>
@@ -130,10 +130,20 @@
                             <p>Dia da Semana:</p>
                         </div>
                         <div class="col">
-                            <input type="text" name="data" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:30%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:5px;">
+                            <input type="text" name="data" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:30%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999;">
                         </div>
                       </div>
-                  </div>  
+                  </div> 
+                  <div class="form-group">
+                      <div class="row">
+                        <div class="col-md-auto">
+                            <p><b>Link</b> (Assistir):</p>
+                        </div>
+                        <div class="col">
+                            <input type="text" name="link" class="form-control" id="exampleFormControlInput1" placeholder="link anime" style="width:65%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:19px;">
+                        </div>
+                      </div>
+                  </div>
                   <div class="form-group">
                     <p>OBS:</p>
                     <textarea class="form-control" name="obs" id="exampleFormControlTextarea1" rows="3" style="width:83%; background-color:transparent; color:red; border-radius:3px; border: 1px solid gray;"></textarea>

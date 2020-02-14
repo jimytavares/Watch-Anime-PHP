@@ -31,7 +31,7 @@
     <?php include ('../../trunk/.globals/header.php'); ?>
 
     <!-- SECTION 02: Botões de Ação
-    ===================================================== -->
+    =====================================================
     <sectcion>
         <div class="container-fluid" style="width: 95%; margin-top:30px;">
 
@@ -54,33 +54,52 @@
             </div>
 
         </div>
-    </sectcion>
+    </sectcion>-->
 
     <!-- SECTION ALL BODY
     ===================================================== -->
-    <section class="container-fluid" style="background-color:#eeebf9;width: 95%; margin-top: 0px; height:1000px; border-radius:5px;">
+    <section class="container-fluid" style="background-color:#eeebf9;width: 95%; margin-top: 5px; height:1000px; border-radius:5px;">
         
-        <!--#### ROW GERAL 01: Perfil ####-->
-        <div class="" style="background-color:white; width: 99%; margin-left:5px; margin-top:70px; border-radius:5px; height:270px;">
+        <!-- #### Row 01: Alert #### -->
+        <div class="" style="margin-top:20px; background-color:white; border-radius:3px; height: 67px; width:98%; margin-left:10px;">
+            
+            <div class="row " style="width: 80%; margin-left: 1%; padding-top:20px;">
+                <div class="col-md-auto">
+                    <img src="../imagens/alert.png" style="margin-top:px;"/>
+                </div>
+                <div class="col" style="margin-top:-8px; font-size:13px;">
+                    <p>Perfil ativo: <b><?=$_SESSION['login']?></b></p>
+                    <p style="color:gray;">Visualização geral de todo conteúdo do seu perfil. <a href="home.php" style="color:#716aca;"> <i class="fas fa-arrow-left"></i> Inicial</a> .</p>
+                </div>
+            </div>
+            
+        </div>
+        
+        <!--#### ROW GERAL 02: Perfil ####-->
+        <div class="" style="background-color:white; width: 99%; margin-left:5px; margin-top:10px; border-radius:5px; height:270px;">
             
             <!-- LINHA 01: Usuario, level, etc -->
             <div class="row" style="width:97%; margin-left:20px; padding-top:20px;">
-                <div class="col-md-auto">
-                    <img src="../../trunk/imagens/user.jpg" style="width:100px;"/>
+                <div class="col" style="background-color:blue;">
+                
+                    <div class="row" style="background-color:red;">
+                        <div class="col-md-auto">
+                            <img src="../../trunk/imagens/user.jpg" style="width:100px;"/>
+                        </div>
+                        <div class="col-md-auto">
+                            <!--<h3><i class="fas fa-street-view" style="color:#00b359; margin-right: 10px;"></i><?=$_SESSION['login']?></h3>-->
+                            <p> <i class="fab fa-accusoft" style="color:#e000c7; padding-top:10px;"></i> <b>Animes</b> Assistindo: 0</p>
+                        </div>
+                        <div class="col-md-auto">
+                            <p> <i class="fas fa-boxes" style="color:#00ace6; padding-top:10px;"></i> <b>Animes</b> Parados: 0</p>
+                        </div>
+                        <div class="col-md-auto" style="text-align:right;">
+                            <p> <i class="fas fa-list-ol" style="font-size:18px; color:#5cbcb1; padding-top:7px;"></i> <b>Animes</b> Assistidos: 0</p>
+                        </div>
+                    </div>
                     
                 </div>
-                <div class="col-md-auto">
-                    <h3><i class="fas fa-street-view" style="color:#00b359; margin-right: 10px;"></i><?=$_SESSION['login']?></h3>
-                    <p> <i class="fab fa-accusoft"></i> <b>Animes</b> Assistindo: 18</p>
-                </div>
-                <div class="col-md-auto">
-                    <p style="margin-top:56px;"> <i class="fas fa-boxes"></i> <b>Animes</b> Parados: 22</p>
-                </div>
-                <div class="col-md-auto" style="text-align:right;">
-                    <h3 style="color:;">Level: 100</h3>
-                    <p style=""> <i class="fas fa-list-ol" style="font-size:18px;"></i> <b>Animes</b> Assistidos: 120</p>
-                </div>
-                <div class="col">
+                <div class="col" style="background-color:yellow;">
                     
                     <div class="row" style="background-color:white; width: 98%; margin-left: 60px; margin-top: 30px;">
                         <div class="col">

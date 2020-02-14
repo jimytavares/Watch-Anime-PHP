@@ -51,8 +51,21 @@ $nickname = $_SESSION['nickname'];
     <div class="container-fluid" style="width: 95%; border-radius:5px;">
         <div class="row" style="margin-top: 30px; background-color:;">
             
+            <!-- Search & Button: Search -->
+            <div class="col-4">
+                
+              <img src="../imagens/titulo.png"/ style="padding-top:10px;">
+              <p style="color:white; padding-top:5px;"> <i class="fas fa-user-tie" style="font-size:15px; color:#80bfff;"></i> Usuário: <?php echo $nickname; ?></p>
+                
+            </div>
+            
+            <!-- User: Campo -->
+            <div class="col-3 resp-user">
+                
+            </div>
+            
             <!-- Title -->
-            <div class="col-lg-5" style="padding-top:30px;">
+            <div class="col-5" style="padding-top:30px;">
                 <a href="../.pages/home.php"> <div class="btn btn-search resp-user-config" style="margin-top:-30px;"><i class="fas fa-home"></i></div> </a>
                 <a href="../.pages/perfil.php"> <div class="btn btn-search resp-user-config" style="margin-top:-30px;"><i class="fas fa-user"></i></div> </a>
                 <a href="../.pages/AnimeForm.php"> <div class="btn btn-search resp-user-config" style="margin-top:-30px;"><i class="fas fa-database"></i></div> </a>
@@ -61,18 +74,6 @@ $nickname = $_SESSION['nickname'];
                 <a href="../.pages/form-assistindo.php"> <div class="btn btn-search resp-user-config" style="margin-top:-30px; background-color:# !important;"><i class="fas fa-pencil-square-o" style="color:white; padding-left:2px;"></i></div> </a>
                 <a href="../.pages/form-parados.php"> <div class="btn btn-search resp-user-config" style="margin-top:-30px; background-color:# !important;"><i class="fas fa-hourglass-half" style="color:white; padding-left:px; font-size:17px; padding-top:1px;"></i></div> </a>
                 <a href="../.pages/form-ranking.php"> <div class="btn btn-search resp-user-config" style="margin-top:-30px; background-color:#3399ff !important;"><i class="fas fa-list-ol" style="color:black; padding-left:0px; font-size:18px; margin-top:2px;"></i></div> </a>
-            </div>
-            
-            <!-- Search & Button: Search -->
-            <div class="col-lg-4">
-                
-              <img src="../imagens/titulo.png"/>
-                
-            </div>
-            
-            <!-- User: Campo -->
-            <div class="col-lg-3 resp-user">
-                <?php echo $nickname; ?>
             </div>
             
         </div>

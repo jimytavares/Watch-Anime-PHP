@@ -78,6 +78,7 @@
                 
                 <!-- TABLE: Assistindo -->
                 <div class="container" style="width:1000px; color:white; background-image: linear-gradient(to right, #959abc, #6eb1d7, #54d8b1); height:50px; border-radius:2px; box-shadow: 1px 3px 10px #000000; text-align:center;">
+                    
                     <div class="row" style="padding-top:15px;">
                         <div class="col" style="background-color:;">
                             <i class="far fa-calendar-alt" id="icon-table-assist" style=""></i>
@@ -94,6 +95,7 @@
                             <i class='far fa-edit' style=' font-size: 20px; margin-left:20px;'></i>
                         </div>
                     </div>
+                    
                 </div>
                     
                 <table class="table table-borderless" style="margin-top: 10px; margin-left: 5%; width:90%;">
@@ -151,9 +153,11 @@
                     <thead>
                         <tr style="background-image: linear-gradient(to right, #3A7EC7 ,#3A7EC7, #2F449C); color:white;">
                             <th style="width:15%;">ID</th>
+                            <th style="">TV</th>
                             <th style="width:20%;">Nome</th>
-                            <th style="width:10%;">Episódio Parado</th>
+                            <th style="width:10%;">Episódio</th>
                             <th style="width:;">Data</th>
+                            <th style="width:;">Nota</th>
                             <th style="width:;">+1 Ep</th>
                             <th style="width:;">-1 Ep</th>
                             <th style="width:;">Apagar</th>

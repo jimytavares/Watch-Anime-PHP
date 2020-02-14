@@ -17,14 +17,21 @@
 
             echo "<td>" . $dados["id"];
                 echo "</td>";
+        
+            echo "<td>";
+                echo " <a href= " . $dados['link'] ." target='_blank'> <i class='fas fa-tv' style='color:#ff00bf; font-size:15px; margin-top:3px;'></i> </a>";
+            echo "</td>";
 
             echo "<td style='font-weight:;color:#9933ff;'>" . $dados["nome"];
                 echo "</td>";
 
-            echo "<td>" . $dados["episodio"];
+            echo "<td style='color:#ff00bf; padding-left:30px;'>" . $dados["episodio"];
                 echo "</td>";
 
             echo "<td>" . $dados["data"];
+                echo "</td>";
+        
+            echo "<td style='color:red; padding-left:19px;'>" . $dados["nota"];
                 echo "</td>";
 
             echo "<td>"; 

@@ -33,7 +33,7 @@
     <?php include ('../../trunk/.globals/header.php'); ?>
 
     <!-- SECTION 02: Botões de Ação
-    ===================================================== -->
+    ===================================================== 
     <sectcion>
         <div class="container-fluid" style="width: 95%; margin-top:30px;">
 
@@ -56,11 +56,11 @@
             </div>
 
         </div>
-    </sectcion>
+    </sectcion> -->
 
     <!-- SECTION ALL BODY
     ===================================================== -->
-    <section class="container-fluid" style="background-color:#eeebf9; width: 95%; margin-top: 0px; height:700px; border-radius:5px;">
+    <section class="container-fluid" style="background-color:#eeebf9; width: 95%; margin-top: 5px; height:700px; border-radius:5px;">
         
         <!-- #### Row 01: Alert #### -->
         <div class="" style="margin-top:20px; background-color:white; border-radius:3px; height: 67px; width:98%; margin-left:10px;">

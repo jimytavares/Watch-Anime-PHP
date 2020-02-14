@@ -77,7 +77,7 @@
     <?php include ('../.globals/header.php'); ?>
 
     <!-- SECTION 02: menu
-    ===================================================== -->
+    =====================================================
     <div class="container-fluid" style="width: 95%; margin-top:30px;">
         <div class="row" style="margin-left:40px;">
             <div class="col-md-auto">
@@ -96,11 +96,11 @@
                 <a href="ranking.php"> <button type="button" class="btn btn-outline-success" style="background-color:#F9F8FD; width:100px; height: 50px;  color:white; border-radius:1px; margin-left:-25px;"><i class="fas fa-align-left" style="color:black; font-size:25px; "></i> </button> </a>
             </div>
         </div>
-    </div>
+    </div> -->
     
     <!-- SECTION 03: body box
     ===================================================== -->
-    <section class="container-fluid" style="background-color:#eeebf9;width: 95%; margin-top: 0px; border-radius:5px; height: 900px;">
+    <section class="container-fluid" style="background-color:#eeebf9;width: 95%; margin-top: 5px; border-radius:5px; height: 900px;">
 
         <!-- #### Row 01: Alert #### -->
         <div class="" style="margin-top:20px; background-color:white; border-radius:3px; height: 67px; width:98%; margin-left:10px;">

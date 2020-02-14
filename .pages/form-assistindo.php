@@ -60,7 +60,7 @@
 
     <!-- SECTION ALL BODY
     ===================================================== -->
-    <section class="container-fluid" style="background-color:#eeebf9; width: 95%; margin-top: 20px; height:700px; border-radius:5px;">
+    <section class="container-fluid" style="background-color:#eeebf9; width: 95%; margin-top: 5px; height:700px; border-radius:5px;">
         
         <!-- #### Row 01: Alert #### -->
         <div class="" style="margin-top:20px; background-color:white; border-radius:3px; height: 67px; width:98%; margin-left:10px;">
@@ -150,7 +150,7 @@
                             <p><b>Link</b> (Assistir):</p>
                         </div>
                         <div class="col">
-                            <input type="text" name="dtdia" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:65%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:px;">
+                            <input type="text" name="link" class="form-control" id="exampleFormControlInput1" placeholder="link anime" style="width:65%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:px;">
                         </div>
                       </div>
                   </div>
