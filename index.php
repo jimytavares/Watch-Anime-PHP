@@ -22,39 +22,53 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 
 </head>
 <body style="background: url('imagens/bg-ranking.jpg') no-repeat center center fixed; background-size: cover; background-repeat: no-repeat;">
 
     <section class="lg-index" style="overflow-x: hidden">
             
-        <div class="box-login" style="background-color: ; width:30%; height: 500px; margin-top: 8%; margin-left:35%; border-radius:4px; opacity:0.9;">
-            
-            <div class="box2-login" style="width:80%; margin-left:9%; padding-top:10%;">
+        <div class="box-login" style="background-color: white; width:22%; height: 500px; margin-top: 4%; margin-left:4%; border-radius:1px; opacity:0.9;">
+            <div class="box2-login" style="padding-top:9%;">
                 
-                <!-- Imagem -->
-                <div class="row">
+                <div class="row" style="margin-top: -30px; width:99%;">
                     <div class="col">
+                        <button type="submit" class="btn btn-primary" style="width:; border:none; margin-left:97%; border-radius:0px;"> <i class="far fa-file-alt"></i> </button>
                     </div>
-                    <div class="col">
-                        <img src="imagens/titulo-black.png" style=""/>
-                    </div>
-                    <div class="col">
+                    <div class="col-md-auto">
+                        <button type="submit" class="btn btn-primary" style="width:; border:none; border-radius:0px;"> <i class="fas fa-key" style="font-size:14px;"></i> </button>
                     </div>
                 </div>
-
+                
+                <!-- Logo/Imagem -->
+                <img src="imagens/titulo-black.png" style="margin-left:28%; margin-top:40px;"/>
+                <hr style="background-color:black;">
+                    
                 <!-- Formulário-->
-                <form action="logar.php" method="post" autocomplete="on" style="margin-top:20px;">
+                <form action="logar.php" method="post" autocomplete="on" style="margin-top:50px; background-color:;">
                     <fieldset>
 
                         <div class="form-group">
-                            <label for="campoUsuario"><b>Usuário:</b></label>
-                            <input type="text" name ="username" class="form-control" autocomplete="on" style="width:100%; border-radius:10px; border:none;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuário">
+                            <div class="row" style="margin-left:23px;">
+                                <div class="col-1">
+                                    <label for="campoUsuario" style="font-family: 'Poppins', sans-serif; padding-top:6px; color:#404040;">Usuário:</label>
+                                </div>
+                                <div class="col">
+                                    <input type="text" name ="username" class="form-control" autocomplete="on" style="width:70%; border-radius:0px; background-color:#e6e6e6; margin-left:45px;" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                            </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="exampleInputPassword1"><b>Senha:</b></label>
-                            <input type="password" id="senha" name="password" class="form-control" autocomplete="on" style="width:100%; background-color:white; border-radius:10px; border:none;" id="exampleInputPassword1" placeholder="Senha">
+                            <div class="row" style="margin-left:7px;">
+                                <div class="col-1"  style="margin-left:15px;">
+                                    <label for="exampleInputPassword1" style="font-family: 'Poppins', sans-serif; padding-top:6px; color:#595959;">Senha:</label>
+                                </div>
+                                <div class="col">
+                                    <input type="password" id="senha" name="password" class="form-control" autocomplete="on" style="width:70%; background-color:white; border-radius:0px; background-color:#e6e6e6; margin-left:45px;" id="exampleInputPassword1">
+                                </div>
+                            </div>
                             <small id="capsativo" style="color:red; display: none; padding-top: 15px; text-align: center;">* Caps lock ativo *</small>
                             <?php
                             if(isset($_GET['error']) && $_GET['error'] == 'wrong'){
@@ -65,19 +79,12 @@
 
 
 
-                        <button type="submit" class="btn btn-primary" style="background-image: linear-gradient(to right, #3FC9FE ,#3A7EC7, #cc33ff); width:100%; color:white; margin-left: %; border-color:transparent; border-radius:10px;">ENTRAR</button>
+                        <button type="submit" class="btn btn-primary" style="background-image: linear-gradient(to right, #3FC9FE ,#3A7EC7, #cc33ff); width:30%; color:white; margin-left: 36%; border-radius:0px; margin-top:20px;">Entrar</button>
 
-                        <div class="row" style="margin: 30px auto; max-width: 100%; margin-left:3px;">
-                            <div class="col-md-auto">
+                        <div class="" style="margin-top:40px; margin-left:25%; font-family: 'Poppins', sans-serif; font-size:14px;">
                                 <a data-toggle="modal" data-target="#ModalRegistrar">
-                                    <button type="submit" class="btn btn-outline-primary" style="width:110px;">Registre-se!</button>
+                                    Registre-se! /<a data-toggle="modal" data-target="#ModalEsqueciSenha"> Perdeu a Senha?</a>
                                 </a>
-                            </div>
-                            <div class="col-md-auto">
-                                <a data-toggle="modal" data-target="#ModalEsqueciSenha">
-                                    <button type="submit" class="btn btn-outline-primary" style="">Perdeu a Senha?</button>
-                                </a>
-                            </div>
                         </div>
 
                     </fieldset>

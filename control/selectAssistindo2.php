@@ -25,7 +25,7 @@
             echo "<td style='font-weight:;color:#9933ff;'>" . $dados["nome"];
                 echo "</td>";
 
-            echo "<td style='padding-left:30px; color:red;' id='colorE'>" . $dados["episodio"];
+            echo "<td style='padding-left:30px; color:red;' id='para1'>" . $dados["episodio"];
                 echo "</td>";
 
             echo "<td>" . $dados["dia_semana"];
@@ -35,7 +35,7 @@
                 echo "</td>";
 
             echo "<td>"; 
-                echo "<a href='../control/plusEpisodio.php?plus=" . $dados['id'] . "' onclick='myFunction()'> <img src='../imagens/img-button-table/plus1.png' style='width:29px; margin-left:5px;'/> </a>";
+                echo "<a href='../control/plusEpisodio.php?plus=" . $dados['id'] . "' onclick='mudarCor('blue');'> <img src='../imagens/img-button-table/plus1.png' style='width:29px; margin-left:5px;'/> </a>";
             echo "</td>";
 
             echo "<td>"; 

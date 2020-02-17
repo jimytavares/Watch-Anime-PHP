@@ -11,162 +11,6 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
-
--- Copiando estrutura do banco de dados para dbanime
-DROP DATABASE IF EXISTS `dbanime`;
-CREATE DATABASE IF NOT EXISTS `dbanime` /*!40100 DEFAULT CHARACTER SET latin1 */;
-USE `dbanime`;
-
--- Copiando estrutura para tabela dbanime.tb_animes
-DROP TABLE IF EXISTS `tb_animes`;
-CREATE TABLE IF NOT EXISTS `tb_animes` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `id_genero` int(11) DEFAULT NULL,
-  `id_categoria` int(11) DEFAULT NULL,
-  `id_temporada` int(11) DEFAULT NULL,
-  `nome` varchar(50) DEFAULT NULL,
-  `abreviacao` varchar(20) NOT NULL,
-  `epsiodio` int(4) NOT NULL,
-  `estreia` date NOT NULL,
-  `diretor` varchar(50) NOT NULL,
-  `estudio` varchar(50) NOT NULL,
-  `trailer` varchar(50) NOT NULL,
-  `sinopse` varchar(50) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `FK_id_genero` (`id_genero`),
-  KEY `FK_id_categoria` (`id_categoria`),
-  KEY `FK_id_temporada` (`id_temporada`),
-  CONSTRAINT `FK_id_categoria` FOREIGN KEY (`id_categoria`) REFERENCES `tb_categoria` (`id`),
-  CONSTRAINT `FK_id_genero` FOREIGN KEY (`id_genero`) REFERENCES `tb_genero` (`id`),
-  CONSTRAINT `FK_id_temporada` FOREIGN KEY (`id_temporada`) REFERENCES `tb_temporada` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
-
--- Exportação de dados foi desmarcado.
-
--- Copiando estrutura para tabela dbanime.tb_assistido
-DROP TABLE IF EXISTS `tb_assistido`;
-CREATE TABLE IF NOT EXISTS `tb_assistido` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `id_anime` int(11) NOT NULL DEFAULT '0',
-  `id_usuario` int(11) NOT NULL DEFAULT '0',
-  `episodio` int(11) NOT NULL,
-  `dia_semana` varchar(50) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `FK3_id_anime` (`id_anime`),
-  KEY `FK3_id_usuario` (`id_usuario`),
-  CONSTRAINT `FK3_id_anime` FOREIGN KEY (`id_anime`) REFERENCES `tb_animes` (`id`),
-  CONSTRAINT `FK3_id_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `tb_usuario` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
-
--- Exportação de dados foi desmarcado.
-
--- Copiando estrutura para tabela dbanime.tb_categoria
-DROP TABLE IF EXISTS `tb_categoria`;
-CREATE TABLE IF NOT EXISTS `tb_categoria` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nome` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
-
--- Exportação de dados foi desmarcado.
-
--- Copiando estrutura para tabela dbanime.tb_comentarios
-DROP TABLE IF EXISTS `tb_comentarios`;
-CREATE TABLE IF NOT EXISTS `tb_comentarios` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `id_usuario` int(11) NOT NULL,
-  `id_anime` int(11) NOT NULL,
-  `comentario` varchar(50) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `FK_id_anime` (`id_anime`),
-  KEY `FK_id_usuario` (`id_usuario`),
-  CONSTRAINT `FK_id_anime` FOREIGN KEY (`id_anime`) REFERENCES `tb_animes` (`id`),
-  CONSTRAINT `FK_id_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `tb_usuario` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- Exportação de dados foi desmarcado.
-
--- Copiando estrutura para tabela dbanime.tb_genero
-DROP TABLE IF EXISTS `tb_genero`;
-CREATE TABLE IF NOT EXISTS `tb_genero` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nome` varchar(50) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=latin1;
-
--- Exportação de dados foi desmarcado.
-
--- Copiando estrutura para tabela dbanime.tb_nota
-DROP TABLE IF EXISTS `tb_nota`;
-CREATE TABLE IF NOT EXISTS `tb_nota` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `pontuacao` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
-
--- Exportação de dados foi desmarcado.
-
--- Copiando estrutura para tabela dbanime.tb_parado
-DROP TABLE IF EXISTS `tb_parado`;
-CREATE TABLE IF NOT EXISTS `tb_parado` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `id_anime` int(11) DEFAULT NULL,
-  `id_usuario` int(11) DEFAULT NULL,
-  `epsidio` int(4) DEFAULT NULL,
-  `data` date DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `FK4_id_usuario` (`id_usuario`),
-  KEY `FK4_id_anime` (`id_anime`),
-  CONSTRAINT `FK4_id_anime` FOREIGN KEY (`id_anime`) REFERENCES `tb_animes` (`id`),
-  CONSTRAINT `FK4_id_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `tb_usuario` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- Exportação de dados foi desmarcado.
-
--- Copiando estrutura para tabela dbanime.tb_ranking
-DROP TABLE IF EXISTS `tb_ranking`;
-CREATE TABLE IF NOT EXISTS `tb_ranking` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `id_anime` int(11) DEFAULT NULL,
-  `id_usuario` int(11) DEFAULT NULL,
-  `id_nota` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `FK2_id_anime` (`id_anime`),
-  KEY `FK2_id_usuario` (`id_usuario`),
-  KEY `FK_id_nota` (`id_nota`),
-  CONSTRAINT `FK2_id_anime` FOREIGN KEY (`id_anime`) REFERENCES `tb_animes` (`id`),
-  CONSTRAINT `FK2_id_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `tb_usuario` (`id`),
-  CONSTRAINT `FK_id_nota` FOREIGN KEY (`id_nota`) REFERENCES `tb_nota` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- Exportação de dados foi desmarcado.
-
--- Copiando estrutura para tabela dbanime.tb_rec_user
-DROP TABLE IF EXISTS `tb_rec_user`;
-CREATE TABLE IF NOT EXISTS `tb_rec_user` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `id_usuario` int(11) NOT NULL DEFAULT '0',
-  `codigo_autenticador` varchar(25) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`),
-  KEY `FK__tb_usuario` (`id_usuario`),
-  CONSTRAINT `FK__tb_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `tb_usuario` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
-
--- Exportação de dados foi desmarcado.
-
--- Copiando estrutura para tabela dbanime.tb_temporada
-DROP TABLE IF EXISTS `tb_temporada`;
-CREATE TABLE IF NOT EXISTS `tb_temporada` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nome` varchar(50) NOT NULL,
-  `ano` date NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
-
--- Exportação de dados foi desmarcado.
-
--- Copiando estrutura para tabela dbanime.tb_usuario
-DROP TABLE IF EXISTS `tb_usuario`;
 CREATE TABLE IF NOT EXISTS `tb_usuario` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(50) NOT NULL,
@@ -182,9 +26,110 @@ CREATE TABLE IF NOT EXISTS `tb_usuario` (
   UNIQUE KEY `uni_nickname` (`nickname`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
--- Exportação de dados foi desmarcado.
+CREATE TABLE IF NOT EXISTS `tb_temporada` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(50) NOT NULL,
+  `ano` date NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
--- Copiando estrutura para view dbanime.vw_assistido
+CREATE TABLE IF NOT EXISTS `tb_animes` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id_genero` int(11) DEFAULT NULL,
+  `id_categoria` int(11) DEFAULT NULL,
+  `id_temporada` int(11) DEFAULT NULL,
+  `nome` varchar(50) DEFAULT NULL,
+  `abreviacao` varchar(20) NOT NULL,
+  `epsiodio` int(4) NOT NULL,
+  `estreia` date NOT NULL,
+  `diretor` varchar(50) NOT NULL,
+  `estudio` varchar(50) NOT NULL,
+  `trailer` varchar(50) NOT NULL,
+  `sinopse` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK_id_temporada` (`id_temporada`),
+  CONSTRAINT `FK_id_temporada` FOREIGN KEY (`id_temporada`) REFERENCES `tb_temporada` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+CREATE TABLE IF NOT EXISTS `tb_assistido` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id_anime` int(11) NOT NULL DEFAULT '0',
+  `id_usuario` int(11) NOT NULL DEFAULT '0',
+  `episodio` int(11) NOT NULL,
+  `dia_semana` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK3_id_anime` (`id_anime`),
+  KEY `FK3_id_usuario` (`id_usuario`),
+  CONSTRAINT `FK3_id_anime` FOREIGN KEY (`id_anime`) REFERENCES `tb_animes` (`id`),
+  CONSTRAINT `FK3_id_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `tb_usuario` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+CREATE TABLE IF NOT EXISTS `tb_categoria` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+
+CREATE TABLE IF NOT EXISTS `tb_comentarios` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id_usuario` int(11) NOT NULL,
+  `id_anime` int(11) NOT NULL,
+  `comentario` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK_id_anime` (`id_anime`),
+  KEY `FK_id_usuario` (`id_usuario`),
+  CONSTRAINT `FK_id_anime` FOREIGN KEY (`id_anime`) REFERENCES `tb_animes` (`id`),
+  CONSTRAINT `FK_id_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `tb_usuario` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE IF NOT EXISTS `tb_genero` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=latin1;
+
+CREATE TABLE IF NOT EXISTS `tb_nota` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `pontuacao` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+CREATE TABLE IF NOT EXISTS `tb_parado` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id_anime` int(11) DEFAULT NULL,
+  `id_usuario` int(11) DEFAULT NULL,
+  `epsidio` int(4) DEFAULT NULL,
+  `data` date DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK4_id_usuario` (`id_usuario`),
+  KEY `FK4_id_anime` (`id_anime`),
+  CONSTRAINT `FK4_id_anime` FOREIGN KEY (`id_anime`) REFERENCES `tb_animes` (`id`),
+  CONSTRAINT `FK4_id_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `tb_usuario` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE IF NOT EXISTS `tb_ranking` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id_anime` int(11) DEFAULT NULL,
+  `id_usuario` int(11) DEFAULT NULL,
+  `id_nota` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK2_id_anime` (`id_anime`),
+  KEY `FK2_id_usuario` (`id_usuario`),
+  KEY `FK_id_nota` (`id_nota`),
+  CONSTRAINT `FK2_id_anime` FOREIGN KEY (`id_anime`) REFERENCES `tb_animes` (`id`),
+  CONSTRAINT `FK2_id_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `tb_usuario` (`id`),
+  CONSTRAINT `FK_id_nota` FOREIGN KEY (`id_nota`) REFERENCES `tb_nota` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE IF NOT EXISTS `tb_rec_user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id_usuario` int(11) NOT NULL DEFAULT '0',
+  `codigo_autenticador` varchar(25) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `FK__tb_usuario` (`id_usuario`),
+  CONSTRAINT `FK__tb_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `tb_usuario` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+
 DROP VIEW IF EXISTS `vw_assistido`;
 -- Criando tabela temporária para evitar erros de dependência de VIEW
 CREATE TABLE `vw_assistido` (

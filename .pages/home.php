@@ -121,8 +121,10 @@
             </div>
         
         <script>
-            function myFunction() {
-              document.getElementById("colorE").style.color = "yellow";
+            function mudarCor(novaCor) 
+            {
+              var elemento = document.getElementById("para1");
+              elemento.style.color = novaCor;
             }
         </script>
         
