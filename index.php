@@ -29,7 +29,7 @@
 
     <section class="lg-index" style="overflow-x: hidden">
             
-        <div class="box-login" style="background-color: white; width:22%; height: 500px; margin-top: 4%; margin-left:4%; border-radius:1px; opacity:0.9;">
+        <div class="box-login" style="background-color: white; width:23%; height: 500px; margin-top: 4%; margin-left:4%; border-radius:1px; opacity:0.9;">
             <div class="box2-login" style="padding-top:9%;">
                 
                 <div class="row" style="margin-top: -30px; width:99%;">

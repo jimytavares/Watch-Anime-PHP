@@ -20,11 +20,12 @@
     <link href="css/Main.css" rel="stylesheet" type="text/css" media="all"/>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     
     <style>  </style>
 
 </head>
-<body style="background-image: linear-gradient(to right, #6424ea,  #ad00b1, #9200c5);">
+<body style="background-image: linear-gradient(to right, #6424ea, #9200c5);">
     
     <!-- SECTION 01: Header 
     ===================================================== -->
@@ -75,7 +76,19 @@
             
         </div>
         
-        <!--#### ROW GERAL 02: Perfil ####-->
+        <!-- #### Row 02: Buttons #### -->
+        <div class="" style="margin-top:10px; background-color:#eeebf9; border-radius:3px; height: 67px; width:98%; margin-left:10px; opacity:;">
+            
+            <div class="" style="background-color:; width:95%; margin-left:30px;">
+                <button type="button" class="btn btn-outline-primary btn-sm" style="color:black; font-weight: bold; padding-top:8px;"> <i class="fab fa-twitch" style="font-size:40px; color:#6424ea;"></i> </button> &nbsp &nbsp
+                <img src="../imagens/google-keep.png" style="width:45px; padding-top:6px;"/>
+                <button type="button" class="btn btn-outline-primary btn-sm" style="color:black; font-weight: bold; margin-left:15px;"> <i class="fab fa-youtube" style="font-size:50px; color:red;"></i> </button> &nbsp &nbsp
+                <button type="button" class="btn btn-outline-primary btn-sm" style="color:black; font-weight: bold; padding-top:10px;"> <i class="fas fa-tv" style="font-size:40px; color:#3e1a61;"></i> </button> &nbsp &nbsp
+            </div>
+            
+        </div>
+        
+        <!--#### ROW GERAL 03: Perfil ####-->
         <div class="" style="background-color:white; width: 99%; margin-left:5px; margin-top:10px; border-radius:5px; height:270px;">
             
             <!-- LINHA 01: Usuario, level, etc -->
@@ -162,12 +175,55 @@
         
         <!--#### ROW GERAL 02: Animes ####-->
         <div class="row" style="width:99%; margin-left:4px; margin-top:15px; height: 230px;">
+            
             <div class="col" style="background-color:white; border-radius:3px;">
                 a
             </div>
-            <div class="col" style="background-color:white; margin-left:10px; border-radius:3px;">
-                b
+            
+            <!-- League of Legends -->
+            <div class="col" style="background-color:white; margin-left:10px; border-radius:3px; font-family: 'Poppins', sans-serif;">
+                
+                <h4>League of Legends</h4>
+                <hr style="width:100%;">
+                
+                <div class="row" style="color:gray;">
+                    <div class="col-md-auto">
+                        <img src="../imagens/icon-circle-lol/c1.jpg" style="width:px;"/>
+                    </div>
+                    <div class="col-md-auto" style="color:black;">
+                        LCK -
+                    </div>
+                    <div class="col">
+                        teastandooooooooooooo
+                    </div>
+                </div>
+                
+                <div class="row" style="color:gray; margin-top:10px;">
+                    <div class="col-md-auto">
+                        <img src="../imagens/icon-circle-lol/c2.jpg" style="width:px;"/>
+                    </div>
+                    <div class="col-md-auto" style="color:black;">
+                        CBLOL -
+                    </div>
+                    <div class="col">
+                        teastandooooooooooooo
+                    </div>
+                </div>
+                
+                <div class="row" style="color:gray; margin-top:10px;">
+                    <div class="col-md-auto">
+                        <img src="../imagens/icon-circle-lol/c3.jpg" style="width:px;"/>
+                    </div>
+                    <div class="col-md-auto" style="color:black;">
+                        LCS -
+                    </div>
+                    <div class="col">
+                        teastandooooooooooooo
+                    </div>
+                </div>
+                
             </div>
+            
         </div>
             
         

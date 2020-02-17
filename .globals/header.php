@@ -13,8 +13,6 @@ $nickname = $_SESSION['nickname'];
 ?>
 
 <style>
-    .r-button{ background-color: transparent; border-color:white; margin: 5px; color: white; padding: 5px; height: 40px; width: 40px; border-radius: 20px; }
-    .r-button:hover{ background-color:#ff1a8c; border-color: transparent; }
     
     @media screen and (min-width:768px) and (max-width:1366px)
     {  
@@ -48,10 +46,10 @@ $nickname = $_SESSION['nickname'];
 
 <section>
     
-    <div class="container-fluid" style="width: 95%; border-radius:5px;">
-        <div class="row" style="margin-top: 30px; background-color:;">
+    <div class="container-fluid" style="width: 95%;">
+        <div class="row" style="margin-top: 30px;">
             
-            <!-- Search & Button: Search -->
+            <!-- Logo & Admin -->
             <div class="col-4">
                 
               <img src="../imagens/titulo.png"/ style="padding-top:10px;">
@@ -59,13 +57,13 @@ $nickname = $_SESSION['nickname'];
                 
             </div>
             
-            <!-- User: Campo -->
+            <!-- Col:  -->
             <div class="col-3 resp-user">
                 
             </div>
             
-            <!-- Title -->
-            <div class="col-5" style="padding-top:30px;">
+            <!-- Menu Buttons -->
+            <div class="col-5" style="padding-top:18px;">
                 <a href="../.pages/home.php"> <div class="btn btn-search resp-user-config" style="margin-top:-30px;"><i class="fas fa-home"></i></div> </a>
                 <a href="../.pages/perfil.php"> <div class="btn btn-search resp-user-config" style="margin-top:-30px;"><i class="fas fa-user"></i></div> </a>
                 <a href="../.pages/AnimeForm.php"> <div class="btn btn-search resp-user-config" style="margin-top:-30px;"><i class="fas fa-database"></i></div> </a>
@@ -74,6 +72,9 @@ $nickname = $_SESSION['nickname'];
                 <a href="../.pages/form-assistindo.php"> <div class="btn btn-search resp-user-config" style="margin-top:-30px; background-color:# !important;"><i class="fas fa-pencil-square-o" style="color:white; padding-left:2px;"></i></div> </a>
                 <a href="../.pages/form-parados.php"> <div class="btn btn-search resp-user-config" style="margin-top:-30px; background-color:# !important;"><i class="fas fa-hourglass-half" style="color:white; padding-left:px; font-size:17px; padding-top:1px;"></i></div> </a>
                 <a href="../.pages/form-ranking.php"> <div class="btn btn-search resp-user-config" style="margin-top:-30px; background-color:#3399ff !important;"><i class="fas fa-list-ol" style="color:black; padding-left:0px; font-size:18px; margin-top:2px;"></i></div> </a>
+                    <br><br>
+                <a href="../.pages/home.php"> <div class="btn btn-search resp-user-config" style="margin-top:-30px;"><i class="fas fa-home"></i></div> </a>
+                <a href="../.pages/perfil.php"> <div class="btn btn-search resp-user-config" style="margin-top:-30px;"><i class="fas fa-file-contract"></i></div> </a>
             </div>
             
         </div>
