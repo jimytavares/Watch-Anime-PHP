@@ -96,7 +96,7 @@
             
             <!-- BOX: form -->
             <div class="" style="margin-left:3%; width: 1000px; margin-top:30px; border: ;">
-                <form action="../../trunk/control/insertassistindo.php" method="post" autocomplete="on" style="font-family: 'Poppins', sans-serif;">
+                <form action="../../trunk/control/insertRanking.php" method="post" autocomplete="on" style="font-family: 'Poppins', sans-serif;">
                   
                  <div class="form-group">
                       <div class="row">
@@ -119,7 +119,7 @@
                             <p>Nota:</p>
                         </div>
                         <div class="col">
-                            <select class="form-control" name="id_anime" id="exampleFormControlSelect1" style="width:40%; background-color:transparent; color:#595959; border-radius:3px; border: 1px solid #999999;">
+                            <select class="form-control" name="id_nota" id="exampleFormControlSelect1" style="width:40%; background-color:transparent; color:#595959; border-radius:3px; border: 1px solid #999999;">
                                 
                               <option value="0">..::Selecione Nota::..</option>
                               <?php include_once('../../trunk/control/selectNotaRanking.php'); ?>  

@@ -3,7 +3,7 @@
    require_once('../.connection/conn.class.php');
    $db = Database::conexao();
 
-   $sql = "SELECT * FROM vw_assistido WHERE id_usuario = " . $_SESSION['id'] . " order by num_dia_semana";
+   $sql = "SELECT * FROM vw_ranking WHERE id_usuario = " . $_SESSION['id'];
 
    $getAssistindo = $db->prepare($sql);
    $getAssistindo->execute();
@@ -14,28 +14,29 @@
 
     // $dados = mysqli_fetch_array($resultado)
 
-    $exibir = '';
-    $diaSemana = 'Nenhum';
+    $table10 = '';
+    $table9 = '';
 
-    foreach ($dadosAssistindo AS $dados){
-        if($diaSemana != $dados["dia_semana"])
+    foreach ($dadosAssistindo AS $dados)
+    {
+        
+        $nota10 = $dados["id_nota"];
+        if($dados["id_nota"] != 0)
         {
-            $diaSemana = $dados["dia_semana"];
-            $exibir .= '<tr id="tr-parados">
-                <th id="th-parados" style="background-color:#eeebf9;"> ' . $dados["dia_semana"] . ' </th>
-                <th id="th-parados" style="background-color:#eeebf9;"></th>
-                <th id="th-parados" style="background-color:#eeebf9;"></th>
+            $table10 .= 
+            '<tr id="tr-parados">
+                <th id="th-parados" style="color:red;"> ' . $dados["nome"] . ' </th>
+                <th id="th-parados" style=""> ' . $dados["id_nota"] . ' </th>
+                <th id="th-parados" style="">' . $dados["comentario"] . ' </th>
             </tr>';
+        } else {
+            echo 'erro';
         }
         
-        $exibir .= "<tr>" . 
-        "<td>" . $dados["nome"] . "</td>" .
-        "<td>" . $dados["episodio"] . "</td>" .
-        "<td>" . $dados["dia_semana"] . "</td>" .
-        "</tr>";
         
     }
     
-    echo $exibir;
+    echo $table10;
+    echo $table9;
 
 ?>

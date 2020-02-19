@@ -20,7 +20,7 @@
     $sql = "INSERT INTO tb_ranking(id_usuario, id_anime, id_nota, comentario) VALUES ('$id_user', '$id_animeA', '$id_nota', '$comentario');";
 
     if ($mysqli->query($sql) === TRUE) {
-    header('Location: ../.pages/form-assistindo.php');
+    header('Location: index.php');
 
     } else {
     echo "Error: " . $sql . "<br>" . $mysqli->error;
