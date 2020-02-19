@@ -45,7 +45,7 @@
                 <img src="imagens/titulo-black.png" style="margin-left:28%; margin-top:40px;"/>
                 <hr style="background-color:black;">
                     
-                <!-- Formulário-->
+                <!-- Form Login -->
                 <form action="logar.php" method="post" autocomplete="on" style="margin-top:50px; background-color:;">
                     <fieldset>
 
@@ -55,7 +55,7 @@
                                     <label for="campoUsuario" style="font-family: 'Poppins', sans-serif; padding-top:6px; color:#404040;">Usuário:</label>
                                 </div>
                                 <div class="col">
-                                    <input type="text" name ="username" class="form-control" autocomplete="on" style="width:70%; border-radius:0px; background-color:#e6e6e6; margin-left:45px;" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    <input type="text" name ="username" class="form-control" autocomplete="on" style="width:75%; border-radius:0px; background-color:#e6e6e6; margin-left:45px;" id="exampleInputEmail1" aria-describedby="emailHelp">
                                 </div>
                             </div>
                         </div>
@@ -66,7 +66,7 @@
                                     <label for="exampleInputPassword1" style="font-family: 'Poppins', sans-serif; padding-top:6px; color:#595959;">Senha:</label>
                                 </div>
                                 <div class="col">
-                                    <input type="password" id="senha" name="password" class="form-control" autocomplete="on" style="width:70%; background-color:white; border-radius:0px; background-color:#e6e6e6; margin-left:45px;" id="exampleInputPassword1">
+                                    <input type="password" id="senha" name="password" class="form-control" autocomplete="on" style="width:75%; background-color:white; border-radius:0px; background-color:#e6e6e6; margin-left:45px;" id="exampleInputPassword1">
                                 </div>
                             </div>
                             <small id="capsativo" style="color:red; display: none; padding-top: 15px; text-align: center;">* Caps lock ativo *</small>
