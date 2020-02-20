@@ -20,23 +20,51 @@
     foreach ($dadosAssistindo AS $dados)
     {
         
-        $nota10 = $dados["id_nota"];
-        if($dados["id_nota"] != 0)
+        if($dados["id_nota"] == 1)
         {
             $table10 .= 
-            '<tr id="tr-parados">
+            '
+            <tr id="tr-parados">
                 <th id="th-parados" style="color:red;"> ' . $dados["nome"] . ' </th>
                 <th id="th-parados" style=""> ' . $dados["id_nota"] . ' </th>
                 <th id="th-parados" style="">' . $dados["comentario"] . ' </th>
             </tr>';
+            
+        
+            
+        } elseif($dados["id_nota"] == 2) {
+            
+            $table9 .=
+            '
+            <tr id="tr-parados">
+                <th id="th-parados" style="color:red;"> ' . $dados["id"] . ' </th>
+                <th id="th-parados" style="color:red;"> ' . $dados["nome"] . ' </th>
+                <th id="th-parados" style=""> ' . $dados["id_nota"] . ' </th>
+                <th id="th-parados" style="">' . $dados["comentario"] . ' </th>
+            </tr>';
+            
         } else {
             echo 'erro';
         }
         
         
+        
     }
-    
+
     echo $table10;
+    echo '
+    <div class="">
+        dasdsa
+    </div>
+    <thead style="">
+        <tr id="tr-parados">
+            <th id="th-parados">ID</th>
+            <th id="th-parados">Nome</th>
+            <th id="th-parados">Episódio</th>
+            <th id="th-parados">Comentário</th>
+        </tr>
+    </thead>';
     echo $table9;
+    
 
 ?>

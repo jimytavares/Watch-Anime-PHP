@@ -51,12 +51,12 @@
     ===================================================== -->
     <section class="container-fluid" style="background-color:#F7F8FA;width: 95%; margin-top: 0px; height:1000px; border-radius:5px;">
     
-        <table class="table table-bordered" style="margin-top: 10px;">
+        <table class="table table-bordered" style="margin-top: 10px;background-image: linear-gradient(to right, #6600ff,  #ad00b1, #9200c5);">
             <thead>
                 <tr id="tr-parados">
                     <th id="th-parados">Nome</th>
                     <th id="th-parados">Episódio</th>
-                    <th id="th-parados">Dia Lançamento</th>
+                    <th id="th-parados">Comentário</th>
                 </tr>
             </thead>
             <tbody id="body-table-parados">
