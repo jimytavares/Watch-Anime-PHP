@@ -1,12 +1,7 @@
 
 <?php
 
-    $servidor = 'localhost';
-    $usuario  = 'testee';
-    $senha    = '12345';
-    $banco    = 'dbanime';
-
-    $mysqli = new mysqli ($servidor, $usuario, $senha, $banco);
+    require_once('../.connection/connection.class.php');
 
     $sql = "SELECT * FROM vw_parados WHERE id_usuario =" . $_SESSION['id'];
 
@@ -22,13 +17,16 @@
                 echo " <a href= " . $dados['link'] ." target='_blank'> <i class='fas fa-tv' style='color:#ff00bf; font-size:15px; margin-top:3px;'></i> </a>";
             echo "</td>";
 
-            echo "<td style='font-weight:;color:#9933ff;'>" . $dados["nome"];
+            echo "<td style='font-weight:;color:#ff00bf;'>" . $dados["nome"];
                 echo "</td>";
 
-            echo "<td style='color:#ff00bf; padding-left:30px;'>" . $dados["episodio"];
+            echo "<td style='padding-left:30px;'>" . $dados["episodio"];
+                echo "</td>";
+        
+            echo "<td>" . $dados["dia"];
                 echo "</td>";
 
-            echo "<td>" . $dados["data"];
+            echo "<td style='color:#b1b1b1;'>" . $dados["data"];
                 echo "</td>";
         
             echo "<td style='color:red; padding-left:19px;'>" . $dados["nota"];
@@ -48,4 +46,8 @@
 
         echo "</tr>";
     }
+
+/*while($artigos = $dadosAssistindo->fetch_array()){
+    echo $artigos["nome"]."<br>";
+}*/
 ?>

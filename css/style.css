@@ -1,0 +1,569 @@
+/* ############## SUMARIO ############## *//*
+ 
+    1º Globals. (Geral)
+    2º Menu.
+    3º Input & Table. (Cadastros) 
+    4º Card de Foto dos Animes. 
+
+
+
+
+/* ############################################ */
+/* ################ GLOBAL'S ################## */
+/* ############################################ */
+
+
+
+/* ############################################ */
+/* ################## MENU #################### */
+/* ############################################ */
+
+.bg-nav{
+    background-color:#570064 !important;
+        color: white !important;
+}
+    .bg-nav:hover{
+        color: black;
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: white !important;
+        opacity: 1; /* Firefox */
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: white !important;
+    }
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        color: white !important;
+    }
+
+
+/* ############################################ */
+/* ################ Tela Login ################ */
+/* ############################################ */
+
+    .lg-index{
+        background-image: url('imagens/img245.jpg'); 
+        background-size:cover;
+    }
+    
+#teste11{
+    color:red;
+}
+
+    .btn-forgot{
+        background-color: #ff33ff;
+        color: white;
+        opacity: 0.5;
+    }
+
+        .btn-forgot {
+          display: inline-block;
+          vertical-align: middle;
+          -webkit-transform: perspective(1px) translateZ(0);
+          transform: perspective(1px) translateZ(0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          position: relative;
+          background: ;
+          -webkit-transition-property: color;
+          transition-property: color;
+          -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+        }
+        .btn-forgot:before {
+          content: "";
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: #cc00cc;
+          -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+          -webkit-transition-property: transform;
+          transition-property: transform;
+          -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+          -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+        }
+        .btn-forgot:hover, .btn-forgot:focus, .btn-forgot:active {
+            color: white;
+            opacity: 1.0;
+        }
+        .btn-forgot:hover:before, .btn-forgot:focus:before, .btn-forgot:active:before {
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+        }
+
+/* ############################################ */
+/* ################ SESSION 01 ################ */
+/* ############################################ */
+
+
+
+/* ####### Input & Table ###### */
+
+ff#row-geral{
+    margin-top: 60px;
+}
+
+#col-input{
+    background-color: #eeeeee;
+    color: white;
+    font-family: "Arial", Times, serif;
+}
+
+    #nome-input:hover{
+        color: dodgerblue;
+        font-size: 16px;
+    }
+
+#input-cadastro{
+    background-color: transparent;
+    color: black;
+    border-radius: 0.5px;
+    margin-top: 10px;
+    width:;
+}
+    #input-cadastro:hover{
+        background-color: white;
+    }
+
+#col-table{
+    color: white;
+}
+    #col-table:hover{
+        background-color: #eeeeee;
+        color: black;
+    }
+
+#row-titulo-form{
+    margin-top: 10px;
+}
+
+#icon-titulo01{
+    color: black;
+    font-size: 30px;
+}
+    #icon-titulo01:hover{
+        color: #ff8080;
+        font-size: 35px;
+    }
+
+#titulo-form{
+    color: black;
+    text-align: right;
+    font-size: 15px;
+}
+
+#button-salvar-form{
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-color: black;
+    color: white;
+}
+
+.button-action{
+    width: 250px; height:190px; background-color:transparent; background-image: linear-gradient( #00c5ff ,#00afff, #0097ff ); border-radius: 0px;
+}
+
+/* ############################################ */
+/* ################ SESSION 02 ################ */
+/* ############################################ */
+
+.fa-ethereum{
+    font-size: 30px;
+    color: #84f6a9;
+}
+
+
+
+
+/* ############################################ */
+/* ################ SESSION 01 ################ */
+/* ############################################ */
+
+
+
+    /*
+        Table Parados 
+    */
+
+        #tr-parados
+        {
+            /*background: linear-gradient(to bottom, #0099ff 0%, #010818 100%);*/
+            border-color: transparent;
+            color: black;
+        }
+
+        #th-parados
+        {
+          background-color: white;
+            color: #0066cc;
+            border-radius: 2px;
+            border-color: transparent;
+            font-family: "Arial";
+          vertical-align: middle;
+          -webkit-transform: perspective(1px) translateZ(0);
+          transform: perspective(1px) translateZ(0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          position: relative;
+          -webkit-transition-property: color;
+          transition-property: color;
+          -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+        }
+            #th-parados:before 
+            {
+              content: "";
+              position: absolute;
+              z-index: -1;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              background: cornflowerblue;
+              -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+              -webkit-transform-origin: 50%;
+              transform-origin: 50%;
+              -webkit-transition-property: transform;
+              transition-property: transform;
+              -webkit-transition-duration: 0.3s;
+              transition-duration: 0.3s;
+              -webkit-transition-timing-function: ease-out;
+              transition-timing-function: ease-out;
+            }
+            #th-parados:hover, #th-parados:focus, #th-parados:active 
+            {
+             // color: white;
+            }
+            #th-parados:hover:before, #th-parados:focus:before, #th-parados:active:before 
+            {
+             // -webkit-transform: scaleX(1);
+             //   transform: scaleX(1);
+            }
+
+    #body-table-parados {
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      position: relative;
+      background-color: red;
+      -webkit-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+    }
+        #body-table-parados:before {
+          content: "";
+            margin-top:-2px;
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: white;
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          -webkit-transition-property: transform;
+          transition-property: transform;
+          -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+          -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+        }
+        #body-table-parados:hover, #body-table-parados:focus, #body-table-parados:active {
+        //color: white;
+        }
+        #body-table-parados:hover:before, #body-table-parados:focus:before, #body-table-parados:active:before {
+         //-webkit-transform: scale(0);
+         //transform: scale(0);
+        }
+
+    #row-input-parados{
+        color: white;
+        padding-bottom: 50px;
+    }
+
+    .input-parados{
+        background-color: transparent;
+        border-radius: 0;
+        color: red;
+    }
+        .input-parados:hover{
+            background-color: #eeeeee;
+        }
+
+    .button-salvar-parados{
+        background-color: darkorange;
+        border-radius: 1;
+        color: black;
+        width: 250px;
+        margin-left: 38%;
+        margin-top: -50px;
+    }
+        .button-salvar-parados:hover{
+            opacity: 0.7;
+            border-color: transparent;
+        }
+
+    .button-salvar-parados {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      position: relative;
+      background: ;
+      -webkit-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+    }
+        .button-salvar-parados:before {
+          content: "";
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: #1aff1a;
+          -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+          -webkit-transition-property: transform;
+          transition-property: transform;
+          -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+          -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+        }
+        .button-salvar-parados:hover, .button-salvar-parados:focus, .button-salvar-parados:active {
+          color: white;
+        }
+        .button-salvar-parados:hover:before, .button-salvar-parados:focus:before, .button-salvar-parados:active:before {
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+        }
+
+
+    #icon-save-parados{
+        color: black;
+        font-size: 18px;
+    }
+
+    #season-janeiro{
+        text-align: center;
+    }
+        #season-janeiro:hover{
+        }
+
+    #icon-table-assist{
+        font-size:22px;
+    }
+        #icon-table-assist:hover{
+            color: red;
+        }
+
+/* ############################################ */
+/* ######## ANIMES PROX TEMPORADA 03 ########## */
+/* ############################################ */
+
+.btn-animeproxtemp{
+    background-color: greenyellow;
+    border-color: transparent;
+}
+
+/* ############################################ */
+/* ######## cards ########## */
+/* ############################################ */
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+p {
+  font-size: 13px;
+}
+
+a:hover .card-outmore {
+  background: #2C3E50;
+  color: #fff;
+}
+
+a:hover .thecard {
+  box-shadow: 0 10px 50px rgba(0,0,0,.6);
+}
+
+.thecard {
+  width: 300px;
+  margin: 5% auto;
+  box-shadow: 0 1px 30px rgba(0,0,0,.4);
+  display: block;
+  background-color: #fff;
+  border-radius: 4px;
+  transition: 400ms ease;
+}
+
+.card-img {
+  height: 225px;
+}
+
+.card-img img {
+  width:100%;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.card-caption {
+  position: relative;
+  background: #ffffff;
+  padding: 15px 25px 5px 25px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.card-outmore {
+  padding: 10px 25px 10px 25px;
+  border-radius: 0px 0px 4px 4px;
+  border-top: 1px solid #e0e0e0;
+  background: #efefef;
+  color: #222;
+  display: inline-table;
+  width: 100%;
+  box-sizing: border-box;
+  transition: 400ms ease;
+}
+.card-outmore h5 {
+  float: left;
+}
+.card-outmore i {
+  float: right;
+}
+
+span.date {
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 22px;
+}
+
+h5 {
+  margin:0;
+}
+
+#like-btn {
+  font-size: 18px;
+  background: #446CB3;
+  color: #fff;
+  padding: 13px 15px;
+  border-radius: 50em;
+  position: absolute;
+  right: 20px;
+  top: -22px;
+  box-shadow: 0 2px 1px rgba(0,0,0,.2);
+  transition: 400ms ease;
+}
+
+#like-btn:hover {
+  font-size: 18px;
+  background: #3B5998;
+  color: #fff;
+  padding: 13px 15px;
+  border-radius: 50em;
+  position: absolute;
+  right: 20px;
+  top: -22px;
+  box-shadow: 0 4px 5px rgba(0,0,0,.3);
+}
+
+#outmore-icon {
+  border:1px solid ;
+  padding: 1px 6px;
+  border-radius: 50em;
+}
+
+/* ############################################ */
+/* ######## CADASTRO DE NOVO USUARIO ########## */
+/* ############################################ */
+
+.button-new-user{
+    background-color: #4CAF50; border: none; color: white; padding: 16px 32px; text-decoration: none; margin: 4px 2px; cursor: pointer;
+}
+
+/*----------------------------*/
+
+
+    @media screen and (min-width:768px) and (max-width:1366px)
+    {   
+        .index-button{color:; width:;}
+    }
+
+    /*iPhone 6/7/8 Plus*/
+    @media screen and (min-width:414px) and (max-width:736px)
+    {   
+       
+    }
+
+    /*iPad*/
+    @media screen and (min-width:768px) and (max-width:1024px)
+    {   
+       
+    }
+
+/* ############################################ */
+/* ################# LOJA ##################### */
+/* ############################################ */
+
+.container-loja {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.box-loja {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+
+.box-loja > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover; 
+  transition: .5s;
+}
+
+.box-loja > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+
+.box-loja:hover { flex: 1 1 50%; }
+.box-loja:hover > img {
+  width: 100%;
+  height: 100%;
+}
+ 
+.teste111{
+    color:red;
+}

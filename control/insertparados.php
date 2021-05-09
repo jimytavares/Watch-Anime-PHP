@@ -2,22 +2,53 @@
 
     session_start();
 
-    $mysqli = new mysqli ('localhost', 'testee', '12345', 'dbanime');
-    
-    $id_user    = (int) $_SESSION['id'] ;
-    $nomeP         = $_POST['id_anime'];
-    $epP           = $_POST['episodio'];
-    $dataP         = $_POST['data'];
+    require_once('../.connection/connection.class.php');
 
-    $sql = "INSERT INTO tb_parado(id_usuario, id_anime, episodio, data) VALUES ('$id_user','$nomeP', '$epP', '$dataP');";
+    if (!$mysqli) {
+      die("Connection failed: " . mysqli_connect_error());
+    }else{
+        echo "Connected successfully";
+    }
     
-    if ($mysqli->query($sql) === TRUE) {
+    $id_user = (int) $_SESSION['id'] ;
+    $nomeP = $_POST['id_anime'];
+    $epP = $_POST['episodio'];
+    $dataP = $_POST['data'];
+    $notaP = $_POST['nota'];
+    $linkP = $_POST['link'];
+
+    $val = true;
+    $consulta = mysqli_query($mysqli,"SELECT * FROM tb_parado WHERE id_anime='$nomeP'");
+    $linha = mysqli_num_rows($consulta);
+
+    if($linha >= 1)
+    {
+        do
+        {
+            $val = false;
+            echo 
+            '<script type="text/javascript">
+                location.href="javascript:history.go(-1)";    
+                alert("Anime parado ja existe!");
+            </script>';
+            exit;
+        } while ($val == true);
+    }
+
+    mysqli_query($sql = "INSERT INTO tb_parado(id_usuario, id_anime, episodio, data, nota, link) VALUES ('$id_user','$nomeP', '$epP', '$dataP', '$notaP', '$linkP');");
+    
+    mysqli_close($mysqli);
+
+    header('Location: ../.pages/form-anime.php?success');
+    die();
+
+    /*if ($mysqli->query($sql) === TRUE) {
     header('Location: ../.pages/form-parados.php');
 
     } else {
     echo "Error: " . $sql . "<br>" . $mysqli->error;
     }
 
-    $mysqli->close();
+    $mysqli->close();*/
     
 ?>

@@ -21,21 +21,6 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-    $numeros = array(1, 2, 3, 4, 5, 6, 7, 8, 9);
-$maiores='';
-$menores='';
-echo '<ul>';
-foreach($numeros as $numero){
-if($numero > 5){
-    $maiores.= '<li>a'.$numero.'</li>';
-}else{
-    $menores.= '<li>b'.$numero.'</li>';
-  }
-}
-echo $maiores;
-echo $menores;
-echo '</ul>';
-    
     <style>
         .bodyanimeted{
             width: 100%;

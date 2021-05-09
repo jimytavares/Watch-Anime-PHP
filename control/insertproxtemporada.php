@@ -1,6 +1,6 @@
 <?php
 
-    $mysqli = new mysqli ('localhost', 'dbanime', '12345', 'dbanime');
+    require_once('../.connection/connection.class.php');
     
     $nomeA      = $_POST['nome'];
     $temporadaA = $_POST['temporada'];

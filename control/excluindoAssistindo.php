@@ -1,11 +1,14 @@
 <?php
 
-   $servidor = 'localhost';
-   $usuario  = 'testee';
-   $senha    = '12345';
-   $banco    = 'dbanime';
+    session_start();
 
-   $mysqli = new mysqli ($servidor, $usuario, $senha, $banco);
+    require_once('../.connection/connection.class.php');
+
+    if (!$mysqli) {
+      die("Connection failed: " . mysqli_connect_error());
+    }else{
+        echo "Connected successfully";
+    }
     
     //O PROBLEMA DE NÃO FUNCIONAR COM BOTÃO PORQUE SÓ TAVA FUNCIONANDO COM O METODO _GET O _POST NÃO IA
     $idA = $_GET['idex'];
@@ -14,7 +17,7 @@
     
     if ($mysqli->query($sql) === TRUE) 
     {
-        header('Location: ../.pages/home.php');
+        header('Location: ../.pages/home.php?delAnime');
     }else {
         echo "Error: " . $sql . "<br>" . $mysqli->error;
     }

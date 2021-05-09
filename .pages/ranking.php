@@ -1,28 +1,4 @@
-<!DOCTYPE HTML>  
-<html>
-<head>
-
-    <?php
-        session_start();
-        require_once('../.globals/verificar_logado.php');
-    ?>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- Meu CSS -->
-    <link href="../css/Main.css" rel="stylesheet" type="text/css" media="all"/>
-    <!-- Responsividade -->
-    <link href="../css/responsive.css" rel="stylesheet" type="text/css" media="all"/>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+<?php include ('../.globals/header.php'); ?>
 
     <style>
         .bodyanimeted{
@@ -42,111 +18,55 @@
 
     </style>
 
-    <style>
-
-    
-
-        .dots span:nth-child(1)
-        {
-           transition-delay: 0.05s;
-        }
-        .dots span:nth-child(2)
-        {
-           transition-delay: 0.1s;
-        }
-        .dots span:nth-child(3)
-        {
-           transition-delay: 0.15s;
-        }
-
-
-        @media (max-width: 1000px) {
-          .wrap {
-           flex-direction: column;
-            width:400px;
-          }
-        }
-
-    </style>
-    
-</head>
-<body class="bodyanimeted" style="background-image: linear-gradient(to right, #6424ea,  #ad00b1, #9200c5);">
-
-    <!-- SECTION 01: header
-    ===================================================== -->
-    <?php include ('../.globals/header.php'); ?>
-
-    <!-- SECTION 02: menu
-    ===================================================== -->
-    <div class="container-fluid" style="width: 95%; margin-top:30px;">
-        <div class="row" style="margin-left:40px;">
-            <div class="col-md-auto">
-                <a href="home.php" > <button type="button" class="btn btn-outline-success" style="background-color:black; opacity:0.6; width:100px; height: 50px; color:white; border-radius:1px;"> Home </button> </a>
-            </div>
-            <div class="col-md-auto">
-                <a href="perfil.php">  <button type="button" class="btn btn-outline-success" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Perfil</button> </a>
-            </div>
-            <div class="col-md-auto">
-                <a href="temporada.php"> <button type="button" class="btn btn-outline-success" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Temporada</button> </a>
-            </div>
-            <div class="col-md-auto">
-                <a href="lancamentos.php"> <button type="button" class="btn btn-outline-success" style="background-color:black; width:100px; height: 50px; opacity:0.6; color:white; border-radius:1px; margin-left:-25px;">Lançamento</button> </a>
-            </div>
-            <div class="col-md-auto">
-                <a href="ranking.php"> <button type="button" class="btn btn-outline-success" style="background-color:#F9F8FD; width:100px; height: 50px;  color:white; border-radius:1px; margin-left:-25px;"><i class="fas fa-align-left" style="color:black; font-size:25px; "></i> </button> </a>
-            </div>
-        </div>
-    </div>
-    
-    <!-- SECTION 03: body box
-    ===================================================== -->
-    <section class="container-fluid" style="background-color:#eeebf9;width: 95%; margin-top: 0px; border-radius:5px; height: 800px;">
+<body class="bodyanimeted" style="">
+   
+    <section class="container-fluid" style="background-color:#eeebf9;width: 95%; margin-top: 30px; border-radius:5px; height: 800px;">
 
         <!--##### ROW 01: Assistindo ####-->
-            <div class="row" style="padding-top: 20px; width:99%; margin-left:8px;">
-                
-                <!-- TABLE: Ranking -->
-                <div class="container" style="width:1000px; color:white; background-image: linear-gradient(to right, #959abc, #6eb1d7, #54d8b1); height:50px; border-radius:2px; box-shadow: 1px 3px 10px #000000; text-align:center;">
-                    <div class="row" style="padding-top:15px;">
-                        <div class="col" style="background-color:;">
-                            <i class="far fa-calendar-alt" id="icon-table-assist" style=""></i>
-                            <i class="fas fa-info-circle" id="icon-table-assist" style="margin-left:30px; "></i> 
-                        </div>
-                        <div class="col alignText-r">
-                            <p style="font-family: 'Poppins', sans-serif; font-size:16px;">A n i m e s Ranking</p>
-                        </div>
-                        <div class="col" style="background-color:;">
-                            <a href="form-assistindo.php" style="color:white;"> 
-                                <i class="fab fa-wpforms" style="font-size:23px; "></i>
-                            </a>
+        <div class="row" style="padding-top: 60px; width:99%; margin-left:8px;">
 
-                            <i class='far fa-edit' style=' font-size: 20px; margin-left:20px;'></i>
-                        </div>
+            <!-- TABLE: Ranking -->
+            <div class="container" style="width:1000px; color:white; background-image: linear-gradient(to right, #ee0979, #ff6a00, #54d8b1); height:50px; border-radius:2px; box-shadow: 1px 3px 10px #000000; text-align:center;">
+                <div class="row" style="padding-top:15px;">
+                    <div class="col" style="background-color:;">
+                        <i class="far fa-calendar-alt" id="icon-table-assist" style=""></i>
+                        <i class="fas fa-info-circle" id="icon-table-assist" style="margin-left:30px; "></i> 
+                    </div>
+                    <div class="col alignText-r">
+                        <p style="font-family: 'Poppins', sans-serif; font-size:16px;">R a n k i n g</p>
+                    </div>
+                    <div class="col" style="background-color:;">
+                        <a href="form-assistindo.php" style="color:white;"> 
+                            <i class="fab fa-wpforms" style="font-size:23px; "></i>
+                        </a>
+
+                        <i class='far fa-edit' style=' font-size: 20px; margin-left:20px;'></i>
                     </div>
                 </div>
-                    
-                <table class="table table-borderless" style="margin-top: 10px; margin-left: 5%; width:90%;">
-                    <thead>
-                        <tr style="background-image: linear-gradient(to right, #959abc, #6eb1d7, #54d8b1); color:white;">
-                            <th style="width:15%; color:;">ID</th>
-                            <th style="width:20%;color:;">Nome</th>
-                            <th style="width:10%;color:;">Episódio Assistido</th>
-                            <th style="color:;">Dia Lançamento</th>
-                            <th style="color:;">Data</th>
-                            <th style="color:;">+1 Ep</th>
-                            <th style="color:;">-1 Ep</th>
-                            <th style="color:;">Apagar</th>
-                        </tr>
-                    </thead>
-                    <tbody style="background-color:white; font-family: 'Poppins', sans-serif; color:#545868;">
-                        <?php include_once('../../trunk/control/selectAssistindo2.php'); ?>
-                    </tbody>
-                </table>
+            </div>
 
-            </div>   
+            <table class="table table-borderless" style="margin-top: 10px; margin-left: 5%; width:90%;">
+                <thead>
+                    <tr style="background-image: linear-gradient(to right, #ee0979, #ff6a00, #54d8b1); color:white;">
+                        <th style="width:1%;">ID</th>
+                        <th style="width:5%; text-align:center;">Nota</th>
+                        <th style="width:20%;">Nome</th>
+                        <th style="width:10%;">Temporada</th>
+                        <th style="color:;">Comentário</th>
+                        <th style="color:;">Apagar</th>
+                    </tr>
+                </thead>
+                <tbody style="background-color:white; font-family: 'Poppins', sans-serif; color:#545868;">
+                    <?php include_once('../../trunk/control/selectRanking.php'); ?>
+                </tbody>
+            </table>
+
+        </div>   
         
     </section>
 
+   
+   
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

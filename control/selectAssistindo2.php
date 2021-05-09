@@ -1,14 +1,8 @@
-
 <?php
 
-    $servidor = 'localhost';
-    $usuario  = 'testee';
-    $senha    = '12345';
-    $banco    = 'dbanime';
+    require_once('../.connection/connection.class.php');
 
-    $mysqli = new mysqli ($servidor, $usuario, $senha, $banco);
-
-    $sql = "SELECT * FROM vw_assistido WHERE id_usuario =" . $_SESSION['id'];
+    $sql = "SELECT * FROM vw_assistido WHERE id_usuario = '$_SESSION[id]' order by id";
 
     $dadosAssistindo = $mysqli->query($sql);
 
@@ -30,12 +24,16 @@
 
             echo "<td>" . $dados["dia_semana"];
                 echo "</td>";
-
-            echo "<td style='color:#e6e6e6;'>" . $dados["dtdia"];
+        
+            echo "<td style='color:#b1b1b1;'>" . $dados["ge_nome"];
                 echo "</td>";
+
+          /* echo "<td style='color:#e6e6e6;'>" . $dados["dtdia"];
+                echo "</td>";*/
 
             echo "<td>"; 
                 echo "<a href='../control/plusEpisodio.php?plus=" . $dados['id'] . "' onclick='mudarCor('blue');'> <img src='../imagens/img-button-table/plus1.png' style='width:29px; margin-left:5px;'/> </a>";
+        
             echo "</td>";
 
             echo "<td>"; 
@@ -52,4 +50,5 @@
 
         echo "</tr>";
     }
+
 ?>

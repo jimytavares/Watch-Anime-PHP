@@ -41,35 +41,6 @@ class Database
         return self::$db;
     }
 
-    /*public static function exibirAssistido(){
-    $con = self::conexao();
-    $getAssistindo = $con->prepare("SELECT * FROM vw_assistido");
-    $getAssistindo->execute();
-    $dadosAssistindo = $getAssistindo->fetchAll();
-    foreach ($dadosAssistindo AS $dados){
-        echo "<tr>";
-        echo "<td>" . $dados["id"];
-        echo "</td>";
-        echo "<td>" . $dados["nome"];
-        echo "</td>";
-        echo "<td>" . $dados["episodio"];
-        echo "</td>";
-        echo "<td>" . $dados["diasemana"];
-        echo "</td>";
-        echo "<td>" . $dados["dataassistido"];
-        echo "</td>";
-        echo "<td>" . $dados["dataproxep"];
-        echo "</td>";
-        echo "<td>" . $dados["qualidade"];
-        echo "</td>";
-        echo "<td>" . $dados["comentario"];
-        echo "</td>";
-        echo "<td>" . $dados["nota"];
-        echo "</td>";
-        echo "</tr>";
-    }
-    }*/
-
 }
 
 ?>

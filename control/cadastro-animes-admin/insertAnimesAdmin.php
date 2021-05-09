@@ -1,13 +1,16 @@
 <?php
+    //var_dump($_POST); 
+    //echo $id_user;
 
     session_start();
 
-    $servidor = 'localhost';
-    $usuario  = 'testee';
-    $senha    = '12345';
-    $banco    = 'dbanime';
+    require_once('../../.connection/connection.class.php');
 
-    $mysqli = new mysqli ($servidor, $usuario, $senha, $banco);
+    if (!$mysqli) {
+      die("Connection failed: " . mysqli_connect_error());
+    }
+
+    echo "Connected successfully";
 
     $nome       = $_POST['nome'];
     $abreviacao = $_POST['abreviacao'];
@@ -19,18 +22,29 @@
     $id_categoria = $_POST['id_categoria'];
     $id_temporada = $_POST['id_temporada'];
 
-    //var_dump($_POST);
-    //echo $id_user;
+    $val = true;
+    $consulta = mysqli_query($mysqli,"SELECT * FROM tb_animes WHERE nome='$nome'");
+    $linha = mysqli_num_rows($consulta);
 
-    $sql = "INSERT INTO tb_animes(nome, abreviacao, episodio, estreia, sinopse, id_genero, id_categoria, id_temporada) VALUES ('$nome', '$abreviacao', '$episodio', '$estreia', '$sinopse', '$id_genero', '$id_categoria', '$id_temporada');";
-
-    if ($mysqli->query($sql) === TRUE) 
+    if($linha >= 1)
     {
-        header('Location: ../../.pages/home.php');
-    }else{
-        echo "Error: " . $sql . "<br>" . $mysqli->error;
+        do
+        {
+            $val = false;
+            echo 
+            '<script type="text/javascript">
+                location.href="javascript:history.go(-1)";    
+                alert("Nome de usuário já existente!");
+            </script>';
+            exit;
+        } while ($val == true);
     }
 
-    $mysqli->close();
+    mysqli_query($mysqli,"INSERT INTO tb_animes(nome, abreviacao, episodio, estreia, sinopse, id_genero, id_categoria, id_temporada) VALUES ('$nome', '$abreviacao', '$episodio', '$estreia', '$sinopse', '$id_genero', '$id_categoria', '$id_temporada')");
+
+    mysqli_close($mysqli);
+
+    header('Location: ../../.pages/form-anime.php');
+    die();
     
 ?>
