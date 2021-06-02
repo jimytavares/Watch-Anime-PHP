@@ -111,8 +111,6 @@
         
     </section>
     
-    <?php include ('../.globals/action-add.php'); ?>
-
    
    
     

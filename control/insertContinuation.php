@@ -12,15 +12,18 @@
         echo "Connected successfully";
     }
 
-    $id_user    = (int) $_SESSION['id'] ;
-    $id_animeA  = $_POST['id_anime'];
-    $episodioA  = $_POST['episodio'];
-    $dia_semana = $_POST['dia_semana'];
-    $dtdia      = $_POST['dtdia'];
-    $link       = $_POST['link'];
+    $ep    = $_POST['ep'];
+    $dia   = $_POST['dia'];
+    $dtata = $_POST['dtata'];
+    $link  = $_POST['link'];
+
+    $id_user      = (int) $_SESSION['id'] ;
+    $id_anime     = $_POST['id_anime'];
+    $id_temporada = $_POST['id_temporada'];
+    $id_nota      = $_POST['id_nota'];
 
     $val = true;
-    $consulta = mysqli_query($mysqli,"SELECT * FROM tb_assistido WHERE id_anime='$id_animeA'");
+    $consulta = mysqli_query($mysqli,"SELECT * FROM tb_continuation WHERE id_anime='$id_animeA'");
     $linha = mysqli_num_rows($consulta);
 
     if($linha >= 1)
@@ -37,13 +40,13 @@
         } while ($val == true);
     }
 
-     mysqli_query($mysqli,"INSERT INTO tb_assistido(id_usuario, id_anime, episodio, dia_semana, dtdia, link) VALUES ('$id_user', '$id_animeA', '$episodioA', '$dia_semana', '$dtdia', '$link');");
+     mysqli_query($mysqli,"INSERT INTO tb_continuation(ep, dia, data, link, id_anime, id_usuario, id_temporada, id_nota) VALUES ('$ep', '$dia', '$dtata', '$link', '$id_anime', '$id_user', '$id_temporada', '$id_nota');");
 
     /*$sql = "INSERT INTO tb_assistido(id_usuario, id_anime, episodio, dia_semana, dtdia, link) VALUES ('$id_user', '$id_animeA', '$episodioA', '$dia_semana', '$dtdia', '$link');";*/
 
     mysqli_close($mysqli);
 
-    header('Location: ../.pages/form-assistindo.php?success');
+    header('Location: ../.pages/form-teste.php?success');
     die();
     
 ?>

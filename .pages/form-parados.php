@@ -106,12 +106,11 @@
                 
             </div>
             .<?php echo $_SESSION['id'] ?>
+            
         </div>
         
     </section>
     
-    
-    <?php include ('../.globals/action-add.php'); ?>
     
     
     

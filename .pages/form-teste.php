@@ -41,7 +41,7 @@
             
             <!-- BOX: form -->
             <div class="" style="margin-left:3%; width: 1000px; margin-top:30px; border: ;">
-                <form action="../../trunk/control/insertRanking.php" method="post" autocomplete="on" style="font-family: 'Poppins', sans-serif;">
+                <form action="../../trunk/control/insertContinuation.php" method="post" autocomplete="on" style="font-family: 'Poppins', sans-serif;">
                   
                  <div class="form-group">
                       <div class="row">
@@ -77,13 +77,62 @@
                   <div class="form-group">
                     <div class="row">
                         <div class="col-md-auto">
-                            <p><b>Comentário:</b></p>
+                            <p><b>ep:</b></p>
                         </div>
                         <div class="col">
-                            <input type="text" name="comentario" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:50%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:5px;">
+                            <input type="text" name="ep" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:50%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:5px;">
                         </div>
                       </div>
                   </div> 
+                   
+                   <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-auto">
+                            <p><b>dia:</b></p>
+                        </div>
+                        <div class="col">
+                            <input type="text" name="dia" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:50%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:5px;">
+                        </div>
+                      </div>
+                  </div> 
+                   
+                   <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-auto">
+                            <p><b>data:</b></p>
+                        </div>
+                        <div class="col">
+                            <input type="text" name="data" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:50%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:5px;">
+                        </div>
+                      </div>
+                  </div> 
+                   
+                   <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-auto">
+                            <p><b>link:</b></p>
+                        </div>
+                        <div class="col">
+                            <input type="text" name="link" class="form-control" id="exampleFormControlInput1" placeholder="data que saiu o anime" style="width:50%; background-color:transparent; color:red; border-radius:3px; border: 1px solid #999999; margin-left:5px;">
+                        </div>
+                      </div>
+                  </div> 
+                   
+                   <div class="form-group">
+                      <div class="row">
+                        <div class="col-md-auto">
+                            <p><b>Temporada:</b></p>
+                        </div>
+                        <div class="col">
+                            <select class="form-control" name="id_temporada" id="exampleFormControlSelect1" style="width:10%; background-color:transparent; color:#595959; border-radius:3px; border: 1px solid #999999; margin-left:55px;">
+                                
+                              <option value="0">.:Nota:.</option>
+                              <?php include_once('../../trunk/control/cadastro-animes-admin/selectTemporada.php'); ?>  
+                                
+                            </select>
+                        </div>
+                      </div>
+                  </div>
                     
                     
                   <!--<div class="form-group">

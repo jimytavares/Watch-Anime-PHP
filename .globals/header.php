@@ -88,3 +88,5 @@
         </div>
     </section>
     <br/>
+    
+<?php include ('../.globals/action-add.php'); ?>
