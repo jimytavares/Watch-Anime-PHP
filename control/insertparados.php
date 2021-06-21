@@ -1,5 +1,4 @@
 <?php
-
     session_start();
 
     require_once('../.connection/connection.class.php');
@@ -12,7 +11,7 @@
     
     $id_user = (int) $_SESSION['id'] ;
     $nomeP = $_POST['id_anime'];
-    $epP = $_POST['episodio'];
+    $epP   = $_POST['episodio'];
     $dataP = $_POST['data'];
     $notaP = $_POST['nota'];
     $linkP = $_POST['link'];
@@ -39,16 +38,6 @@
     
     mysqli_close($mysqli);
 
-    header('Location: ../.pages/form-anime.php?success');
+    header('Location: ../.pages/form-parados.php?success');
     die();
-
-    /*if ($mysqli->query($sql) === TRUE) {
-    header('Location: ../.pages/form-parados.php');
-
-    } else {
-    echo "Error: " . $sql . "<br>" . $mysqli->error;
-    }
-
-    $mysqli->close();*/
-    
 ?>
